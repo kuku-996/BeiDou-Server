@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="housePT.img">
+<imgdir name="housePT.img" indent="2" media="NONE">
   <imgdir name="house0">
     <imgdir name="basic">
       <imgdir name="0">
-        <canvas name="0" width="630" height="380">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="315" y="190"/>
           <int name="z" value="0"/>
         </canvas>
@@ -11,13 +11,13 @@
     </imgdir>
     <imgdir name="deco">
       <imgdir name="0">
-        <canvas name="0" width="288" height="122">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="144" y="61"/>
           <int name="z" value="0"/>
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="542" height="380">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="271" y="190"/>
           <int name="z" value="0"/>
         </canvas>
@@ -27,7 +27,7 @@
   <imgdir name="house1">
     <imgdir name="basic">
       <imgdir name="0">
-        <canvas name="0" width="439" height="337">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="219" y="168"/>
           <int name="z" value="0"/>
         </canvas>
@@ -37,7 +37,7 @@
   <imgdir name="house2">
     <imgdir name="basic">
       <imgdir name="0">
-        <canvas name="0" width="350" height="374">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="175" y="187"/>
           <int name="z" value="0"/>
         </canvas>
@@ -45,7 +45,7 @@
     </imgdir>
     <imgdir name="deco">
       <imgdir name="0">
-        <canvas name="0" width="139" height="107">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="69" y="53"/>
           <int name="z" value="0"/>
         </canvas>
@@ -55,22 +55,16 @@
   <imgdir name="house3">
     <imgdir name="basic">
       <imgdir name="0">
-        <canvas name="0" width="511" height="142">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="255" y="78"/>
           <int name="z" value="0"/>
           <extended name="foothold">
             <vector name="foothold" x="-57" y="44"/>
-            <vector name="foothold" x="-6" y="3"/>
-            <vector name="foothold" x="12" y="3"/>
-            <vector name="foothold" x="79" y="-54"/>
-            <vector name="foothold" x="191" y="-65"/>
-            <vector name="foothold" x="211" y="-54"/>
-            <vector name="foothold" x="254" y="-56"/>
           </extended>
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="481" height="641">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="240" y="320"/>
           <int name="z" value="0"/>
         </canvas>

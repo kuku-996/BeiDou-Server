@@ -1477,6 +1477,10 @@ public class Client extends ChannelInboundHandlerAdapter {
     }
 
     public void sendPacket(Packet packet) {
+        // Artificial players use a mock client without a Netty channel.
+        if (ioChannel == null) {
+            return;
+        }
         announcerLock.lock();
         try {
             ioChannel.writeAndFlush(packet);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="001010003.img">
+<imgdir name="001010003.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -16,8 +16,6 @@
     <int name="hideMinimap" value="0"/>
     <int name="moveLimit" value="0"/>
     <string name="mapMark" value="Amherst"/>
-    <int name="swim" value="0"/>
-    <int name="fieldLimit" value="8196"/>
   </imgdir>
   <imgdir name="back">
     <imgdir name="0">
@@ -33,7 +31,6 @@
       <int name="a" value="255"/>
       <int name="front" value="0"/>
       <int name="ani" value="0"/>
-      <int name="f" value="0"/>
     </imgdir>
   </imgdir>
   <imgdir name="life">
@@ -51,17 +48,16 @@
   </imgdir>
   <imgdir name="0">
     <imgdir name="info">
+      <string name="tS" value="coalMine"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
     <imgdir name="info">
+      <string name="tS" value="coalMine"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="insideGS"/>
@@ -254,9 +250,9 @@
   </imgdir>
   <imgdir name="2">
     <imgdir name="info">
+      <string name="tS" value="coalMine"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="shop"/>
@@ -273,9 +269,9 @@
   </imgdir>
   <imgdir name="3">
     <imgdir name="info">
+      <string name="tS" value="coalMine"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="insideGS"/>
@@ -303,37 +299,31 @@
   </imgdir>
   <imgdir name="4">
     <imgdir name="info">
+      <string name="tS" value="brownBrick"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="5">
     <imgdir name="info">
+      <string name="tS" value="brownBrick"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
     <imgdir name="info">
+      <string name="tS" value="brownBrick"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
     <imgdir name="info">
+      <string name="tS" value="brownBrick"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-  </imgdir>
-  <imgdir name="reactor">
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="foothold">
     <imgdir name="1">
@@ -625,8 +615,7 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="portal">
     <imgdir name="0">
       <string name="pn" value="sp"/>

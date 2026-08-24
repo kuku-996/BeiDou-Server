@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1032111.img">
+<imgdir name="1032111.img" indent="2" media="NONE">
   <imgdir name="info">
     <imgdir name="script">
       <imgdir name="0">
@@ -12,17 +12,17 @@
     <int name="dcBottom" value="-55"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="151" height="203">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="75" y="203"/>
       <int name="z" value="0"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="1" width="151" height="205">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="75" y="203"/>
       <int name="z" value="0"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="2" width="151" height="209">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="75" y="203"/>
       <int name="z" value="0"/>
       <int name="delay" value="150"/>

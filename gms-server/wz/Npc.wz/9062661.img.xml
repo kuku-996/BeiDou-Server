@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="9062661.img" indent="2" media="NONE">
+  <imgdir name="info">
+    <int name="dcLeft" value="-54"/>
+    <int name="dcTop" value="-84"/>
+    <int name="dcRight" value="50"/>
+    <int name="dcBottom" value="0"/>
+    <imgdir name="script">
+      <imgdir name="0">
+        <string name="script" value="npc_9062661"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="stand">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_hash" value="8d3610807b31e0a78e08785e0e5135c375c9e0479fc34cc2ce9d161a25cb4146"/>
+    </canvas>
+  </imgdir>
+  <imgdir name="eye">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="1" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="2" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="3" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+  </imgdir>
+  <imgdir name="say">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="1" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="2" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="3" format="1" scale="0">
+      <vector name="origin" x="54" y="83"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+  </imgdir>
+  <imgdir name="condition1">
+    <imgdir name="502079">
+      <imgdir name="0">
+        <string name="key" value="floor"/>
+        <string name="value" value="1"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="stand">
+      <canvas name="0" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_hash" value="4cf9d41a2fb28a0755fdaea541e8c149914af45f5e1fb64da269aa70acc30399"/>
+      </canvas>
+    </imgdir>
+    <imgdir name="eye">
+      <canvas name="0" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+      <canvas name="1" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+      <canvas name="2" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+      <canvas name="3" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+    </imgdir>
+    <imgdir name="say">
+      <canvas name="0" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+      <canvas name="1" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+      <canvas name="2" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+      <canvas name="3" format="1" scale="0">
+        <vector name="origin" x="52" y="81"/>
+        <int name="z" value="0"/>
+        <string name="_inlink" value="condition1/stand/0"/>
+      </canvas>
+    </imgdir>
+  </imgdir>
+</imgdir>

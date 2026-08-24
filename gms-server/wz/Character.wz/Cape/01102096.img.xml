@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01102096.img">
+<imgdir name="01102096.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="31" height="31">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-1" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="31" height="31">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-1" y="31"/>
     </canvas>
     <string name="islot" value="Sr"/>
@@ -19,7 +19,7 @@
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="cape" width="43" height="34">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="13" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -28,7 +28,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="41" height="34">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="13" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -37,7 +37,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="42" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="13" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -46,7 +46,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="cape" width="42" height="34">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="13" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -71,7 +71,7 @@
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="cape" width="36" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="11" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -80,7 +80,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="39" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="13" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -89,7 +89,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="42" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -111,7 +111,7 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="cape" width="39" height="35">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -120,7 +120,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="39" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -129,7 +129,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="39" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -140,7 +140,7 @@
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="0">
-      <canvas name="cape" width="43" height="32">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -149,7 +149,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="26" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="3" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -158,7 +158,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="37" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="4" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -169,7 +169,7 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="13" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -178,7 +178,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="8" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -187,7 +187,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="37" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="8" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -198,7 +198,7 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="cape" width="42" height="39">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="19" y="23"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -207,7 +207,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="39" height="27">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="5" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -216,7 +216,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="43" height="32">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="10" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -227,7 +227,7 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="cape" width="42" height="39">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="21" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -236,7 +236,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="39" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="19" y="15"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -245,7 +245,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="26" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="5" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -254,7 +254,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="cape" width="38" height="39">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="28"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -265,7 +265,7 @@
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="cape" width="39" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="14" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -274,7 +274,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="10" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -283,7 +283,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="44" height="30">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="4" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -294,7 +294,7 @@
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="0">
-      <canvas name="cape" width="26" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="4" y="16"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -303,7 +303,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="44" height="30">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="4" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -312,7 +312,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="42" height="42">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="25"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -323,7 +323,7 @@
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -332,7 +332,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="42" height="42">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="19" y="25"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -341,7 +341,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="43" height="32">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="12" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -352,7 +352,7 @@
   </imgdir>
   <imgdir name="swingTF">
     <imgdir name="0">
-      <canvas name="cape" width="41" height="34">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="14" y="15"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -361,7 +361,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="28" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -370,7 +370,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="10" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -379,7 +379,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="cape" width="44" height="30">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="6" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -390,7 +390,7 @@
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="cape" width="39" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -399,7 +399,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="10" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -408,7 +408,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="44" height="30">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="4" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -419,7 +419,7 @@
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="cape" width="26" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -428,7 +428,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="44" height="30">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="2" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -437,7 +437,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="42" height="42">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="25"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -448,7 +448,7 @@
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="cape" width="38" height="39">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="12" y="27"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -457,7 +457,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="36" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="10" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -466,7 +466,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -475,7 +475,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="cape" width="43" height="32">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="14" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -486,7 +486,7 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="cape" width="44" height="39">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="21" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -495,7 +495,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="39" height="27">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="7" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -506,7 +506,7 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="cape" width="44" height="39">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="18" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -515,7 +515,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="39" height="27">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="8" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -526,7 +526,7 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="16" y="23"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -535,7 +535,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="37" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="14" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -544,7 +544,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="44" height="30">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="8" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -555,7 +555,7 @@
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="10" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -564,7 +564,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="37" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="7" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -573,7 +573,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="40" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="6" y="25"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -584,7 +584,7 @@
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="cape" width="36" height="38">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="8" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -593,7 +593,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="37" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="11" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -602,7 +602,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="40" height="36">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="9" y="25"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -619,7 +619,7 @@
       <uol name="cape" value="../../swingPF/1/cape"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="43" height="34">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="19" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -628,7 +628,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="cape" width="37" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="7" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -639,7 +639,7 @@
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="cape" width="43" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="22" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -648,7 +648,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="40" height="42">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="18" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -657,7 +657,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="42" height="41">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="18" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -668,7 +668,7 @@
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="cape" width="43" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="19" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -677,7 +677,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="40" height="42">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -686,7 +686,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="cape" width="42" height="41">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -695,7 +695,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="cape" width="39" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -704,7 +704,7 @@
       </canvas>
     </imgdir>
     <imgdir name="4">
-      <canvas name="cape" width="40" height="42">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="23"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -715,7 +715,7 @@
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="cape" width="40" height="42">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="22" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -724,7 +724,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="43" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="25" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -738,7 +738,7 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="cape" width="42" height="16">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="30" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -747,7 +747,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="42" height="16">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="29" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -774,7 +774,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="cape" width="42" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -783,7 +783,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="36" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="15" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -794,7 +794,7 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="cape" width="37" height="33">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="9" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -805,7 +805,7 @@
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="cape" width="36" height="32">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="14" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -816,7 +816,7 @@
   </imgdir>
   <imgdir name="ladder">
     <imgdir name="0">
-      <canvas name="cape" width="37" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="18" y="14"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -825,7 +825,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="37" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="14"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -836,7 +836,7 @@
   </imgdir>
   <imgdir name="rope">
     <imgdir name="0">
-      <canvas name="cape" width="37" height="37">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="18" y="14"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -845,7 +845,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="cape" width="37" height="35">
+      <canvas name="cape" format="1" scale="0">
         <vector name="origin" x="17" y="15"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>

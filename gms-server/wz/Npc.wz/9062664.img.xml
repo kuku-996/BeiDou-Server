@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="9062664.img" indent="2" media="NONE">
+  <imgdir name="info">
+    <int name="dcLeft" value="-78"/>
+    <int name="dcTop" value="-120"/>
+    <int name="dcRight" value="86"/>
+    <int name="dcBottom" value="-1"/>
+    <imgdir name="script">
+      <imgdir name="0">
+        <string name="script" value="npc_9062664"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="stand">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_hash" value="31525c0677f4c240f13ce8a6f30d5fff10b7ccd26ba40805652be9e7e137cc7a"/>
+    </canvas>
+  </imgdir>
+  <imgdir name="eye">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="1" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="2" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="3" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+  </imgdir>
+  <imgdir name="say">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="1" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="2" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+    <canvas name="3" format="1" scale="0">
+      <vector name="origin" x="77" y="120"/>
+      <int name="z" value="0"/>
+      <string name="_inlink" value="stand/0"/>
+    </canvas>
+  </imgdir>
+</imgdir>

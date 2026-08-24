@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01000030.img">
+<imgdir name="01000030.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="33" height="32">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="32"/>
     </canvas>
-    <canvas name="iconRaw" width="33" height="31">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="32"/>
     </canvas>
     <string name="islot" value="HrCp"/>
@@ -18,14 +18,14 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="66" height="45">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="33" y="22"/>
       <imgdir name="map">
         <vector name="brow" x="-7" y="1"/>
       </imgdir>
       <string name="z" value="cap"/>
     </canvas>
-    <canvas name="defaultAc" width="72" height="58">
+    <canvas name="defaultAc" format="1" scale="0">
       <vector name="origin" x="36" y="29"/>
       <imgdir name="map">
         <vector name="brow" x="-7" y="-3"/>
@@ -34,7 +34,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default1" width="70" height="52">
+    <canvas name="default1" format="1" scale="0">
       <vector name="origin" x="35" y="26"/>
       <imgdir name="map">
         <vector name="brow" x="-5" y="-3"/>
@@ -416,14 +416,14 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="default" width="66" height="45">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="33" y="22"/>
         <imgdir name="map">
           <vector name="brow" x="-7" y="1"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="72" height="49">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="36" y="24"/>
         <imgdir name="map">
           <vector name="brow" x="-7" y="2"/>

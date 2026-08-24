@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01092044.img">
+<imgdir name="01092044.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="29" height="31">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-2" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="29" height="29">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-2" y="31"/>
     </canvas>
     <string name="islot" value="Si"/>
@@ -19,7 +19,7 @@
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="shield" width="12" height="11">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="17" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -28,7 +28,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="12" height="11">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="14" y="1"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -40,7 +40,7 @@
       <uol name="shield" value="../0/shield"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="shield" width="12" height="11">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="18" y="11"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -51,7 +51,7 @@
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="shield" width="12" height="11">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="13" y="-2"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -60,7 +60,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="12" height="11">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="15" y="-1"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -69,7 +69,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="shield" width="12" height="11">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="17" y="-2"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -80,7 +80,7 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="shield" width="42" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="28" y="20"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -89,7 +89,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="29" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -98,7 +98,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="29" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -109,7 +109,7 @@
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="0">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="13" y="24"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -118,7 +118,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="7" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -127,7 +127,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="shield" width="43" height="36">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="30" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -138,7 +138,7 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="34" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -147,7 +147,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="33" y="30"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -156,7 +156,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="shield" width="42" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="39" y="29"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -167,7 +167,7 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="shield" width="42" height="34">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="49" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -176,7 +176,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="20" y="24"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -185,7 +185,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="shield" width="42" height="38">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="13" y="23"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -196,7 +196,7 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="30" y="17"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -205,7 +205,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="4" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -214,7 +214,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="13" y="27"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -223,7 +223,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="shield" width="41" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="40" y="13"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -234,7 +234,7 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="42" y="23"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -243,7 +243,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="14" y="22"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -254,7 +254,7 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="47" y="25"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -263,7 +263,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="14" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -274,7 +274,7 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="shield" width="48" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="24" y="18"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -283,7 +283,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="54" y="27"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -292,7 +292,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="shield" width="42" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="45" y="23"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -303,7 +303,7 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="shield" width="42" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="63" y="23"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -333,7 +333,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="shield" width="12" height="11">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="16" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -347,7 +347,7 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="shield" width="43" height="37">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="33" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -358,7 +358,7 @@
   </imgdir>
   <imgdir name="ladder">
     <imgdir name="0">
-      <canvas name="shield" width="48" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="25" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -367,7 +367,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="48" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="23" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -378,7 +378,7 @@
   </imgdir>
   <imgdir name="rope">
     <imgdir name="0">
-      <canvas name="shield" width="48" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="25" y="19"/>
         <imgdir name="map">
           <vector name="navel" x="-1" y="0"/>
@@ -387,7 +387,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="shield" width="48" height="35">
+      <canvas name="shield" format="1" scale="0">
         <vector name="origin" x="23" y="21"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>

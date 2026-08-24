@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="6109010.img">
+<imgdir name="6109010.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="info" value="910200000"/>
   </imgdir>
@@ -15,7 +15,7 @@
         <int name="2" value="1"/>
       </imgdir>
     </imgdir>
-    <canvas name="0" width="48" height="34">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="24" y="17"/>
       <int name="z" value="0"/>
     </canvas>
@@ -161,7 +161,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="11">
-    <canvas name="0" width="1" height="1">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
   </imgdir>

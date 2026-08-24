@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0413.img">
+<imgdir name="0413.img" indent="2" media="NONE">
   <imgdir name="04131000">
     <imgdir name="info">
-      <canvas name="icon" width="30" height="29">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="-1" y="29"/>
       </canvas>
-      <canvas name="iconRaw" width="30" height="26">
+      <canvas name="iconRaw" format="1" scale="0">
         <vector name="origin" x="-1" y="29"/>
       </canvas>
       <int name="price" value="10000"/>
@@ -134,10 +134,10 @@
   </imgdir>
   <imgdir name="04130000">
     <imgdir name="info">
-      <canvas name="icon" width="26" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="-4" y="32"/>
       </canvas>
-      <canvas name="iconRaw" width="20" height="31">
+      <canvas name="iconRaw" format="1" scale="0">
         <vector name="origin" x="-6" y="32"/>
       </canvas>
       <int name="price" value="100"/>

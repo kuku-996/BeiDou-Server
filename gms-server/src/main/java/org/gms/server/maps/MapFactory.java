@@ -34,6 +34,8 @@ import org.gms.server.partyquest.GuardianSpawnPoint;
 import org.gms.util.DatabaseConnection;
 import org.gms.util.NumberTool;
 import org.gms.util.StringUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.sql.Connection;
@@ -47,6 +49,7 @@ import java.util.List;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class MapFactory {
+    private static final Logger log = LoggerFactory.getLogger(MapFactory.class);
     private static final Data nameData = DataProviderFactory.getDataProvider(WZFiles.STRING).getData("Map.img");
     private static final DataProvider mapSource = DataProviderFactory.getDataProvider(WZFiles.MAP);
 
@@ -109,6 +112,12 @@ public class MapFactory {
 
     private static void loadLifeRaw(MapleMap map, int id, String type, int cy, int f, int fh, int rx0, int rx1, int x, int y, int hide, int mobTime, int team) {
         AbstractLoadedLife myLife = loadLife(id, type, cy, f, fh, rx0, rx1, x, y, hide);
+        if (myLife == null) {
+            // A map can reference a life entry absent from a different-but-
+            // compatible WZ data set. Skip only that entry so the remaining
+            // map and its portals can still be loaded safely.
+            return;
+        }
         if (myLife instanceof Monster monster) {
             int mobRespawnRate = GameConfig.getServerInt("mob_respawn_rate");
             float mobTimeRate = GameConfig.getServerFloat("boss_respawn_mob_time_rate");
@@ -145,6 +154,10 @@ public class MapFactory {
 
         String mapName = getMapName(mapid);
         Data mapData = mapSource.getData(mapName);    // source.getData issue with giving nulls in rare ocasions found thanks to MedicOP
+        if (mapData == null) {
+            log.warn("Map {} is missing from the active Map.wz data (expected {}).", mapid, mapName);
+            return null;
+        }
         Data infoData = mapData.getChildByPath("info");
 
         String link = DataTool.getString(infoData.getChildByPath("link"), "");
@@ -335,6 +348,9 @@ public class MapFactory {
 
     private static AbstractLoadedLife loadLife(int id, String type, int cy, int f, int fh, int rx0, int rx1, int x, int y, int hide) {
         AbstractLoadedLife myLife = LifeFactory.getLife(id, type);
+        if (myLife == null) {
+            return null;
+        }
         myLife.setCy(cy);
         myLife.setF(f);
         myLife.setFh(fh);

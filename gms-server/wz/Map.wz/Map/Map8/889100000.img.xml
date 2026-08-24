@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="889100000.img">
+<imgdir name="889100000.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -9,7 +9,7 @@
     <float name="mobRate" value="1.0"/>
     <string name="bgm" value="Bgm04/WhiteChristmas"/>
     <string name="mapMark" value="HappyVillage"/>
-    <int name="hideMinimap" value="0"/>
+    <int name="hideMinimap" value="1"/>
     <int name="fieldLimit" value="262252"/>
     <int name="swim" value="0"/>
     <int name="fly" value="0"/>
@@ -182,18 +182,13 @@
     </imgdir>
   </imgdir>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="Christmas"/>
@@ -294,10 +289,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="Christmas"/>
@@ -374,20 +367,14 @@
     </imgdir>
   </imgdir>
   <imgdir name="3">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="5">
     <imgdir name="info">
@@ -802,27 +789,19 @@
         <int name="zM" value="0"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="foothold">
     <imgdir name="5">
       <imgdir name="12">
@@ -1111,8 +1090,7 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="portal">
     <imgdir name="0">
       <string name="pn" value="sp"/>

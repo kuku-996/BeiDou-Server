@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="106021000.img">
+<imgdir name="106021000.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -251,13 +251,10 @@
       <int name="rx1" value="2320"/>
     </imgdir>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="1">
         <string name="oS" value="Tdungeon"/>
@@ -3054,10 +3051,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="Tdungeon"/>
@@ -3182,28 +3177,19 @@
     </imgdir>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="ToolTip">
     <imgdir name="0">
@@ -4052,8 +4038,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="189" height="95">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="3032"/>
     <int name="height" value="1524"/>
     <int name="centerX" value="643"/>

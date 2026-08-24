@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9802005.img">
-  <imgdir name="info">
-  </imgdir>
+<imgdir name="9802005.img" indent="2" media="NONE">
+  <imgdir name="info"/>
   <imgdir name="0">
-    <canvas name="0" width="38" height="51">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="21" y="27"/>
       <int name="z" value="0"/>
     </canvas>
     <imgdir name="hit">
-      <canvas name="0" width="38" height="51">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="21" y="27"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="1" width="39" height="51">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="22" y="27"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="2" width="38" height="51">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="21" y="27"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="3" width="38" height="51">
+      <canvas name="3" format="1" scale="0">
         <vector name="origin" x="21" y="27"/>
         <int name="z" value="0"/>
       </canvas>
@@ -33,7 +32,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="1">
-    <canvas name="0" width="1" height="1">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
     <imgdir name="event">

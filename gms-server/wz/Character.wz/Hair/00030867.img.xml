@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="00030867.img">
+<imgdir name="00030867.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="islot" value="Hr"/>
     <string name="vslot" value="H1H2H3H4H5H6HfHsHb"/>
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="hairOverHead" width="44" height="37">
+    <canvas name="hairOverHead" format="1" scale="0">
       <vector name="origin" x="22" y="33"/>
       <imgdir name="map">
         <vector name="brow" x="-5" y="-8"/>
       </imgdir>
       <string name="z" value="hairOverHead"/>
     </canvas>
-    <canvas name="hair" width="38" height="25">
+    <canvas name="hair" format="1" scale="0">
       <vector name="origin" x="18" y="30"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-17"/>
       </imgdir>
       <string name="z" value="hair"/>
     </canvas>
-    <canvas name="hairBelowBody" width="39" height="39">
+    <canvas name="hairBelowBody" format="1" scale="0">
       <vector name="origin" x="18" y="29"/>
       <imgdir name="map">
         <vector name="brow" x="-3" y="-17"/>
@@ -28,7 +28,7 @@
       <string name="z" value="hairBelowBody"/>
     </canvas>
     <imgdir name="hairShade">
-      <canvas name="0" width="33" height="20">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="17" y="10"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="1"/>
@@ -45,14 +45,14 @@
     </imgdir>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="backHair" width="44" height="51">
+    <canvas name="backHair" format="1" scale="0">
       <vector name="origin" x="22" y="37"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-13"/>
       </imgdir>
       <string name="z" value="backHair"/>
     </canvas>
-    <canvas name="backHairBelowCap" width="39" height="39">
+    <canvas name="backHairBelowCap" format="1" scale="0">
       <vector name="origin" x="11" y="7"/>
       <imgdir name="map">
         <vector name="brow" x="4" y="5"/>

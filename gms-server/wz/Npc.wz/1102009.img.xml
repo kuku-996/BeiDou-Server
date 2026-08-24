@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1102009.img">
+<imgdir name="1102009.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="hideName" value="1"/>
     <int name="talkMouseOnly" value="1"/>
-    <canvas name="default" width="48" height="82">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="21" y="82"/>
       <int name="delay" value="3000"/>
     </canvas>
@@ -18,7 +18,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="1" height="60">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="61"/>
     </canvas>
   </imgdir>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2081014.img">
-  <imgdir name="info">
-  </imgdir>
+<imgdir name="2081014.img" indent="2" media="NONE">
+  <imgdir name="info"/>
   <imgdir name="stand">
-    <canvas name="0" width="56" height="70">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="26" y="70"/>
       <int name="z" value="0"/>
       <int name="delay" value="5000"/>
     </canvas>
   </imgdir>
   <imgdir name="finger">
-    <canvas name="0" width="56" height="70">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="26" y="70"/>
       <int name="z" value="0"/>
       <int name="delay" value="5000"/>
@@ -22,12 +21,12 @@
     </imgdir>
   </imgdir>
   <imgdir name="wink">
-    <canvas name="0" width="56" height="70">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="26" y="70"/>
       <int name="z" value="0"/>
       <int name="delay" value="200"/>
     </canvas>
-    <canvas name="1" width="56" height="70">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="26" y="70"/>
       <int name="z" value="0"/>
       <int name="delay" value="4800"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9300189.img">
+<imgdir name="9300189.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="bodyAttack" value="1"/>
     <int name="level" value="50"/>
@@ -62,7 +62,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="default">
-      <canvas name="0" width="135" height="210">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="67" y="105"/>
         <int name="z" value="0"/>
       </canvas>

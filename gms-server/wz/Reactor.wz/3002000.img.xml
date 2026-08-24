@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="3002000.img">
+<imgdir name="3002000.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="info" value="물 웅덩이"/>
   </imgdir>
   <imgdir name="0">
-    <canvas name="0" width="341" height="100">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="170" y="50"/>
       <int name="z" value="0"/>
     </canvas>
@@ -21,7 +21,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="1">
-    <canvas name="0" width="341" height="100">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="170" y="50"/>
       <int name="z" value="0"/>
     </canvas>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0520.img">
+<imgdir name="0520.img" indent="2" media="NONE">
   <imgdir name="05200000">
     <imgdir name="info">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
       </canvas>
-      <canvas name="iconRaw" width="32" height="31">
+      <canvas name="iconRaw" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
       </canvas>
       <int name="meso" value="1000000"/>
@@ -14,10 +14,10 @@
   </imgdir>
   <imgdir name="05200001">
     <imgdir name="info">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
       </canvas>
-      <canvas name="iconRaw" width="32" height="31">
+      <canvas name="iconRaw" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
       </canvas>
       <int name="meso" value="5000000"/>
@@ -26,10 +26,10 @@
   </imgdir>
   <imgdir name="05200002">
     <imgdir name="info">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
       </canvas>
-      <canvas name="iconRaw" width="32" height="31">
+      <canvas name="iconRaw" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
       </canvas>
       <int name="meso" value="10000000"/>

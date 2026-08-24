@@ -204,6 +204,16 @@ public enum RecvOpcode implements Opcode {
     MTS_OPERATION(0xFD), // MTS操作
     USE_MAPLELIFE(0x100), // 使用MapleLife
     USE_HAMMER(0x104), // 使用锤子
+    HYPER_TELEPORT_ROCK(0x105), // Kaentake server-validated Hyper Teleport Rock
+    DAMAGE_SKIN_APPLY(0x110), // Kaentake damage skin apply
+    DAMAGE_SKIN_PURCHASE(0x111), // Kaentake damage skin purchase
+    WORLD_MAP_PLAYERS(0x115), // Kaentake world-map player lookup
+    DAILY_CHECKIN(0x11A), // Kaentake 28-day daily check-in
+    BATTLE_STATISTICS(0x11B), // Kaentake combat statistics panel
+    BEAUTY_SALON(0x174), // Kaentake hair/face/skin storage
+    SET_ITEM_ACTION(0x371B), // Kaentake set catalog/piece-count requests
+    BAG_WINDOW(0x3724), // Kaentake character storage bags
+    MONSTER_BOOK_QUERY(0x372B), // Kaentake extended Monster Book queries
 
     SET_HPMPALERT(0x1000), // 设置HP/MP警报
     ;

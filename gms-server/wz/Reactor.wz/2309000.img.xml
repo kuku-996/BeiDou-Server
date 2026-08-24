@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2309000.img">
-  <imgdir name="info">
-  </imgdir>
+<imgdir name="2309000.img" indent="2" media="NONE">
+  <imgdir name="info"/>
   <imgdir name="0">
-    <canvas name="0" width="55" height="67">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="31" y="33"/>
       <int name="z" value="0"/>
     </canvas>
     <imgdir name="hit">
-      <canvas name="0" width="55" height="67">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="31" y="33"/>
         <int name="z" value="0"/>
         <int name="delay" value="80"/>
       </canvas>
-      <canvas name="1" width="55" height="62">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="31" y="26"/>
         <int name="z" value="0"/>
         <int name="delay" value="80"/>
@@ -27,7 +26,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="1">
-    <canvas name="0" width="55" height="62">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="31" y="26"/>
       <int name="z" value="0"/>
     </canvas>

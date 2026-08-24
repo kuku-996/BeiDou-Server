@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01902002.img">
+<imgdir name="01902002.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="32" height="32">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="32"/>
     </canvas>
-    <canvas name="iconRaw" width="32" height="32">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="32"/>
     </canvas>
     <string name="islot" value="Tm"/>
@@ -19,7 +19,7 @@
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="0" width="120" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-60" y="-110"/>
         <vector name="rb" x="60" y="-38"/>
@@ -28,7 +28,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="123" height="74">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="61" y="37"/>
         <vector name="lt" x="-61" y="-37"/>
         <vector name="rb" x="62" y="37"/>
@@ -37,7 +37,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="41" height="19">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="20" y="9"/>
         <vector name="lt" x="-20" y="-9"/>
         <vector name="rb" x="21" y="10"/>
@@ -49,7 +49,7 @@
       <int name="delay" value="160"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="0" width="115" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="114"/>
         <vector name="lt" x="-60" y="-109"/>
         <vector name="rb" x="55" y="-37"/>
@@ -58,7 +58,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="122" height="78">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="61" y="39"/>
         <vector name="lt" x="-61" y="-39"/>
         <vector name="rb" x="61" y="39"/>
@@ -67,7 +67,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="37" height="35">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="17"/>
         <vector name="lt" x="-18" y="-17"/>
         <vector name="rb" x="19" y="18"/>
@@ -79,7 +79,7 @@
       <int name="delay" value="160"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="0" width="115" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="113"/>
         <vector name="lt" x="-60" y="-108"/>
         <vector name="rb" x="55" y="-36"/>
@@ -88,7 +88,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="125" height="72">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="62" y="36"/>
         <vector name="lt" x="-62" y="-36"/>
         <vector name="rb" x="63" y="36"/>
@@ -97,7 +97,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="37" height="33">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="16"/>
         <vector name="lt" x="-18" y="-16"/>
         <vector name="rb" x="19" y="17"/>
@@ -109,7 +109,7 @@
       <int name="delay" value="160"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="0" width="108" height="89">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="114"/>
         <vector name="lt" x="-60" y="-109"/>
         <vector name="rb" x="48" y="-21"/>
@@ -118,7 +118,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="128" height="67">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="64" y="33"/>
         <vector name="lt" x="-64" y="-33"/>
         <vector name="rb" x="64" y="34"/>
@@ -127,7 +127,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="24" height="28">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="12" y="14"/>
         <vector name="lt" x="-12" y="-14"/>
         <vector name="rb" x="12" y="14"/>
@@ -139,7 +139,7 @@
       <int name="delay" value="160"/>
     </imgdir>
     <imgdir name="4">
-      <canvas name="0" width="101" height="90">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-60" y="-110"/>
         <vector name="rb" x="41" y="-21"/>
@@ -148,7 +148,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="132" height="69">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="66" y="34"/>
         <vector name="lt" x="-66" y="-34"/>
         <vector name="rb" x="66" y="35"/>
@@ -157,7 +157,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="21" height="34">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="10" y="17"/>
         <vector name="lt" x="-10" y="-17"/>
         <vector name="rb" x="11" y="17"/>
@@ -169,7 +169,7 @@
       <int name="delay" value="160"/>
     </imgdir>
     <imgdir name="5">
-      <canvas name="0" width="102" height="83">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="116"/>
         <vector name="lt" x="-60" y="-111"/>
         <vector name="rb" x="42" y="-28"/>
@@ -178,7 +178,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="125" height="68">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="62" y="34"/>
         <vector name="lt" x="-62" y="-34"/>
         <vector name="rb" x="63" y="34"/>
@@ -187,7 +187,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="23" height="32">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="11" y="16"/>
         <vector name="lt" x="-11" y="-16"/>
         <vector name="rb" x="12" y="16"/>
@@ -239,7 +239,7 @@
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="0" width="120" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-60" y="-110"/>
         <vector name="rb" x="60" y="-38"/>
@@ -248,7 +248,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="124" height="74">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="62" y="37"/>
         <vector name="lt" x="-62" y="-37"/>
         <vector name="rb" x="62" y="37"/>
@@ -257,7 +257,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="21" height="19">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="21" y="55"/>
         <vector name="lt" x="-21" y="-55"/>
         <vector name="rb" x="0" y="-36"/>
@@ -269,7 +269,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="0" width="115" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="114"/>
         <vector name="lt" x="-60" y="-109"/>
         <vector name="rb" x="55" y="-37"/>
@@ -278,7 +278,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="122" height="81">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="61" y="40"/>
         <vector name="lt" x="-61" y="-40"/>
         <vector name="rb" x="61" y="41"/>
@@ -287,7 +287,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="37" height="35">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="17"/>
         <vector name="lt" x="-18" y="-17"/>
         <vector name="rb" x="19" y="18"/>
@@ -299,7 +299,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="0" width="115" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="113"/>
         <vector name="lt" x="-60" y="-108"/>
         <vector name="rb" x="55" y="-36"/>
@@ -308,7 +308,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="126" height="76">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="63" y="38"/>
         <vector name="lt" x="-63" y="-38"/>
         <vector name="rb" x="63" y="38"/>
@@ -317,7 +317,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="37" height="33">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="16"/>
         <vector name="lt" x="-18" y="-16"/>
         <vector name="rb" x="19" y="17"/>
@@ -329,7 +329,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="0" width="108" height="90">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="114"/>
         <vector name="lt" x="-60" y="-109"/>
         <vector name="rb" x="48" y="-19"/>
@@ -338,7 +338,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="129" height="67">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="64" y="33"/>
         <vector name="lt" x="-64" y="-33"/>
         <vector name="rb" x="65" y="34"/>
@@ -347,7 +347,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="24" height="15">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="12" y="7"/>
         <vector name="lt" x="-12" y="-7"/>
         <vector name="rb" x="12" y="8"/>
@@ -359,7 +359,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="4">
-      <canvas name="0" width="101" height="90">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-60" y="-110"/>
         <vector name="rb" x="41" y="-20"/>
@@ -368,7 +368,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="133" height="69">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="37" y="67"/>
         <vector name="lt" x="-37" y="-67"/>
         <vector name="rb" x="96" y="2"/>
@@ -377,7 +377,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="20" height="16">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="10" y="8"/>
         <vector name="lt" x="-10" y="-8"/>
         <vector name="rb" x="10" y="8"/>
@@ -389,7 +389,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="5">
-      <canvas name="0" width="102" height="83">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="116"/>
         <vector name="lt" x="-60" y="-111"/>
         <vector name="rb" x="42" y="-28"/>
@@ -398,7 +398,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="130" height="69">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="37" y="69"/>
         <vector name="lt" x="-37" y="-69"/>
         <vector name="rb" x="93" y="0"/>
@@ -407,7 +407,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="23" height="32">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="11" y="16"/>
         <vector name="lt" x="-11" y="-16"/>
         <vector name="rb" x="12" y="16"/>
@@ -419,7 +419,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="6">
-      <canvas name="0" width="120" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-60" y="-110"/>
         <vector name="rb" x="60" y="-38"/>
@@ -428,7 +428,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="124" height="74">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="62" y="37"/>
         <vector name="lt" x="-62" y="-37"/>
         <vector name="rb" x="62" y="37"/>
@@ -437,7 +437,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="41" height="19">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="20" y="9"/>
         <vector name="lt" x="-20" y="-9"/>
         <vector name="rb" x="21" y="10"/>
@@ -449,7 +449,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="7">
-      <canvas name="0" width="115" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="114"/>
         <vector name="lt" x="-60" y="-109"/>
         <vector name="rb" x="55" y="-37"/>
@@ -458,7 +458,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="122" height="81">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="61" y="40"/>
         <vector name="lt" x="-61" y="-40"/>
         <vector name="rb" x="61" y="41"/>
@@ -467,7 +467,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="37" height="35">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="17"/>
         <vector name="lt" x="-18" y="-17"/>
         <vector name="rb" x="19" y="18"/>
@@ -479,7 +479,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="8">
-      <canvas name="0" width="115" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="113"/>
         <vector name="lt" x="-60" y="-108"/>
         <vector name="rb" x="55" y="-36"/>
@@ -488,7 +488,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="126" height="76">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="63" y="38"/>
         <vector name="lt" x="-63" y="-38"/>
         <vector name="rb" x="63" y="38"/>
@@ -497,7 +497,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="37" height="33">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="16"/>
         <vector name="lt" x="-18" y="-16"/>
         <vector name="rb" x="19" y="17"/>
@@ -509,7 +509,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="9">
-      <canvas name="0" width="108" height="88">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="114"/>
         <vector name="lt" x="-60" y="-109"/>
         <vector name="rb" x="48" y="-22"/>
@@ -518,7 +518,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="129" height="67">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="64" y="33"/>
         <vector name="lt" x="-64" y="-33"/>
         <vector name="rb" x="65" y="34"/>
@@ -527,7 +527,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="24" height="15">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="12" y="7"/>
         <vector name="lt" x="-12" y="-7"/>
         <vector name="rb" x="12" y="8"/>
@@ -539,7 +539,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="10">
-      <canvas name="0" width="101" height="90">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-60" y="-110"/>
         <vector name="rb" x="41" y="-20"/>
@@ -548,7 +548,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="133" height="69">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="37" y="67"/>
         <vector name="lt" x="-37" y="-67"/>
         <vector name="rb" x="96" y="2"/>
@@ -557,7 +557,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="20" height="16">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="10" y="8"/>
         <vector name="lt" x="-10" y="-8"/>
         <vector name="rb" x="10" y="8"/>
@@ -569,7 +569,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="11">
-      <canvas name="0" width="102" height="84">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="116"/>
         <vector name="lt" x="-60" y="-111"/>
         <vector name="rb" x="42" y="-27"/>
@@ -578,7 +578,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="130" height="69">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="37" y="69"/>
         <vector name="lt" x="-37" y="-69"/>
         <vector name="rb" x="93" y="0"/>
@@ -587,7 +587,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="23" height="32">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="11" y="16"/>
         <vector name="lt" x="-11" y="-16"/>
         <vector name="rb" x="12" y="16"/>
@@ -675,7 +675,7 @@
   </imgdir>
   <imgdir name="tired">
     <imgdir name="0">
-      <canvas name="0" width="96" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="48" y="76"/>
         <vector name="lt" x="-48" y="-36"/>
         <vector name="rb" x="48" y="36"/>
@@ -684,7 +684,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="97" height="40">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="48" y="20"/>
         <vector name="lt" x="-48" y="-20"/>
         <vector name="rb" x="49" y="20"/>
@@ -698,7 +698,7 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="0" width="110" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-55" y="-36"/>
         <vector name="rb" x="55" y="36"/>
@@ -707,7 +707,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="125" height="72">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="62" y="36"/>
         <vector name="lt" x="-62" y="-36"/>
         <vector name="rb" x="63" y="36"/>
@@ -716,7 +716,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="41" height="19">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="20" y="9"/>
         <vector name="lt" x="-20" y="-9"/>
         <vector name="rb" x="21" y="10"/>
@@ -730,7 +730,7 @@
   </imgdir>
   <imgdir name="prone">
     <imgdir name="0">
-      <canvas name="0" width="104" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="50" y="86"/>
         <vector name="lt" x="-50" y="-86"/>
         <vector name="rb" x="54" y="-14"/>
@@ -739,7 +739,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="97" height="40">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="25" y="39"/>
         <vector name="lt" x="-25" y="-39"/>
         <vector name="rb" x="72" y="0"/>
@@ -753,7 +753,7 @@
   </imgdir>
   <imgdir name="ladder">
     <imgdir name="0">
-      <canvas name="0" width="48" height="54">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="23" y="127"/>
         <vector name="lt" x="-25" y="-77"/>
         <vector name="rb" x="28" y="0"/>
@@ -762,7 +762,7 @@
           <vector name="navel" x="1" y="-64"/>
         </imgdir>
       </canvas>
-      <canvas name="1" width="96" height="108">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="48" y="54"/>
         <vector name="lt" x="-24" y="-58"/>
         <vector name="rb" x="39" y="0"/>
@@ -774,7 +774,7 @@
       <int name="delay" value="230"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="0" width="48" height="54">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="23" y="127"/>
         <vector name="lt" x="-25" y="-77"/>
         <vector name="rb" x="28" y="0"/>
@@ -783,7 +783,7 @@
         </imgdir>
         <string name="z" value="backTamingMobFront"/>
       </canvas>
-      <canvas name="1" width="96" height="108">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="48" y="54"/>
         <vector name="lt" x="-24" y="-58"/>
         <vector name="rb" x="39" y="0"/>
@@ -797,7 +797,7 @@
   </imgdir>
   <imgdir name="rope">
     <imgdir name="0">
-      <canvas name="0" width="48" height="54">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="23" y="127"/>
         <vector name="lt" x="-25" y="-77"/>
         <vector name="rb" x="28" y="0"/>
@@ -806,7 +806,7 @@
         </imgdir>
         <string name="z" value="backTamingMobFront"/>
       </canvas>
-      <canvas name="1" width="96" height="108">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="48" y="54"/>
         <vector name="lt" x="-24" y="-58"/>
         <vector name="rb" x="39" y="0"/>
@@ -818,7 +818,7 @@
       <int name="delay" value="200"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="0" width="48" height="54">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="23" y="125"/>
         <vector name="lt" x="-25" y="-77"/>
         <vector name="rb" x="28" y="0"/>
@@ -827,7 +827,7 @@
         </imgdir>
         <string name="z" value="backTamingMobFront"/>
       </canvas>
-      <canvas name="1" width="96" height="105">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="48" y="52"/>
         <vector name="lt" x="-24" y="-58"/>
         <vector name="rb" x="39" y="0"/>
@@ -841,7 +841,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="0" width="115" height="72">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="115"/>
         <vector name="lt" x="-41" y="-60"/>
         <vector name="rb" x="25" y="-8"/>
@@ -850,7 +850,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="122" height="78">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="61" y="39"/>
         <vector name="lt" x="-24" y="-56"/>
         <vector name="rb" x="43" y="-6"/>
@@ -859,7 +859,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="37" height="35">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="17"/>
         <vector name="lt" x="-24" y="-58"/>
         <vector name="rb" x="39" y="0"/>
@@ -871,7 +871,7 @@
       <int name="delay" value="150"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="0" width="108" height="89">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="123"/>
         <vector name="lt" x="-42" y="-55"/>
         <vector name="rb" x="24" y="-2"/>
@@ -880,7 +880,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="128" height="67">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="64" y="33"/>
         <vector name="lt" x="-23" y="-62"/>
         <vector name="rb" x="40" y="0"/>
@@ -889,7 +889,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="24" height="28">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="12" y="14"/>
         <vector name="lt" x="-24" y="-58"/>
         <vector name="rb" x="39" y="0"/>
@@ -901,7 +901,7 @@
       <int name="delay" value="180"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="0" width="101" height="90">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="60" y="116"/>
         <vector name="lt" x="-41" y="-60"/>
         <vector name="rb" x="25" y="-8"/>
@@ -910,7 +910,7 @@
         </imgdir>
         <string name="z" value="tamingMobFront"/>
       </canvas>
-      <canvas name="1" width="132" height="69">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="66" y="34"/>
         <vector name="lt" x="-24" y="-56"/>
         <vector name="rb" x="43" y="-6"/>
@@ -919,7 +919,7 @@
         </imgdir>
         <string name="z" value="tamingMobMid"/>
       </canvas>
-      <canvas name="2" width="21" height="34">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="10" y="17"/>
         <vector name="lt" x="-24" y="-58"/>
         <vector name="rb" x="39" y="0"/>

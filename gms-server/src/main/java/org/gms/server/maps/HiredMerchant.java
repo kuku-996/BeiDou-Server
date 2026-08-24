@@ -55,6 +55,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import static org.gms.server.artificial.soloport.ArtificialPlayer.BotHelpers.isBot;
+
 /**
  * @author XoticStory
  * @author Ronan - concurrency protection
@@ -63,13 +65,13 @@ public class HiredMerchant extends AbstractMapObject {
     private static final int VISITOR_HISTORY_LIMIT = 10;
     private static final int BLACKLIST_LIMIT = 20;
 
-    private final int ownerId;
+    protected int ownerId;
     private final int itemId;
     private final int mesos = 0;
     private final int channel;
     private final int world;
     private final long start;
-    private String ownerName = "";
+    protected String ownerName = "";
     private String description = "";
     private final List<PlayerShopItem> items = new LinkedList<>();
     private final List<Pair<String, Byte>> messages = new LinkedList<>();
@@ -520,6 +522,11 @@ public class HiredMerchant extends AbstractMapObject {
         return ownerId;
     }
 
+    protected void setArtificialOwner(int ownerId, String ownerName) {
+        this.ownerId = ownerId;
+        this.ownerName = ownerName;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -565,6 +572,66 @@ public class HiredMerchant extends AbstractMapObject {
 
             items.add(item);
             return true;
+        }
+    }
+
+    /** Server-side purchase path for headless bots, which have no network Client. */
+    public void botBuy(Character buyer, PlayerShopItem item, short quantity) {
+        if (buyer == null || item == null || quantity < 1) {
+            return;
+        }
+        synchronized (items) {
+            if (!item.isExist() || item.getBundles() < quantity || !items.contains(item)) {
+                return;
+            }
+
+            Item soldItem = item.getItem().copy();
+            soldItem.setQuantity((short) (soldItem.getQuantity() * quantity));
+            int price = (int) Math.min((float) item.getPrice() * quantity, Integer.MAX_VALUE);
+            price -= Trade.getFee(price);
+
+            synchronized (sold) {
+                sold.add(new SoldItem(buyer.getName(), item.getItem().getItemId(), quantity, price));
+            }
+            item.setBundles((short) (item.getBundles() - quantity));
+            if (item.getBundles() < 1) {
+                item.setDoesExist(false);
+            }
+
+            if (GameConfig.getServerBoolean("use_announce_shop_item_sold")) {
+                announceItemSold(soldItem, price, getQuantityLeft(item.getItem().getItemId()));
+            }
+
+            Character owner = Server.getInstance().getWorld(world).getPlayerStorage().getCharacterByName(ownerName);
+            if (owner != null && !isBot(owner)) {
+                owner.addMerchantMesos(price);
+            } else {
+                try (Connection con = DatabaseConnection.getConnection()) {
+                    long merchantMesos = 0;
+                    try (PreparedStatement ps = con.prepareStatement("SELECT MerchantMesos FROM characters WHERE id = ?")) {
+                        ps.setInt(1, ownerId);
+                        try (ResultSet rs = ps.executeQuery()) {
+                            if (rs.next()) {
+                                merchantMesos = rs.getInt(1);
+                            }
+                        }
+                    }
+                    merchantMesos += price;
+                    try (PreparedStatement ps = con.prepareStatement("UPDATE characters SET MerchantMesos = ? WHERE id = ?", PreparedStatement.RETURN_GENERATED_KEYS)) {
+                        ps.setInt(1, (int) Math.min(merchantMesos, Integer.MAX_VALUE));
+                        ps.setInt(2, ownerId);
+                        ps.executeUpdate();
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            try {
+                saveItems(false);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -658,7 +725,7 @@ public class HiredMerchant extends AbstractMapObject {
         return list;
     }
 
-    public void saveItems(boolean shutdown) throws SQLException {
+    public synchronized void saveItems(boolean shutdown) throws SQLException {
         List<Pair<Item, InventoryType>> itemsWithType = new ArrayList<>();
         List<Short> bundles = new ArrayList<>();
 

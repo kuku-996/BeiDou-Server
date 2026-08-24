@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="WorldMap070.img">
+<imgdir name="WorldMap070.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="parentMap" value="WorldMap"/>
   </imgdir>
   <imgdir name="BaseImg">
-    <canvas name="0" width="640" height="470">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="320" y="235"/>
       <int name="z" value="0"/>
     </canvas>
@@ -150,12 +150,12 @@
     <imgdir name="18">
       <vector name="spot" x="48" y="-138"/>
       <int name="type" value="1"/>
-      <string name="title" value="Sahel Desert II"/>
-      <string name="desc" value="A dungeon where you can hunt alone or with your party members. There is a portal that leads to the #cHill of Sandstorms#."/>
+      <string name="title" value="莎翁小镇：沙哈地带2"/>
+      <string name="desc" value="可独自或组队挑战#c迷你地图：沙尘暴山丘#."/>
       <imgdir name="mapNo">
         <int name="0" value="260020600"/>
       </imgdir>
-      <canvas name="path" width="80" height="37">
+      <canvas name="path" format="1" scale="0">
         <vector name="origin" x="-51" y="182"/>
         <int name="z" value="2"/>
       </canvas>
@@ -274,12 +274,12 @@
     <imgdir name="34">
       <vector name="spot" x="161" y="45"/>
       <int name="type" value="1"/>
-      <string name="title" value="Lab Area C-1"/>
-      <string name="desc" value="A dungeon where you can hunt alone or with your party members. There is a portal that leads to the #cFatal Error#."/>
+      <string name="title" value="卡帕莱特研究所：研究所C-1 地区"/>
+      <string name="desc" value="可独自或组队挑战#c迷你地图：致命的错误#."/>
       <imgdir name="mapNo">
         <int name="0" value="261020300"/>
       </imgdir>
-      <canvas name="path" width="80" height="40">
+      <canvas name="path" format="1" scale="0">
         <vector name="origin" x="-163" y="3"/>
         <int name="z" value="2"/>
       </canvas>

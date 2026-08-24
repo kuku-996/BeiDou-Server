@@ -30,6 +30,10 @@ import org.gms.net.packet.InPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.server.ChatLogger;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotBuffRequestSystem.BotBuffRequestHandler;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotMessagingSystem.ChatMessage;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotMessagingSystem.MessageQueue;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotPlayerInteractionService;
 import org.gms.util.PacketCreator;
 
 public final class GeneralChatHandler extends AbstractPacketHandler {
@@ -58,6 +62,10 @@ public final class GeneralChatHandler extends AbstractPacketHandler {
                 chr.dropMessage(5, "The map you are in is currently muted. Please try again later.");
                 return;
             }
+
+            BotBuffRequestHandler.tryHandle(chr, s);
+            MessageQueue.getInstance().addMessage("primary", new ChatMessage(chr, s));
+            BotPlayerInteractionService.onPlayerGeneralChat(chr, s);
 
             if (!chr.isHidden()) {
                 chr.getMap().broadcastMessage(PacketCreator.getChatText(chr.getId(), s, chr.getWhiteChat(), show));

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="00031577.img">
+<imgdir name="00031577.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="islot" value="Hr"/>
     <string name="vslot" value="H1H2H3H4H5H6HfHsHb"/>
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="hairOverHead" width="45" height="41">
+    <canvas name="hairOverHead" format="1" scale="0">
       <vector name="origin" x="22" y="20"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-5"/>
       </imgdir>
       <string name="z" value="hairOverHead"/>
     </canvas>
-    <canvas name="hair" width="42" height="38">
+    <canvas name="hair" format="1" scale="0">
       <vector name="origin" x="21" y="19"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-7"/>
       </imgdir>
       <string name="z" value="hair"/>
     </canvas>
-    <canvas name="hairBelowBody" width="43" height="52">
+    <canvas name="hairBelowBody" format="1" scale="0">
       <vector name="origin" x="21" y="26"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-14"/>
@@ -28,7 +28,7 @@
       <string name="z" value="hairBelowBody"/>
     </canvas>
     <imgdir name="hairShade">
-      <canvas name="0" width="37" height="31">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-3"/>
@@ -36,7 +36,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="1" width="37" height="31">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-3"/>
@@ -44,7 +44,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="2" width="37" height="31">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-3"/>
@@ -52,7 +52,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="3" width="37" height="31">
+      <canvas name="3" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-3"/>
@@ -60,7 +60,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="4" width="37" height="31">
+      <canvas name="4" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-3"/>
@@ -71,14 +71,14 @@
     </imgdir>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="backHair" width="44" height="55">
+    <canvas name="backHair" format="1" scale="0">
       <vector name="origin" x="22" y="27"/>
       <imgdir name="map">
         <vector name="brow" x="-3" y="-11"/>
       </imgdir>
       <string name="z" value="backHair"/>
     </canvas>
-    <canvas name="backHairBelowCap" width="42" height="51">
+    <canvas name="backHairBelowCap" format="1" scale="0">
       <vector name="origin" x="21" y="25"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-13"/>
@@ -622,14 +622,14 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="hairOverHead" width="45" height="39">
+      <canvas name="hairOverHead" format="1" scale="0">
         <vector name="origin" x="22" y="19"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-4"/>
         </imgdir>
         <string name="z" value="hairOverHead"/>
       </canvas>
-      <canvas name="hair" width="42" height="36">
+      <canvas name="hair" format="1" scale="0">
         <vector name="origin" x="21" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-6"/>

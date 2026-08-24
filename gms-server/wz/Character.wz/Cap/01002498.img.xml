@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002498.img">
+<imgdir name="01002498.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="30" height="30">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-1" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="30" height="30">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-1" y="31"/>
     </canvas>
     <string name="islot" value="HrCp"/>
@@ -18,7 +18,7 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="5" height="5">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="25"/>
       <imgdir name="map">
         <vector name="brow" x="-15" y="-18"/>
@@ -27,7 +27,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default1" width="5" height="5">
+    <canvas name="default1" format="1" scale="0">
       <vector name="origin" x="15" y="25"/>
       <imgdir name="map">
         <vector name="brow" x="-17" y="-21"/>

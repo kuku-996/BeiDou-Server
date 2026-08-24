@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="910510000.img">
+<imgdir name="910510000.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -82,21 +82,15 @@
       <int name="f" value="0"/>
     </imgdir>
   </imgdir>
-  <imgdir name="life">
-  </imgdir>
+  <imgdir name="life"/>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="dungeon"/>
@@ -811,16 +805,12 @@
         <int name="zM" value="4"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="3">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="4">
     <imgdir name="info">
@@ -1389,35 +1379,24 @@
         <int name="zM" value="0"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="foothold">
     <imgdir name="4">
       <imgdir name="0">
@@ -2184,11 +2163,9 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="96" height="73">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="1536"/>
     <int name="height" value="1169"/>
     <int name="centerX" value="453"/>
@@ -2206,12 +2183,11 @@
     </imgdir>
     <imgdir name="1">
       <string name="pn" value="out00"/>
-      <int name="pt" value="7"/>
+      <int name="pt" value="2"/>
       <int name="x" value="-216"/>
       <int name="y" value="260"/>
-      <int name="tm" value="999999999"/>
-      <string name="tn" value=""/>
-      <string name="script" value="exit_puppeteer"/>
+      <int name="tm" value="105070300"/>
+      <string name="tn" value="in00"/>
     </imgdir>
   </imgdir>
 </imgdir>

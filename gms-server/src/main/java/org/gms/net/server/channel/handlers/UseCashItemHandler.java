@@ -48,6 +48,7 @@ import org.gms.constants.game.GameConstants;
 import org.gms.constants.id.ItemId;
 import org.gms.constants.id.MapId;
 import org.gms.constants.inventory.ItemConstants;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotPlayerInteractionService;
 import org.gms.net.AbstractPacketHandler;
 import org.gms.net.packet.InPacket;
 import org.gms.net.packet.out.SendNoteSuccessPacket;
@@ -296,14 +297,18 @@ public final class UseCashItemHandler extends AbstractPacketHandler {
             switch ((itemId / 1000) % 10) {
                 case 1: // Megaphone
                     if (player.getLevel() > 9) {
-                        player.getClient().getChannelServer().broadcastPacket(PacketCreator.serverNotice(2, medal + player.getName() + " : " + p.readString()));
+                        String megaphoneMessage = p.readString();
+                        player.getClient().getChannelServer().broadcastPacket(PacketCreator.serverNotice(2, medal + player.getName() + " : " + megaphoneMessage));
+                        BotPlayerInteractionService.onPlayerMegaphone(player, megaphoneMessage);
                     } else {
                         player.dropMessage(1, I18nUtil.getMessage("UseCashItemHandler.handlePacket.message4"));
                         return;
                     }
                     break;
                 case 2: // Super megaphone
-                    Server.getInstance().broadcastMessage(c.getWorld(), PacketCreator.serverNotice(3, c.getChannel(), medal + player.getName() + " : " + p.readString(), (p.readByte() != 0)));
+                    String superMegaphoneMessage = p.readString();
+                    Server.getInstance().broadcastMessage(c.getWorld(), PacketCreator.serverNotice(3, c.getChannel(), medal + player.getName() + " : " + superMegaphoneMessage, (p.readByte() != 0)));
+                    BotPlayerInteractionService.onPlayerMegaphone(player, superMegaphoneMessage);
                     break;
                 case 5: // Maple TV
                     int tvType = itemId % 10;
@@ -346,7 +351,8 @@ public final class UseCashItemHandler extends AbstractPacketHandler {
 
                     break;
                 case 6: //item megaphone
-                    String msg = medal + player.getName() + " : " + p.readString();
+                    String itemMegaphoneMessage = p.readString();
+                    String msg = medal + player.getName() + " : " + itemMegaphoneMessage;
                     whisper = p.readByte() == 1;
                     Item item = null;
                     if (p.readByte() == 1) { //item
@@ -359,6 +365,7 @@ public final class UseCashItemHandler extends AbstractPacketHandler {
                         // thanks Conrad for noticing that untradeable items should be allowed in megas
                     }
                     Server.getInstance().broadcastMessage(c.getWorld(), PacketCreator.itemMegaphone(msg, whisper, c.getChannel(), item));
+                    BotPlayerInteractionService.onPlayerMegaphone(player, itemMegaphoneMessage);
                     break;
                 case 7: //triple megaphone
                     int lines = p.readByte();
@@ -372,6 +379,7 @@ public final class UseCashItemHandler extends AbstractPacketHandler {
                     }
                     whisper = p.readByte() == 1;
                     Server.getInstance().broadcastMessage(c.getWorld(), PacketCreator.getMultiMegaphone(msg2, c.getChannel(), whisper));
+                    BotPlayerInteractionService.onPlayerMegaphone(player, String.join(" ", msg2));
                     break;
             }
             remove(c, position, itemId);

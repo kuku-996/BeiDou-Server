@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01001045.img">
+<imgdir name="01001045.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="33" height="32">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="32"/>
     </canvas>
-    <canvas name="iconRaw" width="33" height="32">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="32"/>
     </canvas>
     <string name="islot" value="HrCp"/>
@@ -18,14 +18,14 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="67" height="57">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="33" y="28"/>
       <imgdir name="map">
         <vector name="brow" x="-8" y="-1"/>
       </imgdir>
       <string name="z" value="cap"/>
     </canvas>
-    <canvas name="defaultAc" width="73" height="76">
+    <canvas name="defaultAc" format="1" scale="0">
       <vector name="origin" x="36" y="38"/>
       <imgdir name="map">
         <vector name="brow" x="-8" y="-8"/>
@@ -34,7 +34,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default1" width="72" height="69">
+    <canvas name="default1" format="1" scale="0">
       <vector name="origin" x="36" y="34"/>
       <imgdir name="map">
         <vector name="brow" x="-3" y="-7"/>
@@ -416,14 +416,14 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="default" width="67" height="51">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="33" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="-7" y="2"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="73" height="52">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="36" y="26"/>
         <imgdir name="map">
           <vector name="brow" x="-7" y="4"/>

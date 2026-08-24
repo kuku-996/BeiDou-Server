@@ -126,6 +126,10 @@ public enum Job {
         */
     }
 
+    public int getJobTier() {
+        return Math.min(4, Math.max(0, (id % 100) / 10));
+    }
+
     public static Job getJobStyleInternal(int jobid, byte opt) {
         int jobtype = jobid / 100;
 

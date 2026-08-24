@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="920010600.img">
+<imgdir name="920010600.img" indent="2" media="NONE">
   <imgdir name="back">
     <imgdir name="0">
       <string name="bS" value="skyStation"/>
@@ -392,31 +392,21 @@
       <int name="rx1" value="147"/>
     </imgdir>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="3">
     <imgdir name="info">
@@ -2429,10 +2419,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="connect"/>
@@ -2789,28 +2777,19 @@
     </imgdir>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="info">
     <int name="version" value="10"/>
@@ -5085,8 +5064,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="48" height="202">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="775"/>
     <int name="height" value="3242"/>
     <int name="centerX" value="437"/>
@@ -5200,48 +5178,48 @@
     </imgdir>
     <imgdir name="12">
       <string name="pn" value="r4rp12"/>
-      <int name="pt" value="8"/>
       <int name="x" value="-90"/>
       <int name="y" value="-1459"/>
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="party3_r4pt"/>
+      <int name="pt" value="8"/>
     </imgdir>
     <imgdir name="13">
       <string name="pn" value="r4rp13"/>
-      <int name="pt" value="8"/>
       <int name="x" value="10"/>
       <int name="y" value="-1459"/>
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="party3_r4pt"/>
+      <int name="pt" value="8"/>
     </imgdir>
     <imgdir name="14">
       <string name="pn" value="r4rp21"/>
-      <int name="pt" value="8"/>
       <int name="x" value="-181"/>
       <int name="y" value="-1635"/>
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="party3_r4pt"/>
+      <int name="pt" value="8"/>
     </imgdir>
     <imgdir name="15">
       <string name="pn" value="r4rp22"/>
-      <int name="pt" value="8"/>
       <int name="x" value="-94"/>
       <int name="y" value="-1638"/>
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="party3_r4pt"/>
+      <int name="pt" value="8"/>
     </imgdir>
     <imgdir name="16">
       <string name="pn" value="r4rp23"/>
-      <int name="pt" value="8"/>
       <int name="x" value="6"/>
       <int name="y" value="-1638"/>
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="party3_r4pt"/>
+      <int name="pt" value="8"/>
     </imgdir>
     <imgdir name="17">
       <string name="pn" value="st00"/>
@@ -5251,6 +5229,60 @@
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="party3_roomout"/>
+    </imgdir>
+    <imgdir name="18">
+      <string name="pn" value="np03"/>
+      <int name="x" value="-273"/>
+      <int name="y" value="-1"/>
+      <string name="tn" value="r4rp11"/>
+      <string name="script" value=""/>
+      <int name="tm" value="920010600"/>
+      <int name="pt" value="1"/>
+    </imgdir>
+    <imgdir name="19">
+      <string name="pn" value="np04"/>
+      <int name="x" value="-1"/>
+      <int name="y" value="-1"/>
+      <string name="tn" value="r4rp12"/>
+      <string name="script" value=""/>
+      <int name="tm" value="920010600"/>
+      <int name="pt" value="1"/>
+    </imgdir>
+    <imgdir name="20">
+      <string name="pn" value="np05"/>
+      <int name="x" value="-1"/>
+      <int name="y" value="-1"/>
+      <string name="tn" value="r4rp13"/>
+      <string name="script" value=""/>
+      <int name="tm" value="920010600"/>
+      <int name="pt" value="1"/>
+    </imgdir>
+    <imgdir name="21">
+      <string name="pn" value="np06"/>
+      <int name="x" value="-1"/>
+      <int name="y" value="-1"/>
+      <string name="tn" value="r4rp21"/>
+      <string name="script" value=""/>
+      <int name="tm" value="920010600"/>
+      <int name="pt" value="1"/>
+    </imgdir>
+    <imgdir name="22">
+      <string name="pn" value="np07"/>
+      <int name="x" value="-1"/>
+      <int name="y" value="-1"/>
+      <string name="tn" value="r4rp22"/>
+      <string name="script" value=""/>
+      <int name="tm" value="920010600"/>
+      <int name="pt" value="1"/>
+    </imgdir>
+    <imgdir name="23">
+      <string name="pn" value="np08"/>
+      <int name="x" value="-1"/>
+      <int name="y" value="-1"/>
+      <string name="tn" value="r4rp23"/>
+      <string name="script" value=""/>
+      <int name="tm" value="920010600"/>
+      <int name="pt" value="1"/>
     </imgdir>
   </imgdir>
 </imgdir>

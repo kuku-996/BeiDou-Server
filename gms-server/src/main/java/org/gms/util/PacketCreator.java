@@ -7513,6 +7513,138 @@ public class PacketCreator {
         return familyBuff(0, 0, 0, 0);
     }
 
+    public static Packet bagWindowSnapshot(int bagKind, OreStorage storage, boolean auto) {
+        final OutPacket p = OutPacket.create(SendOpcode.BAG_WINDOW);
+        p.writeByte(1);
+        p.writeByte(bagKind);
+        List<Item> items = storage.getItems();
+        p.writeShort(items.size());
+        for (Item item : items) {
+            p.writeShort(item.getPosition());
+            addItemInfo(p, item, true);
+        }
+        for (Item item : items) {
+            p.writeShort(item.getQuantity());
+        }
+        p.writeByte(auto ? 1 : 0);
+        return p;
+    }
+
+    /**
+     * Daily check-in snapshot (0x17C): response type, visible day, 28-bit claim mask,
+     * just-claimed day, then the icon and tooltip tables used by Kaentake.
+     */
+    public static Packet dailyCheckinSnapshot(int currentDay, int claimedMask, int justClaimed) {
+        final OutPacket p = OutPacket.create(SendOpcode.DAILY_CHECKIN);
+        p.writeByte(1);
+        p.writeByte(currentDay);
+        p.writeInt(claimedMask);
+        p.writeByte(justClaimed);
+        p.writeByte(DailyCheckinRewards.CYCLE_DAYS);
+        for (int day = 1; day <= DailyCheckinRewards.CYCLE_DAYS; day++) {
+            p.writeInt(DailyCheckinRewards.iconItemId(day));
+        }
+        for (int day = 1; day <= DailyCheckinRewards.CYCLE_DAYS; day++) {
+            p.writeString(DailyCheckinRewards.tooltip(day));
+        }
+        return p;
+    }
+
+    /** Kaentake combat statistics snapshot (0x17D). */
+    public static Packet battleStatisticsSnapshot(boolean active, int elapsedSeconds,
+                                                  int killedMobs, int mesos, int experience) {
+        final OutPacket p = OutPacket.create(SendOpcode.BATTLE_STATISTICS);
+        p.writeByte(1);
+        p.writeByte(active ? 1 : 0);
+        p.writeInt(elapsedSeconds);
+        p.writeInt(killedMobs);
+        p.writeInt(mesos);
+        p.writeInt(experience);
+        return p;
+    }
+
+    /** Authorizes the Kaentake quest XML path dialog for server GM level 6 only. */
+    public static Packet questScriptDebugAccess(int gmLevel) {
+        final OutPacket p = OutPacket.create(SendOpcode.QUEST_SCRIPT_DEBUG);
+        p.writeByte(Math.max(0, Math.min(gmLevel, 6)));
+        return p;
+    }
+
+    /** Extended Monster Book: live drop chances for one monster, expressed in parts per million. */
+    public static Packet monsterBookDropTable(int mobId, Map<Integer, Integer> chancesPpm) {
+        final OutPacket p = OutPacket.create(SendOpcode.MONSTER_BOOK_RESULT);
+        p.writeByte(0);
+        p.writeInt(mobId);
+        p.writeShort(chancesPpm.size());
+        for (Map.Entry<Integer, Integer> entry : chancesPpm.entrySet()) {
+            p.writeInt(entry.getKey());
+            p.writeInt(entry.getValue());
+        }
+        return p;
+    }
+
+    /** Extended Monster Book: item ids that match an item-name search. */
+    public static Packet monsterBookItemHits(String query, int[] itemIds) {
+        final OutPacket p = OutPacket.create(SendOpcode.MONSTER_BOOK_RESULT);
+        p.writeByte(1);
+        p.writeString(query == null ? "" : query);
+        p.writeShort(itemIds.length);
+        for (int itemId : itemIds) {
+            p.writeInt(itemId);
+        }
+        return p;
+    }
+
+    /** Extended Monster Book: carded monsters that drop one item, with their live chances. */
+    public static Packet monsterBookItemDroppers(int itemId, Map<Integer, Integer> chancesPpm) {
+        final OutPacket p = OutPacket.create(SendOpcode.MONSTER_BOOK_RESULT);
+        p.writeByte(2);
+        p.writeInt(itemId);
+        p.writeShort(chancesPpm.size());
+        for (Map.Entry<Integer, Integer> entry : chancesPpm.entrySet()) {
+            p.writeInt(entry.getKey());
+            p.writeInt(entry.getValue());
+        }
+        return p;
+    }
+
+    public static Packet damageSkinCatalog(Map<Integer, Long> catalog) {
+        final OutPacket p = OutPacket.create(SendOpcode.DAMAGE_SKIN_CATALOG);
+        p.writeShort(catalog.size());
+        for (Map.Entry<Integer, Long> entry : catalog.entrySet()) {
+            p.writeInt(entry.getKey());
+            p.writeLong(entry.getValue());
+        }
+        return p;
+    }
+
+    public static Packet damageSkinInventory(int activeSkinId, List<Integer> ownedSkinIds) {
+        final OutPacket p = OutPacket.create(SendOpcode.DAMAGE_SKIN_INVENTORY);
+        p.writeInt(activeSkinId);
+        p.writeShort(ownedSkinIds.size());
+        for (int skinId : ownedSkinIds) {
+            p.writeInt(skinId);
+        }
+        return p;
+    }
+
+    /** op=1 applies a skin; op=2 purchases a skin. */
+    public static Packet damageSkinResult(int op, boolean success, int skinId, int mesos) {
+        final OutPacket p = OutPacket.create(SendOpcode.DAMAGE_SKIN_RESULT);
+        p.writeByte(op);
+        p.writeByte(success ? 1 : 0);
+        p.writeInt(skinId);
+        p.writeInt(mesos);
+        return p;
+    }
+
+    public static Packet damageSkinBroadcast(int characterId, int skinId) {
+        final OutPacket p = OutPacket.create(SendOpcode.DAMAGE_SKIN_BROADCAST);
+        p.writeInt(characterId);
+        p.writeInt(skinId);
+        return p;
+    }
+
     public static Packet UseTreasureBox(int type){
         OutPacket p = OutPacket.create(SendOpcode.SUCCESS_IN_USE_GACHAPON_BOX);
         p.writeInt(type);

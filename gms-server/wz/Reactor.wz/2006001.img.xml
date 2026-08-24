@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2006001.img">
+<imgdir name="2006001.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="info" value="여신의 석상"/>
   </imgdir>
   <string name="action" value="fgodNPC1"/>
   <imgdir name="1">
-    <canvas name="0" width="1" height="1">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
   </imgdir>
   <imgdir name="0">
-    <canvas name="0" width="1" height="1">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
     <imgdir name="event">
@@ -24,7 +24,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="1" height="1">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="0" y="0"/>
       </canvas>
     </imgdir>

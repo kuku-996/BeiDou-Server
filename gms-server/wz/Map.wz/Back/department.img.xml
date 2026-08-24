@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="department.img">
+<imgdir name="department.img" indent="2" media="NONE">
   <imgdir name="back">
-    <canvas name="0" width="850" height="369">
+    <canvas name="0" format="2" scale="0">
       <vector name="origin" x="425" y="184"/>
       <int name="z" value="0"/>
+      <int name="pt" value="2"/>
     </canvas>
-    <canvas name="1" width="993" height="369">
+    <canvas name="1" format="2" scale="0">
       <vector name="origin" x="494" y="191"/>
       <int name="z" value="0"/>
+      <int name="pt" value="2"/>
     </canvas>
-    <canvas name="2" width="993" height="544">
+    <canvas name="2" format="2" scale="0">
       <vector name="origin" x="496" y="272"/>
       <int name="z" value="0"/>
+      <int name="pt" value="2"/>
     </canvas>
-    <canvas name="3" width="1200" height="600">
+    <canvas name="3" format="2" scale="0">
       <vector name="origin" x="600" y="300"/>
       <int name="z" value="0"/>
+      <int name="pt" value="2"/>
     </canvas>
   </imgdir>
 </imgdir>

@@ -64,6 +64,7 @@ import org.gms.server.maps.MapObjectType;
 import org.gms.server.maps.MapleMap;
 import org.gms.server.maps.Summon;
 import org.gms.server.quest.medal.VeteranHunterMedal;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotHelpers;
 
 import java.awt.*;
 import java.lang.ref.WeakReference;
@@ -769,8 +770,11 @@ public class Monster extends AbstractLoadedLife {
 
             int _partyExp = expValueToInteger(partyExp);
 
-            attacker.gainExp(_personalExp, _partyExp, true, false, white);
-            attacker.increaseEquipExp(_personalExp);
+            boolean botAttacker = BotHelpers.isBot(attacker);
+            attacker.gainExp(_personalExp, _partyExp, !botAttacker, false, white);
+            if (!botAttacker) {
+                attacker.increaseEquipExp(_personalExp);
+            }
             attacker.raiseQuestMobCount(getId());
             VeteranHunterMedal.onMonsterKilled(attacker, this);
         }
@@ -1860,7 +1864,9 @@ public class Monster extends AbstractLoadedLife {
         Character newControllerWithPuppet = null;
 
         for (Character chr : getMap().getAllPlayers()) {
-            if (!chr.isHidden()) {
+            // Headless bots have no client to receive monster-control packets.
+            // Never select one as a controller or the mob becomes visually frozen.
+            if (!chr.isHidden() && !BotHelpers.isBot(chr)) {
                 int ctrlMonsSize = chr.getNumControlledMonsters();
 
                 if (isCharacterPuppetInVicinity(chr)) {
@@ -1923,6 +1929,9 @@ public class Monster extends AbstractLoadedLife {
      * player controller.
      */
     public void aggroSwitchController(Character newController, boolean immediateAggro) {
+        if (newController != null && BotHelpers.isBot(newController)) {
+            return;
+        }
         if (aggroUpdateLock.tryLock()) {
             try {
                 Character prevController = getController();

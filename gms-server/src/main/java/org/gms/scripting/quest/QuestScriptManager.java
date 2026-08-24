@@ -27,6 +27,7 @@ import org.gms.constants.game.GameConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.scripting.AbstractScriptManager;
+import org.gms.scripting.npc.NPCScriptDebugInfo;
 import org.gms.server.quest.Quest;
 
 import javax.script.Invocable;
@@ -49,13 +50,15 @@ public class QuestScriptManager extends AbstractScriptManager {
         return instance;
     }
 
-    private ScriptEngine getQuestScriptEngine(Client c, short questid) {
-        ScriptEngine engine = getInvocableScriptEngine("quest/" + questid + ".js", c);
+    private QuestScript getQuestScript(Client c, short questid) {
+        String scriptPath = "quest/" + questid + ".js";
+        ScriptEngine engine = getInvocableScriptEngine(scriptPath, c);
         if (engine == null && GameConstants.isMedalQuest(questid)) {
-            engine = getInvocableScriptEngine("quest/medalQuest.js", c);   // start generic medal quest
+            scriptPath = "quest/medalQuest.js";
+            engine = getInvocableScriptEngine(scriptPath, c);   // start generic medal quest
         }
 
-        return engine;
+        return new QuestScript(engine, engine == null ? null : resolveScriptPath(scriptPath));
     }
 
     public void start(Client c, short questid, int npc) {
@@ -73,13 +76,15 @@ public class QuestScriptManager extends AbstractScriptManager {
                     return;
                 }*/
 
-                ScriptEngine engine = getQuestScriptEngine(c, questid);
+                QuestScript questScript = getQuestScript(c, questid);
+                ScriptEngine engine = questScript.engine();
                 if (engine == null) {
                     log.warn("START Quest {} is uncoded.", questid);
                     qm.dispose();
                     return;
                 }
 
+                qm.setScriptDebugInfo(NPCScriptDebugInfo.forQuest(npc, questid, true, questScript.path()));
                 engine.put("qm", qm);
 
                 Invocable iv = (Invocable) engine;
@@ -125,13 +130,15 @@ public class QuestScriptManager extends AbstractScriptManager {
                     return;
                 }*/
 
-                ScriptEngine engine = getQuestScriptEngine(c, questid);
+                QuestScript questScript = getQuestScript(c, questid);
+                ScriptEngine engine = questScript.engine();
                 if (engine == null) {
                     log.warn("END Quest {} is uncoded.", questid);
                     qm.dispose();
                     return;
                 }
 
+                qm.setScriptDebugInfo(NPCScriptDebugInfo.forQuest(npc, questid, false, questScript.path()));
                 engine.put("qm", qm);
 
                 Invocable iv = (Invocable) engine;
@@ -167,13 +174,15 @@ public class QuestScriptManager extends AbstractScriptManager {
             if (c.canClickNPC()) {
                 qms.put(c, qm);
 
-                ScriptEngine engine = getQuestScriptEngine(c, questid);
+                QuestScript questScript = getQuestScript(c, questid);
+                ScriptEngine engine = questScript.engine();
                 if (engine == null) {
                     //FilePrinter.printError(FilePrinter.QUEST_UNCODED, "RAISE Quest " + questid + " is uncoded.");
                     qm.dispose();
                     return;
                 }
 
+                qm.setScriptDebugInfo(NPCScriptDebugInfo.forQuest(npc, questid, true, questScript.path()));
                 engine.put("qm", qm);
 
                 Invocable iv = (Invocable) engine;
@@ -188,6 +197,7 @@ public class QuestScriptManager extends AbstractScriptManager {
     }
 
     public void dispose(QuestActionManager qm, Client c) {
+        qm.clearScriptDebugInfo();
         qms.remove(c);
         scripts.remove(c);
         c.getPlayer().setNpcCooldown(System.currentTimeMillis());
@@ -212,7 +222,7 @@ public class QuestScriptManager extends AbstractScriptManager {
     }
 
     public boolean checkFunctionExists(Client c, short questid, int npc, String functionName) {
-        ScriptEngine engine = getQuestScriptEngine(c, questid);
+        ScriptEngine engine = getQuestScript(c, questid).engine();
         if (engine == null) {
             return false;
         }
@@ -234,5 +244,12 @@ public class QuestScriptManager extends AbstractScriptManager {
         return false;
     }
 
+    private String resolveScriptPath(String scriptPath) {
+        String resolvedScriptPath = getResolvedScriptPath(scriptPath);
+        return resolvedScriptPath != null ? resolvedScriptPath : scriptPath;
+    }
+
+    private record QuestScript(ScriptEngine engine, String path) {
+    }
 
 }

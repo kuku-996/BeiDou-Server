@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="8021007.img" indent="2" media="NONE">
+  <imgdir name="0">
+    <imgdir name="event">
+      <imgdir name="0">
+        <int name="type" value="100"/>
+        <int name="state" value="1"/>
+        <string name="message" value="The elevator shaft is now accessible."/>
+        <int name="0" value="4031596"/>
+        <int name="2" value="1"/>
+        <int name="1" value="1"/>
+        <vector name="lt" x="-3000" y="-1500"/>
+        <vector name="rb" x="3000" y="1500"/>
+      </imgdir>
+    </imgdir>
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="0" y="0"/>
+      <int name="z" value="0"/>
+    </canvas>
+  </imgdir>
+  <imgdir name="1">
+    <imgdir name="0">
+      <vector name="origin" x="0" y="0"/>
+      <int name="z" value="0"/>
+    </imgdir>
+  </imgdir>
+  <string name="action" value="amoriaItem0"/>
+  <imgdir name="info">
+    <string name="info" value="Broadcasts message after defeating Royal Guard"/>
+  </imgdir>
+</imgdir>

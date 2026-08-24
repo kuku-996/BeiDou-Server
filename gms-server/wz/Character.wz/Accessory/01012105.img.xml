@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01012105.img">
+<imgdir name="01012105.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="26" height="26">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-4" y="26"/>
     </canvas>
-    <canvas name="iconRaw" width="25" height="24">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-4" y="26"/>
     </canvas>
     <string name="islot" value="Af"/>
@@ -18,7 +18,7 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="12" height="10">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="7" y="-15"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -44,7 +44,7 @@
   </imgdir>
   <imgdir name="smile">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -55,7 +55,7 @@
   </imgdir>
   <imgdir name="troubled">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -76,7 +76,7 @@
   </imgdir>
   <imgdir name="bewildered">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -87,7 +87,7 @@
   </imgdir>
   <imgdir name="stunned">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -98,7 +98,7 @@
   </imgdir>
   <imgdir name="vomit">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -107,7 +107,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -118,7 +118,7 @@
   </imgdir>
   <imgdir name="oops">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -129,7 +129,7 @@
   </imgdir>
   <imgdir name="cheers">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -163,7 +163,7 @@
   </imgdir>
   <imgdir name="shine">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>

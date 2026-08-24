@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01012080.img">
+<imgdir name="01012080.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="26" height="31">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-3" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="23" height="29">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-4" y="31"/>
     </canvas>
     <string name="islot" value="Af"/>
@@ -18,7 +18,7 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="16" height="7">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="6"/>
       <imgdir name="map">
         <vector name="brow" x="-7" y="-22"/>
@@ -44,7 +44,7 @@
   </imgdir>
   <imgdir name="smile">
     <imgdir name="0">
-      <canvas name="default" width="16" height="9">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="8" y="4"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-18"/>
@@ -60,7 +60,7 @@
   </imgdir>
   <imgdir name="cry">
     <imgdir name="0">
-      <canvas name="default" width="13" height="7">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="6" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-17"/>
@@ -71,7 +71,7 @@
   </imgdir>
   <imgdir name="angry">
     <imgdir name="0">
-      <canvas name="default" width="14" height="12">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="7" y="6"/>
         <imgdir name="map">
           <vector name="brow" x="1" y="-20"/>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="00031587.img">
+<imgdir name="00031587.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="islot" value="Hr"/>
     <string name="vslot" value="H1H2H3H4H5H6HfHsHb"/>
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="hairOverHead" width="41" height="38">
+    <canvas name="hairOverHead" format="1" scale="0">
       <vector name="origin" x="22" y="20"/>
       <imgdir name="map">
         <vector name="brow" x="-5" y="-2"/>
       </imgdir>
       <string name="z" value="hairOverHead"/>
     </canvas>
-    <canvas name="hair" width="35" height="32">
+    <canvas name="hair" format="1" scale="0">
       <vector name="origin" x="21" y="19"/>
       <imgdir name="map">
         <vector name="brow" x="-7" y="-7"/>
@@ -21,7 +21,7 @@
       <string name="z" value="hair"/>
     </canvas>
     <imgdir name="hairShade">
-      <canvas name="0" width="33" height="16">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-4"/>
@@ -29,7 +29,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="1" width="33" height="16">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-4"/>
@@ -37,7 +37,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="2" width="33" height="16">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-4"/>
@@ -45,7 +45,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="3" width="33" height="16">
+      <canvas name="3" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-4"/>
@@ -53,7 +53,7 @@
         <string name="z" value="hairShade"/>
         <string name="group" value="skin"/>
       </canvas>
-      <canvas name="4" width="33" height="16">
+      <canvas name="4" format="1" scale="0">
         <vector name="origin" x="18" y="15"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-4"/>
@@ -64,14 +64,14 @@
     </imgdir>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="backHair" width="39" height="41">
+    <canvas name="backHair" format="1" scale="0">
       <vector name="origin" x="22" y="27"/>
       <imgdir name="map">
         <vector name="brow" x="-7" y="-9"/>
       </imgdir>
       <string name="z" value="backHair"/>
     </canvas>
-    <canvas name="backHairBelowCap" width="35" height="35">
+    <canvas name="backHairBelowCap" format="1" scale="0">
       <vector name="origin" x="13" y="7"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="5"/>

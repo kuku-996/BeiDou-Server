@@ -19,6 +19,7 @@ public class ItemId {
     public static final int BUMMER_EFFECT = 4290001;
     public static final int ARPQ_SHIELD = 2022269;
     public static final int ROARING_TIGER_MESSENGER = 5390006;
+    public static final int HYPER_TELEPORT_ROCK = 5041000;
 
     public static boolean isExpIncrease(int itemId) {
         return itemId >= 2022450 && itemId <= 2022452;
@@ -63,8 +64,10 @@ public class ItemId {
     private static final int CHAIR_MAX = FISHING_CHAIR;
 
     public static boolean isChair(int itemId) {
-        return itemId >= CHAIR_MIN && itemId <= CHAIR_MAX;
-        // alt: return itemId / 10000 == 301;
+        // The original range ended at the old fishing chair (3011000).  The
+        // current client Data contains later 301xxxx chairs, which must still
+        // use the portable-chair packet handler.
+        return itemId / 10000 == 301;
     }
 
     // Throwing star

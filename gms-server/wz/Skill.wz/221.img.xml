@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="221.img">
+<imgdir name="221.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="26" height="30">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-4" y="30"/>
     </canvas>
   </imgdir>
   <imgdir name="skill">
     <imgdir name="2210000">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconMouseOver" width="32" height="32">
+      <canvas name="iconMouseOver" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconDisabled" width="32" height="32">
+      <canvas name="iconDisabled" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
@@ -103,15 +103,15 @@
       </imgdir>
     </imgdir>
     <imgdir name="2210001">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconMouseOver" width="32" height="32">
+      <canvas name="iconMouseOver" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconDisabled" width="32" height="32">
+      <canvas name="iconDisabled" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
@@ -269,15 +269,15 @@
       </imgdir>
     </imgdir>
     <imgdir name="2211002">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconMouseOver" width="32" height="32">
+      <canvas name="iconMouseOver" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconDisabled" width="32" height="32">
+      <canvas name="iconDisabled" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
@@ -388,7 +388,7 @@
         </imgdir>
         <imgdir name="11">
           <string name="hs" value="h11"/>
-          <int name="mpCon" value="31"/>
+          <int name="mpCon" value="33"/>
           <int name="mad" value="52"/>
           <int name="mastery" value="4"/>
           <int name="mobCount" value="6"/>
@@ -398,7 +398,7 @@
         </imgdir>
         <imgdir name="12">
           <string name="hs" value="h12"/>
-          <int name="mpCon" value="32"/>
+          <int name="mpCon" value="36"/>
           <int name="mad" value="54"/>
           <int name="mastery" value="4"/>
           <int name="mobCount" value="6"/>
@@ -408,7 +408,7 @@
         </imgdir>
         <imgdir name="13">
           <string name="hs" value="h13"/>
-          <int name="mpCon" value="33"/>
+          <int name="mpCon" value="39"/>
           <int name="mad" value="56"/>
           <int name="mastery" value="5"/>
           <int name="mobCount" value="6"/>
@@ -418,7 +418,7 @@
         </imgdir>
         <imgdir name="14">
           <string name="hs" value="h14"/>
-          <int name="mpCon" value="34"/>
+          <int name="mpCon" value="42"/>
           <int name="mad" value="58"/>
           <int name="mastery" value="5"/>
           <int name="mobCount" value="6"/>
@@ -428,7 +428,7 @@
         </imgdir>
         <imgdir name="15">
           <string name="hs" value="h15"/>
-          <int name="mpCon" value="35"/>
+          <int name="mpCon" value="45"/>
           <int name="mad" value="60"/>
           <int name="mastery" value="5"/>
           <int name="mobCount" value="6"/>
@@ -438,7 +438,7 @@
         </imgdir>
         <imgdir name="16">
           <string name="hs" value="h16"/>
-          <int name="mpCon" value="36"/>
+          <int name="mpCon" value="48"/>
           <int name="mad" value="62"/>
           <int name="mastery" value="6"/>
           <int name="mobCount" value="6"/>
@@ -448,7 +448,7 @@
         </imgdir>
         <imgdir name="17">
           <string name="hs" value="h17"/>
-          <int name="mpCon" value="37"/>
+          <int name="mpCon" value="51"/>
           <int name="mad" value="64"/>
           <int name="mastery" value="6"/>
           <int name="mobCount" value="6"/>
@@ -458,7 +458,7 @@
         </imgdir>
         <imgdir name="18">
           <string name="hs" value="h18"/>
-          <int name="mpCon" value="38"/>
+          <int name="mpCon" value="54"/>
           <int name="mad" value="66"/>
           <int name="mastery" value="6"/>
           <int name="mobCount" value="6"/>
@@ -468,7 +468,7 @@
         </imgdir>
         <imgdir name="19">
           <string name="hs" value="h19"/>
-          <int name="mpCon" value="39"/>
+          <int name="mpCon" value="57"/>
           <int name="mad" value="68"/>
           <int name="mastery" value="7"/>
           <int name="mobCount" value="6"/>
@@ -478,7 +478,7 @@
         </imgdir>
         <imgdir name="20">
           <string name="hs" value="h20"/>
-          <int name="mpCon" value="40"/>
+          <int name="mpCon" value="60"/>
           <int name="mad" value="70"/>
           <int name="mastery" value="7"/>
           <int name="mobCount" value="6"/>
@@ -488,7 +488,7 @@
         </imgdir>
         <imgdir name="21">
           <string name="hs" value="h21"/>
-          <int name="mpCon" value="41"/>
+          <int name="mpCon" value="63"/>
           <int name="mad" value="72"/>
           <int name="mastery" value="7"/>
           <int name="mobCount" value="6"/>
@@ -498,7 +498,7 @@
         </imgdir>
         <imgdir name="22">
           <string name="hs" value="h22"/>
-          <int name="mpCon" value="42"/>
+          <int name="mpCon" value="66"/>
           <int name="mad" value="74"/>
           <int name="mastery" value="8"/>
           <int name="mobCount" value="6"/>
@@ -508,7 +508,7 @@
         </imgdir>
         <imgdir name="23">
           <string name="hs" value="h23"/>
-          <int name="mpCon" value="43"/>
+          <int name="mpCon" value="69"/>
           <int name="mad" value="76"/>
           <int name="mastery" value="8"/>
           <int name="mobCount" value="6"/>
@@ -518,7 +518,7 @@
         </imgdir>
         <imgdir name="24">
           <string name="hs" value="h24"/>
-          <int name="mpCon" value="44"/>
+          <int name="mpCon" value="72"/>
           <int name="mad" value="78"/>
           <int name="mastery" value="8"/>
           <int name="mobCount" value="6"/>
@@ -528,7 +528,7 @@
         </imgdir>
         <imgdir name="25">
           <string name="hs" value="h25"/>
-          <int name="mpCon" value="45"/>
+          <int name="mpCon" value="75"/>
           <int name="mad" value="80"/>
           <int name="mastery" value="9"/>
           <int name="mobCount" value="6"/>
@@ -538,7 +538,7 @@
         </imgdir>
         <imgdir name="26">
           <string name="hs" value="h26"/>
-          <int name="mpCon" value="46"/>
+          <int name="mpCon" value="78"/>
           <int name="mad" value="82"/>
           <int name="mastery" value="9"/>
           <int name="mobCount" value="6"/>
@@ -548,7 +548,7 @@
         </imgdir>
         <imgdir name="27">
           <string name="hs" value="h27"/>
-          <int name="mpCon" value="47"/>
+          <int name="mpCon" value="81"/>
           <int name="mad" value="84"/>
           <int name="mastery" value="9"/>
           <int name="mobCount" value="6"/>
@@ -558,7 +558,7 @@
         </imgdir>
         <imgdir name="28">
           <string name="hs" value="h28"/>
-          <int name="mpCon" value="48"/>
+          <int name="mpCon" value="84"/>
           <int name="mad" value="86"/>
           <int name="mastery" value="10"/>
           <int name="mobCount" value="6"/>
@@ -568,7 +568,7 @@
         </imgdir>
         <imgdir name="29">
           <string name="hs" value="h29"/>
-          <int name="mpCon" value="49"/>
+          <int name="mpCon" value="87"/>
           <int name="mad" value="88"/>
           <int name="mastery" value="10"/>
           <int name="mobCount" value="6"/>
@@ -578,7 +578,7 @@
         </imgdir>
         <imgdir name="30">
           <string name="hs" value="h30"/>
-          <int name="mpCon" value="50"/>
+          <int name="mpCon" value="90"/>
           <int name="mad" value="90"/>
           <int name="mastery" value="10"/>
           <int name="mobCount" value="6"/>
@@ -588,74 +588,74 @@
         </imgdir>
       </imgdir>
       <imgdir name="effect">
-        <canvas name="0" width="110" height="140">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="61" y="136"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="1" width="124" height="144">
+        <canvas name="1" format="1" scale="0">
           <vector name="origin" x="69" y="136"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="2" width="132" height="146">
+        <canvas name="2" format="1" scale="0">
           <vector name="origin" x="72" y="138"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="3" width="132" height="142">
+        <canvas name="3" format="1" scale="0">
           <vector name="origin" x="72" y="138"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="4" width="132" height="142">
+        <canvas name="4" format="1" scale="0">
           <vector name="origin" x="72" y="138"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="5" width="132" height="142">
+        <canvas name="5" format="1" scale="0">
           <vector name="origin" x="72" y="138"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="6" width="134" height="143">
+        <canvas name="6" format="1" scale="0">
           <vector name="origin" x="73" y="139"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="7" width="132" height="142">
+        <canvas name="7" format="1" scale="0">
           <vector name="origin" x="72" y="138"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="8" width="114" height="125">
+        <canvas name="8" format="1" scale="0">
           <vector name="origin" x="60" y="127"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="9" width="21" height="113">
+        <canvas name="9" format="1" scale="0">
           <vector name="origin" x="17" y="118"/>
           <int name="delay" value="95"/>
         </canvas>
-        <canvas name="10" width="3" height="53">
+        <canvas name="10" format="1" scale="0">
           <vector name="origin" x="8" y="99"/>
           <int name="delay" value="95"/>
         </canvas>
       </imgdir>
       <imgdir name="hit">
         <imgdir name="0">
-          <canvas name="0" width="48" height="81">
+          <canvas name="0" format="1" scale="0">
             <vector name="origin" x="10" y="209"/>
             <int name="delay" value="120"/>
           </canvas>
-          <canvas name="1" width="54" height="57">
+          <canvas name="1" format="1" scale="0">
             <vector name="origin" x="8" y="89"/>
             <int name="delay" value="80"/>
           </canvas>
-          <canvas name="2" width="73" height="72">
+          <canvas name="2" format="1" scale="0">
             <vector name="origin" x="26" y="70"/>
             <int name="delay" value="80"/>
           </canvas>
-          <canvas name="3" width="79" height="78">
+          <canvas name="3" format="1" scale="0">
             <vector name="origin" x="30" y="58"/>
             <int name="delay" value="80"/>
           </canvas>
-          <canvas name="4" width="80" height="79">
+          <canvas name="4" format="1" scale="0">
             <vector name="origin" x="38" y="46"/>
             <int name="delay" value="80"/>
           </canvas>
-          <canvas name="5" width="76" height="75">
+          <canvas name="5" format="1" scale="0">
             <vector name="origin" x="38" y="37"/>
             <int name="delay" value="80"/>
           </canvas>
@@ -663,15 +663,15 @@
       </imgdir>
     </imgdir>
     <imgdir name="2211003">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconMouseOver" width="32" height="32">
+      <canvas name="iconMouseOver" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconDisabled" width="32" height="32">
+      <canvas name="iconDisabled" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
@@ -680,181 +680,181 @@
         <imgdir name="1">
           <string name="hs" value="h1"/>
           <int name="mpCon" value="10"/>
-          <int name="mad" value="80"/>
+          <int name="mad" value="140"/>
           <int name="mastery" value="1"/>
         </imgdir>
         <imgdir name="2">
           <string name="hs" value="h2"/>
           <int name="mpCon" value="10"/>
-          <int name="mad" value="90"/>
+          <int name="mad" value="150"/>
           <int name="mastery" value="1"/>
         </imgdir>
         <imgdir name="3">
           <string name="hs" value="h3"/>
           <int name="mpCon" value="11"/>
-          <int name="mad" value="95"/>
+          <int name="mad" value="155"/>
           <int name="mastery" value="1"/>
         </imgdir>
         <imgdir name="4">
           <string name="hs" value="h4"/>
           <int name="mpCon" value="11"/>
-          <int name="mad" value="100"/>
+          <int name="mad" value="160"/>
           <int name="mastery" value="2"/>
         </imgdir>
         <imgdir name="5">
           <string name="hs" value="h5"/>
           <int name="mpCon" value="12"/>
-          <int name="mad" value="104"/>
+          <int name="mad" value="164"/>
           <int name="mastery" value="2"/>
         </imgdir>
         <imgdir name="6">
           <string name="hs" value="h6"/>
           <int name="mpCon" value="12"/>
-          <int name="mad" value="108"/>
+          <int name="mad" value="168"/>
           <int name="mastery" value="2"/>
         </imgdir>
         <imgdir name="7">
           <string name="hs" value="h7"/>
           <int name="mpCon" value="13"/>
-          <int name="mad" value="111"/>
+          <int name="mad" value="171"/>
           <int name="mastery" value="3"/>
         </imgdir>
         <imgdir name="8">
           <string name="hs" value="h8"/>
           <int name="mpCon" value="13"/>
-          <int name="mad" value="115"/>
+          <int name="mad" value="175"/>
           <int name="mastery" value="3"/>
         </imgdir>
         <imgdir name="9">
           <string name="hs" value="h9"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="118"/>
+          <int name="mad" value="178"/>
           <int name="mastery" value="3"/>
         </imgdir>
         <imgdir name="10">
           <string name="hs" value="h10"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="121"/>
+          <int name="mad" value="181"/>
           <int name="mastery" value="4"/>
         </imgdir>
         <imgdir name="11">
           <string name="hs" value="h11"/>
           <int name="mpCon" value="15"/>
-          <int name="mad" value="124"/>
+          <int name="mad" value="184"/>
           <int name="mastery" value="4"/>
         </imgdir>
         <imgdir name="12">
           <string name="hs" value="h12"/>
           <int name="mpCon" value="15"/>
-          <int name="mad" value="127"/>
+          <int name="mad" value="187"/>
           <int name="mastery" value="4"/>
         </imgdir>
         <imgdir name="13">
           <string name="hs" value="h13"/>
           <int name="mpCon" value="16"/>
-          <int name="mad" value="130"/>
+          <int name="mad" value="190"/>
           <int name="mastery" value="5"/>
         </imgdir>
         <imgdir name="14">
           <string name="hs" value="h14"/>
           <int name="mpCon" value="16"/>
-          <int name="mad" value="133"/>
+          <int name="mad" value="193"/>
           <int name="mastery" value="5"/>
         </imgdir>
         <imgdir name="15">
           <string name="hs" value="h15"/>
           <int name="mpCon" value="17"/>
-          <int name="mad" value="135"/>
+          <int name="mad" value="195"/>
           <int name="mastery" value="5"/>
         </imgdir>
         <imgdir name="16">
           <string name="hs" value="h16"/>
           <int name="mpCon" value="17"/>
-          <int name="mad" value="138"/>
+          <int name="mad" value="198"/>
           <int name="mastery" value="6"/>
         </imgdir>
         <imgdir name="17">
           <string name="hs" value="h17"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="141"/>
+          <int name="mad" value="201"/>
           <int name="mastery" value="6"/>
         </imgdir>
         <imgdir name="18">
           <string name="hs" value="h18"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="143"/>
+          <int name="mad" value="203"/>
           <int name="mastery" value="6"/>
         </imgdir>
         <imgdir name="19">
           <string name="hs" value="h19"/>
           <int name="mpCon" value="19"/>
-          <int name="mad" value="145"/>
+          <int name="mad" value="205"/>
           <int name="mastery" value="7"/>
         </imgdir>
         <imgdir name="20">
           <string name="hs" value="h20"/>
           <int name="mpCon" value="19"/>
-          <int name="mad" value="148"/>
+          <int name="mad" value="208"/>
           <int name="mastery" value="7"/>
         </imgdir>
         <imgdir name="21">
           <string name="hs" value="h21"/>
           <int name="mpCon" value="20"/>
-          <int name="mad" value="150"/>
+          <int name="mad" value="210"/>
           <int name="mastery" value="7"/>
         </imgdir>
         <imgdir name="22">
           <string name="hs" value="h22"/>
           <int name="mpCon" value="20"/>
-          <int name="mad" value="153"/>
+          <int name="mad" value="213"/>
           <int name="mastery" value="8"/>
         </imgdir>
         <imgdir name="23">
           <string name="hs" value="h23"/>
           <int name="mpCon" value="21"/>
-          <int name="mad" value="155"/>
+          <int name="mad" value="215"/>
           <int name="mastery" value="8"/>
         </imgdir>
         <imgdir name="24">
           <string name="hs" value="h24"/>
           <int name="mpCon" value="21"/>
-          <int name="mad" value="157"/>
+          <int name="mad" value="217"/>
           <int name="mastery" value="8"/>
         </imgdir>
         <imgdir name="25">
           <string name="hs" value="h25"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="159"/>
+          <int name="mad" value="219"/>
           <int name="mastery" value="9"/>
         </imgdir>
         <imgdir name="26">
           <string name="hs" value="h26"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="162"/>
+          <int name="mad" value="222"/>
           <int name="mastery" value="9"/>
         </imgdir>
         <imgdir name="27">
           <string name="hs" value="h27"/>
           <int name="mpCon" value="23"/>
-          <int name="mad" value="164"/>
+          <int name="mad" value="224"/>
           <int name="mastery" value="9"/>
         </imgdir>
         <imgdir name="28">
           <string name="hs" value="h28"/>
           <int name="mpCon" value="23"/>
-          <int name="mad" value="166"/>
+          <int name="mad" value="226"/>
           <int name="mastery" value="10"/>
         </imgdir>
         <imgdir name="29">
           <string name="hs" value="h29"/>
           <int name="mpCon" value="24"/>
-          <int name="mad" value="168"/>
+          <int name="mad" value="228"/>
           <int name="mastery" value="10"/>
         </imgdir>
         <imgdir name="30">
           <string name="hs" value="h30"/>
           <int name="mpCon" value="24"/>
-          <int name="mad" value="170"/>
+          <int name="mad" value="230"/>
           <int name="mastery" value="10"/>
         </imgdir>
       </imgdir>
@@ -863,23 +863,23 @@
       </imgdir>
       <imgdir name="hit">
         <imgdir name="0">
-          <canvas name="0" width="164" height="76">
+          <canvas name="0" format="1" scale="0">
             <vector name="origin" x="47" y="56"/>
             <int name="delay" value="100"/>
           </canvas>
-          <canvas name="1" width="113" height="76">
+          <canvas name="1" format="1" scale="0">
             <vector name="origin" x="55" y="56"/>
             <int name="delay" value="100"/>
           </canvas>
-          <canvas name="2" width="109" height="77">
+          <canvas name="2" format="1" scale="0">
             <vector name="origin" x="53" y="57"/>
             <int name="delay" value="100"/>
           </canvas>
-          <canvas name="3" width="104" height="69">
+          <canvas name="3" format="1" scale="0">
             <vector name="origin" x="47" y="49"/>
             <int name="delay" value="100"/>
           </canvas>
-          <canvas name="4" width="113" height="76">
+          <canvas name="4" format="1" scale="0">
             <vector name="origin" x="55" y="56"/>
             <int name="delay" value="100"/>
             <int name="a0" value="255"/>
@@ -888,79 +888,79 @@
         </imgdir>
       </imgdir>
       <imgdir name="effect">
-        <canvas name="0" width="26" height="26">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="16" y="47"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="1" width="39" height="39">
+        <canvas name="1" format="1" scale="0">
           <vector name="origin" x="23" y="54"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="2" width="117" height="117">
+        <canvas name="2" format="1" scale="0">
           <vector name="origin" x="59" y="91"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="3" width="215" height="134">
+        <canvas name="3" format="1" scale="0">
           <vector name="origin" x="98" y="104"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="4" width="208" height="139">
+        <canvas name="4" format="1" scale="0">
           <vector name="origin" x="103" y="103"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="5" width="207" height="127">
+        <canvas name="5" format="1" scale="0">
           <vector name="origin" x="111" y="101"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="6" width="184" height="133">
+        <canvas name="6" format="1" scale="0">
           <vector name="origin" x="93" y="108"/>
           <int name="z" value="0"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="7" width="187" height="140">
+        <canvas name="7" format="1" scale="0">
           <vector name="origin" x="101" y="108"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="8" width="186" height="142">
+        <canvas name="8" format="1" scale="0">
           <vector name="origin" x="100" y="110"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="9" width="163" height="116">
+        <canvas name="9" format="1" scale="0">
           <vector name="origin" x="89" y="97"/>
           <int name="delay" value="70"/>
         </canvas>
-        <canvas name="10" width="139" height="94">
+        <canvas name="10" format="1" scale="0">
           <vector name="origin" x="79" y="84"/>
           <int name="delay" value="100"/>
         </canvas>
-        <canvas name="11" width="132" height="86">
+        <canvas name="11" format="1" scale="0">
           <vector name="origin" x="76" y="80"/>
           <int name="delay" value="100"/>
         </canvas>
-        <canvas name="12" width="170" height="24">
+        <canvas name="12" format="1" scale="0">
           <vector name="origin" x="133" y="41"/>
           <int name="delay" value="100"/>
         </canvas>
-        <canvas name="13" width="56" height="16">
+        <canvas name="13" format="1" scale="0">
           <vector name="origin" x="79" y="36"/>
           <int name="delay" value="100"/>
         </canvas>
-        <canvas name="14" width="27" height="12">
+        <canvas name="14" format="1" scale="0">
           <vector name="origin" x="82" y="35"/>
           <int name="delay" value="100"/>
         </canvas>
       </imgdir>
     </imgdir>
     <imgdir name="2211004">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconMouseOver" width="32" height="32">
+      <canvas name="iconMouseOver" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconDisabled" width="32" height="32">
+      <canvas name="iconDisabled" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
@@ -1150,65 +1150,65 @@
         </imgdir>
       </imgdir>
       <imgdir name="effect">
-        <canvas name="0" width="50" height="133">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="30" y="133"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="1" width="143" height="189">
+        <canvas name="1" format="1" scale="0">
           <vector name="origin" x="75" y="189"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="2" width="152" height="192">
+        <canvas name="2" format="1" scale="0">
           <vector name="origin" x="81" y="193"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="3" width="155" height="196">
+        <canvas name="3" format="1" scale="0">
           <vector name="origin" x="81" y="195"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="4" width="162" height="196">
+        <canvas name="4" format="1" scale="0">
           <vector name="origin" x="85" y="198"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="5" width="160" height="182">
+        <canvas name="5" format="1" scale="0">
           <vector name="origin" x="84" y="198"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="6" width="150" height="171">
+        <canvas name="6" format="1" scale="0">
           <vector name="origin" x="79" y="192"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="7" width="153" height="157">
+        <canvas name="7" format="1" scale="0">
           <vector name="origin" x="81" y="196"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="8" width="61" height="89">
+        <canvas name="8" format="1" scale="0">
           <vector name="origin" x="34" y="164"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="9" width="61" height="73">
+        <canvas name="9" format="1" scale="0">
           <vector name="origin" x="34" y="164"/>
           <int name="delay" value="82"/>
         </canvas>
-        <canvas name="10" width="59" height="71">
+        <canvas name="10" format="1" scale="0">
           <vector name="origin" x="33" y="163"/>
           <int name="delay" value="82"/>
         </canvas>
       </imgdir>
       <imgdir name="mob">
-        <canvas name="0" width="40" height="31">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="50"/>
           <int name="delay" value="300"/>
         </canvas>
-        <canvas name="1" width="40" height="31">
+        <canvas name="1" format="1" scale="0">
           <vector name="origin" x="13" y="50"/>
           <int name="delay" value="300"/>
         </canvas>
-        <canvas name="2" width="40" height="31">
+        <canvas name="2" format="1" scale="0">
           <vector name="origin" x="13" y="50"/>
           <int name="delay" value="300"/>
         </canvas>
-        <canvas name="3" width="40" height="31">
+        <canvas name="3" format="1" scale="0">
           <vector name="origin" x="13" y="50"/>
           <int name="delay" value="300"/>
         </canvas>
@@ -1220,15 +1220,15 @@
       </imgdir>
     </imgdir>
     <imgdir name="2211005">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconMouseOver" width="32" height="32">
+      <canvas name="iconMouseOver" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconDisabled" width="32" height="32">
+      <canvas name="iconDisabled" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
@@ -1378,81 +1378,81 @@
         <string name="0" value="alert"/>
       </imgdir>
       <imgdir name="effect">
-        <canvas name="0" width="145" height="142">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="109" y="119"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="1" width="139" height="137">
+        <canvas name="1" format="1" scale="0">
           <vector name="origin" x="106" y="113"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="2" width="134" height="135">
+        <canvas name="2" format="1" scale="0">
           <vector name="origin" x="103" y="107"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="3" width="120" height="120">
+        <canvas name="3" format="1" scale="0">
           <vector name="origin" x="96" y="96"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="4" width="120" height="120">
+        <canvas name="4" format="1" scale="0">
           <vector name="origin" x="96" y="93"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="5" width="99" height="105">
+        <canvas name="5" format="1" scale="0">
           <vector name="origin" x="86" y="87"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="6" width="82" height="89">
+        <canvas name="6" format="1" scale="0">
           <vector name="origin" x="86" y="81"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="7" width="83" height="93">
+        <canvas name="7" format="1" scale="0">
           <vector name="origin" x="87" y="83"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="8" width="84" height="94">
+        <canvas name="8" format="1" scale="0">
           <vector name="origin" x="88" y="88"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="9" width="84" height="90">
+        <canvas name="9" format="1" scale="0">
           <vector name="origin" x="88" y="87"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="10" width="118" height="94">
+        <canvas name="10" format="1" scale="0">
           <vector name="origin" x="88" y="94"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="11" width="123" height="97">
+        <canvas name="11" format="1" scale="0">
           <vector name="origin" x="88" y="100"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="12" width="140" height="95">
+        <canvas name="12" format="1" scale="0">
           <vector name="origin" x="85" y="99"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="13" width="127" height="104">
+        <canvas name="13" format="1" scale="0">
           <vector name="origin" x="64" y="111"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="14" width="88" height="87">
+        <canvas name="14" format="1" scale="0">
           <vector name="origin" x="53" y="99"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="15" width="89" height="96">
+        <canvas name="15" format="1" scale="0">
           <vector name="origin" x="54" y="100"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="16" width="81" height="88">
+        <canvas name="16" format="1" scale="0">
           <vector name="origin" x="51" y="99"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="17" width="81" height="81">
+        <canvas name="17" format="1" scale="0">
           <vector name="origin" x="51" y="99"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
-        <canvas name="18" width="79" height="79">
+        <canvas name="18" format="1" scale="0">
           <vector name="origin" x="50" y="98"/>
-          <int name="delay" value="75"/>
+          <int name="delay" value="60"/>
         </canvas>
       </imgdir>
       <imgdir name="req">
@@ -1460,15 +1460,15 @@
       </imgdir>
     </imgdir>
     <imgdir name="2211006">
-      <canvas name="icon" width="32" height="32">
+      <canvas name="icon" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconMouseOver" width="32" height="32">
+      <canvas name="iconMouseOver" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
-      <canvas name="iconDisabled" width="32" height="32">
+      <canvas name="iconDisabled" format="1" scale="0">
         <vector name="origin" x="0" y="32"/>
         <int name="z" value="0"/>
       </canvas>
@@ -1476,7 +1476,7 @@
         <imgdir name="1">
           <string name="hs" value="h1"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="80"/>
+          <int name="mad" value="130"/>
           <int name="mastery" value="1"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1484,7 +1484,7 @@
         <imgdir name="2">
           <string name="hs" value="h2"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="84"/>
+          <int name="mad" value="134"/>
           <int name="mastery" value="1"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1492,7 +1492,7 @@
         <imgdir name="3">
           <string name="hs" value="h3"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="87"/>
+          <int name="mad" value="137"/>
           <int name="mastery" value="1"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1500,7 +1500,7 @@
         <imgdir name="4">
           <string name="hs" value="h4"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="90"/>
+          <int name="mad" value="140"/>
           <int name="mastery" value="2"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1508,7 +1508,7 @@
         <imgdir name="5">
           <string name="hs" value="h5"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="93"/>
+          <int name="mad" value="143"/>
           <int name="mastery" value="2"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1516,7 +1516,7 @@
         <imgdir name="6">
           <string name="hs" value="h6"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="96"/>
+          <int name="mad" value="146"/>
           <int name="mastery" value="2"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1524,7 +1524,7 @@
         <imgdir name="7">
           <string name="hs" value="h7"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="98"/>
+          <int name="mad" value="148"/>
           <int name="mastery" value="3"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1532,7 +1532,7 @@
         <imgdir name="8">
           <string name="hs" value="h8"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="100"/>
+          <int name="mad" value="150"/>
           <int name="mastery" value="3"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1540,7 +1540,7 @@
         <imgdir name="9">
           <string name="hs" value="h9"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="102"/>
+          <int name="mad" value="152"/>
           <int name="mastery" value="3"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1548,7 +1548,7 @@
         <imgdir name="10">
           <string name="hs" value="h10"/>
           <int name="mpCon" value="14"/>
-          <int name="mad" value="104"/>
+          <int name="mad" value="154"/>
           <int name="mastery" value="4"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1556,7 +1556,7 @@
         <imgdir name="11">
           <string name="hs" value="h11"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="106"/>
+          <int name="mad" value="156"/>
           <int name="mastery" value="4"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1564,7 +1564,7 @@
         <imgdir name="12">
           <string name="hs" value="h12"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="108"/>
+          <int name="mad" value="158"/>
           <int name="mastery" value="4"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1572,7 +1572,7 @@
         <imgdir name="13">
           <string name="hs" value="h13"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="110"/>
+          <int name="mad" value="160"/>
           <int name="mastery" value="5"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1580,7 +1580,7 @@
         <imgdir name="14">
           <string name="hs" value="h14"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="112"/>
+          <int name="mad" value="162"/>
           <int name="mastery" value="5"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1588,7 +1588,7 @@
         <imgdir name="15">
           <string name="hs" value="h15"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="114"/>
+          <int name="mad" value="164"/>
           <int name="mastery" value="5"/>
           <int name="time" value="1"/>
           <int name="x" value="1"/>
@@ -1596,7 +1596,7 @@
         <imgdir name="16">
           <string name="hs" value="h16"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="116"/>
+          <int name="mad" value="166"/>
           <int name="mastery" value="6"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1604,7 +1604,7 @@
         <imgdir name="17">
           <string name="hs" value="h17"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="118"/>
+          <int name="mad" value="168"/>
           <int name="mastery" value="6"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1612,7 +1612,7 @@
         <imgdir name="18">
           <string name="hs" value="h18"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="120"/>
+          <int name="mad" value="170"/>
           <int name="mastery" value="6"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1620,7 +1620,7 @@
         <imgdir name="19">
           <string name="hs" value="h19"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="122"/>
+          <int name="mad" value="172"/>
           <int name="mastery" value="7"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1628,7 +1628,7 @@
         <imgdir name="20">
           <string name="hs" value="h20"/>
           <int name="mpCon" value="18"/>
-          <int name="mad" value="124"/>
+          <int name="mad" value="174"/>
           <int name="mastery" value="7"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1636,7 +1636,7 @@
         <imgdir name="21">
           <string name="hs" value="h21"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="126"/>
+          <int name="mad" value="176"/>
           <int name="mastery" value="7"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1644,7 +1644,7 @@
         <imgdir name="22">
           <string name="hs" value="h22"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="128"/>
+          <int name="mad" value="178"/>
           <int name="mastery" value="8"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1652,7 +1652,7 @@
         <imgdir name="23">
           <string name="hs" value="h23"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="130"/>
+          <int name="mad" value="180"/>
           <int name="mastery" value="8"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1660,7 +1660,7 @@
         <imgdir name="24">
           <string name="hs" value="h24"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="132"/>
+          <int name="mad" value="182"/>
           <int name="mastery" value="8"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1668,7 +1668,7 @@
         <imgdir name="25">
           <string name="hs" value="h25"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="134"/>
+          <int name="mad" value="184"/>
           <int name="mastery" value="9"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1676,7 +1676,7 @@
         <imgdir name="26">
           <string name="hs" value="h26"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="136"/>
+          <int name="mad" value="187"/>
           <int name="mastery" value="9"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1684,7 +1684,7 @@
         <imgdir name="27">
           <string name="hs" value="h27"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="137"/>
+          <int name="mad" value="190"/>
           <int name="mastery" value="9"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1692,7 +1692,7 @@
         <imgdir name="28">
           <string name="hs" value="h28"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="138"/>
+          <int name="mad" value="193"/>
           <int name="mastery" value="10"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1700,7 +1700,7 @@
         <imgdir name="29">
           <string name="hs" value="h29"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="139"/>
+          <int name="mad" value="196"/>
           <int name="mastery" value="10"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1708,7 +1708,7 @@
         <imgdir name="30">
           <string name="hs" value="h30"/>
           <int name="mpCon" value="22"/>
-          <int name="mad" value="140"/>
+          <int name="mad" value="200"/>
           <int name="mastery" value="10"/>
           <int name="time" value="2"/>
           <int name="x" value="1"/>
@@ -1718,55 +1718,55 @@
         <string name="0" value="shoot6"/>
       </imgdir>
       <imgdir name="effect">
-        <canvas name="0" width="76" height="75">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="81" y="110"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="1" width="84" height="84">
+        <canvas name="1" format="1" scale="0">
           <vector name="origin" x="84" y="116"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="2" width="89" height="87">
+        <canvas name="2" format="1" scale="0">
           <vector name="origin" x="87" y="117"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="3" width="141" height="77">
+        <canvas name="3" format="1" scale="0">
           <vector name="origin" x="63" y="114"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="4" width="143" height="83">
+        <canvas name="4" format="1" scale="0">
           <vector name="origin" x="61" y="117"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="5" width="148" height="88">
+        <canvas name="5" format="1" scale="0">
           <vector name="origin" x="66" y="119"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="6" width="121" height="46">
+        <canvas name="6" format="1" scale="0">
           <vector name="origin" x="65" y="98"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="7" width="115" height="44">
+        <canvas name="7" format="1" scale="0">
           <vector name="origin" x="64" y="90"/>
           <int name="delay" value="60"/>
         </canvas>
-        <canvas name="8" width="171" height="146">
+        <canvas name="8" format="1" scale="0">
           <vector name="origin" x="115" y="108"/>
           <int name="delay" value="80"/>
         </canvas>
-        <canvas name="9" width="178" height="151">
+        <canvas name="9" format="1" scale="0">
           <vector name="origin" x="119" y="108"/>
           <int name="delay" value="80"/>
         </canvas>
-        <canvas name="10" width="174" height="155">
+        <canvas name="10" format="1" scale="0">
           <vector name="origin" x="114" y="108"/>
           <int name="delay" value="80"/>
         </canvas>
-        <canvas name="11" width="168" height="155">
+        <canvas name="11" format="1" scale="0">
           <vector name="origin" x="113" y="108"/>
           <int name="delay" value="90"/>
         </canvas>
-        <canvas name="12" width="58" height="150">
+        <canvas name="12" format="1" scale="0">
           <vector name="origin" x="59" y="103"/>
           <int name="delay" value="90"/>
           <int name="a0" value="255"/>
@@ -1774,30 +1774,30 @@
         </canvas>
       </imgdir>
       <imgdir name="ball">
-        <canvas name="0" width="75" height="30">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="40" y="17"/>
           <int name="delay" value="100"/>
         </canvas>
-        <canvas name="1" width="76" height="31">
+        <canvas name="1" format="1" scale="0">
           <vector name="origin" x="40" y="18"/>
           <int name="delay" value="100"/>
         </canvas>
-        <canvas name="2" width="79" height="29">
+        <canvas name="2" format="1" scale="0">
           <vector name="origin" x="40" y="16"/>
           <int name="delay" value="100"/>
         </canvas>
       </imgdir>
       <imgdir name="hit">
         <imgdir name="0">
-          <canvas name="0" width="63" height="74">
+          <canvas name="0" format="1" scale="0">
             <vector name="origin" x="32" y="37"/>
             <int name="delay" value="120"/>
           </canvas>
-          <canvas name="1" width="61" height="75">
+          <canvas name="1" format="1" scale="0">
             <vector name="origin" x="33" y="37"/>
             <int name="delay" value="120"/>
           </canvas>
-          <canvas name="2" width="60" height="72">
+          <canvas name="2" format="1" scale="0">
             <vector name="origin" x="32" y="35"/>
             <int name="delay" value="120"/>
             <int name="a0" value="255"/>

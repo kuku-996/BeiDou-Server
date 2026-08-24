@@ -24,6 +24,7 @@ package org.gms.net.server.handlers.login;
 import lombok.extern.slf4j.Slf4j;
 import org.gms.client.Client;
 import org.gms.client.creator.novice.BeginnerCreator;
+import org.gms.client.creator.novice.AdventurerDiceStats;
 import org.gms.client.creator.novice.LegendCreator;
 import org.gms.client.creator.novice.NoblesseCreator;
 import org.gms.config.GameConfig;
@@ -51,6 +52,11 @@ public final class CreateCharHandler extends AbstractPacketHandler {
         int shoes = p.readInt();
         int weapon = p.readInt();
         int gender = p.readByte();
+
+        AdventurerDiceStats diceStats = readAdventurerDiceStats(p, c, job);
+        if (diceStats == INVALID_DICE_STATS) {
+            return;
+        }
 
         if (!ItemConstants.isNewCharDefaultFace(job, gender, face)) {
             log.warn("非法创建角色，使用了非默认参数 职业 {} 性别 {} 脸型 {}", job, gender, face);
@@ -104,7 +110,7 @@ public final class CreateCharHandler extends AbstractPacketHandler {
                 status = !GameConfig.getServerBoolean("enable_knights_of_cygnus") ? -3 : NoblesseCreator.createCharacter(c, name, face, hair + hairColor, skinColor, top, bottom, shoes, weapon, gender);
                 break;
             case 1: // Adventurer #冒险家
-                status = !GameConfig.getServerBoolean("enable_adventurers") ? -3 : BeginnerCreator.createCharacter(c, name, face, hair + hairColor, skinColor, top, bottom, shoes, weapon, gender);
+                status = !GameConfig.getServerBoolean("enable_adventurers") ? -3 : BeginnerCreator.createCharacter(c, name, face, hair + hairColor, skinColor, top, bottom, shoes, weapon, gender, diceStats);
                 break;
             case 2: // Aran #战神
                 status = !GameConfig.getServerBoolean("enable_the_lord_of_war") ? -3 : LegendCreator.createCharacter(c, name, face, hair + hairColor, skinColor, top, bottom, shoes, weapon, gender);
@@ -122,5 +128,52 @@ public final class CreateCharHandler extends AbstractPacketHandler {
         } else if(status != 0) {
             c.sendPacket(PacketCreator.deleteCharResponse(0, 9));       //发送未知错误的弹窗提示
         }
+    }
+
+    private static final AdventurerDiceStats INVALID_DICE_STATS =
+            new AdventurerDiceStats(0, 0, 0, 0);
+
+    private static AdventurerDiceStats readAdventurerDiceStats(InPacket p, Client c, int job) {
+        int remaining = p.available();
+        boolean enabled = GameConfig.getServerBoolean("enable_native_adventurer_dice");
+
+        if (!enabled) {
+            if (remaining == 0) {
+                return null;
+            }
+            rejectDicePacket(c, job, remaining, "功能未启用但封包带有额外数据");
+            return INVALID_DICE_STATS;
+        }
+
+        if (job != 1) {
+            if (remaining == 0) {
+                return null;
+            }
+            rejectDicePacket(c, job, remaining, "非冒险家携带了投骰属性");
+            return INVALID_DICE_STATS;
+        }
+
+        if (remaining != 4) {
+            rejectDicePacket(c, job, remaining, "冒险家投骰属性长度必须为4字节");
+            return INVALID_DICE_STATS;
+        }
+
+        AdventurerDiceStats stats = new AdventurerDiceStats(
+                p.readUnsignedByte(),
+                p.readUnsignedByte(),
+                p.readUnsignedByte(),
+                p.readUnsignedByte());
+        if (!stats.isValid()) {
+            log.warn("拒绝创建角色：非法投骰属性 job={} STR={} DEX={} INT={} LUK={}",
+                    job, stats.str(), stats.dex(), stats.intelligence(), stats.luk());
+            c.sendPacket(PacketCreator.deleteCharResponse(0, 9));
+            return INVALID_DICE_STATS;
+        }
+        return stats;
+    }
+
+    private static void rejectDicePacket(Client c, int job, int remaining, String reason) {
+        log.warn("拒绝创建角色：{} job={} remaining={}", reason, job, remaining);
+        c.sendPacket(PacketCreator.deleteCharResponse(0, 9));
     }
 }

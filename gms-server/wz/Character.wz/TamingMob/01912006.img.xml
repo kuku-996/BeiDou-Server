@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01912006.img">
+<imgdir name="01912006.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="33" height="24">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="1" y="25"/>
     </canvas>
-    <canvas name="iconRaw" width="33" height="20">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="1" y="25"/>
     </canvas>
     <string name="islot" value="Sd"/>
@@ -14,7 +14,7 @@
   <imgdir name="1902010">
     <imgdir name="stand1">
       <imgdir name="0">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="57"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-51"/>
@@ -23,7 +23,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="58"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-52"/>
@@ -32,7 +32,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="59"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-53"/>
@@ -41,7 +41,7 @@
         </canvas>
       </imgdir>
       <imgdir name="3">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="60"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-54"/>
@@ -70,7 +70,7 @@
     </imgdir>
     <imgdir name="walk1">
       <imgdir name="0">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="59"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-53"/>
@@ -79,7 +79,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="24" y="61"/>
           <imgdir name="map">
             <vector name="navel" x="2" y="-55"/>
@@ -88,7 +88,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="59"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-53"/>
@@ -97,7 +97,7 @@
         </canvas>
       </imgdir>
       <imgdir name="3">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="58"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-52"/>
@@ -106,7 +106,7 @@
         </canvas>
       </imgdir>
       <imgdir name="4">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="58"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-52"/>
@@ -115,7 +115,7 @@
         </canvas>
       </imgdir>
       <imgdir name="5">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="58"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-52"/>
@@ -151,7 +151,7 @@
     </imgdir>
     <imgdir name="tired">
       <imgdir name="0">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="57"/>
           <imgdir name="map">
             <vector name="navel" x="4" y="-51"/>
@@ -160,7 +160,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="29" y="58"/>
           <imgdir name="map">
             <vector name="navel" x="4" y="-51"/>
@@ -169,7 +169,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="29" y="58"/>
           <imgdir name="map">
             <vector name="navel" x="4" y="-51"/>
@@ -178,7 +178,7 @@
         </canvas>
       </imgdir>
       <imgdir name="3">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="29" y="58"/>
           <imgdir name="map">
             <vector name="navel" x="4" y="-51"/>
@@ -189,7 +189,7 @@
     </imgdir>
     <imgdir name="jump">
       <imgdir name="0">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="20" y="34"/>
           <imgdir name="map">
             <vector name="navel" x="6" y="-28"/>
@@ -200,7 +200,7 @@
     </imgdir>
     <imgdir name="prone">
       <imgdir name="0">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="23" y="53"/>
           <imgdir name="map">
             <vector name="navel" x="3" y="-47"/>
@@ -211,7 +211,7 @@
     </imgdir>
     <imgdir name="ladder">
       <imgdir name="0">
-        <canvas name="0" width="61" height="32">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="29" y="40"/>
           <imgdir name="map">
             <vector name="navel" x="2" y="-23"/>
@@ -220,7 +220,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="61" height="32">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="29" y="39"/>
           <imgdir name="map">
             <vector name="navel" x="2" y="-23"/>
@@ -231,7 +231,7 @@
     </imgdir>
     <imgdir name="rope">
       <imgdir name="0">
-        <canvas name="0" width="61" height="32">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="29" y="40"/>
           <imgdir name="map">
             <vector name="navel" x="2" y="-23"/>
@@ -240,7 +240,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="61" height="32">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="29" y="39"/>
           <imgdir name="map">
             <vector name="navel" x="2" y="-23"/>
@@ -251,7 +251,7 @@
     </imgdir>
     <imgdir name="fly">
       <imgdir name="0">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="20" y="67"/>
           <imgdir name="map">
             <vector name="navel" x="6" y="-61"/>
@@ -260,7 +260,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="21" y="67"/>
           <imgdir name="map">
             <vector name="navel" x="5" y="-61"/>
@@ -269,7 +269,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="57" height="33">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="21" y="67"/>
           <imgdir name="map">
             <vector name="navel" x="5" y="-61"/>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="8830023.img" indent="2" media="NONE">
+  <imgdir name="info">
+    <int name="bodyAttack" value="0"/>
+    <int name="level" value="105"/>
+    <int name="maxHP" value="9980000"/>
+    <int name="maxMP" value="0"/>
+    <int name="speed" value="0"/>
+    <int name="PADamage" value="0"/>
+    <int name="PDDamage" value="0"/>
+    <int name="MADamage" value="0"/>
+    <int name="MDDamage" value="0"/>
+    <int name="acc" value="0"/>
+    <int name="eva" value="0"/>
+    <int name="exp" value="0"/>
+    <int name="undead" value="0"/>
+    <int name="pushed" value="1"/>
+    <float name="fs" value="10.0"/>
+    <int name="summonType" value="1"/>
+    <int name="hpTagColor" value="3"/>
+    <int name="hpTagBgcolor" value="5"/>
+    <string name="defaultHP" value="측정불가"/>
+    <int name="noFlip" value="1"/>
+    <string name="defaultMP" value="측정불가"/>
+    <int name="firstAttack" value="1"/>
+    <int name="disable" value="1"/>
+    <imgdir name="skill">
+      <imgdir name="0">
+        <int name="skill" value="200"/>
+        <int name="action" value="1"/>
+        <int name="level" value="161"/>
+        <int name="effectAfter" value="0"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="speak">
+      <int name="chatBalloon" value="1"/>
+    </imgdir>
+    <int name="boss" value="1"/>
+    <string name="link" value="8830003"/>
+  </imgdir>
+</imgdir>

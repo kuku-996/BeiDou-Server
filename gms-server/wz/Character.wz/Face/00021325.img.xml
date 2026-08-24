@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="00021325.img">
+<imgdir name="00021325.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="islot" value="Fc"/>
     <string name="vslot" value="Fc"/>
     <int name="cash" value="1"/>
     <imgdir name="despair">
       <imgdir name="0">
-        <canvas name="face" width="42" height="20">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="14" y="-12"/>
@@ -16,7 +16,7 @@
         <int name="delay" value="150"/>
       </imgdir>
       <imgdir name="1">
-        <canvas name="face" width="44" height="20">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="16" y="-12"/>
@@ -28,7 +28,7 @@
     </imgdir>
     <imgdir name="love">
       <imgdir name="0">
-        <canvas name="face" width="27" height="22">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="0" y="-9"/>
@@ -38,7 +38,7 @@
         <int name="delay" value="150"/>
       </imgdir>
       <imgdir name="1">
-        <canvas name="face" width="27" height="22">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="0" y="-9"/>
@@ -50,7 +50,7 @@
     </imgdir>
     <imgdir name="shine">
       <imgdir name="0">
-        <canvas name="face" width="26" height="16">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="6"/>
           <imgdir name="map">
             <vector name="brow" x="0" y="-8"/>
@@ -61,7 +61,7 @@
     </imgdir>
     <imgdir name="blaze">
       <imgdir name="0">
-        <canvas name="face" width="30" height="21">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="0" y="-10"/>
@@ -71,7 +71,7 @@
         <int name="delay" value="110"/>
       </imgdir>
       <imgdir name="1">
-        <canvas name="face" width="30" height="23">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="0" y="-8"/>
@@ -83,7 +83,7 @@
     </imgdir>
     <imgdir name="hum">
       <imgdir name="0">
-        <canvas name="face" width="25" height="21">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="-2" y="-9"/>
@@ -93,7 +93,7 @@
         <int name="delay" value="110"/>
       </imgdir>
       <imgdir name="1">
-        <canvas name="face" width="25" height="21">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="-2" y="-9"/>
@@ -105,7 +105,7 @@
     </imgdir>
     <imgdir name="bowing">
       <imgdir name="0">
-        <canvas name="face" width="36" height="20">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="11" y="-11"/>
@@ -115,7 +115,7 @@
         <int name="delay" value="110"/>
       </imgdir>
       <imgdir name="1">
-        <canvas name="face" width="37" height="20">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="12" y="-11"/>
@@ -127,7 +127,7 @@
     </imgdir>
     <imgdir name="hot">
       <imgdir name="0">
-        <canvas name="face" width="40" height="25">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="16" y="-10"/>
@@ -137,7 +137,7 @@
         <int name="delay" value="110"/>
       </imgdir>
       <imgdir name="1">
-        <canvas name="face" width="46" height="26">
+        <canvas name="face" format="1" scale="0">
           <vector name="origin" x="13" y="8"/>
           <imgdir name="map">
             <vector name="brow" x="21" y="-9"/>
@@ -149,7 +149,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="default">
-    <canvas name="face" width="27" height="17">
+    <canvas name="face" format="1" scale="0">
       <vector name="origin" x="13" y="8"/>
       <imgdir name="map">
         <vector name="brow" x="-1" y="-12"/>
@@ -159,7 +159,7 @@
   </imgdir>
   <imgdir name="blink">
     <imgdir name="0">
-      <canvas name="face" width="27" height="17">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -169,7 +169,7 @@
       <int name="delay" value="60"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="27" height="16">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-13"/>
@@ -179,7 +179,7 @@
       <int name="delay" value="60"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="face" width="27" height="17">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -191,7 +191,7 @@
   </imgdir>
   <imgdir name="hit">
     <imgdir name="0">
-      <canvas name="face" width="27" height="18">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -202,7 +202,7 @@
   </imgdir>
   <imgdir name="smile">
     <imgdir name="0">
-      <canvas name="face" width="26" height="17">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -213,7 +213,7 @@
   </imgdir>
   <imgdir name="troubled">
     <imgdir name="0">
-      <canvas name="face" width="27" height="16">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-13"/>
@@ -224,7 +224,7 @@
   </imgdir>
   <imgdir name="cry">
     <imgdir name="0">
-      <canvas name="face" width="26" height="16">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-13"/>
@@ -235,7 +235,7 @@
   </imgdir>
   <imgdir name="angry">
     <imgdir name="0">
-      <canvas name="face" width="27" height="19">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-15"/>
@@ -246,7 +246,7 @@
   </imgdir>
   <imgdir name="bewildered">
     <imgdir name="0">
-      <canvas name="face" width="26" height="17">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -257,7 +257,7 @@
   </imgdir>
   <imgdir name="stunned">
     <imgdir name="0">
-      <canvas name="face" width="26" height="18">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -268,7 +268,7 @@
   </imgdir>
   <imgdir name="vomit">
     <imgdir name="0">
-      <canvas name="face" width="28" height="49">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="14" y="24"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-27"/>
@@ -278,7 +278,7 @@
       <int name="delay" value="120"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="28" height="49">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="14" y="24"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-27"/>
@@ -291,7 +291,7 @@
   <imgdir name="oops">
     <int name="delay" value="1640"/>
     <imgdir name="0">
-      <canvas name="face" width="27" height="16">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-13"/>
@@ -302,7 +302,7 @@
   </imgdir>
   <imgdir name="cheers">
     <imgdir name="0">
-      <canvas name="face" width="26" height="17">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -313,7 +313,7 @@
   </imgdir>
   <imgdir name="chu">
     <imgdir name="0">
-      <canvas name="face" width="27" height="18">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -324,7 +324,7 @@
   </imgdir>
   <imgdir name="wink">
     <imgdir name="0">
-      <canvas name="face" width="26" height="17">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-12"/>
@@ -335,7 +335,7 @@
   </imgdir>
   <imgdir name="pain">
     <imgdir name="0">
-      <canvas name="face" width="32" height="20">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="16" y="10"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-11"/>
@@ -346,7 +346,7 @@
   </imgdir>
   <imgdir name="glitter">
     <imgdir name="0">
-      <canvas name="face" width="27" height="18">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-11"/>
@@ -356,7 +356,7 @@
       <int name="delay" value="150"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="27" height="18">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-11"/>
@@ -368,7 +368,7 @@
   </imgdir>
   <imgdir name="despair">
     <imgdir name="0">
-      <canvas name="face" width="42" height="20">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="14" y="-12"/>
@@ -378,7 +378,7 @@
       <int name="delay" value="150"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="44" height="20">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="16" y="-12"/>
@@ -390,7 +390,7 @@
   </imgdir>
   <imgdir name="love">
     <imgdir name="0">
-      <canvas name="face" width="27" height="22">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-9"/>
@@ -400,7 +400,7 @@
       <int name="delay" value="150"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="27" height="22">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-9"/>
@@ -412,7 +412,7 @@
   </imgdir>
   <imgdir name="shine">
     <imgdir name="0">
-      <canvas name="face" width="26" height="16">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="6"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-8"/>
@@ -423,7 +423,7 @@
   </imgdir>
   <imgdir name="blaze">
     <imgdir name="0">
-      <canvas name="face" width="30" height="21">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-10"/>
@@ -433,7 +433,7 @@
       <int name="delay" value="110"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="30" height="23">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="-8"/>
@@ -445,7 +445,7 @@
   </imgdir>
   <imgdir name="hum">
     <imgdir name="0">
-      <canvas name="face" width="25" height="21">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-9"/>
@@ -455,7 +455,7 @@
       <int name="delay" value="110"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="25" height="21">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-9"/>
@@ -467,7 +467,7 @@
   </imgdir>
   <imgdir name="bowing">
     <imgdir name="0">
-      <canvas name="face" width="36" height="20">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="11" y="-11"/>
@@ -477,7 +477,7 @@
       <int name="delay" value="110"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="37" height="20">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="12" y="-11"/>
@@ -489,7 +489,7 @@
   </imgdir>
   <imgdir name="hot">
     <imgdir name="0">
-      <canvas name="face" width="40" height="25">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="16" y="-10"/>
@@ -499,7 +499,7 @@
       <int name="delay" value="110"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="face" width="46" height="26">
+      <canvas name="face" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="brow" x="21" y="-9"/>
@@ -507,28 +507,6 @@
         <string name="z" value="face"/>
       </canvas>
       <int name="delay" value="110"/>
-    </imgdir>
-  </imgdir>
-  <imgdir name="dam">
-    <imgdir name="0">
-      <canvas name="face" width="24" height="22">
-        <vector name="origin" x="11" y="-2"/>
-        <imgdir name="map">
-          <vector name="brow" x="0" y="0"/>
-        </imgdir>
-        <string name="z" value="face"/>
-      </canvas>
-      <int name="delay" value="240"/>
-    </imgdir>
-    <imgdir name="1">
-      <canvas name="face" width="24" height="23">
-        <vector name="origin" x="11" y="-1"/>
-        <imgdir name="map">
-          <vector name="brow" x="0" y="0"/>
-        </imgdir>
-        <string name="z" value="face"/>
-      </canvas>
-      <int name="delay" value="240"/>
     </imgdir>
   </imgdir>
 </imgdir>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="109080000.img">
+<imgdir name="109080000.img" indent="2" media="NONE">
   <imgdir name="back">
     <imgdir name="0">
       <string name="bS" value="sandBeach"/>
@@ -332,10 +332,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="1">
         <string name="oS" value="acc2"/>
@@ -10912,12 +10910,9 @@
     </imgdir>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="3">
     <imgdir name="info">
@@ -12483,10 +12478,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="5">
         <string name="oS" value="acc2"/>
@@ -13250,28 +13243,19 @@
     </imgdir>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="coconut">
     <int name="countFalling" value="401"/>
@@ -13311,8 +13295,7 @@
     <string name="eventName" value="『코코넛 시즌』"/>
     <string name="eventObjectName" value="코코넛"/>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -19284,8 +19267,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="156" height="181">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="2502"/>
     <int name="height" value="2907"/>
     <int name="centerX" value="592"/>
@@ -19388,6 +19370,14 @@
       <int name="y" value="-1762"/>
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
+    </imgdir>
+  </imgdir>
+  <imgdir name="noSkill">
+    <imgdir name="class">
+      <int name="0" value="1"/>
+      <int name="1" value="2"/>
+      <int name="2" value="3"/>
+      <int name="3" value="4"/>
     </imgdir>
   </imgdir>
 </imgdir>

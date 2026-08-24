@@ -62,6 +62,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.scripting.event.EventInstanceManager;
 import org.gms.server.life.MobSkill;
+import org.gms.server.DamageSkinService;
+import org.gms.server.DailyCheckinService;
+import org.gms.server.DailyCheckinConfigService;
 import org.gms.service.NoteService;
 import org.gms.util.DatabaseConnection;
 import org.gms.util.PacketCreator;
@@ -249,6 +252,10 @@ public final class PlayerLoggedinHandler extends AbstractPacketHandler {
             }
 
             c.sendPacket(PacketCreator.getCharInfo(player));    //这里发送登录成功封包
+            c.sendPacket(PacketCreator.damageSkinCatalog(DamageSkinService.getCatalog()));
+            c.sendPacket(PacketCreator.damageSkinInventory(
+                    DamageSkinService.getActive(player.getId()),
+                    DamageSkinService.getOwned(player.getId())));
             if (player.isHidden()) {
                 if (!GameConfig.getServerBoolean("use_auto_hide_gm")) {
                     player.toggleHide(true);
@@ -398,6 +405,8 @@ public final class PlayerLoggedinHandler extends AbstractPacketHandler {
                         player.sendPacket(PacketCreator.earnTitleMessage("You can vote now! Vote and earn a vote point!"));
                     }
                     */
+                c.sendPacket(PacketCreator.questScriptDebugAccess(player.gmLevel()));
+
                 if (player.isGM()) {
                     Server.getInstance().broadcastGMMessage(c.getWorld(), PacketCreator.earnTitleMessage((player.gmLevel() < 6 ? "GM " : "Admin ") + player.getName() + " 登录了游戏"));
                 } else {
@@ -469,6 +478,13 @@ public final class PlayerLoggedinHandler extends AbstractPacketHandler {
                 }
 
                 c.sendPacket(PacketCreator.setNPCScriptable(npcsIds));
+            }
+
+            if (DailyCheckinConfigService.isAutoPopup() && DailyCheckinService.eligible(player)) {
+                DailyCheckinService.Snapshot daily = DailyCheckinService.snapshot(player);
+                if (daily.claimableDay() > 0) {
+                    c.sendPacket(DailyCheckinService.packet(daily, 0));
+                }
             }
 
             if (newcomer) {

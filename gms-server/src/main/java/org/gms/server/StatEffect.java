@@ -1233,6 +1233,17 @@ public class StatEffect {
         return bounds;
     }
 
+    /**
+     * Returns this skill's WZ-defined attack rectangle, or null when the skill
+     * has no rectangle. SoloMapling uses it for server-authoritative bot range.
+     */
+    public Rectangle getAttackBox(Point from, boolean facingLeft) {
+        if (lt == null || rb == null) {
+            return null;
+        }
+        return calculateBoundingBox(from, facingLeft);
+    }
+
     public int getBuffLocalDuration() {
         return !GameConfig.getServerBoolean("use_buff_everlasting") ? duration : Integer.MAX_VALUE;
     }
@@ -1567,6 +1578,16 @@ public class StatEffect {
         }
         // wk charges have lt and rb set but are neither player nor monster buffs
         return (sourceid < 1211003 || sourceid > 1211008) && sourceid != Paladin.SWORD_HOLY_CHARGE && sourceid != Paladin.BW_HOLY_CHARGE && sourceid != DawnWarrior.SOUL_CHARGE;
+    }
+
+    /** Compatibility entry point for server-side artificial players. */
+    public boolean isPartyBuffEffect() {
+        return isPartyBuff();
+    }
+
+    /** Applies this effect to a secondary target without treating that target as the caster. */
+    public boolean applyToTarget(Character applyfrom, Character applyto) {
+        return applyTo(applyfrom, applyto, false, null, false, 1);
     }
 
     private boolean isHeal() {

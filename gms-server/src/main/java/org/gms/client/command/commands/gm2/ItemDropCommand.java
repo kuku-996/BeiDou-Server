@@ -89,7 +89,7 @@ public class ItemDropCommand extends Command {
                     toDrop.setOwner("TRIAL-MODE");
                 }
 
-                c.getPlayer().getMap().spawnItemDrop(c.getPlayer(), c.getPlayer(), toDrop, c.getPlayer().getPosition(), true, true);
+                c.getPlayer().getMap().spawnItemDropInstant(c.getPlayer(), c.getPlayer(), toDrop, c.getPlayer().getPosition(), true, true);
 
                 return;
             } else {
@@ -116,6 +116,8 @@ public class ItemDropCommand extends Command {
             toDrop.setOwner("TRIAL-MODE");
         }
 
-        c.getPlayer().getMap().spawnItemDrop(c.getPlayer(), c.getPlayer(), toDrop, c.getPlayer().getPosition(), true, true);
+        // GM-generated items do not need a fall animation.  The stationary
+        // packet is compatible with extended items from the current Data.
+        c.getPlayer().getMap().spawnItemDropInstant(c.getPlayer(), c.getPlayer(), toDrop, c.getPlayer().getPosition(), true, true);
     }
 }

@@ -51,6 +51,8 @@ import org.slf4j.LoggerFactory;
 import org.gms.scripting.event.EventInstanceManager;
 import org.gms.scripting.map.MapScriptManager;
 import org.gms.server.ItemInformationProvider;
+import org.gms.server.DamageSkinService;
+import org.gms.server.BattleStatisticsService;
 import org.gms.server.StatEffect;
 import org.gms.server.TimerManager;
 import org.gms.server.events.gm.Coconut;
@@ -169,6 +171,10 @@ public class MapleMap {
     private boolean allowSummons = true; // All maps should have this true at the beginning
     private Character mapOwner = null;
     private long mapOwnerLastActivityTime = Long.MAX_VALUE;
+    // Optional rope geometry populated by the SoloMapling navigation adapter.
+    private final List<Rope> ropes = new ArrayList<>();
+    private boolean swim;
+    private float footholdSpeed;
 
     // events
     private boolean eventstarted = false, isMuted = false;
@@ -794,6 +800,11 @@ public class MapleMap {
         spawnDrop(drop, this.calcDropPos(dropPos, reactor.getPosition()), reactor, chr, (byte) (chr.getParty() != null ? 1 : 0), questid);
     }
 
+    public void dropFromReactor(final Character chr, final Reactor reactor, Item drop, Point dropPos,
+                                short questid, short delay) {
+        dropFromReactor(chr, reactor, drop, dropPos, questid);
+    }
+
     private void stopItemMonitor() {
         itemMonitor.cancel(false);
         itemMonitor = null;
@@ -1164,6 +1175,12 @@ public class MapleMap {
         instantiateItemDrop(mdrop);
     }
 
+    public final void spawnMesoDrop(final int meso, final Point position, final MapObject dropper,
+                                    final Character owner, final boolean playerDrop, final byte droptype,
+                                    final short delay) {
+        spawnMesoDrop(meso, position, dropper, owner, playerDrop, droptype);
+    }
+
     public final void disappearingItemDrop(final MapObject dropper, final Character owner, final Item item, final Point pos) {
         final Point droppos = calcDropPos(pos, pos);
         final MapItem mdrop = new MapItem(item, droppos, dropper, owner, owner.getClient(), (byte) 1, false);
@@ -1476,6 +1493,7 @@ public class MapleMap {
                     }
 
                     Character dropOwner = monster.killBy(chr);
+                    BattleStatisticsService.recordMobKill(chr);
                     if (withDrops && !monster.dropsDisabled()) {
                         if (dropOwner == null) {
                             dropOwner = chr;
@@ -1723,6 +1741,33 @@ public class MapleMap {
         }
     }
 
+    /** Rope geometry registered by optional map navigation loaders. */
+    public List<Rope> getRopes() {
+        return Collections.unmodifiableList(ropes);
+    }
+
+    public boolean isSwim() {
+        return swim;
+    }
+
+    public void setSwim(boolean swim) {
+        this.swim = swim;
+    }
+
+    public float getFootholdSpeed() {
+        return footholdSpeed;
+    }
+
+    public void setFootholdSpeed(float footholdSpeed) {
+        this.footholdSpeed = footholdSpeed;
+    }
+
+    public void addRope(Rope rope) {
+        if (rope != null) {
+            ropes.add(rope);
+        }
+    }
+
     public NPC getNPCById(int id) {
         for (MapObject obj : getMapObjects()) {
             if (obj.getType() == MapObjectType.NPC) {
@@ -1943,6 +1988,14 @@ public class MapleMap {
         }
     }
 
+    public List<Point> getMonsterSpawnPositions() {
+        List<Point> positions = new ArrayList<>();
+        for (SpawnPoint spawn : getMonsterSpawn()) {
+            positions.add(new Point(spawn.getPosition()));
+        }
+        return positions;
+    }
+
     private List<SpawnPoint> getAllMonsterSpawn() {
         synchronized (allMonsterSpawn) {
             return new ArrayList<>(allMonsterSpawn);
@@ -2160,14 +2213,57 @@ public class MapleMap {
         getWorldServer().registerTimedMapObject(expireKite, GameConfig.getServerLong("kite_expire_time"));
     }
 
-    public final void spawnItemDrop(final MapObject dropper, final Character owner, final Item item, Point pos, final boolean ffaDrop, final boolean playerDrop) {
-        spawnItemDrop(dropper, owner, item, pos, (byte) (ffaDrop ? 2 : 0), playerDrop);
+    public final MapItem spawnItemDrop(final MapObject dropper, final Character owner, final Item item, Point pos, final boolean ffaDrop, final boolean playerDrop) {
+        return spawnItemDrop(dropper, owner, item, pos, (byte) (ffaDrop ? 2 : 0), playerDrop);
     }
 
-    public final void spawnItemDrop(final MapObject dropper, final Character owner, final Item item, Point pos, final byte dropType, final boolean playerDrop) {
+    /**
+     * Spawns an item already resting on the ground instead of playing the
+     * character-to-ground drop animation.  This is used by the GM !drop
+     * command because some expanded Item.wz entries do not render correctly
+     * from the animated spawn packet, while their normal map-load spawn is
+     * fully supported by the client.
+     */
+    public final MapItem spawnItemDropInstant(final MapObject dropper, final Character owner,
+                                              final Item item, Point pos, final boolean ffaDrop,
+                                              final boolean playerDrop) {
+        if (FieldLimit.DROP_LIMIT.check(this.getFieldLimit())) {
+            this.disappearingItemDrop(dropper, owner, item, pos);
+            return null;
+        }
+
+        final Point droppos = calcDropPos(pos, pos);
+        final MapItem mdrop = new MapItem(item, droppos, dropper, owner, owner.getClient(),
+                (byte) (ffaDrop ? 2 : 0), playerDrop);
+        mdrop.setDropTime(Server.getInstance().getCurrentTime());
+
+        spawnAndAddRangedMapObject(mdrop, c -> {
+            mdrop.lockItem();
+            try {
+                // mod 2 is the same stable, already-on-the-map form used
+                // when a player changes channel or re-enters a map.
+                c.sendPacket(PacketCreator.dropItemFromMapObject(c.getPlayer(), mdrop,
+                        null, droppos, (byte) 2));
+            } finally {
+                mdrop.unlockItem();
+            }
+        }, null);
+
+        instantiateItemDrop(mdrop);
+        activateItemReactors(mdrop, owner.getClient());
+        return mdrop;
+    }
+
+    public final MapItem spawnItemDropNoExpire(final Character dropperOwner, final Character owner,
+                                               final Item item, Point pos, final boolean ffaDrop,
+                                               final boolean playerDrop) {
+        return spawnItemDrop(dropperOwner, owner, item, pos, ffaDrop, playerDrop);
+    }
+
+    public final MapItem spawnItemDrop(final MapObject dropper, final Character owner, final Item item, Point pos, final byte dropType, final boolean playerDrop) {
         if (FieldLimit.DROP_LIMIT.check(this.getFieldLimit())) { // thanks Conrad for noticing some maps shouldn't have loots available
             this.disappearingItemDrop(dropper, owner, item, pos);
-            return;
+            return null;
         }
 
         final Point droppos = calcDropPos(pos, pos);
@@ -2192,6 +2288,7 @@ public class MapleMap {
 
         instantiateItemDrop(mdrop);
         activateItemReactors(mdrop, owner.getClient());
+        return mdrop;
     }
 
     public final void spawnItemDropList(List<Integer> list, final MapObject dropper, final Character owner, Point pos) {
@@ -2617,6 +2714,15 @@ public class MapleMap {
         }
 
         chr.receivePartyMemberHP();
+        for (Character player : getCharacters()) {
+            chr.sendPacket(PacketCreator.damageSkinBroadcast(
+                    player.getId(), DamageSkinService.getActive(player.getId())));
+        }
+        broadcastMessage(
+                chr,
+                PacketCreator.damageSkinBroadcast(
+                        chr.getId(), DamageSkinService.getActive(chr.getId())),
+                false);
         announcePlayerDiseases(chr.getClient());
     }
 
@@ -2684,11 +2790,37 @@ public class MapleMap {
         return null;
     }
 
-    /*
     public Collection<Portal> getPortals() {
         return Collections.unmodifiableCollection(portals.values());
     }
-    */
+
+    public void moveBot(Character bot, Point position) {
+        if (bot != null && position != null) {
+            bot.setPosition(position);
+        }
+    }
+
+    public List<PlayerShop> getAllPlayerShops() {
+        List<PlayerShop> shops = new ArrayList<>();
+        for (MapObject object : getMapObjectsInRange(new Point(0, 0), Double.POSITIVE_INFINITY,
+                Collections.singletonList(MapObjectType.SHOP))) {
+            if (object instanceof PlayerShop shop) {
+                shops.add(shop);
+            }
+        }
+        return shops;
+    }
+
+    public List<HiredMerchant> getAllHiredMerchants() {
+        List<HiredMerchant> shops = new ArrayList<>();
+        for (MapObject object : getMapObjectsInRange(new Point(0, 0), Double.POSITIVE_INFINITY,
+                Collections.singletonList(MapObjectType.HIRED_MERCHANT))) {
+            if (object instanceof HiredMerchant shop) {
+                shops.add(shop);
+            }
+        }
+        return shops;
+    }
 
     public void addPlayerPuppet(Character player) {
         for (Monster mm : this.getAllMonsters()) {

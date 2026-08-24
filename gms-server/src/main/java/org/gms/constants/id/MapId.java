@@ -1,5 +1,7 @@
 package org.gms.constants.id;
 
+import java.util.Set;
+
 public class MapId {
     // Special
     public static final int NONE = 999999999;
@@ -17,8 +19,12 @@ public class MapId {
     public static final int CAVE_OF_PIANUS = 230040420;
     public static final int GUILD_HQ = 200000301;
     public static final int FM_ENTRANCE = 910000000;
+    public static final int ANT_TUNNEL_PARK = 105000000;
+    public static final int SHARP_CLIFF_I = 211030000;
+    public static final int PATH_OF_TIME_HUB = 220000000;
 
     // Beginner
+    public static final int BEGINNER_START = 1;
     public static final int BEIDOU_BEGINNER = 4;
     public static final int MUSHROOM_TOWN = 10000;
     // Town
@@ -66,6 +72,41 @@ public class MapId {
 
     public static boolean isMapleIsland(int mapId) {
         return mapId >= MAPLE_ISLAND_MIN && mapId <= MAPLE_ISLAND_MAX;
+    }
+
+    private static final Set<Integer> BOSS_EXPEDITION_MAPS = Set.of(
+            // Balrog
+            105100300, 105100301, 105100400, 105100401,
+            // Papulatus
+            220080001,
+            // Zakum
+            280030000,
+            // Horntail
+            240060000, 240060100, 240060200, 240060201,
+            // Pink Bean
+            270050100, 270050200, 270050300,
+            // Von Leon
+            211070100,
+            // Toad and Showa
+            800040410, 801040100, 801040101,
+            // Scarlion, Targa and Krexel
+            551030200, 541020800,
+            // Crimsonwood Keep expedition
+            610030100, 610030200, 610030300, 610030400, 610030500,
+            610030510, 610030520, 610030521, 610030522, 610030530,
+            610030540, 610030550, 610030600, 610030700, 610030800
+    );
+
+    public static boolean isTimeTemple(int mapId) {
+        return mapId >= 270000000 && mapId < 271000000;
+    }
+
+    public static boolean isBossExpeditionMap(int mapId) {
+        return BOSS_EXPEDITION_MAPS.contains(mapId);
+    }
+
+    public static boolean isRestrictedHyperTeleportMap(int mapId) {
+        return mapId == GM_MAP || mapId == JAIL || mapId == DEVELOPERS_HQ;
     }
 
     // Travel

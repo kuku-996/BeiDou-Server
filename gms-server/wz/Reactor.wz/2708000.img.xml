@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2708000.img">
+<imgdir name="2708000.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="info" value="배경 변환용 리액터"/>
   </imgdir>
   <imgdir name="0">
-    <canvas name="0" width="10" height="10">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="-2" y="32"/>
     </canvas>
     <imgdir name="hit">
-      <canvas name="0" width="10" height="10">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-2" y="32"/>
       </canvas>
     </imgdir>
@@ -25,11 +25,11 @@
     </imgdir>
   </imgdir>
   <imgdir name="1">
-    <canvas name="0" width="10" height="10">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="-2" y="32"/>
     </canvas>
     <imgdir name="hit">
-      <canvas name="0" width="10" height="10">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-2" y="32"/>
       </canvas>
     </imgdir>

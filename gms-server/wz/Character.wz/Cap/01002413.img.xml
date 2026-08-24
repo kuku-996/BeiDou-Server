@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002413.img">
+<imgdir name="01002413.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="32" height="30">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="30"/>
     </canvas>
-    <canvas name="iconRaw" width="32" height="29">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="30"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -18,14 +18,14 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="44" height="27">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="25"/>
       <imgdir name="map">
         <vector name="brow" x="5" y="-6"/>
       </imgdir>
       <string name="z" value="cap"/>
     </canvas>
-    <canvas name="defaultAc" width="35" height="23">
+    <canvas name="defaultAc" format="1" scale="0">
       <vector name="origin" x="17" y="11"/>
       <imgdir name="map">
         <vector name="brow" x="-2" y="-18"/>
@@ -34,7 +34,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="43" height="35">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="25"/>
       <imgdir name="map">
         <vector name="brow" x="2" y="-6"/>

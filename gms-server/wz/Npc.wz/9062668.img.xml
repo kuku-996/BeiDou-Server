@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="9062668.img" indent="2" media="NONE">
+  <imgdir name="info">
+    <int name="dcLeft" value="-54"/>
+    <int name="dcTop" value="-56"/>
+    <int name="dcRight" value="58"/>
+    <int name="dcBottom" value="-1"/>
+    <imgdir name="script">
+      <imgdir name="0">
+        <string name="script" value="npc_9062668"/>
+      </imgdir>
+    </imgdir>
+    <int name="hide" value="1"/>
+  </imgdir>
+  <imgdir name="stand">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="0" y="0"/>
+      <int name="z" value="0"/>
+    </canvas>
+  </imgdir>
+  <imgdir name="condition1">
+    <imgdir name="502079">
+      <imgdir name="0">
+        <string name="key" value="floor"/>
+        <string name="value" value="3"/>
+      </imgdir>
+      <int name="hide" value="0"/>
+    </imgdir>
+    <imgdir name="stand">
+      <canvas name="0" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="9ba20bded86c2bc5a13e55d8389033606944aca1a4fa89abfe01d6f6b28dc2b0"/>
+      </canvas>
+      <canvas name="1" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="6b5c22a0f20916c0190dc8d9491014439ca2f5d69043a9e0344c89d334a522b6"/>
+      </canvas>
+      <canvas name="2" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="42802bb82ba5d079574307970c7594e903a53e1583de6f09f1fc3e442e3e8621"/>
+      </canvas>
+      <canvas name="3" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="3c81f7ed7a9c0b6ef2dca97792b5d18d0700911529361866d06ee2d27eb2f071"/>
+      </canvas>
+      <canvas name="4" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="bf728da48f7805edff8908bcbb44843baa09959643366405ef163e175b2cf12d"/>
+      </canvas>
+      <canvas name="5" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="1289f98fe6e1ce60313f2acfdfef2d691ecbb9c5b7d0fc673eb19c6b7139f5e7"/>
+      </canvas>
+      <canvas name="6" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="c278e6635148209dd122631bda73fd483f12efddb3795730fe06d8965053477a"/>
+      </canvas>
+      <canvas name="7" format="1" scale="0">
+        <vector name="origin" x="57" y="55"/>
+        <int name="z" value="0"/>
+        <int name="delay" value="150"/>
+        <vector name="head" x="-2" y="-57"/>
+        <string name="_hash" value="7178cd7e3c544377f395479fa2efceccb6fd56d368c8e7e4020f580dea7acbed"/>
+      </canvas>
+    </imgdir>
+  </imgdir>
+  <imgdir name="condition2">
+    <imgdir name="502079">
+      <imgdir name="0">
+        <string name="key" value="floor"/>
+        <string name="value" value="4"/>
+      </imgdir>
+      <int name="hide" value="0"/>
+    </imgdir>
+    <imgdir name="stand">
+      <canvas name="0" format="1" scale="0">
+        <vector name="origin" x="54" y="38"/>
+        <int name="z" value="0"/>
+        <string name="_hash" value="c42a4ac1d19370c06309d7c80111f2e42a42fb97943d499e8ba342f07c30078c"/>
+      </canvas>
+    </imgdir>
+  </imgdir>
+</imgdir>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01802012.img">
+<imgdir name="01802012.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="32" height="34">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="34"/>
     </canvas>
-    <canvas name="iconRaw" width="32" height="34">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="34"/>
     </canvas>
     <int name="tuc" value="7"/>
@@ -13,14 +13,14 @@
   </imgdir>
   <imgdir name="5000008">
     <imgdir name="stand0">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="21" y="42"/>
       </canvas>
       <uol name="1" value="0"/>
       <uol name="2" value="0"/>
     </imgdir>
     <imgdir name="stand1">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="21" y="42"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -29,7 +29,7 @@
       <uol name="4" value="0"/>
     </imgdir>
     <imgdir name="rest0">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="19" y="42"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -38,33 +38,33 @@
       <uol name="4" value="0"/>
     </imgdir>
     <imgdir name="move">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="23" y="42"/>
       </canvas>
-      <canvas name="1" width="33" height="30">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="24" y="41"/>
       </canvas>
-      <canvas name="2" width="33" height="30">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="23" y="43"/>
       </canvas>
     </imgdir>
     <imgdir name="jump">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="21" y="41"/>
       </canvas>
     </imgdir>
     <imgdir name="hungry">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="19" y="41"/>
       </canvas>
     </imgdir>
     <imgdir name="angry">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="20" y="40"/>
       </canvas>
     </imgdir>
     <imgdir name="chat">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="21" y="42"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -76,42 +76,42 @@
       <uol name="7" value="0"/>
     </imgdir>
     <imgdir name="hang">
-      <canvas name="0" width="32" height="31">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="15" y="63"/>
       </canvas>
     </imgdir>
     <imgdir name="rise">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="16" y="53"/>
       </canvas>
     </imgdir>
     <imgdir name="sit">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="12" y="50"/>
       </canvas>
     </imgdir>
     <imgdir name="dung">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="18" y="47"/>
       </canvas>
     </imgdir>
     <imgdir name="cry">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="19" y="41"/>
       </canvas>
     </imgdir>
     <imgdir name="melong">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="21" y="41"/>
       </canvas>
     </imgdir>
     <imgdir name="sulk">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="22" y="36"/>
       </canvas>
     </imgdir>
     <imgdir name="love">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="19" y="42"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -157,10 +157,10 @@
       <uol name="41" value="0"/>
     </imgdir>
     <imgdir name="play">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="12" y="49"/>
       </canvas>
-      <canvas name="1" width="33" height="30">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="12" y="50"/>
       </canvas>
       <uol name="2" value="0"/>
@@ -177,7 +177,7 @@
       <uol name="13" value="1"/>
     </imgdir>
     <imgdir name="sleep">
-      <canvas name="0" width="34" height="29">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="22" y="55"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -233,12 +233,12 @@
       <uol name="51" value="0"/>
     </imgdir>
     <imgdir name="eat">
-      <canvas name="0" width="33" height="32">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="11" y="52"/>
       </canvas>
       <uol name="1" value="0"/>
       <uol name="2" value="0"/>
-      <canvas name="3" width="33" height="30">
+      <canvas name="3" format="1" scale="0">
         <vector name="origin" x="11" y="49"/>
       </canvas>
       <uol name="4" value="0"/>
@@ -275,10 +275,10 @@
       <uol name="35" value="0"/>
     </imgdir>
     <imgdir name="fly">
-      <canvas name="0" width="33" height="30">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="21" y="42"/>
       </canvas>
-      <canvas name="1" width="33" height="30">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="21" y="43"/>
       </canvas>
     </imgdir>

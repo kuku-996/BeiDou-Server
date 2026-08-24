@@ -47,18 +47,21 @@ public class DataTool {
     }
 
     public static double getDouble(Data data) {
-        return (Double) data.getData();
+        return ((Number) data.getData()).doubleValue();
     }
 
     public static float getFloat(Data data) {
-        return (Float) data.getData();
+        return ((Number) data.getData()).floatValue();
     }
 
     public static int getInt(Data data) {
         if (data == null || data.getData() == null) {
             return 0;// DEF?
         }
-        return (Integer) data.getData();
+        if (data.getType() == DataType.STRING) {
+            return Integer.parseInt(getString(data));
+        }
+        return ((Number) data.getData()).intValue();
     }
 
     public static int getInt(String path, Data data) {
@@ -107,12 +110,7 @@ public class DataTool {
         } else if (data.getType() == DataType.STRING) {
             return Integer.parseInt(getString(data));
         } else {
-            Object numData = data.getData();
-            if (numData instanceof Integer) {
-                return (Integer) numData;
-            } else {
-                return (Short) numData;
-            }
+            return ((Number) data.getData()).intValue();
         }
     }
 

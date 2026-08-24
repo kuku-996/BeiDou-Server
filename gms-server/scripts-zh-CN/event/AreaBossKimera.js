@@ -34,7 +34,7 @@ var BossName = "吉米拉";
 /**刷新时间，分钟;  Generation time in minutes*/
 var BossTime = 180;
 /**指定Boss刷新的XY坐标位置; Specify the XY coordinate position for Boss refresh*/
-var point = new Point(Math.floor((Math.random() * 900) - 900), 180);
+var point = new Point(Math.floor((Math.random() * 900) - 900), 0);
 var BossNotice= "自地底幽暗中现身的刹那，眼瞳里跃动的碎光如未淬火的星屑‌";
 
 const methodName = "start";     //指定当前事件刷新Boss的函数，无需改动

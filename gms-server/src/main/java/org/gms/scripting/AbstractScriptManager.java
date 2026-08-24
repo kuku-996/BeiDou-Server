@@ -49,23 +49,12 @@ public abstract class AbstractScriptManager {
     }
 
     protected ScriptEngine getInvocableScriptEngine(String path) {
-        // 读取当前服务端语言配置，用于拼出 scripts-语言 目录名，例如 scripts-zh-CN。
-        ServiceProperty serviceProperty = ServerManager.getApplicationContext().getBean(ServiceProperty.class);
-
-        // 默认脚本目录始终是 scripts，里面保留英文原版脚本。
-        Path scriptPath = Path.of(SCRIPT_DIRECTORY, path);
-        // 语言脚本目录只放已本地化的脚本文件，不要求复制完整 scripts 目录。
-        Path scriptLangPath = Path.of(SCRIPT_DIRECTORY + "-" + serviceProperty.getLanguage(), path);
-
-        // 按文件级别选择脚本：先找语言文件，找不到再回退到英文原版文件。
-        Path actualPath;
-        if (Files.exists(scriptLangPath)) {
-            actualPath = scriptLangPath;
-        } else if (Files.exists(scriptPath)) {
-            actualPath = scriptPath;
-        } else {
+        String resolvedScriptPath = getResolvedScriptPath(path);
+        if (resolvedScriptPath == null) {
             return null;
         }
+
+        Path actualPath = Path.of(resolvedScriptPath);
 
         // 为本次实际命中的脚本文件创建独立 JS 引擎。
         ScriptEngine engine = sef.getScriptEngine();
@@ -85,6 +74,28 @@ public abstract class AbstractScriptManager {
         }
 
         return graalScriptEngine;
+    }
+
+    /**
+     * 解析脚本实际命中的相对路径，优先使用当前语言目录，再回退到默认 scripts 目录。
+     */
+    protected String getResolvedScriptPath(String path) {
+        // 读取当前服务端语言配置，用于拼出 scripts-语言 目录名，例如 scripts-zh-CN。
+        ServiceProperty serviceProperty = ServerManager.getApplicationContext().getBean(ServiceProperty.class);
+
+        // 默认脚本目录始终是 scripts，里面保留英文原版脚本。
+        Path scriptPath = Path.of(SCRIPT_DIRECTORY, path);
+        // 语言脚本目录只放已本地化的脚本文件，不要求复制完整 scripts 目录。
+        Path scriptLangPath = Path.of(SCRIPT_DIRECTORY + "-" + serviceProperty.getLanguage(), path);
+
+        // 按文件级别选择脚本：先找语言文件，找不到再回退到英文原版文件。
+        if (Files.exists(scriptLangPath)) {
+            return scriptLangPath.toString().replace('\\', '/');
+        } else if (Files.exists(scriptPath)) {
+            return scriptPath.toString().replace('\\', '/');
+        }
+
+        return null;
     }
 
     protected ScriptEngine getInvocableScriptEngine(String path, Client c) {

@@ -26,6 +26,7 @@ package org.gms.client.command.commands.gm3;
 import org.gms.client.Character;
 import org.gms.client.Client;
 import org.gms.client.command.Command;
+import org.gms.server.MonsterBookQueryService;
 import org.gms.server.life.MonsterInformationProvider;
 import org.gms.util.I18nUtil;
 
@@ -38,6 +39,7 @@ public class ReloadDropsCommand extends Command {
     public void execute(Client c, String[] params) {
         Character player = c.getPlayer();
         MonsterInformationProvider.getInstance().clearDrops();
+        MonsterBookQueryService.clearDropCaches();
         player.dropMessage(5, I18nUtil.getMessage("ReloadDropsCommand.message2"));
     }
 }

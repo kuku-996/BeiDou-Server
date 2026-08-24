@@ -76,6 +76,10 @@ public class MapManager {
 
         map = MapFactory.loadMapFromWz(mapid, world, channel, event);
 
+        if (map == null) {
+            return null;
+        }
+
         if (cache) {
             mapsWLock.lock();
             try {

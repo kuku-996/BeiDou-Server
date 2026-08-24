@@ -90,13 +90,15 @@ public class NPCScriptManager extends AbstractScriptManager {
                 return;
             }
             cms.put(c, cm);
-            ScriptEngine engine = getInvocableScriptEngine("npc/" + filename + ".js", c);
+            String scriptPath = "npc/" + filename + ".js";
+            ScriptEngine engine = getInvocableScriptEngine(scriptPath, c);
 
             if (engine == null) {
                 c.getPlayer().dropMessage(1, "NPC " + npc + " is uncoded.");
                 cm.dispose();
                 return;
             }
+            cm.setScriptDebugInfo(NPCScriptDebugInfo.forNpc(npc, resolveScriptPath(scriptPath)));
             engine.put("cm", cm);
 
             Invocable invocable = (Invocable) engine;
@@ -122,20 +124,25 @@ public class NPCScriptManager extends AbstractScriptManager {
             if (c.canClickNPC()) {
                 cms.put(c, cm);
                 ScriptEngine engine = null;
+                String scriptPath = null;
                 if (!itemScript) {
                     if (fileName != null) {
-                        engine = getInvocableScriptEngine("npc/" + fileName + ".js", c);
+                        scriptPath = "npc/" + fileName + ".js";
+                        engine = getInvocableScriptEngine(scriptPath, c);
                         if (engine == null) {
-                            engine = getInvocableScriptEngine("BeiDouSpecial/" + fileName + ".js", c);
+                            scriptPath = "BeiDouSpecial/" + fileName + ".js";
+                            engine = getInvocableScriptEngine(scriptPath, c);
                         }
                     }
                 } else {
                     if (fileName != null) {     // thanks MiLin for drafting NPC-based item scripts
-                        engine = getInvocableScriptEngine("item/" + fileName + ".js", c);
+                        scriptPath = "item/" + fileName + ".js";
+                        engine = getInvocableScriptEngine(scriptPath, c);
                     }
                 }
                 if (engine == null) {
-                    engine = getInvocableScriptEngine("npc/" + npc + ".js", c);
+                    scriptPath = "npc/" + npc + ".js";
+                    engine = getInvocableScriptEngine(scriptPath, c);
                     cm.resetItemScript();
                 }
 
@@ -143,6 +150,7 @@ public class NPCScriptManager extends AbstractScriptManager {
                     dispose(c);
                     return false;
                 }
+                cm.setScriptDebugInfo(NPCScriptDebugInfo.forNpc(npc, resolveScriptPath(scriptPath)));
                 engine.put(engineName, cm);
 
                 Invocable iv = (Invocable) engine;
@@ -277,6 +285,11 @@ public class NPCScriptManager extends AbstractScriptManager {
 
     public NPCConversationManager getCM(Client c) {
         return cms.get(c);
+    }
+
+    private String resolveScriptPath(String scriptPath) {
+        String resolvedScriptPath = getResolvedScriptPath(scriptPath);
+        return resolvedScriptPath != null ? resolvedScriptPath : scriptPath;
     }
 
 }

@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="WorldMap060.img">
+<imgdir name="WorldMap060.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="parentMap" value="WorldMap"/>
-  </imgdir>
-  <imgdir name="BaseImg">
-    <canvas name="0" width="640" height="470">
-      <vector name="origin" x="320" y="235"/>
-      <int name="z" value="0"/>
-    </canvas>
   </imgdir>
   <imgdir name="MapList">
     <imgdir name="0">
@@ -163,13 +157,13 @@
     </imgdir>
     <imgdir name="21">
       <vector name="spot" x="-177" y="171"/>
-      <string name="title" value="Red-Nose Pirate Den 2"/>
-      <string name="desc" value="A mini dungeon where you can hunt alone or with your party members. There is a portal that leads to the #cPillage of Treasure Island#."/>
+      <string name="title" value="百草堂：红鼻子海盗团老巢2"/>
+      <string name="desc" value="可独自或组队挑战#c迷你地图：宝岛掠夺#."/>
       <int name="type" value="1"/>
       <imgdir name="mapNo">
         <int name="0" value="251010402"/>
       </imgdir>
-      <canvas name="path" width="83" height="35">
+      <canvas name="path" format="1" scale="0">
         <vector name="origin" x="180" y="-138"/>
         <int name="z" value="2"/>
       </canvas>
@@ -244,5 +238,12 @@
         <int name="0" value="250010304"/>
       </imgdir>
     </imgdir>
+  </imgdir>
+  <imgdir name="BaseImg">
+    <canvas name="0" format="1" scale="0">
+      <vector name="origin" x="320" y="235"/>
+      <int name="z" value="0"/>
+      <string name="_hash" value="a6289fabbac79d8a50d69852f3d09895410ae56ae36f8171d0d322ea6983bf60"/>
+    </canvas>
   </imgdir>
 </imgdir>

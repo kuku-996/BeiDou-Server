@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2060003.img">
-  <imgdir name="info">
-  </imgdir>
+<imgdir name="2060003.img" indent="2" media="NONE">
+  <imgdir name="info"/>
   <imgdir name="stand">
-    <canvas name="0" width="66" height="68">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="1500"/>
     </canvas>
-    <canvas name="1" width="66" height="68">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="2" width="66" height="68">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="250"/>
     </canvas>
@@ -20,15 +19,15 @@
     <uol name="5" value="2"/>
   </imgdir>
   <imgdir name="eye">
-    <canvas name="0" width="66" height="68">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="1500"/>
     </canvas>
-    <canvas name="1" width="66" height="68">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="2" width="66" height="68">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="100"/>
     </canvas>
@@ -37,15 +36,15 @@
     <uol name="5" value="2"/>
   </imgdir>
   <imgdir name="say">
-    <canvas name="0" width="66" height="68">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="1000"/>
     </canvas>
-    <canvas name="1" width="66" height="68">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="2" width="66" height="68">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="100"/>
     </canvas>
@@ -54,7 +53,7 @@
     <uol name="5" value="1"/>
     <uol name="6" value="0"/>
     <uol name="7" value="1"/>
-    <canvas name="8" width="66" height="68">
+    <canvas name="8" format="1" scale="0">
       <vector name="origin" x="32" y="68"/>
       <int name="delay" value="500"/>
     </canvas>

@@ -26,23 +26,55 @@ import org.gms.client.inventory.InventoryType;
 import org.gms.constants.id.ItemId;
 import org.gms.net.AbstractPacketHandler;
 import org.gms.net.packet.InPacket;
+import org.gms.server.TimerManager;
 
 public final class UseChairHandler extends AbstractPacketHandler {
     @Override
     public final void handlePacket(InPacket p, Client c) {
         int itemId = p.readInt();
-
-        // thanks Darter (YungMoozi) for reporting unchecked chair item
-        if (!ItemId.isChair(itemId) || c.getPlayer().getInventory(InventoryType.SETUP).findById(itemId) == null) {
+        final var player = c.getPlayer();
+        if (player == null) {
             return;
         }
 
-        if (c.tryacquireClient()) {
-            try {
-                c.getPlayer().sitChair(itemId);
-            } finally {
-                c.releaseClient();
-            }
+        // Always release the client action lock when validation rejects a
+        // chair request.  Without this reply, expanded/newer chair IDs leave
+        // the client unable to move or open any UI until @dispose is used.
+        if (!ItemId.isChair(itemId)
+                || player.getInventory(InventoryType.SETUP).findById(itemId) == null) {
+            player.enableActions();
+            return;
+        }
+
+        if (!c.tryacquireClient()) {
+            // A concurrent action must never strand the client in its local
+            // sitting state while the request waits for the next input.
+            TimerManager.getInstance().schedule(player::enableActions, 50);
+            return;
+        }
+
+        try {
+            player.sitChair(itemId);
+
+            /*
+             * Some post-v83 chairs finish their local mount/body-offset
+             * animation after the normal ENABLE_ACTIONS packet has been
+             * processed, and lock input again.  Re-send the packet after
+             * the animation hand-off, but only while this exact chair is
+             * still active so a later map change or chair switch is not
+             * affected.
+             */
+            TimerManager.getInstance().schedule(() -> {
+                if (c.getPlayer() == player && player.isLoggedInWorld()
+                        && player.getChair() == itemId) {
+                    player.enableActions();
+                }
+            }, 900);
+        } finally {
+            // sitChair normally sends this itself.  Keep the handler-level
+            // reply as a final guard for any future data/validation change.
+            player.enableActions();
+            c.releaseClient();
         }
     }
 }

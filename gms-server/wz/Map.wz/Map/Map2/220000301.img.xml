@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="220000301.img">
+<imgdir name="220000301.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -47,15 +47,13 @@
       <int name="rx1" value="25"/>
     </imgdir>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="0">
     <imgdir name="info">
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="insideTC"/>
@@ -75,8 +73,7 @@
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="insideTC"/>
@@ -118,8 +115,7 @@
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="insideTC"/>
@@ -172,8 +168,7 @@
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="insideTC"/>
@@ -468,8 +463,7 @@
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="insideTC"/>
@@ -511,30 +505,24 @@
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
     <imgdir name="info">
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
     <imgdir name="info">
       <string name="tS" value="blankTower"/>
       <int name="tSMag" value="1"/>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="foothold">
     <imgdir name="3">
@@ -698,8 +686,7 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="portal">
     <imgdir name="0">
       <string name="pn" value="sp"/>

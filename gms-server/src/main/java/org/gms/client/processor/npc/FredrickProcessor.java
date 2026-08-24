@@ -125,9 +125,7 @@ public class FredrickProcessor {
 
     public static void insertFredrickLog(int cid) {
         try (Connection con = DatabaseConnection.getConnection()) {
-
-            removeFredrickLog(con, cid);
-            try (PreparedStatement ps = con.prepareStatement("INSERT INTO `fredstorage` (`cid`, `daynotes`, `timestamp`) VALUES (?, 0, ?)")) {
+            try (PreparedStatement ps = con.prepareStatement("INSERT INTO `fredstorage` (`cid`, `daynotes`, `timestamp`) VALUES (?, 0, ?) ON DUPLICATE KEY UPDATE `daynotes` = VALUES(`daynotes`), `timestamp` = VALUES(`timestamp`)")) {
                 ps.setInt(1, cid);
                 ps.setTimestamp(2, new Timestamp(System.currentTimeMillis()));
                 ps.executeUpdate();
@@ -163,7 +161,7 @@ public class FredrickProcessor {
         try (Connection con = DatabaseConnection.getConnection()) {
             List<Pair<Integer, Integer>> expiredCids = new LinkedList<>();
             List<Pair<Pair<Integer, String>, Integer>> notifCids = new LinkedList<>();
-            try (PreparedStatement ps = con.prepareStatement("SELECT * FROM fredstorage f LEFT JOIN (SELECT id, name, world, lastLogoutTime FROM characters) AS c ON c.id = f.cid");
+            try (PreparedStatement ps = con.prepareStatement("SELECT * FROM fredstorage f INNER JOIN (SELECT id, name, world, lastLogoutTime FROM characters) AS c ON c.id = f.cid");
                  ResultSet rs = ps.executeQuery()) {
                 long curTime = System.currentTimeMillis();
 

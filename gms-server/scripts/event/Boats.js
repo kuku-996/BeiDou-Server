@@ -97,14 +97,21 @@ function approach() {
 function invasion() {
     const LifeFactory = Java.type('org.gms.server.life.LifeFactory');
 
+    // Some 083 data sets do not include the Balrog invasion mob.  Do not let
+    // the scheduled event throw when the optional mob is unavailable.
+    var balrog = LifeFactory.getMonster(8150000);
+    if (balrog == null) {
+        return;
+    }
+
     var map1 = Boat_to_Ellinia;
     var pos1 = new java.awt.Point(-538, 143);
-    map1.spawnMonsterOnGroundBelow(LifeFactory.getMonster(8150000), pos1);
+    map1.spawnMonsterOnGroundBelow(balrog, pos1);
     map1.spawnMonsterOnGroundBelow(LifeFactory.getMonster(8150000), pos1);
 
     var map2 = Boat_to_Orbis;
     var pos2 = new java.awt.Point(339, 148);
-    map2.spawnMonsterOnGroundBelow(LifeFactory.getMonster(8150000), pos2);
+    map2.spawnMonsterOnGroundBelow(balrog, pos2);
     map2.spawnMonsterOnGroundBelow(LifeFactory.getMonster(8150000), pos2);
 }
 
@@ -141,4 +148,3 @@ function clearPQ(eim) {}
 function allMonstersDead(eim) {}
 
 function playerUnregistered(eim, player) {}
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="980041000.img">
+<imgdir name="980041000.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -215,12 +215,11 @@
       <int name="a" value="255"/>
     </imgdir>
   </imgdir>
-  <imgdir name="life">
-  </imgdir>
+  <imgdir name="life"/>
   <imgdir name="reactor">
     <imgdir name="0">
       <string name="id" value="9908001"/>
-      <int name="x" value="241"/>
+      <int name="x" value="2410"/>
       <int name="y" value="-1549"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
@@ -228,7 +227,7 @@
     </imgdir>
     <imgdir name="1">
       <string name="id" value="9908001"/>
-      <int name="x" value="-147"/>
+      <int name="x" value="-1470"/>
       <int name="y" value="-282"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
@@ -236,7 +235,7 @@
     </imgdir>
     <imgdir name="2">
       <string name="id" value="9908001"/>
-      <int name="x" value="-63"/>
+      <int name="x" value="-6300"/>
       <int name="y" value="-757"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
@@ -244,7 +243,7 @@
     </imgdir>
     <imgdir name="3">
       <string name="id" value="9908001"/>
-      <int name="x" value="-315"/>
+      <int name="x" value="-3150"/>
       <int name="y" value="-1042"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
@@ -252,7 +251,7 @@
     </imgdir>
     <imgdir name="4">
       <string name="id" value="9908001"/>
-      <int name="x" value="-27"/>
+      <int name="x" value="-2700"/>
       <int name="y" value="-1854"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
@@ -260,7 +259,7 @@
     </imgdir>
     <imgdir name="5">
       <string name="id" value="9908001"/>
-      <int name="x" value="-292"/>
+      <int name="x" value="-2920"/>
       <int name="y" value="-2312"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
@@ -400,14 +399,11 @@
         <int name="zM" value="1"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="9">
         <string name="oS" value="event"/>
@@ -4253,50 +4249,33 @@
     </imgdir>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="3">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="event"/>
@@ -7289,8 +7268,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="60" height="241">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="961"/>
     <int name="height" value="3858"/>
     <int name="centerX" value="543"/>

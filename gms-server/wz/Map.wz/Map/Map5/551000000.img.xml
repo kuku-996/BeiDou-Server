@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="551000000.img">
+<imgdir name="551000000.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="bgm" value="BgmMY/KualaLumpur"/>
     <int name="cloud" value="0"/>
@@ -15,14 +15,13 @@
     <string name="onFirstUserEnter" value=""/>
     <string name="onUserEnter" value=""/>
     <int name="fly" value="0"/>
-    <int name="VRLeft" value="-1355"/>
-    <int name="VRRight" value="900"/>
+    <int name="VRLeft" value="-1354"/>
+    <int name="VRRight" value="913"/>
     <int name="VRTop" value="-1000"/>
-    <int name="VRBottom" value="1010"/>
+    <int name="VRBottom" value="1014"/>
   </imgdir>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="153" height="87">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="2450"/>
     <int name="height" value="1407"/>
     <int name="centerX" value="1455"/>
@@ -30,32 +29,22 @@
     <int name="mag" value="4"/>
   </imgdir>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="3">
-    <imgdir name="info">
-    </imgdir>
+    <imgdir name="info"/>
     <imgdir name="obj">
       <imgdir name="0">
         <int name="x" value="-988"/>
@@ -442,15 +431,13 @@
         <int name="f" value="0"/>
       </imgdir>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="4">
     <imgdir name="info">
       <string name="tS" value="klField2_MY"/>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
     <imgdir name="tile">
       <imgdir name="0">
         <int name="x" value="-315"/>
@@ -2310,16 +2297,12 @@
     </imgdir>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
+    <imgdir name="info"/>
     <imgdir name="obj">
       <imgdir name="0">
         <int name="x" value="-630"/>
@@ -2646,8 +2629,12 @@
         <int name="f" value="0"/>
       </imgdir>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="8">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="ladderRope">
     <imgdir name="1">
@@ -2667,9 +2654,9 @@
       <int name="l" value="0"/>
     </imgdir>
     <imgdir name="3">
-      <int name="x" value="991"/>
+      <int name="x" value="788"/>
       <int name="y1" value="317"/>
-      <int name="y2" value="334"/>
+      <int name="y2" value="355"/>
       <int name="uf" value="1"/>
       <int name="page" value="7"/>
       <int name="l" value="0"/>
@@ -2868,8 +2855,7 @@
       <string name="pn" value="tp"/>
     </imgdir>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="back">
     <imgdir name="0">
       <int name="x" value="77"/>
@@ -5552,60 +5538,39 @@
     <imgdir name="0">
       <string name="id" value="9270062"/>
       <int name="x" value="566"/>
-      <int name="y" value="786"/>
-      <int name="cy" value="794"/>
+      <int name="y" value="788"/>
+      <int name="cy" value="796"/>
       <int name="mobTime" value="0"/>
       <int name="rx0" value="516"/>
       <int name="rx1" value="616"/>
       <int name="f" value="0"/>
+      <int name="hide" value="0"/>
       <string name="type" value="n"/>
       <int name="fh" value="227"/>
     </imgdir>
     <imgdir name="1">
-      <string name="id" value="9000001"/>
-      <int name="x" value="338"/>
-      <int name="y" value="306"/>
-      <int name="cy" value="314"/>
-      <int name="mobTime" value="0"/>
-      <int name="rx0" value="288"/>
-      <int name="rx1" value="388"/>
-      <int name="f" value="0"/>
-      <string name="type" value="n"/>
-      <int name="fh" value="171"/>
-    </imgdir>
-    <imgdir name="2">
       <string name="id" value="9270065"/>
       <int name="x" value="-928"/>
-      <int name="y" value="815"/>
-      <int name="cy" value="824"/>
+      <int name="y" value="816"/>
+      <int name="cy" value="825"/>
       <int name="mobTime" value="0"/>
       <int name="rx0" value="-978"/>
       <int name="rx1" value="-878"/>
       <int name="f" value="0"/>
+      <int name="hide" value="0"/>
       <string name="type" value="n"/>
       <int name="fh" value="44"/>
     </imgdir>
-    <imgdir name="3">
-      <string name="id" value="9000021"/>
-      <int name="x" value="198"/>
-      <int name="y" value="298"/>
-      <int name="cy" value="314"/>
-      <int name="mobTime" value="0"/>
-      <int name="rx0" value="148"/>
-      <int name="rx1" value="248"/>
-      <int name="f" value="0"/>
-      <string name="type" value="n"/>
-      <int name="fh" value="154"/>
-    </imgdir>
-    <imgdir name="4">
+    <imgdir name="2">
       <string name="id" value="9201135"/>
       <int name="x" value="221"/>
-      <int name="y" value="812"/>
-      <int name="cy" value="824"/>
+      <int name="y" value="813"/>
+      <int name="cy" value="825"/>
       <int name="mobTime" value="0"/>
       <int name="rx0" value="171"/>
       <int name="rx1" value="271"/>
       <int name="f" value="0"/>
+      <int name="hide" value="0"/>
       <string name="type" value="n"/>
       <int name="fh" value="156"/>
     </imgdir>

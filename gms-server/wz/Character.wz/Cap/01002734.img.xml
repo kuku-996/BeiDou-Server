@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002734.img">
+<imgdir name="01002734.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="34" height="35">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="35"/>
     </canvas>
-    <canvas name="iconRaw" width="34" height="35">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="35"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -18,16 +18,16 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="58" height="75">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="29" y="37"/>
       <imgdir name="map">
         <vector name="brow" x="-7" y="-12"/>
       </imgdir>
-      <string name="z" value="cap"/>
+      <string name="z" value="capOverHair"/>
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="58" height="75">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="29" y="37"/>
       <imgdir name="map">
         <vector name="brow" x="-3" y="-11"/>
@@ -43,65 +43,41 @@
       <uol name="default" value="../../default/default"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="58" height="75">
-        <vector name="origin" x="29" y="37"/>
+      <canvas name="default" format="1" scale="0">
+        <vector name="origin" x="27" y="37"/>
         <imgdir name="map">
-          <vector name="brow" x="-5" y="-9"/>
+          <vector name="brow" x="-7" y="-12"/>
         </imgdir>
-        <string name="z" value="cap"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="57" height="75">
-        <vector name="origin" x="29" y="37"/>
+      <canvas name="default" format="1" scale="0">
+        <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
-          <vector name="brow" x="-5" y="-9"/>
+          <vector name="brow" x="-7" y="-12"/>
         </imgdir>
-        <string name="z" value="capeOverHead"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="walk2">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
-        <vector name="origin" x="29" y="37"/>
-        <imgdir name="map">
-          <vector name="brow" x="-2" y="-8"/>
-        </imgdir>
-        <string name="z" value="cap"/>
-      </canvas>
-    </imgdir>
-    <imgdir name="1">
-      <canvas name="default" width="57" height="75">
-        <vector name="origin" x="28" y="37"/>
-        <imgdir name="map">
-          <vector name="brow" x="-3" y="-9"/>
-        </imgdir>
-        <string name="z" value="cap"/>
-      </canvas>
+      <uol name="default" value="../../default/default"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="58" height="75">
-        <vector name="origin" x="29" y="37"/>
-        <imgdir name="map">
-          <vector name="brow" x="-5" y="-9"/>
-        </imgdir>
-        <string name="z" value="cap"/>
-      </canvas>
+      <uol name="default" value="../../walk1/2/default"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="57" height="75">
-        <vector name="origin" x="28" y="37"/>
-        <imgdir name="map">
-          <vector name="brow" x="-3" y="-9"/>
-        </imgdir>
-        <string name="z" value="cap"/>
-      </canvas>
+      <uol name="default" value="../../walk1/3/default"/>
+    </imgdir>
+    <imgdir name="1">
+      <uol name="default" value="../../default/default"/>
     </imgdir>
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-9"/>
@@ -110,7 +86,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-9"/>
@@ -119,7 +95,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-9"/>
@@ -130,7 +106,7 @@
   </imgdir>
   <imgdir name="stand2">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
@@ -139,7 +115,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
@@ -148,7 +124,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
@@ -159,65 +135,65 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="59" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
@@ -226,175 +202,175 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-11"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="61" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-7"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-6"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-10"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-3"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
@@ -403,418 +379,418 @@
       <uol name="backDefault" value="../../backDefault/default"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-7"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-7"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-7" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-7" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="stabTF">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="57" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="60" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="4">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="56" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="28" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-9"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="default" width="61" height="54">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="1"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="61" height="54">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="1"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="prone">
     <imgdir name="0">
-      <canvas name="default" width="61" height="54">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="30" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="-6" y="1"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
@@ -834,43 +810,43 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-10"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-10"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-3" y="-10"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="default" width="58" height="75">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="29" y="37"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="-8"/>
         </imgdir>
-        <string name="z" value="capBelowAccessory"/>
+        <string name="z" value="capOverHair"/>
       </canvas>
     </imgdir>
   </imgdir>

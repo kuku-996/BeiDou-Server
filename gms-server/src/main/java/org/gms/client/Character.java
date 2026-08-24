@@ -1,4 +1,4 @@
-/* 
+/*
  This file is part of the OdinMS Maple Story Server
  Copyright (C) 2008 Patrick Huy <patrick.huy@frz.cc>
  Matthias Butz <matze@odinms.de>
@@ -29,6 +29,7 @@ import org.gms.client.creator.CharacterFactoryRecipe;
 import org.gms.client.inventory.*;
 import org.gms.client.inventory.Equip.StatUpgrade;
 import org.gms.client.inventory.manipulator.InventoryManipulator;
+import org.gms.client.inventory.manipulator.KarmaManipulator;
 import org.gms.client.keybind.KeyBinding;
 import org.gms.client.keybind.QuickslotBinding;
 import org.gms.client.processor.action.PetAutopotProcessor;
@@ -83,6 +84,9 @@ import org.gms.server.partyquest.MonsterCarnival;
 import org.gms.server.partyquest.MonsterCarnivalParty;
 import org.gms.server.partyquest.PartyQuest;
 import org.gms.server.quest.Quest;
+import org.gms.server.setitem.ItemSetInfoProvider;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotTier;
+import org.gms.server.artificial.soloport.localization.SoloMaplingChineseLocalization;
 import org.gms.service.*;
 import org.gms.util.*;
 import org.gms.util.packets.WeddingPackets;
@@ -96,6 +100,7 @@ import java.util.List;
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -110,6 +115,20 @@ import static java.util.concurrent.TimeUnit.*;
 
 public class Character extends AbstractCharacterObject {
     private static final Logger log = LoggerFactory.getLogger(Character.class);
+
+    private BotTier artificialTier = BotTier.getDefaultTier();
+
+    public BotTier getTier() {
+        return artificialTier;
+    }
+
+    public void setTier(BotTier tier) {
+        artificialTier = tier != null ? tier : BotTier.getDefaultTier();
+    }
+
+    public boolean isLoggedIn() {
+        return client != null && client.isLoggedIn();
+    }
 
     @Getter
     @Setter
@@ -269,6 +288,18 @@ public class Character extends AbstractCharacterObject {
     @Setter
     private boolean finishedDojoTutorial;
     private boolean usedStorage = false;
+    private OreStorage oreStorage;
+    private OreStorage scrollStorage;
+    private OreStorage chairStorage;
+    private OreStorage mountStorage;
+    private volatile boolean usedOreStorage;
+    private volatile boolean usedScrollStorage;
+    private volatile boolean usedChairStorage;
+    private volatile boolean usedMountStorage;
+    private boolean autoOreStorage;
+    private boolean autoScrollStorage;
+    private boolean autoChairStorage;
+    private boolean autoMountStorage;
     @Getter
     @Setter
     private String name;
@@ -450,8 +481,8 @@ public class Character extends AbstractCharacterObject {
     @Setter
     @Getter
     private int partnerId = -1;
-    private final List<Ring> crushRings = new ArrayList<>();
-    private final List<Ring> friendshipRings = new ArrayList<>();
+    private final List<Ring> crushRings = new CopyOnWriteArrayList<>();
+    private final List<Ring> friendshipRings = new CopyOnWriteArrayList<>();
     @Getter
     @Setter
     private boolean loggedIn = false;
@@ -601,6 +632,22 @@ public class Character extends AbstractCharacterObject {
 
     public boolean isLoggedInWorld() {
         return this.isLoggedIn() && !this.isAwayFromWorld();
+    }
+
+    public boolean isLoggedinWorld() {
+        return isLoggedInWorld();
+    }
+
+    public boolean isLoggedin() {
+        return isLoggedIn();
+    }
+
+    public int getTotalMoveSpeedStat() {
+        return 100;
+    }
+
+    public int getTotalJumpStat() {
+        return 100;
     }
 
     public boolean isAwayFromWorld() {
@@ -1176,7 +1223,7 @@ public class Character extends AbstractCharacterObject {
             addhp += Randomizer.rand(300, 350);
             addmp += Randomizer.rand(150, 200);
         }
-        
+
         /*
         //aran perks?
         int newJobId = newJob.getId();
@@ -1260,7 +1307,7 @@ public class Character extends AbstractCharacterObject {
         if (guild != null) {
             guild.broadcast(packet, id);
         }
-        
+
         /*
         if(partnerid > 0) {
             partner.sendPacket(packet); not yet implemented
@@ -2022,6 +2069,12 @@ public class Character extends AbstractCharacterObject {
                 final Packet pickupPacket = PacketCreator.removeItemFromMap(mapitem.getObjectId(), (isPet) ? 5 : 2, this.getId(), isPet, petIndex);
 
                 Item mItem = mapitem.getItem();
+                if (mapitem.getMeso() <= 0 && !MapId.isSelfLootableOnly(this.getMapId())
+                        && autoCollectToBag(mItem)) {
+                    this.getMap().pickItemDrop(pickupPacket, mapitem);
+                    enableActions();
+                    return;
+                }
                 boolean hasSpaceInventory = true;
                 ItemInformationProvider ii = ItemInformationProvider.getInstance();
                 if (ItemId.isNxCard(mapitem.getItemId()) || mapitem.getMeso() > 0 || ii.isConsumeOnPickup(mapitem.getItemId()) || (hasSpaceInventory = InventoryManipulator.checkSpace(client, mapitem.getItemId(), mItem.getQuantity(), mItem.getOwner()))) {
@@ -2658,6 +2711,9 @@ public class Character extends AbstractCharacterObject {
      * @param message
      */
     public void dropMessage(int type, String message) {
+        if (isGM() && type == 6) {
+            message = SoloMaplingChineseLocalization.gmMessage(message);
+        }
         sendPacket(PacketCreator.serverNotice(type, message));
     }
 
@@ -2967,6 +3023,7 @@ public class Character extends AbstractCharacterObject {
                 leftover = nextExp - Integer.MAX_VALUE;
             }
             updateSingleStat(Stat.EXP, exp.addAndGet((int) total));
+            BattleStatisticsService.recordExperienceGain(this, total);
             totalExpGained += total;
             if (show) {
                 announceExpGain(gain, equip, party, inChat, white);
@@ -3085,6 +3142,7 @@ public class Character extends AbstractCharacterObject {
         }
 
         if (gain != 0) {
+            BattleStatisticsService.recordMesoGain(this, gain);
             updateSingleStat(Stat.MESO, (int) nextMeso, enableActions);
             if (show) {
                 sendPacket(PacketCreator.getShowMesoGain(gain, inChat));
@@ -6690,7 +6748,7 @@ public class Character extends AbstractCharacterObject {
     }
 
     public void yellowMessage(String m) {
-        sendPacket(PacketCreator.sendYellowTip(m));
+        sendPacket(PacketCreator.sendYellowTip(isGM() ? SoloMaplingChineseLocalization.gmMessage(m) : m));
     }
 
     public void raiseQuestMobCount(int id) {
@@ -6845,6 +6903,10 @@ public class Character extends AbstractCharacterObject {
         this.chair.set(chair);
     }
 
+    public void setChairForBot(int chair) {
+        setChair(chair);
+    }
+
     public void respawn(int returnMap) {
         respawn(null, returnMap);    // unspecified EIM, don't force EIM unregister in this case
     }
@@ -6908,6 +6970,17 @@ public class Character extends AbstractCharacterObject {
                 //equipjump += equip.getJump();
             }
 
+            Map<String, Integer> setBonus = getActiveSetBonusStats();
+            int allStatBonus = setBonus.getOrDefault("incAllStat", 0);
+            equipstr += setBonus.getOrDefault("incSTR", 0) + allStatBonus;
+            equipdex += setBonus.getOrDefault("incDEX", 0) + allStatBonus;
+            equipint_ += setBonus.getOrDefault("incINT", 0) + allStatBonus;
+            equipluk += setBonus.getOrDefault("incLUK", 0) + allStatBonus;
+            equipmaxhp += setBonus.getOrDefault("incMHP", 0);
+            equipmaxmp += setBonus.getOrDefault("incMMP", 0);
+            equipwatk += setBonus.getOrDefault("incPAD", 0);
+            equipmagic += setBonus.getOrDefault("incMAD", 0);
+
             equipchanged = false;
         }
 
@@ -6919,6 +6992,10 @@ public class Character extends AbstractCharacterObject {
         localluk += equipluk;
         localmagic += equipmagic;
         localwatk += equipwatk;
+    }
+
+    public Map<String, Integer> getActiveSetBonusStats() {
+        return ItemSetInfoProvider.getInstance().getActiveBonusStats(this);
     }
 
     public void reapplyLocalStats() {
@@ -7899,7 +7976,33 @@ public class Character extends AbstractCharacterObject {
                     usedStorage = false;
                 }
 
+                try (PreparedStatement psBag = con.prepareStatement(
+                        "UPDATE characters SET autoOreStorage = ?, autoScrollStorage = ?, autoChairStorage = ?, autoMountStorage = ? WHERE id = ?")) {
+                    psBag.setBoolean(1, autoOreStorage);
+                    psBag.setBoolean(2, autoScrollStorage);
+                    psBag.setBoolean(3, autoChairStorage);
+                    psBag.setBoolean(4, autoMountStorage);
+                    psBag.setInt(5, id);
+                    psBag.executeUpdate();
+                }
+                if (oreStorage != null && usedOreStorage) {
+                    oreStorage.saveToDB(con);
+                }
+                if (scrollStorage != null && usedScrollStorage) {
+                    scrollStorage.saveToDB(con);
+                }
+                if (chairStorage != null && usedChairStorage) {
+                    chairStorage.saveToDB(con);
+                }
+                if (mountStorage != null && usedMountStorage) {
+                    mountStorage.saveToDB(con);
+                }
+
                 con.commit();
+                usedOreStorage = false;
+                usedScrollStorage = false;
+                usedChairStorage = false;
+                usedMountStorage = false;
             } catch (Exception e) {
                 con.rollback();
                 throw e;
@@ -7939,6 +8042,139 @@ public class Character extends AbstractCharacterObject {
 
     public void sendKeymap() {
         sendPacket(PacketCreator.getKeymap(keymap));
+    }
+
+    private boolean autoCollectToBag(Item mapItem) {
+        if (mapItem == null) {
+            return false;
+        }
+
+        int itemId = mapItem.getItemId();
+        OreStorage bag;
+        int kind;
+        if (autoOreStorage && oreStorage != null && ItemConstants.isOreBagAllowed(itemId)) {
+            bag = oreStorage;
+            kind = 0;
+        } else if (autoScrollStorage && scrollStorage != null && ItemConstants.isScrollBagAllowed(itemId)) {
+            bag = scrollStorage;
+            kind = 1;
+        } else if (autoChairStorage && chairStorage != null && ItemConstants.isChairBagAllowed(itemId)) {
+            bag = chairStorage;
+            kind = 2;
+        } else if (autoMountStorage && mountStorage != null && ItemConstants.isMountBagAllowed(itemId)) {
+            bag = mountStorage;
+            kind = 3;
+        } else {
+            return false;
+        }
+
+        Item bagItem = mapItem.copy();
+        KarmaManipulator.toggleKarmaFlagToUntradeable(bagItem);
+        if (!bag.storeMerge(bagItem, client)) {
+            return false;
+        }
+
+        markStorageBagUsed(kind);
+        client.sendPacket(PacketCreator.bagWindowSnapshot(kind, bag, true));
+        return true;
+    }
+
+    private void markStorageBagUsed(int kind) {
+        switch (kind) {
+            case 1 -> usedScrollStorage = true;
+            case 2 -> usedChairStorage = true;
+            case 3 -> usedMountStorage = true;
+            default -> usedOreStorage = true;
+        }
+    }
+
+    public OreStorage getOreStorage() {
+        return oreStorage;
+    }
+
+    public void setOreStorage(OreStorage oreStorage) {
+        this.oreStorage = oreStorage;
+    }
+
+    public OreStorage getScrollStorage() {
+        return scrollStorage;
+    }
+
+    public void setScrollStorage(OreStorage scrollStorage) {
+        this.scrollStorage = scrollStorage;
+    }
+
+    public OreStorage getChairStorage() {
+        return chairStorage;
+    }
+
+    public void setChairStorage(OreStorage chairStorage) {
+        this.chairStorage = chairStorage;
+    }
+
+    public OreStorage getMountStorage() {
+        return mountStorage;
+    }
+
+    public void setMountStorage(OreStorage mountStorage) {
+        this.mountStorage = mountStorage;
+    }
+
+    public void setUsedOreStorage() {
+        usedOreStorage = true;
+    }
+
+    public void setUsedScrollStorage() {
+        usedScrollStorage = true;
+    }
+
+    public void setUsedChairStorage() {
+        usedChairStorage = true;
+    }
+
+    public void setUsedMountStorage() {
+        usedMountStorage = true;
+    }
+
+    public boolean isAutoOreStorage() {
+        return autoOreStorage;
+    }
+
+    public void setAutoOreStorage(boolean autoOreStorage) {
+        this.autoOreStorage = autoOreStorage;
+    }
+
+    public boolean isAutoScrollStorage() {
+        return autoScrollStorage;
+    }
+
+    public void setAutoScrollStorage(boolean autoScrollStorage) {
+        this.autoScrollStorage = autoScrollStorage;
+    }
+
+    public boolean isAutoChairStorage() {
+        return autoChairStorage;
+    }
+
+    public void setAutoChairStorage(boolean autoChairStorage) {
+        this.autoChairStorage = autoChairStorage;
+    }
+
+    public boolean isAutoMountStorage() {
+        return autoMountStorage;
+    }
+
+    public void setAutoMountStorage(boolean autoMountStorage) {
+        this.autoMountStorage = autoMountStorage;
+    }
+
+    public static boolean bagAccepts(int kind, int itemId) {
+        return switch (kind) {
+            case 1 -> ItemConstants.isScrollBagAllowed(itemId);
+            case 2 -> ItemConstants.isChairBagAllowed(itemId);
+            case 3 -> ItemConstants.isMountBagAllowed(itemId);
+            default -> ItemConstants.isOreBagAllowed(itemId);
+        };
     }
 
     public void sendQuickmap() {
@@ -8988,7 +9224,10 @@ public class Character extends AbstractCharacterObject {
 
     @Override
     public void sendSpawnData(Client client) {
-        if (!this.isHidden() || client.getPlayer().gmLevel() > 1) {
+        // SoloMapling bots share a headless Client which deliberately has no
+        // attached player. It never needs hidden-player packets, so treat it
+        // as a non-GM viewer instead of dereferencing its null player.
+        if (!this.isHidden() || (client.getPlayer() != null && client.getPlayer().gmLevel() > 1)) {
             client.sendPacket(PacketCreator.spawnPlayerMapObject(client, this, false));
 
             if (buffEffects.containsKey(getJobMapChair(job))) { // mustn't effLock, chrLock sendSpawnData

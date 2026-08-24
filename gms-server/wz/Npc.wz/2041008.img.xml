@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2041008.img">
+<imgdir name="2041008.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="dcLeft" value="-57"/>
     <int name="dcRight" value="58"/>
@@ -12,20 +12,20 @@
     <int name="trunkPut" value="100"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="117" height="98">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="58" y="98"/>
       <int name="delay" value="300"/>
     </canvas>
-    <canvas name="1" width="117" height="97">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="58" y="97"/>
       <int name="delay" value="300"/>
     </canvas>
     <uol name="2" value="0"/>
-    <canvas name="3" width="117" height="98">
+    <canvas name="3" format="1" scale="0">
       <vector name="origin" x="58" y="98"/>
       <int name="delay" value="70"/>
     </canvas>
-    <canvas name="4" width="117" height="98">
+    <canvas name="4" format="1" scale="0">
       <vector name="origin" x="58" y="98"/>
       <int name="delay" value="70"/>
     </canvas>
@@ -33,23 +33,23 @@
     <uol name="6" value="1"/>
   </imgdir>
   <imgdir name="say">
-    <canvas name="0" width="117" height="98">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="58" y="98"/>
       <int name="delay" value="300"/>
     </canvas>
-    <canvas name="1" width="117" height="98">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="58" y="98"/>
       <int name="delay" value="300"/>
     </canvas>
-    <canvas name="2" width="117" height="97">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="58" y="97"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="3" width="117" height="97">
+    <canvas name="3" format="1" scale="0">
       <vector name="origin" x="58" y="97"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="4" width="117" height="97">
+    <canvas name="4" format="1" scale="0">
       <vector name="origin" x="58" y="97"/>
       <int name="delay" value="100"/>
     </canvas>
@@ -79,23 +79,23 @@
     </imgdir>
   </imgdir>
   <imgdir name="jump">
-    <canvas name="0" width="117" height="98">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="58" y="98"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="1" width="117" height="96">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="58" y="96"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="2" width="117" height="98">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="58" y="98"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="3" width="117" height="100">
+    <canvas name="3" format="1" scale="0">
       <vector name="origin" x="58" y="103"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="4" width="117" height="103">
+    <canvas name="4" format="1" scale="0">
       <vector name="origin" x="58" y="108"/>
       <int name="delay" value="100"/>
     </canvas>

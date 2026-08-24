@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="WorldMap020.img">
+<imgdir name="WorldMap020.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="parentMap" value="WorldMap"/>
   </imgdir>
   <imgdir name="BaseImg">
-    <canvas name="0" width="640" height="470">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="320" y="235"/>
       <int name="z" value="0"/>
     </canvas>
@@ -178,7 +178,7 @@
         <int name="11" value="200081300"/>
         <int name="12" value="200081400"/>
       </imgdir>
-      <string name="title" value="Orbis Tower 8th Floor - 20th Floor"/>
+      <string name="title" value="神秘岛：通天塔8层~20层"/>
     </imgdir>
     <imgdir name="22">
       <vector name="spot" x="-188" y="126"/>
@@ -262,7 +262,7 @@
     <imgdir name="33">
       <vector name="spot" x="245" y="95"/>
       <int name="type" value="2"/>
-      <string name="title" value="El Nath Dungeon"/>
+      <string name="title" value="危险区域：废矿区"/>
       <imgdir name="mapNo">
         <int name="0" value="211040300"/>
         <int name="1" value="211040400"/>
@@ -287,7 +287,42 @@
         <int name="20" value="211042200"/>
         <int name="21" value="211042300"/>
         <int name="22" value="211042400"/>
-        <int name="23" value="280030000"/>
+        <int name="23" value="211060010"/>
+        <int name="24" value="211060100"/>
+        <int name="25" value="211060200"/>
+        <int name="26" value="211060201"/>
+        <int name="27" value="211060300"/>
+        <int name="28" value="211060400"/>
+        <int name="29" value="211060401"/>
+        <int name="30" value="211060410"/>
+        <int name="31" value="211060500"/>
+        <int name="32" value="211060600"/>
+        <int name="33" value="211060601"/>
+        <int name="34" value="211060610"/>
+        <int name="35" value="211060620"/>
+        <int name="36" value="211060700"/>
+        <int name="37" value="211060800"/>
+        <int name="38" value="211060801"/>
+        <int name="39" value="211060810"/>
+        <int name="40" value="211060820"/>
+        <int name="41" value="211060830"/>
+        <int name="42" value="211060900"/>
+        <int name="43" value="211061000"/>
+        <int name="44" value="211061001"/>
+        <int name="45" value="211060000"/>
+        <int name="46" value="211070000"/>
+        <int name="47" value="211070100"/>
+        <int name="48" value="211070101"/>
+        <int name="49" value="211070110"/>
+        <int name="50" value="921140001"/>
+        <int name="51" value="921140003"/>
+        <int name="52" value="211080000"/>
+        <int name="53" value="211080100"/>
+        <int name="54" value="211080200"/>
+        <int name="55" value="211080300"/>
+        <int name="56" value="211080400"/>
+        <int name="57" value="211080500"/>
+        <int name="58" value="211080600"/>
       </imgdir>
     </imgdir>
     <imgdir name="34">
@@ -302,7 +337,7 @@
         <int name="5" value="200082000"/>
         <int name="6" value="200082100"/>
       </imgdir>
-      <string name="title" value="Orbis Tower 1st Floor - 7nd Floor"/>
+      <string name="title" value="神秘岛：通天塔1层~7层"/>
     </imgdir>
     <imgdir name="35">
       <vector name="spot" x="-148" y="-177"/>
@@ -356,7 +391,7 @@
   <imgdir name="MapLink">
     <imgdir name="0">
       <imgdir name="link">
-        <canvas name="linkImg" width="129" height="104">
+        <canvas name="linkImg" format="1" scale="0">
           <vector name="origin" x="-182" y="-15"/>
           <int name="z" value="1"/>
         </canvas>

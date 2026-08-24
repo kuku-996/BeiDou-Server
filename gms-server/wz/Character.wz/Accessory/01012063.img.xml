@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01012063.img">
+<imgdir name="01012063.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="23" height="29">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-5" y="30"/>
     </canvas>
-    <canvas name="iconRaw" width="23" height="29">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-5" y="30"/>
     </canvas>
     <string name="islot" value="Af"/>
@@ -18,7 +18,7 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="33" height="7">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="16" y="3"/>
       <imgdir name="map">
         <vector name="brow" x="-1" y="-18"/>
@@ -44,7 +44,7 @@
   </imgdir>
   <imgdir name="smile">
     <imgdir name="0">
-      <canvas name="default" width="3" height="2">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="1" y="1"/>
         <imgdir name="map">
           <vector name="brow" x="2" y="-19"/>
@@ -60,7 +60,7 @@
   </imgdir>
   <imgdir name="cry">
     <imgdir name="0">
-      <canvas name="default" width="33" height="7">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-15"/>
@@ -94,7 +94,7 @@
   </imgdir>
   <imgdir name="oops">
     <imgdir name="0">
-      <canvas name="default" width="33" height="7">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-16"/>
@@ -133,7 +133,7 @@
   </imgdir>
   <imgdir name="shine">
     <imgdir name="0">
-      <canvas name="default" width="33" height="7">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="-1" y="-18"/>

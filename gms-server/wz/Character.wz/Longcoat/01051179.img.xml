@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01051179.img">
+<imgdir name="01051179.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="28" height="29">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-2" y="29"/>
     </canvas>
-    <canvas name="iconRaw" width="28" height="27">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-2" y="29"/>
     </canvas>
     <string name="islot" value="MaPn"/>
@@ -16,10 +16,12 @@
     <int name="reqINT" value="0"/>
     <int name="reqLUK" value="0"/>
     <int name="cash" value="1"/>
+    <int name="tradeBlock" value="1"/>
+    <int name="isDonor" value="1"/>
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="mail" width="19" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -28,7 +30,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="6"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -37,7 +39,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="18" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -46,7 +48,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="mail" width="18" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -57,7 +59,7 @@
   </imgdir>
   <imgdir name="walk2">
     <imgdir name="0">
-      <canvas name="mail" width="19" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -66,7 +68,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="6"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -75,7 +77,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="18" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -84,7 +86,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="mail" width="18" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -95,7 +97,7 @@
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="6"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -104,7 +106,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -113,7 +115,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="6"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -124,7 +126,7 @@
   </imgdir>
   <imgdir name="stand2">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="6"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -133,7 +135,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -142,7 +144,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="6"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -153,7 +155,7 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -162,7 +164,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -171,7 +173,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -182,7 +184,7 @@
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="0">
-      <canvas name="mail" width="20" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -191,7 +193,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="6" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -200,7 +202,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -211,7 +213,7 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="mail" width="22" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -220,7 +222,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="20" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -229,7 +231,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="24" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -240,7 +242,7 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="15">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -249,7 +251,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="19" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -258,7 +260,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="20" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="5" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -269,7 +271,7 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -278,7 +280,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="24" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -287,7 +289,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="22" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="6" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -296,7 +298,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="mail" width="26" height="16">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="14" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -307,7 +309,7 @@
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -316,7 +318,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -325,7 +327,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -336,7 +338,7 @@
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="0">
-      <canvas name="mail" width="23" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -345,7 +347,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="22" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -354,7 +356,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -365,7 +367,7 @@
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="mail" width="22" height="16">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -374,7 +376,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="22" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -383,7 +385,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -394,7 +396,7 @@
   </imgdir>
   <imgdir name="swingTF">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -403,7 +405,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="22" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="13" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -412,7 +414,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="21" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -421,7 +423,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="12" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -432,7 +434,7 @@
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -441,7 +443,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="11"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -450,7 +452,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -461,7 +463,7 @@
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -470,7 +472,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="22" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -479,7 +481,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -490,7 +492,7 @@
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="mail" width="26" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -499,7 +501,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="28" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -508,7 +510,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="24" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="14" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -517,7 +519,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="mail" width="22" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -528,7 +530,7 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="mail" width="23" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -537,7 +539,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="25" height="16">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -548,7 +550,7 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="mail" width="22" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -557,7 +559,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="25" height="16">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -568,7 +570,7 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="mail" width="19" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="12" y="11"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -577,7 +579,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="23" height="16">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="13" y="6"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -586,7 +588,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="26" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -597,7 +599,7 @@
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="mail" width="25" height="20">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -606,7 +608,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="25" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="6" y="8"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -615,7 +617,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="30" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="12" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -626,7 +628,7 @@
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="mail" width="22" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="11"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -635,7 +637,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="23" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -644,7 +646,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="30" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -661,7 +663,7 @@
       <uol name="mail" value="../../swingPF/1/mail"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="24" height="20">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="12" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -675,7 +677,7 @@
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -684,7 +686,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -698,7 +700,7 @@
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -707,7 +709,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -716,7 +718,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -725,7 +727,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -734,7 +736,7 @@
       </canvas>
     </imgdir>
     <imgdir name="4">
-      <canvas name="mail" width="20" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -745,7 +747,7 @@
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="12" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -754,7 +756,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="23" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="13" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -768,7 +770,7 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="mail" width="21" height="14">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="11"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -777,7 +779,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="14">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="9" y="11"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -804,7 +806,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="mail" width="19" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="7" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -813,7 +815,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="20" height="19">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="8" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -824,7 +826,7 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="mail" width="24" height="18">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -835,7 +837,7 @@
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="mail" width="20" height="14">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="7"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -846,7 +848,7 @@
   </imgdir>
   <imgdir name="ladder">
     <imgdir name="0">
-      <canvas name="mail" width="22" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="12" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -855,7 +857,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="21" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="10" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -866,7 +868,7 @@
   </imgdir>
   <imgdir name="rope">
     <imgdir name="0">
-      <canvas name="mail" width="23" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="12" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>
@@ -875,7 +877,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="mail" width="23" height="17">
+      <canvas name="mail" format="1" scale="0">
         <vector name="origin" x="11" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="0"/>

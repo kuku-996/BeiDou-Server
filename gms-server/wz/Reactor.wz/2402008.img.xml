@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2402008.img">
+<imgdir name="2402008.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="info" value="네오씨티 휴지통"/>
   </imgdir>
   <imgdir name="0">
-    <canvas name="0" width="53" height="71">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="26" y="35"/>
       <int name="z" value="0"/>
     </canvas>
@@ -15,7 +15,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="54" height="73">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="27" y="36"/>
         <int name="z" value="0"/>
         <int name="delay" value="180"/>
@@ -62,7 +62,7 @@
       <int name="timeOut" value="10000"/>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="53" height="71">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="26" y="35"/>
         <int name="z" value="0"/>
       </canvas>

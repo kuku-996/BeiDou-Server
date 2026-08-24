@@ -42,6 +42,21 @@ import java.util.List;
 public abstract class AbstractMovementPacketHandler extends AbstractPacketHandler {
     private static final Logger log = LoggerFactory.getLogger(AbstractMovementPacketHandler.class);
 
+    /**
+     * Public bridge for server-side synthetic players. The normal movement
+     * parser is protected because real packets enter through handlers; the
+     * SoloMapling adapter needs the same v83 position updates for headless bots.
+     */
+    public static void updatePositionBot(InPacket packet, Character target, int yOffset)
+            throws EmptyMovementException {
+        new AbstractMovementPacketHandler() {
+            @Override
+            public void handlePacket(InPacket packet, org.gms.client.Client client) {
+                // Synthetic bot movement is applied directly; no client dispatch is needed.
+            }
+        }.updatePosition(packet, target, yOffset);
+    }
+
     protected List<LifeMovementFragment> parseMovement(InPacket p) throws EmptyMovementException {
         List<LifeMovementFragment> res = new ArrayList<>();
         byte numCommands = p.readByte();

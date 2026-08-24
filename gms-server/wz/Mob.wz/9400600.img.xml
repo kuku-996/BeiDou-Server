@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9400600.img">
+<imgdir name="9400600.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="level" value="30"/>
     <int name="maxHP" value="5000"/>
@@ -20,17 +20,17 @@
     <int name="dropItemPeriod" value="10"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="48" height="34">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="24" y="34"/>
     </canvas>
   </imgdir>
   <imgdir name="hit1">
-    <canvas name="0" width="48" height="34">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="24" y="34"/>
     </canvas>
   </imgdir>
   <imgdir name="die1">
-    <canvas name="0" width="48" height="34">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="24" y="34"/>
     </canvas>
   </imgdir>

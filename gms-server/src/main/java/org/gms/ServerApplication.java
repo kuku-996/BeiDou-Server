@@ -20,7 +20,7 @@ import java.util.LinkedHashMap;
 @SpringBootApplication
 @MapperScan("org.gms.dao.mapper")
 @Slf4j
-public class ServerApplication {
+public class    ServerApplication {
     public static void main(String[] args) {
         try {
             initDb(args);

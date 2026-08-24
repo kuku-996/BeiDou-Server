@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1200003.img">
+<imgdir name="1200003.img" indent="2" media="NONE">
   <imgdir name="info">
     <imgdir name="script">
       <imgdir name="0">
@@ -8,19 +8,19 @@
     </imgdir>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="98" height="144">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="45" y="144"/>
       <int name="z" value="0"/>
       <int name="delay" value="3000"/>
     </canvas>
   </imgdir>
   <imgdir name="say">
-    <canvas name="0" width="98" height="144">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="45" y="144"/>
       <int name="z" value="0"/>
       <int name="delay" value="180"/>
     </canvas>
-    <canvas name="1" width="98" height="144">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="45" y="144"/>
       <int name="z" value="0"/>
       <int name="delay" value="180"/>

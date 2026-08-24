@@ -33,6 +33,7 @@ import org.gms.net.server.coordinator.world.InviteCoordinator;
 import org.gms.net.server.coordinator.world.InviteCoordinator.InviteResult;
 import org.gms.net.server.coordinator.world.InviteCoordinator.InviteResultType;
 import org.gms.net.server.coordinator.world.InviteCoordinator.InviteType;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotTradeSystem.BotTradeQueue;
 import org.gms.util.I18nUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,6 +45,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.StringJoiner;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.Consumer;
+
+import static org.gms.server.artificial.soloport.ArtificialPlayer.BotHelpers.isBot;
 
 /**
  * @author Matze
@@ -82,6 +86,7 @@ public class Trade {
     private final Character chr;
     private final byte number;
     private boolean fullTrade = false;
+    private Consumer<TradeResult> tradeResultCallback;
 
     public Trade(byte number, Character chr) {
         this.chr = chr;
@@ -159,8 +164,10 @@ public class Trade {
         // 但如果 completeTrade 检查失败，会先 unlock 再 cancelTrade，正常客户端不会走 else 分支
         boolean bothLocked = isLocked() && partner != null && partner.isLocked();
         if (!bothLocked) {
-            for (Item item : items) {
-                InventoryManipulator.addFromDrop(chr.getClient(), item, show);
+            if (!isBot(chr)) {
+                for (Item item : items) {
+                    InventoryManipulator.addFromDrop(chr.getClient(), item, show);
+                }
             }
             if (meso > 0) {
                 chr.gainMeso(meso, show, true, show);
@@ -186,11 +193,11 @@ public class Trade {
         chr.sendPacket(PacketCreator.getTradeResult(number, result));
     }
 
-    private boolean isLocked() {
+    public boolean isLocked() {
         return locked.get();
     }
 
-    private int getMeso() {
+    public int getMeso() {
         return meso;
     }
 
@@ -257,6 +264,38 @@ public class Trade {
         return new LinkedList<>(items);
     }
 
+    /** Sets bot-held mesos without charging a real client inventory. */
+    public void setMesoBot(int meso) {
+        if (!locked.get() && meso >= 0) {
+            this.meso = meso;
+            if (!isBot(chr)) {
+                chr.sendPacket(PacketCreator.getTradeMesoSet((byte) 0, this.meso));
+            }
+            if (partner != null && !isBot(partner.getChr())) {
+                partner.getChr().sendPacket(PacketCreator.getTradeMesoSet((byte) 1, this.meso));
+            }
+        }
+    }
+
+    /** Replaces the item occupying a trade slot, used by artificial merchant logic. */
+    public boolean swapItem(Item item) {
+        if (locked.get() || item == null) {
+            return false;
+        }
+        synchronized (items) {
+            items.removeIf(existing -> existing.getPosition() == item.getPosition());
+            if (items.size() >= 10) {
+                return false;
+            }
+            items.add(item);
+            return true;
+        }
+    }
+
+    public void setTradeResultCallback(Consumer<TradeResult> callback) {
+        this.tradeResultCallback = callback;
+    }
+
     public int getExchangeMesos() {
         return exchangeMeso;
     }
@@ -266,6 +305,9 @@ public class Trade {
     }
 
     private boolean fitsInInventory() {
+        if (isBot(chr)) {
+            return true;
+        }
         List<Pair<Item, InventoryType>> tradeItems = new LinkedList<>();
         for (Item item : exchangeItems) {
             tradeItems.add(new Pair<>(item, item.getInventoryType()));
@@ -394,11 +436,30 @@ public class Trade {
             }
 
             logTrade(local, partner);
-            local.completeTrade();
-            partner.completeTrade();
+            if (!isBot(local.getChr())) {
+                local.completeTrade();
+            }
+            if (!isBot(partner.getChr())) {
+                partner.completeTrade();
+            }
+
+            if (local.tradeResultCallback != null) {
+                local.tradeResultCallback.accept(TradeResult.SUCCESSFUL);
+            }
+            if (partner.tradeResultCallback != null) {
+                partner.tradeResultCallback.accept(TradeResult.SUCCESSFUL);
+            }
 
             partner.getChr().setTrade(null);
             chr.setTrade(null);
+            clearBotTradeQueue(partner.getChr());
+            clearBotTradeQueue(chr);
+        }
+    }
+
+    private static void clearBotTradeQueue(Character chr) {
+        if (isBot(chr)) {
+            BotTradeQueue.getInstance().removeTradeRequest(chr);
         }
     }
 
@@ -412,11 +473,13 @@ public class Trade {
         if (trade.getPartner() != null) {
             trade.getPartner().cancel(partnerResult);
             trade.getPartner().getChr().setTrade(null);
+            clearBotTradeQueue(trade.getPartner().getChr());
 
             InviteCoordinator.answerInvite(InviteType.TRADE, trade.getChr().getId(), trade.getPartner().getChr().getId(), false);
             InviteCoordinator.answerInvite(InviteType.TRADE, trade.getPartner().getChr().getId(), trade.getChr().getId(), false);
         }
         chr.setTrade(null);
+        clearBotTradeQueue(chr);
     }
 
     private static byte[] tradeResultsPair(byte result) {
@@ -526,6 +589,9 @@ public class Trade {
 
                 c1.sendPacket(PacketCreator.getTradeStart(c1.getClient(), c1.getTrade(), (byte) 0));
                 c2.sendPacket(PacketCreator.tradeInvite(c1));
+                if (isBot(c2)) {
+                    BotTradeQueue.getInstance().addTradeRequest(c2, c1);
+                }
             } else {
                 c1.message(I18nUtil.getMessage("Trade.inviteTrade.createInvite.msg1"));
                 cancelTrade(c1, TradeResult.NO_RESPONSE);
@@ -541,10 +607,12 @@ public class Trade {
         InviteResult inviteRes = InviteCoordinator.answerInvite(InviteType.TRADE, c1.getId(), c2.getId(), true);
 
         InviteResultType res = inviteRes.result;
-        if (res == InviteResultType.ACCEPTED) {
+        if (res == InviteResultType.ACCEPTED || isBot(c2)) {
             if (c1.getTrade() != null && c1.getTrade().getPartner() == c2.getTrade() && c2.getTrade() != null && c2.getTrade().getPartner() == c1.getTrade()) {
                 c2.sendPacket(PacketCreator.getTradePartnerAdd(c1));
-                c1.sendPacket(PacketCreator.getTradeStart(c1.getClient(), c1.getTrade(), (byte) 1));
+                if (!isBot(c1)) {
+                    c1.sendPacket(PacketCreator.getTradeStart(c1.getClient(), c1.getTrade(), (byte) 1));
+                }
                 c1.getTrade().setFullTrade(true);
                 c2.getTrade().setFullTrade(true);
             } else {
@@ -567,10 +635,12 @@ public class Trade {
 
                 other.getTrade().cancel(TradeResult.PARTNER_CANCEL.getValue());
                 other.setTrade(null);
+                clearBotTradeQueue(other);
 
             }
             trade.cancel(TradeResult.NO_RESPONSE.getValue());
             chr.setTrade(null);
+            clearBotTradeQueue(chr);
         }
     }
 

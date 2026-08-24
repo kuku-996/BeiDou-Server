@@ -1,51 +1,349 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="Pet.img">
+<imgdir name="Pet.img" indent="2" media="NONE">
+  <imgdir name="5000076">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="leapup"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+    <sound name="yes"/> 
+  </imgdir>
+  <imgdir name="5000040">
+    <uol name="angry" value="../5000016/angry"/>
+    <uol name="chat" value="../5000016/chat"/>
+    <uol name="cry" value="../5000016/cry"/>
+    <uol name="dung" value="../5000016/dung"/>
+    <uol name="eat" value="../5000016/eat"/>
+    <uol name="hungry" value="../5000016/hungry"/>
+    <uol name="love" value="../5000016/love"/>
+    <uol name="play" value="../5000016/play"/>
+    <uol name="sleep" value="../5000016/sleep"/>
+  </imgdir>
+  <imgdir name="5000027">
+    <uol name="angry" value="../5000016/angry"/>
+    <uol name="chat" value="../5000016/chat"/>
+    <uol name="cry" value="../5000016/cry"/>
+    <uol name="dung" value="../5000016/dung"/>
+    <uol name="eat" value="../5000016/eat"/>
+    <uol name="hungry" value="../5000016/hungry"/>
+    <uol name="love" value="../5000016/love"/>
+    <uol name="play" value="../5000016/play"/>
+    <uol name="sleep" value="../5000016/sleep"/>
+  </imgdir>
+  <imgdir name="5000016">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000107">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000126">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="no"/> 
+    <sound name="sleep"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="ok"/> 
+    <sound name="dung"/> 
+  </imgdir>
+  <imgdir name="5000204">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="love"/> 
+    <sound name="shinee"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000124">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000043">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="rise"/> 
+    <sound name="sit"/> 
+    <sound name="sleep"/> 
+    <sound name="stunned"/> 
+  </imgdir>
+  <imgdir name="5000063">
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="question"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="ignore"/> 
+  </imgdir>
+  <imgdir name="5000122">
+    <sound name="chat"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+    <sound name="poop"/> 
+  </imgdir>
+  <imgdir name="5000138">
+    <sound name="love"/> 
+    <sound name="chat"/> 
+    <sound name="eat"/> 
+    <sound name="sleep"/> 
+    <sound name="hungry"/> 
+    <sound name="dung"/> 
+    <sound name="cry"/> 
+  </imgdir>
+  <imgdir name="5000111">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000110">
+    <sound name="hungry"/> 
+    <sound name="bewildered"/> 
+    <sound name="eat"/> 
+    <sound name="sleep"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="dung"/> 
+    <sound name="angry"/> 
+  </imgdir>
+  <imgdir name="5000109">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="ignore"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000108">
+    <uol name="love" value="../5000085/love"/>
+    <uol name="chat" value="../5000085/chat"/>
+    <uol name="eat" value="../5000085/eat"/>
+    <uol name="sleep" value="../5000085/sleep"/>
+    <uol name="hungry" value="../5000085/hungry"/>
+    <uol name="stunned" value="../5000085/stunned"/>
+    <uol name="poop" value="../5000085/poop"/>
+    <uol name="transform" value="../5000085/transform"/>
+    <uol name="what" value="../5000085/what"/>
+    <uol name="angry" value="../5000085/angry"/>
+    <uol name="cry" value="../5000085/cry"/>
+  </imgdir>
+  <imgdir name="5000106">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000093">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="leapup"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000091">
+    <sound name="hungry"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="dung"/> 
+    <sound name="ignore"/> 
+    <sound name="pathetic"/> 
+    <sound name="sleep"/> 
+    <sound name="no"/> 
+    <sound name="stunned"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+  </imgdir>
+  <imgdir name="5000090">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="dung"/> 
+    <sound name="no"/> 
+    <sound name="sleep"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="stunned"/> 
+  </imgdir>
+  <imgdir name="5000089">
+    <sound name="hungry"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="stunned"/> 
+    <sound name="no"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+    <sound name="cry"/> 
+    <sound name="ignore"/> 
+  </imgdir>
+  <imgdir name="5000086">
+    <uol name="love" value="../5000085/love"/>
+    <uol name="chat" value="../5000085/chat"/>
+    <uol name="eat" value="../5000085/eat"/>
+    <uol name="sleep" value="../5000085/sleep"/>
+    <uol name="hungry" value="../5000085/hungry"/>
+    <uol name="stunned" value="../5000085/stunned"/>
+    <uol name="poop" value="../5000085/poop"/>
+    <uol name="transform" value="../5000085/transform"/>
+    <uol name="what" value="../5000085/what"/>
+    <uol name="angry" value="../5000085/angry"/>
+    <uol name="cry" value="../5000085/cry"/>
+  </imgdir>
+  <imgdir name="5000085">
+    <sound name="love"/> 
+    <sound name="chat"/> 
+    <sound name="eat"/> 
+    <sound name="sleep"/> 
+    <sound name="hungry"/> 
+    <sound name="stunned"/> 
+    <sound name="poop"/> 
+    <sound name="transform"/> 
+    <sound name="what"/> 
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+  </imgdir>
+  <imgdir name="5000071">
+    <uol name="chat" value="../5000070/chat"/>
+    <uol name="eat" value="../5000070/eat"/>
+    <uol name="fire" value="../5000070/fire"/>
+    <uol name="love" value="../5000070/love"/>
+    <uol name="sleep" value="../5000070/sleep"/>
+    <uol name="poop" value="../5000070/poop"/>
+    <uol name="flyr" value="../5000070/flyr"/>
+    <uol name="stunned" value="../5000070/stunned"/>
+    <uol name="cry" value="../5000070/cry"/>
+    <uol name="what" value="../5000070/what"/>
+  </imgdir>
+  <imgdir name="5000070">
+    <sound name="chat"/> 
+    <sound name="eat"/> 
+    <sound name="fire"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+    <sound name="poop"/> 
+    <sound name="flyr"/> 
+    <sound name="stunned"/> 
+    <sound name="cry"/> 
+    <sound name="what"/> 
+  </imgdir>
+  <imgdir name="5000067">
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="dung"/> 
+    <sound name="hungry"/> 
+    <sound name="sleep"/> 
+    <sound name="stunned"/> 
+    <sound name="question"/> 
+    <sound name="spaceship"/> 
+  </imgdir>
+  <imgdir name="5000066">
+    <sound name="hungry"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="proud"/> 
+    <sound name="angry"/> 
+    <sound name="question"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
   <imgdir name="5000000">
-    <sound name="alert"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="levelup"/>
-    <sound name="rise"/>
-    <sound name="poor"/>
-    <sound name="prone"/>
+    <sound name="alert"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="levelup"/> 
+    <sound name="rise"/> 
+    <sound name="poor"/> 
+    <sound name="prone"/> 
   </imgdir>
   <imgdir name="5000001">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="levelup"/>
-    <sound name="nap"/>
-    <sound name="prone"/>
-    <sound name="rise"/>
-    <sound name="tedious"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="levelup"/> 
+    <sound name="nap"/> 
+    <sound name="prone"/> 
+    <sound name="rise"/> 
+    <sound name="tedious"/> 
   </imgdir>
   <imgdir name="5000002">
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="hug"/>
-    <sound name="rise"/>
-    <sound name="cry"/>
-    <sound name="complain"/>
-    <sound name="donno"/>
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="hug"/> 
+    <sound name="rise"/> 
+    <sound name="cry"/> 
+    <sound name="complain"/> 
+    <sound name="donno"/> 
   </imgdir>
   <imgdir name="5000003">
-    <sound name="alert"/>
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eye"/>
-    <sound name="no"/>
-    <sound name="prone"/>
-    <sound name="rise"/>
-    <sound name="smile"/>
-    <sound name="sneer"/>
-    <sound name="yes"/>
+    <sound name="alert"/> 
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eye"/> 
+    <sound name="no"/> 
+    <sound name="prone"/> 
+    <sound name="rise"/> 
+    <sound name="smile"/> 
+    <sound name="sneer"/> 
+    <sound name="yes"/> 
   </imgdir>
   <imgdir name="5000004">
     <uol name="alert" value="../5000000/alert"/>
@@ -69,52 +367,52 @@
     <uol name="donno" value="../5000002/donno"/>
   </imgdir>
   <imgdir name="5000006">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="nap"/>
-    <sound name="prone"/>
-    <sound name="rise"/>
-    <sound name="tedious"/>
-    <sound name="hand"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="nap"/> 
+    <sound name="prone"/> 
+    <sound name="rise"/> 
+    <sound name="tedious"/> 
+    <sound name="hand"/> 
   </imgdir>
   <imgdir name="5000007">
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="love"/>
-    <sound name="dung"/>
-    <sound name="no"/>
-    <sound name="stunned"/>
-    <sound name="cry"/>
-    <sound name="lonely"/>
-    <sound name="hand"/>
-    <sound name="smile"/>
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="love"/> 
+    <sound name="dung"/> 
+    <sound name="no"/> 
+    <sound name="stunned"/> 
+    <sound name="cry"/> 
+    <sound name="lonely"/> 
+    <sound name="hand"/> 
+    <sound name="smile"/> 
   </imgdir>
   <imgdir name="5000008">
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="melong"/>
-    <sound name="play"/>
-    <sound name="rise"/>
-    <sound name="sleep"/>
-    <sound name="sulk"/>
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="melong"/> 
+    <sound name="play"/> 
+    <sound name="rise"/> 
+    <sound name="sleep"/> 
+    <sound name="sulk"/> 
   </imgdir>
   <imgdir name="5000009">
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="belch"/>
-    <sound name="cry"/>
-    <sound name="deride"/>
-    <sound name="dung"/>
-    <sound name="sleep"/>
-    <sound name="smile"/>
-    <sound name="stunned"/>
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="belch"/> 
+    <sound name="cry"/> 
+    <sound name="deride"/> 
+    <sound name="dung"/> 
+    <sound name="sleep"/> 
+    <sound name="smile"/> 
+    <sound name="stunned"/> 
   </imgdir>
   <imgdir name="5000010">
     <uol name="chat" value="../5000009/chat"/>
@@ -128,69 +426,68 @@
     <uol name="stunned" value="../5000009/stunned"/>
   </imgdir>
   <imgdir name="5000011">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="melong"/>
-    <sound name="play"/>
-    <sound name="sit"/>
-    <sound name="sleep"/>
-    <sound name="sulk"/>
-    <sound name="rise"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="melong"/> 
+    <sound name="play"/> 
+    <sound name="sit"/> 
+    <sound name="sleep"/> 
+    <sound name="sulk"/> 
+    <sound name="rise"/> 
   </imgdir>
   <imgdir name="5000012">
-    <sound name="alert"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="love"/>
-    <sound name="no"/>
-    <sound name="sad"/>
-    <sound name="stretch"/>
-    <sound name="stunned"/>
+    <sound name="alert"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="love"/> 
+    <sound name="no"/> 
+    <sound name="sad"/> 
+    <sound name="stretch"/> 
+    <sound name="stunned"/> 
   </imgdir>
   <imgdir name="5000014">
-    <sound name="alert"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="christmas"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="go"/>
-    <sound name="lonely"/>
-    <sound name="love"/>
-    <sound name="rise"/>
-    <sound name="eat"/>
+    <sound name="alert"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="christmas"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="go"/> 
+    <sound name="lonely"/> 
+    <sound name="love"/> 
+    <sound name="rise"/> 
+    <sound name="eat"/> 
   </imgdir>
   <imgdir name="5000015">
-    <sound name="alert"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="christmas"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="go"/>
-    <sound name="lonely"/>
-    <sound name="love"/>
-    <sound name="rise"/>
-    <sound name="eat"/>
+    <sound name="angry"/> 
+    <sound name="charming"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dance"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="rise"/> 
+    <sound name="sleep"/> 
   </imgdir>
   <imgdir name="5000017">
-    <sound name="angry"/>
-    <sound name="rise"/>
-    <sound name="change1"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="fight"/>
-    <sound name="good"/>
-    <sound name="love"/>
-    <sound name="charge"/>
-    <sound name="change"/>
-    <sound name="stunned"/>
+    <sound name="angry"/> 
+    <sound name="rise"/> 
+    <sound name="change1"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="fight"/> 
+    <sound name="good"/> 
+    <sound name="love"/> 
+    <sound name="charge"/> 
+    <sound name="change"/> 
+    <sound name="stunned"/> 
   </imgdir>
   <imgdir name="5000018">
     <uol name="angry" value="../5000006/angry"/>
@@ -205,116 +502,116 @@
     <uol name="hand" value="../5000006/hand"/>
   </imgdir>
   <imgdir name="5000020">
-    <sound name="angry"/>
-    <sound name="charming"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dance"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="rise"/>
-    <sound name="sleep"/>
+    <sound name="angry"/> 
+    <sound name="charming"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dance"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="rise"/> 
+    <sound name="sleep"/> 
   </imgdir>
   <imgdir name="5000021">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="melong"/>
-    <sound name="play"/>
-    <sound name=" rise"/>
-    <sound name="sit"/>
-    <sound name="sleep"/>
-    <sound name="sulk"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="melong"/> 
+    <sound name="play"/> 
+    <sound name=" rise"/> 
+    <sound name="sit"/> 
+    <sound name="sleep"/> 
+    <sound name="sulk"/> 
   </imgdir>
   <imgdir name="5000022">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="goodboy"/>
-    <sound name="jumpfly"/>
-    <sound name="love"/>
-    <sound name="mischief"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="goodboy"/> 
+    <sound name="jumpfly"/> 
+    <sound name="love"/> 
+    <sound name="mischief"/> 
   </imgdir>
   <imgdir name="5000023">
-    <sound name="angry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="cry"/>
-    <sound name="chat"/>
-    <sound name="puling"/>
-    <sound name="stunned"/>
-    <sound name="hug"/>
-    <sound name="sleep"/>
-    <sound name="good"/>
-    <sound name="love"/>
-    <sound name="kiss"/>
+    <sound name="angry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="cry"/> 
+    <sound name="chat"/> 
+    <sound name="puling"/> 
+    <sound name="stunned"/> 
+    <sound name="hug"/> 
+    <sound name="sleep"/> 
+    <sound name="good"/> 
+    <sound name="love"/> 
+    <sound name="kiss"/> 
   </imgdir>
   <imgdir name="5000024">
-    <sound name="charming"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="fart"/>
-    <sound name="vomit"/>
-    <sound name="dung"/>
-    <sound name="cry"/>
-    <sound name="glitter"/>
-    <sound name="love"/>
-    <sound name="eye"/>
-    <sound name="sleep"/>
-    <sound name="eat"/>
+    <sound name="charming"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="fart"/> 
+    <sound name="vomit"/> 
+    <sound name="dung"/> 
+    <sound name="cry"/> 
+    <sound name="glitter"/> 
+    <sound name="love"/> 
+    <sound name="eye"/> 
+    <sound name="sleep"/> 
+    <sound name="eat"/> 
   </imgdir>
   <imgdir name="5000025">
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="good"/>
-    <sound name="sleep"/>
-    <sound name="stunned"/>
-    <sound name="dung"/>
-    <sound name="charge"/>
-    <sound name="cry"/>
-    <sound name="love"/>
-    <sound name="love2"/>
-    <sound name="hug"/>
-    <sound name="ignore"/>
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="good"/> 
+    <sound name="sleep"/> 
+    <sound name="stunned"/> 
+    <sound name="dung"/> 
+    <sound name="charge"/> 
+    <sound name="cry"/> 
+    <sound name="love"/> 
+    <sound name="love2"/> 
+    <sound name="hug"/> 
+    <sound name="ignore"/> 
   </imgdir>
   <imgdir name="5000026">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="happy"/>
-    <sound name="sleep"/>
-    <sound name="transformation"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="happy"/> 
+    <sound name="sleep"/> 
+    <sound name="transformation"/> 
   </imgdir>
   <imgdir name="5000029">
-    <sound name="angry"/>
-    <sound name="bewildered"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="eat"/>
-    <sound name="hungry"/>
-    <sound name="ignore"/>
-    <sound name="love"/>
-    <sound name="sleep"/>
+    <sound name="angry"/> 
+    <sound name="bewildered"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="ignore"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
     <uol name="dung" value="../5000006/dung"/>
   </imgdir>
   <imgdir name="5000030">
-    <sound name="love"/>
-    <sound name="hungry"/>
-    <sound name="eat"/>
-    <sound name="dung"/>
-    <sound name="change"/>
-    <sound name="bewildered"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="sleep"/>
+    <sound name="love"/> 
+    <sound name="hungry"/> 
+    <sound name="eat"/> 
+    <sound name="dung"/> 
+    <sound name="change"/> 
+    <sound name="bewildered"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="sleep"/> 
   </imgdir>
   <imgdir name="5000031">
     <uol name="sleep" value="../5000030/sleep"/>
@@ -362,13 +659,13 @@
     <uol name="donno" value="../5000002/donno"/>
   </imgdir>
   <imgdir name="5000036">
-    <sound name="angry"/>
-    <sound name="change"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="good"/>
-    <sound name="hungry"/>
-    <sound name="nap"/>
+    <sound name="angry"/> 
+    <sound name="change"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="good"/> 
+    <sound name="hungry"/> 
+    <sound name="nap"/> 
   </imgdir>
   <imgdir name="5000037">
     <uol name="angry" value="../5000006/angry"/>
@@ -383,115 +680,95 @@
     <uol name="hand" value="../5000006/hand"/>
   </imgdir>
   <imgdir name="5000039">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="hungry"/>
-    <sound name="ignore"/>
-    <sound name="love"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="hungry"/> 
+    <sound name="ignore"/> 
+    <sound name="love"/> 
     <uol name="love2" value="love"/>
-    <sound name="sleep"/>
-  </imgdir>
-  <imgdir name="5000040">
-    <sound name="angry"/>
-    <sound name="change"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="good"/>
-    <sound name="hungry"/>
-    <sound name="nap"/>
+    <sound name="sleep"/> 
   </imgdir>
   <imgdir name="5000041">
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="cry"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="twinkling"/>
-    <sound name="shock"/>
-    <sound name="arrogance"/>
-    <sound name="stunned"/>
-    <sound name="change"/>
+    <sound name="chat"/> 
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="twinkling"/> 
+    <sound name="shock"/> 
+    <sound name="arrogance"/> 
+    <sound name="stunned"/> 
+    <sound name="change"/> 
   </imgdir>
   <imgdir name="5000042">
-    <sound name="love"/>
-    <sound name="chat"/>
-    <sound name="eat"/>
-    <sound name="sleep"/>
-    <sound name="hungry"/>
-    <sound name="stunned"/>
-    <sound name="dung"/>
-    <sound name="merong"/>
-    <sound name="what"/>
-    <sound name="change"/>
-    <sound name="cry"/>
-  </imgdir>
-  <imgdir name="5000043">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="hungry"/>
-    <sound name="ignore"/>
-    <sound name="love"/>
-    <uol name="love2" value="love"/>
-    <sound name="sleep"/>
+    <sound name="angry"/> 
+    <sound name="bewildered"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="question"/> 
+    <sound name="sleep"/> 
   </imgdir>
   <imgdir name="5000044">
-    <sound name="alert"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="love"/>
-    <sound name="no"/>
-    <sound name="sad"/>
-    <sound name="stretch"/>
-    <sound name="stunned"/>
+    <sound name="alert"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="love"/> 
+    <sound name="no"/> 
+    <sound name="sad"/> 
+    <sound name="stretch"/> 
+    <sound name="stunned"/> 
   </imgdir>
   <imgdir name="5000045">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="hungry"/>
-    <sound name="no"/>
-    <sound name="love"/>
-    <sound name="sleep"/>
-    <sound name="dung"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="hungry"/> 
+    <sound name="no"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+    <sound name="dung"/> 
   </imgdir>
   <imgdir name="5000046">
-    <sound name="love"/>
-    <sound name="chat"/>
-    <sound name="eat"/>
-    <sound name="sleep"/>
-    <sound name="hungry"/>
-    <sound name="stunned"/>
-    <sound name="dung"/>
-    <sound name="merong"/>
-    <sound name="what"/>
-    <sound name="change"/>
-    <sound name="cry"/>
+    <sound name="love"/> 
+    <sound name="chat"/> 
+    <sound name="eat"/> 
+    <sound name="sleep"/> 
+    <sound name="hungry"/> 
+    <sound name="stunned"/> 
+    <sound name="dung"/> 
+    <sound name="merong"/> 
+    <sound name="what"/> 
+    <sound name="change"/> 
+    <sound name="cry"/> 
   </imgdir>
   <imgdir name="5000048">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="sleep"/>
-    <sound name="surprise"/>
-    <sound name="transform"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+    <sound name="surprise"/> 
+    <sound name="transform"/> 
   </imgdir>
   <imgdir name="5000049">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="eat"/>
-    <sound name="hand"/>
-    <sound name="love"/>
-    <sound name="rise"/>
-    <sound name="sit"/>
-    <sound name="sleep"/>
-    <sound name="stunned"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="hand"/> 
+    <sound name="love"/> 
+    <sound name="rise"/> 
+    <sound name="sit"/> 
+    <sound name="sleep"/> 
+    <sound name="stunned"/> 
   </imgdir>
   <imgdir name="5000050">
     <uol name="angry" value="../5000049/angry"/>
@@ -530,123 +807,451 @@
     <uol name="stunned" value="../5000049/stunned"/>
   </imgdir>
   <imgdir name="5000053">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="rise"/>
-    <sound name="sit"/>
-    <sound name="sleep"/>
-    <sound name="stunned"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="rise"/> 
+    <sound name="sit"/> 
+    <sound name="sleep"/> 
+    <sound name="stunned"/> 
   </imgdir>
-  <imgdir name="5000055">
-    <sound name="alert"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="christmas"/>
-    <sound name="cry"/>
-    <sound name="what"/>
-    <sound name="surprise"/>
-    <sound name="love"/>
-    <sound name="stunned"/>
-    <sound name="eat"/>
-  </imgdir>
-  <imgdir name="5000058">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="surprise"/>
-    <sound name="what"/>
-    <sound name="stunned"/>
-    <sound name="cry"/>
-    <sound name="sleep"/>
-    <sound name="love"/>
-    <sound name="poop"/>
-    <sound name="eat"/>
-    <sound name="transform"/>
-    <uol name="dance" value="chat"/>
-  </imgdir>
-  <imgdir name="5000054">
-    <uol name="hungry" value="../5000046/hungry"/>
-  </imgdir>
-  <imgdir name="5000060">
-    <sound name="hungry"/>
-    <sound name="chat"/>
-    <sound name="stunned"/>
-    <sound name="cry"/>
-    <sound name="sleep"/>
-    <sound name="love"/>
-    <sound name="eat"/>
-    <sound name="angry"/>
-    <sound name="upset"/>
-    <sound name="guitar"/>
-    <sound name="melong"/>
-    <sound name="surprise"/>
-    <sound name="play"/>
+  <imgdir name="5000120">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
   </imgdir>
   <imgdir name="5000100">
-    <sound name="love"/>
-    <sound name="chat"/>
-    <sound name="eat"/>
-    <sound name="sleep"/>
-    <sound name="hungry"/>
-    <sound name="stunned"/>
-    <sound name="dung"/>
-    <sound name="merong"/>
-    <sound name="what"/>
-    <sound name="change"/>
-    <sound name="cry"/>
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
   </imgdir>
-  <imgdir name="5000101">
-    <sound name="alert"/>
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dung"/>
-    <sound name="love"/>
-    <sound name="no"/>
-    <sound name="sad"/>
-    <sound name="stretch"/>
-    <sound name="stunned"/>
+  <imgdir name="5000059">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="ignore"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
   </imgdir>
-  <imgdir name="5000102">
-    <sound name="angry"/>
-    <sound name="charming"/>
-    <sound name="chat"/>
-    <sound name="cry"/>
-    <sound name="dance"/>
-    <sound name="dung"/>
-    <sound name="eat"/>
-    <sound name="love"/>
-    <sound name="rise"/>
-    <sound name="sleep"/>
+  <imgdir name="5000192">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="ignore"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
   </imgdir>
-  <imgdir name="5000064">
-    <sound name="chat"/>
-    <sound name="angry"/>
-    <sound name="good"/>
-    <sound name="sleep"/>
-    <sound name="stunned"/>
-    <sound name="dung"/>
-    <sound name="charge"/>
-    <sound name="cry"/>
-    <sound name="love"/>
-    <sound name="love2"/>
-    <sound name="hug"/>
-    <sound name="ignore"/>
+  <imgdir name="5000191">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000061">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000121">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000127">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000116">
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000099">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000097">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000062">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="ignore"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+    <sound name="stunned"/> 
+  </imgdir>
+  <imgdir name="5000105">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000069">
+    <sound name="alert"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="levelup"/> 
+    <sound name="poor"/> 
+    <sound name="prone"/> 
+    <sound name="rise"/> 
   </imgdir>
   <imgdir name="5000065">
-    <sound name="angry"/>
-    <sound name="chat"/>
-    <sound name="surprise"/>
-    <sound name="what"/>
-    <sound name="stunned"/>
-    <sound name="cry"/>
-    <sound name="sleep"/>
-    <sound name="love"/>
-    <sound name="poop"/>
-    <sound name="eat"/>
-    <sound name="transform"/>
-    <uol name="dance" value="chat"/>
+    <sound name="alert"/> 
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="love"/> 
+    <sound name="no"/> 
+    <sound name="sad"/> 
+    <sound name="stretch"/> 
+    <sound name="stunned"/> 
+  </imgdir>
+  <imgdir name="5000035">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="leapup"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000123">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000117">
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="love"/> 
+    <sound name="ok"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000113">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000114">
+    <sound name="angry"/> 
+    <sound name="bewildered"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="ignore"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000104">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000103">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000101">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000079">
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="love"/> 
+    <sound name="ok"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000078">
+    <sound name="angry"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="love"/> 
+    <sound name="ok"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000119">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="no"/> 
+    <sound name="ok"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000068">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="melong"/> 
+    <sound name="play"/> 
+    <sound name="rise"/> 
+    <sound name="sleep"/> 
+    <sound name="sulk"/> 
+  </imgdir>
+  <imgdir name="5000072">
+    <sound name="angry"/> 
+    <uol name="chat" value="../5000403/chat"/>
+    <uol name="cry" value="../5000376/cry"/>
+    <uol name="dung" value="../5000376/dung"/>
+    <uol name="eat" value="../5000322/eat"/>
+    <uol name="love" value="../5000365/love"/>
+    <uol name="sleep" value="../5000365/sleep"/>
+  </imgdir>
+  <imgdir name="5000414">
+    <uol name="angry" value="../5000020/angry"/>
+    <uol name="chat" value="../5000020/chat"/>
+    <uol name="cry" value="../5000020/cry"/>
+    <uol name="eat" value="../5000020/eat"/>
+    <uol name="love" value="../5000020/love"/>
+    <uol name="sleep" value="../5000020/sleep"/>
+    <uol name="charming" value="../5000020/charming"/>
+    <uol name="dance" value="../5000020/dance"/>
+    <uol name="dung" value="../5000020/dung"/>
+  </imgdir>
+  <imgdir name="5000412">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000413">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="play"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000411">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000415">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000407">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000433">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000434">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000209">
+    <uol name="angry" value="../5000016/angry"/>
+    <uol name="chat" value="../5000016/chat"/>
+    <uol name="cry" value="../5000016/cry"/>
+    <uol name="dung" value="../5000016/dung"/>
+    <uol name="eat" value="../5000016/eat"/>
+    <uol name="hungry" value="../5000016/hungry"/>
+    <uol name="love" value="../5000016/love"/>
+    <uol name="play" value="../5000016/play"/>
+    <uol name="sleep" value="../5000016/sleep"/>
+  </imgdir>
+  <imgdir name="5000207">
+    <uol name="angry" value="../5000016/angry"/>
+    <uol name="chat" value="../5000016/chat"/>
+    <uol name="cry" value="../5000016/cry"/>
+    <uol name="dung" value="../5000016/dung"/>
+    <uol name="eat" value="../5000016/eat"/>
+    <uol name="hungry" value="../5000016/hungry"/>
+    <uol name="love" value="../5000016/love"/>
+    <uol name="play" value="../5000016/play"/>
+    <uol name="sleep" value="../5000016/sleep"/>
+  </imgdir>
+  <imgdir name="5000208">
+    <uol name="angry" value="../5000016/angry"/>
+    <uol name="chat" value="../5000016/chat"/>
+    <uol name="cry" value="../5000016/cry"/>
+    <uol name="dung" value="../5000016/dung"/>
+    <uol name="eat" value="../5000016/eat"/>
+    <uol name="hungry" value="../5000016/hungry"/>
+    <uol name="love" value="../5000016/love"/>
+    <uol name="play" value="../5000016/play"/>
+    <uol name="sleep" value="../5000016/sleep"/>
+  </imgdir>
+  <imgdir name="5000331">
+    <sound name="angry"/> 
+    <sound name="chat"/> 
+    <sound name="cry"/> 
+    <sound name="dung"/> 
+    <sound name="eat"/> 
+    <sound name="hungry"/> 
+    <sound name="love"/> 
+    <sound name="sleep"/> 
+  </imgdir>
+  <imgdir name="5000206">
+    <uol name="angry" value="../5000004/angry"/>
+    <uol name="chat" value="../5000004/chat"/>
+    <uol name="cry" value="../5000004/cry"/>
+    <uol name="dung" value="../5000004/dung"/>
+    <uol name="eat" value="../5000004/eat"/>
+    <uol name="hungry" value="../5000004/hungry"/>
+  </imgdir>
+  <imgdir name="5000205">
+    <uol name="angry" value="../5000001/angry"/>
+    <uol name="chat" value="../5000001/chat"/>
+    <uol name="cry" value="../5000001/cry"/>
+    <uol name="dung" value="../5000001/dung"/>
+    <uol name="eat" value="../5000001/eat"/>
+    <uol name="sleep" value="../5000001/nap"/>
+  </imgdir>
+  <imgdir name="5000330">
+    <sound name="hungry"/> 
+    <sound name="eat"/> 
+    <sound name="sleep"/> 
+    <sound name="cry"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="dung"/> 
+    <sound name="angry"/> 
+  </imgdir>
+  <imgdir name="5000077">
+    <sound name="hungry"/> 
+    <sound name="eat"/> 
+    <sound name="sleep"/> 
+    <sound name="ignore"/> 
+    <sound name="cry"/> 
+    <sound name="chat"/> 
+    <sound name="love"/> 
+    <sound name="dung"/> 
+    <sound name="angry"/> 
   </imgdir>
 </imgdir>

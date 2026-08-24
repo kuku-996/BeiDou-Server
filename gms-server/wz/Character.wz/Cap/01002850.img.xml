@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002850.img">
+<imgdir name="01002850.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="29" height="34">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-2" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="29" height="34">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-2" y="31"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -123,7 +123,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="39" height="48">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="19" y="24"/>
       <imgdir name="map">
         <vector name="brow" x="-2" y="6"/>
@@ -132,7 +132,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="43" height="21">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="13" y="17"/>
       <imgdir name="map">
         <vector name="brow" x="4" y="13"/>
@@ -206,7 +206,7 @@
       <uol name="default" value="../../default/default"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="1" width="46" height="53">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="23" y="26"/>
         <int name="z" value="0"/>
         <imgdir name="map">
@@ -215,7 +215,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="46" height="53">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="23" y="26"/>
         <imgdir name="map">
           <vector name="brow" x="-2" y="9"/>
@@ -334,7 +334,7 @@
       <uol name="default" value="../../default/default"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="dafault" width="45" height="51">
+      <canvas name="dafault" format="1" scale="0">
         <vector name="origin" x="22" y="25"/>
         <int name="z" value="0"/>
         <imgdir name="map">
@@ -477,7 +477,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="dafault" width="44" height="53">
+      <canvas name="dafault" format="1" scale="0">
         <vector name="origin" x="22" y="26"/>
         <int name="z" value="0"/>
         <imgdir name="map">
@@ -486,7 +486,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="dafault" width="45" height="53">
+      <canvas name="dafault" format="1" scale="0">
         <vector name="origin" x="22" y="26"/>
         <int name="z" value="0"/>
         <imgdir name="map">

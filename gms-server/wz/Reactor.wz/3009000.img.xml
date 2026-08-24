@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="3009000.img">
+<imgdir name="3009000.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="info" value="메이플아일랜드 범용리엑터"/>
   </imgdir>
   <imgdir name="0">
-    <canvas name="0" width="139" height="160">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="69" y="80"/>
       <int name="z" value="0"/>
     </canvas>
@@ -20,7 +20,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="139" height="160">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="69" y="80"/>
         <int name="z" value="0"/>
         <int name="a0" value="255"/>
@@ -30,7 +30,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="1">
-    <canvas name="0" width="139" height="160">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="69" y="80"/>
       <int name="z" value="0"/>
       <int name="a0" value="200"/>
@@ -48,7 +48,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="139" height="160">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="69" y="80"/>
         <int name="z" value="0"/>
         <int name="a0" value="200"/>
@@ -58,7 +58,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="2">
-    <canvas name="0" width="139" height="160">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="69" y="80"/>
       <int name="z" value="0"/>
       <int name="a0" value="180"/>
@@ -76,7 +76,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="139" height="160">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="69" y="80"/>
         <int name="z" value="0"/>
         <int name="a0" value="180"/>
@@ -86,7 +86,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="3">
-    <canvas name="0" width="139" height="160">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="69" y="80"/>
       <int name="z" value="0"/>
       <int name="a0" value="120"/>
@@ -104,7 +104,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="139" height="160">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="69" y="80"/>
         <int name="z" value="0"/>
         <int name="a0" value="120"/>
@@ -114,7 +114,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="4">
-    <canvas name="0" width="1" height="1">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
   </imgdir>

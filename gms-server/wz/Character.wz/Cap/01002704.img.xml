@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002704.img">
+<imgdir name="01002704.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="31" height="29">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="1" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="31" height="27">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="1" y="31"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -18,7 +18,7 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="39" height="35">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="19" y="17"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-5"/>
@@ -27,7 +27,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="41" height="35">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="20" y="17"/>
       <imgdir name="map">
         <vector name="brow" x="-4" y="-5"/>
@@ -37,7 +37,7 @@
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="default" width="39" height="35">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="19" y="17"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-5"/>
@@ -46,7 +46,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="39" height="35">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="19" y="17"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-5"/>
@@ -55,7 +55,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="39" height="35">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="19" y="17"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-5"/>
@@ -64,7 +64,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="39" height="35">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="19" y="17"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-5"/>
@@ -111,7 +111,7 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="default" width="39" height="35">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="19" y="17"/>
         <imgdir name="map">
           <vector name="brow" x="-4" y="-5"/>

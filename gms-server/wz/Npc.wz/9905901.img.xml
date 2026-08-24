@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9905901.img">
+<imgdir name="9905901.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="imitate" value="1"/>
     <int name="hideName" value="1"/>
@@ -18,13 +18,13 @@
     </imgdir>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="1" height="1">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
     <int name="delay" value="7000"/>
   </imgdir>
   <imgdir name="say">
-    <canvas name="0" width="1" height="1">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
     <imgdir name="speak">

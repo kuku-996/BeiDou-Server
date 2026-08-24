@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="610030010.img">
+<imgdir name="610030010.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="bgm" value="BgmGL/CrimsonwoodKeepInterior"/>
     <int name="cloud" value="0"/>
     <int name="swim" value="0"/>
-    <int name="forcedReturn" value="999999999"/>
+    <int name="forcedReturn" value="610030010"/>
     <int name="hideMinimap" value="0"/>
     <string name="mapMark" value="Crimsonwood"/>
     <float name="mobRate" value="0.4999999"/>
-    <int name="returnMap" value="610030000"/>
+    <int name="returnMap" value="610030010"/>
     <int name="town" value="0"/>
     <int name="version" value="10"/>
     <int name="fieldLimit" value="0"/>
@@ -18,11 +18,10 @@
     <int name="VRLeft" value="-340"/>
     <int name="VRRight" value="2770"/>
     <int name="VRTop" value="-1300"/>
-    <int name="VRBottom" value="500"/>
+    <int name="VRBottom" value="497"/>
   </imgdir>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="207" height="136">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="3315"/>
     <int name="height" value="2189"/>
     <int name="centerX" value="444"/>
@@ -30,12 +29,9 @@
     <int name="mag" value="4"/>
   </imgdir>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="1">
     <imgdir name="info">
@@ -827,8 +823,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
+    <imgdir name="info"/>
     <imgdir name="obj">
       <imgdir name="0">
         <int name="x" value="757"/>
@@ -1311,15 +1306,13 @@
         <int name="f" value="0"/>
       </imgdir>
     </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="3">
     <imgdir name="info">
       <string name="tS" value="masteriaGL2"/>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
     <imgdir name="tile">
       <imgdir name="0">
         <int name="x" value="-360"/>
@@ -5587,39 +5580,31 @@
     </imgdir>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
-  <imgdir name="ladderRope">
+  <imgdir name="8">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
   </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="portal">
     <imgdir name="0">
       <int name="x" value="1212"/>
@@ -5695,20 +5680,8 @@
       <string name="pn" value="warp01"/>
       <string name="image" value=""/>
     </imgdir>
-    <imgdir name="9">
-      <int name="x" value="2384"/>
-      <int name="y" value="-803"/>
-      <int name="pt" value="8"/>
-      <int name="tm" value="999999999"/>
-      <string name="tn" value=""/>
-      <string name="pn" value="in06"/>
-      <int name="hideTooltip" value="0"/>
-      <int name="onlyOnce" value="0"/>
-      <string name="script" value="glpqEnter"/>
-    </imgdir>
   </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="reactor"/>
   <imgdir name="back">
     <imgdir name="0">
       <int name="x" value="1186"/>
@@ -5757,7 +5730,7 @@
     </imgdir>
     <imgdir name="3">
       <int name="x" value="962"/>
-      <int name="y" value="-829"/>
+      <int name="y" value="-839"/>
       <int name="rx" value="-60"/>
       <int name="ry" value="-85"/>
       <int name="cx" value="0"/>
@@ -5772,7 +5745,7 @@
     </imgdir>
     <imgdir name="4">
       <int name="x" value="835"/>
-      <int name="y" value="-938"/>
+      <int name="y" value="-948"/>
       <int name="rx" value="-80"/>
       <int name="ry" value="-85"/>
       <int name="cx" value="0"/>
@@ -5787,7 +5760,7 @@
     </imgdir>
     <imgdir name="5">
       <int name="x" value="1019"/>
-      <int name="y" value="-1098"/>
+      <int name="y" value="-1108"/>
       <int name="rx" value="-90"/>
       <int name="ry" value="-90"/>
       <int name="cx" value="0"/>
@@ -12605,6 +12578,7 @@
       <int name="rx0" value="2335"/>
       <int name="rx1" value="2435"/>
       <int name="f" value="0"/>
+      <int name="hide" value="0"/>
       <string name="type" value="n"/>
       <int name="fh" value="533"/>
     </imgdir>

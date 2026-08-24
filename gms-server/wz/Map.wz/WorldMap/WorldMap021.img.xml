@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="WorldMap021.img">
+<imgdir name="WorldMap021.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="parentMap" value="WorldMap020"/>
   </imgdir>
   <imgdir name="BaseImg">
-    <canvas name="0" width="640" height="470">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="320" y="235"/>
       <int name="z" value="0"/>
     </canvas>
@@ -167,10 +167,29 @@
     <imgdir name="22">
       <vector name="spot" x="187" y="-109"/>
       <int name="type" value="1"/>
-      <string name="desc" value="A powerful organism bestowed in darkness is waiting for you."/>
+      <string name="desc" value="一个强大的生物在黑暗中等待着你。"/>
       <imgdir name="mapNo">
         <int name="0" value="280030000"/>
       </imgdir>
+    </imgdir>
+    <imgdir name="23">
+      <vector name="spot" x="-91" y="-110"/>
+      <int name="type" value="1"/>
+      <imgdir name="mapNo">
+        <int name="0" value="211060000"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="MapLink">
+    <imgdir name="0">
+      <imgdir name="link">
+        <string name="linkMap" value="WorldMap022"/>
+        <canvas name="linkImg" format="1" scale="0">
+          <vector name="origin" x="92" y="243"/>
+          <int name="z" value="1"/>
+        </canvas>
+      </imgdir>
+      <string name="toolTip" value="狮子王之城"/>
     </imgdir>
   </imgdir>
 </imgdir>

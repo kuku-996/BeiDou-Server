@@ -26,10 +26,14 @@ import org.gms.client.Client;
 import org.gms.constants.id.MapId;
 import org.gms.net.AbstractPacketHandler;
 import org.gms.net.packet.InPacket;
+import org.gms.provider.DataProviderFactory;
+import org.gms.provider.wz.WZFiles;
+import org.gms.scripting.npc.NPCScriptDebugInfo;
 import org.gms.scripting.quest.QuestScriptManager;
 import org.gms.server.life.NPC;
 import org.gms.server.quest.Quest;
 import org.gms.util.I18nUtil;
+import org.gms.util.PacketCreator;
 
 import java.awt.*;
 
@@ -37,6 +41,18 @@ import java.awt.*;
  * @author Matze
  */
 public final class QuestActionHandler extends AbstractPacketHandler {
+
+    private static final String QUEST_INFO_XML = DataProviderFactory.getResolvedXmlPath(WZFiles.QUEST, "QuestInfo.img");
+    private static final String QUEST_CHECK_XML = DataProviderFactory.getResolvedXmlPath(WZFiles.QUEST, "Check.img");
+    private static final String QUEST_ACT_XML = DataProviderFactory.getResolvedXmlPath(WZFiles.QUEST, "Act.img");
+
+    private static void sendXmlQuestDebug(Client c, int npcId, short questId, boolean start) {
+        String text = NPCScriptDebugInfo.forXmlQuest(c.getPlayer().gmLevel(), npcId, questId, start,
+                QUEST_INFO_XML, QUEST_CHECK_XML, QUEST_ACT_XML);
+        if (text != null) {
+            c.sendPacket(PacketCreator.getNPCTalk(npcId, (byte) 0, text, "00 00", (byte) 0));
+        }
+    }
 
     // isNpcNearby thanks to GabrielSin
     private static boolean isNpcNearby(InPacket p, Character player, Quest quest, int npcId) {
@@ -96,6 +112,7 @@ public final class QuestActionHandler extends AbstractPacketHandler {
                         QuestScriptManager.getInstance().start(c, questid, npc);
                     } else {
                         quest.start(player, npc);
+                        sendXmlQuestDebug(c, npc, questid, true);
                     }
                 }
                 break;
@@ -117,6 +134,7 @@ public final class QuestActionHandler extends AbstractPacketHandler {
                         } else {
                             quest.complete(player, npc);
                         }
+                        sendXmlQuestDebug(c, npc, questid, false);
                     }
                 }
                 break;

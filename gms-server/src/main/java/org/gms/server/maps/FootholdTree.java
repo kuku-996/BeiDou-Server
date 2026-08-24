@@ -193,6 +193,17 @@ public class FootholdTree {
         return null;
     }
 
+    public List<Foothold> getAllFootholds() {
+        List<Foothold> result = new LinkedList<>(footholds);
+        if (nw != null) {
+            result.addAll(nw.getAllFootholds());
+            result.addAll(ne.getAllFootholds());
+            result.addAll(sw.getAllFootholds());
+            result.addAll(se.getAllFootholds());
+        }
+        return result;
+    }
+
     public int getX1() {
         return p1.x;
     }

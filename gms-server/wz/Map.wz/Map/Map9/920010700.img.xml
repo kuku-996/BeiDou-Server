@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="920010700.img">
+<imgdir name="920010700.img" indent="2" media="NONE">
   <imgdir name="back">
     <imgdir name="0">
       <string name="bS" value="skyStation"/>
@@ -443,28 +443,19 @@
     </imgdir>
   </imgdir>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="3">
     <imgdir name="info">
@@ -4494,10 +4485,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="connect"/>
@@ -5074,28 +5063,19 @@
     </imgdir>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="area">
     <imgdir name="1">
@@ -9722,8 +9702,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="48" height="397">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="775"/>
     <int name="height" value="6362"/>
     <int name="centerX" value="437"/>
@@ -10514,6 +10493,582 @@
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="party3_r6pt"/>
+    </imgdir>
+    <imgdir name="88">
+      <string name="pn" value="rp1011"/>
+      <int name="x" value="-8257"/>
+      <int name="y" value="-8527"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp011"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="89">
+      <string name="pn" value="rp1012"/>
+      <int name="x" value="-9929"/>
+      <int name="y" value="-11685"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp012"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="90">
+      <string name="pn" value="rp1013"/>
+      <int name="x" value="-5236"/>
+      <int name="y" value="-9685"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp013"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="91">
+      <string name="pn" value="rp1014"/>
+      <int name="x" value="-6868"/>
+      <int name="y" value="-6474"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp014"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="92">
+      <string name="pn" value="rp1021"/>
+      <int name="x" value="-2899"/>
+      <int name="y" value="-6453"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp021"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="93">
+      <string name="pn" value="rp1022"/>
+      <int name="x" value="-2267"/>
+      <int name="y" value="-10212"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp022"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="94">
+      <string name="pn" value="rp1023"/>
+      <int name="x" value="-470"/>
+      <int name="y" value="-12670"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp023"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="95">
+      <string name="pn" value="rp1024"/>
+      <int name="x" value="-2439"/>
+      <int name="y" value="-12895"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp024"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="96">
+      <string name="pn" value="rp1031"/>
+      <int name="x" value="-5123"/>
+      <int name="y" value="-9710"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp031"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="97">
+      <string name="pn" value="rp1032"/>
+      <int name="x" value="-852"/>
+      <int name="y" value="-13156"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp032"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="98">
+      <string name="pn" value="rp1033"/>
+      <int name="x" value="-4349"/>
+      <int name="y" value="-14073"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp033"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="99">
+      <string name="pn" value="rp1034"/>
+      <int name="x" value="-7048"/>
+      <int name="y" value="-9209"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp034"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="100">
+      <string name="pn" value="rp1041"/>
+      <int name="x" value="-5422"/>
+      <int name="y" value="-7905"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp041"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="101">
+      <string name="pn" value="rp1042"/>
+      <int name="x" value="-8767"/>
+      <int name="y" value="-15507"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp042"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="102">
+      <string name="pn" value="rp1043"/>
+      <int name="x" value="-2454"/>
+      <int name="y" value="-14042"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp043"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="103">
+      <string name="pn" value="rp1044"/>
+      <int name="x" value="-6253"/>
+      <int name="y" value="-9757"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp044"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="104">
+      <string name="pn" value="rp1051"/>
+      <int name="x" value="-2973"/>
+      <int name="y" value="-10862"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp051"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="105">
+      <string name="pn" value="rp1052"/>
+      <int name="x" value="-9296"/>
+      <int name="y" value="-15035"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp052"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="106">
+      <string name="pn" value="rp1053"/>
+      <int name="x" value="-134"/>
+      <int name="y" value="-11228"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp053"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="107">
+      <string name="pn" value="rp1054"/>
+      <int name="x" value="-6943"/>
+      <int name="y" value="-12147"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp054"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="108">
+      <string name="pn" value="rp1061"/>
+      <int name="x" value="-3771"/>
+      <int name="y" value="-14100"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp061"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="109">
+      <string name="pn" value="rp1062"/>
+      <int name="x" value="-7004"/>
+      <int name="y" value="-8086"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp062"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="110">
+      <string name="pn" value="rp1063"/>
+      <int name="x" value="-3312"/>
+      <int name="y" value="-7021"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp063"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="111">
+      <string name="pn" value="rp1064"/>
+      <int name="x" value="-7506"/>
+      <int name="y" value="-7471"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp064"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="112">
+      <string name="pn" value="rp1071"/>
+      <int name="x" value="-8257"/>
+      <int name="y" value="-12617"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp071"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="113">
+      <string name="pn" value="rp1072"/>
+      <int name="x" value="-5044"/>
+      <int name="y" value="-15176"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp072"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="114">
+      <string name="pn" value="rp1073"/>
+      <int name="x" value="-7405"/>
+      <int name="y" value="-12485"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp073"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="115">
+      <string name="pn" value="rp1074"/>
+      <int name="x" value="-5641"/>
+      <int name="y" value="-10032"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp074"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="116">
+      <string name="pn" value="rp1081"/>
+      <int name="x" value="-6297"/>
+      <int name="y" value="-7399"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp081"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="117">
+      <string name="pn" value="rp1082"/>
+      <int name="x" value="-2155"/>
+      <int name="y" value="-11421"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp082"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="118">
+      <string name="pn" value="rp1083"/>
+      <int name="x" value="-3444"/>
+      <int name="y" value="-13662"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp083"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="119">
+      <string name="pn" value="rp1084"/>
+      <int name="x" value="-8541"/>
+      <int name="y" value="-12872"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp084"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="120">
+      <string name="pn" value="rp1091"/>
+      <int name="x" value="-9846"/>
+      <int name="y" value="-11557"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp091"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="121">
+      <string name="pn" value="rp1092"/>
+      <int name="x" value="-5344"/>
+      <int name="y" value="-9356"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp092"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="122">
+      <string name="pn" value="rp1093"/>
+      <int name="x" value="-3000"/>
+      <int name="y" value="-13406"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp093"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="123">
+      <string name="pn" value="rp1094"/>
+      <int name="x" value="-2686"/>
+      <int name="y" value="-7877"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp094"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="124">
+      <string name="pn" value="rp1101"/>
+      <int name="x" value="-6171"/>
+      <int name="y" value="-15514"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp101"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="125">
+      <string name="pn" value="rp1102"/>
+      <int name="x" value="-6710"/>
+      <int name="y" value="-14159"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp102"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="126">
+      <string name="pn" value="rp1103"/>
+      <int name="x" value="-6034"/>
+      <int name="y" value="-10400"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp103"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="127">
+      <string name="pn" value="rp1104"/>
+      <int name="x" value="-2947"/>
+      <int name="y" value="-11768"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp104"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="128">
+      <string name="pn" value="rp1111"/>
+      <int name="x" value="-6966"/>
+      <int name="y" value="-13161"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp111"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="129">
+      <string name="pn" value="rp1112"/>
+      <int name="x" value="-5398"/>
+      <int name="y" value="-13841"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp112"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="130">
+      <string name="pn" value="rp1113"/>
+      <int name="x" value="-8248"/>
+      <int name="y" value="-8544"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp113"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="131">
+      <string name="pn" value="rp1114"/>
+      <int name="x" value="-3258"/>
+      <int name="y" value="-11742"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp114"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="132">
+      <string name="pn" value="rp1121"/>
+      <int name="x" value="-1219"/>
+      <int name="y" value="-13378"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp121"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="133">
+      <string name="pn" value="rp1122"/>
+      <int name="x" value="-8161"/>
+      <int name="y" value="-9427"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp122"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="134">
+      <string name="pn" value="rp1123"/>
+      <int name="x" value="-7050"/>
+      <int name="y" value="-12353"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp123"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="135">
+      <string name="pn" value="rp1124"/>
+      <int name="x" value="-3563"/>
+      <int name="y" value="-7081"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp124"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="136">
+      <string name="pn" value="rp1131"/>
+      <int name="x" value="-2182"/>
+      <int name="y" value="-13857"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp131"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="137">
+      <string name="pn" value="rp1132"/>
+      <int name="x" value="-4498"/>
+      <int name="y" value="-12675"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp132"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="138">
+      <string name="pn" value="rp1133"/>
+      <int name="x" value="-7745"/>
+      <int name="y" value="-6545"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp133"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="139">
+      <string name="pn" value="rp1134"/>
+      <int name="x" value="-264"/>
+      <int name="y" value="-15488"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp134"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="140">
+      <string name="pn" value="rp1141"/>
+      <int name="x" value="-1292"/>
+      <int name="y" value="-6624"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp141"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="141">
+      <string name="pn" value="rp1142"/>
+      <int name="x" value="-4854"/>
+      <int name="y" value="-11362"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp142"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="142">
+      <string name="pn" value="rp1143"/>
+      <int name="x" value="-4028"/>
+      <int name="y" value="-10481"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp143"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="143">
+      <string name="pn" value="rp1144"/>
+      <int name="x" value="-9911"/>
+      <int name="y" value="-15464"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp144"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="144">
+      <string name="pn" value="rp1151"/>
+      <int name="x" value="-4405"/>
+      <int name="y" value="-7177"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp151"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="145">
+      <string name="pn" value="rp1152"/>
+      <int name="x" value="-2845"/>
+      <int name="y" value="-14695"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp152"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="146">
+      <string name="pn" value="rp1153"/>
+      <int name="x" value="-9409"/>
+      <int name="y" value="-10609"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp153"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="147">
+      <string name="pn" value="rp1154"/>
+      <int name="x" value="-8344"/>
+      <int name="y" value="-8504"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp154"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="148">
+      <string name="pn" value="rp1161"/>
+      <int name="x" value="-8174"/>
+      <int name="y" value="-11665"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp161"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="149">
+      <string name="pn" value="rp1162"/>
+      <int name="x" value="-5006"/>
+      <int name="y" value="-13861"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp162"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="150">
+      <string name="pn" value="rp1163"/>
+      <int name="x" value="-8648"/>
+      <int name="y" value="-6598"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp163"/>
+      <string name="script" value=""/>
+    </imgdir>
+    <imgdir name="151">
+      <string name="pn" value="rp1164"/>
+      <int name="x" value="-28"/>
+      <int name="y" value="-7393"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value="rp164"/>
+      <string name="script" value=""/>
     </imgdir>
   </imgdir>
 </imgdir>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002667.img">
+<imgdir name="01002667.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="29" height="33">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-3" y="33"/>
     </canvas>
-    <canvas name="iconRaw" width="27" height="30">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-5" y="33"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -32,7 +32,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="16" height="14">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="-6" y="12"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -41,7 +41,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="1" height="1">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -51,7 +51,7 @@
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -60,7 +60,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -69,7 +69,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -78,7 +78,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -89,7 +89,7 @@
   </imgdir>
   <imgdir name="walk2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -98,7 +98,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -107,7 +107,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -116,7 +116,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -127,7 +127,7 @@
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -136,7 +136,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -145,7 +145,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -156,7 +156,7 @@
   </imgdir>
   <imgdir name="stand2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -165,7 +165,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -174,7 +174,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -185,7 +185,7 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -194,7 +194,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -203,7 +203,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -214,7 +214,7 @@
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -223,7 +223,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -232,7 +232,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -243,7 +243,7 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -252,7 +252,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -261,7 +261,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -272,7 +272,7 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -281,7 +281,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -290,7 +290,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -301,7 +301,7 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -310,7 +310,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -319,7 +319,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="28">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="19"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -328,7 +328,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -339,7 +339,7 @@
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -348,7 +348,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -357,7 +357,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -368,7 +368,7 @@
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -377,7 +377,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -386,7 +386,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -397,7 +397,7 @@
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -406,7 +406,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -415,7 +415,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -426,7 +426,7 @@
   </imgdir>
   <imgdir name="swingTF">
     <imgdir name="0">
-      <canvas name="default" width="1" height="1">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="0"/>
         <imgdir name="map">
           <vector name="brow" x="-20" y="1"/>
@@ -435,7 +435,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -444,7 +444,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -453,7 +453,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="28" height="28">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="19"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -464,7 +464,7 @@
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -473,7 +473,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -482,7 +482,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -493,7 +493,7 @@
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -502,7 +502,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -511,7 +511,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -522,7 +522,7 @@
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -531,7 +531,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -540,7 +540,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="28">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="19"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -549,7 +549,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -560,7 +560,7 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -569,7 +569,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -580,7 +580,7 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -589,7 +589,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -600,7 +600,7 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -609,7 +609,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -618,7 +618,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -629,7 +629,7 @@
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -638,7 +638,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -647,7 +647,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -658,7 +658,7 @@
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-7" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="1" y="0"/>
@@ -667,7 +667,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -676,7 +676,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -687,7 +687,7 @@
   </imgdir>
   <imgdir name="stabTF">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -696,7 +696,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -705,7 +705,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -714,7 +714,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -725,7 +725,7 @@
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -734,7 +734,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -748,7 +748,7 @@
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -757,7 +757,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -766,7 +766,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -775,7 +775,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -784,7 +784,7 @@
       </canvas>
     </imgdir>
     <imgdir name="4">
-      <canvas name="default" width="28" height="28">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="19"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -795,7 +795,7 @@
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -804,7 +804,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -818,7 +818,7 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -827,7 +827,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -854,7 +854,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -863,7 +863,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -874,7 +874,7 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="default" width="28" height="26">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="18"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -885,7 +885,7 @@
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="default" width="16" height="14">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="-6" y="12"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -896,7 +896,7 @@
   </imgdir>
   <imgdir name="ladder">
     <imgdir name="0">
-      <canvas name="default" width="1" height="1">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="0"/>
         <imgdir name="map">
           <vector name="brow" x="-21" y="0"/>
@@ -905,7 +905,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="1" height="1">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="0"/>
         <imgdir name="map">
           <vector name="brow" x="-21" y="0"/>
@@ -916,7 +916,7 @@
   </imgdir>
   <imgdir name="rope">
     <imgdir name="0">
-      <canvas name="default" width="1" height="1">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="0"/>
         <imgdir name="map">
           <vector name="brow" x="-21" y="0"/>
@@ -925,7 +925,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="1" height="1">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="0" y="0"/>
         <imgdir name="map">
           <vector name="brow" x="-21" y="0"/>

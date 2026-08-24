@@ -62,6 +62,10 @@ import org.gms.server.TimerManager;
 import org.gms.server.expeditions.ExpeditionBossLog;
 import org.gms.server.life.PlayerNPC;
 import org.gms.server.quest.Quest;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotClientHandler;
+import org.gms.server.artificial.soloport.itemPool.DesirableEquipList;
+import org.gms.server.artificial.soloport.itemPool.EquipMetadataCache;
+import org.gms.server.artificial.soloport.Environment.EnvironmentManager;
 import org.gms.service.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -748,6 +752,20 @@ public class Server {
         }
         log.info(I18nUtil.getLogMessage("Server.init.info8"));
         online = true;
+
+        // SoloMapling is server-side and needs the fully initialized world/channel
+        // graph before it creates headless characters. Run it after the server is
+        // accepting logins so its staged population cannot block the login socket.
+        BotClientHandler.initHeadlessBotClient();
+        Thread.startVirtualThread(() -> {
+            try {
+                EquipMetadataCache.initialize();
+                DesirableEquipList.load();
+                EnvironmentManager.environmentLoadStartup();
+            } catch (Throwable t) {
+                log.error("SoloMapling environment startup failed", t);
+            }
+        });
         Duration initDuration = Duration.between(beforeInit, Instant.now());
         log.info(I18nUtil.getLogMessage("Server.init.info9"), initDuration.toMillis() / 1000.0);
     }

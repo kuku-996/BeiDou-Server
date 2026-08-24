@@ -47,6 +47,14 @@ public class MapScriptManager extends AbstractScriptManager {
     }
 
     public boolean runMapScript(Client c, String mapScriptPath, boolean firstUser) {
+        // Headless SoloMapling bots do not have a player-bound script context.
+        // Map entry scripts are player-facing (quests, effects, tutorials), so
+        // silently skip them for such clients instead of invoking JavaScript
+        // with a null player and flooding the runtime log.
+        if (c == null || c.getPlayer() == null) {
+            return false;
+        }
+
         if (firstUser) {
             Character chr = c.getPlayer();
             int mapid = chr.getMapId();

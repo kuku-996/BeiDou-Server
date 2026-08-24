@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2012019.img">
+<imgdir name="2012019.img" indent="2" media="NONE">
   <imgdir name="info">
+    <imgdir name="script">
+      <imgdir name="0">
+        <string name="script" value="Manji"/>
+      </imgdir>
+    </imgdir>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="59" height="55">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="29" y="55"/>
       <int name="delay" value="180"/>
     </canvas>
-    <canvas name="1" width="59" height="54">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="29" y="54"/>
       <int name="delay" value="180"/>
     </canvas>
   </imgdir>
   <imgdir name="tail">
-    <canvas name="0" width="59" height="55">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="29" y="55"/>
       <int name="delay" value="1000"/>
     </canvas>
-    <canvas name="1" width="60" height="55">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="30" y="55"/>
       <int name="delay" value="200"/>
     </canvas>
-    <canvas name="2" width="59" height="55">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="29" y="55"/>
       <int name="delay" value="200"/>
     </canvas>
     <uol name="3" value="1"/>
-    <canvas name="4" width="59" height="55">
+    <canvas name="4" format="1" scale="0">
       <vector name="origin" x="29" y="55"/>
       <int name="delay" value="200"/>
     </canvas>
@@ -42,15 +47,15 @@
     </imgdir>
   </imgdir>
   <imgdir name="deep">
-    <canvas name="0" width="59" height="55">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="29" y="55"/>
       <int name="delay" value="1000"/>
     </canvas>
-    <canvas name="1" width="60" height="54">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="30" y="54"/>
       <int name="delay" value="50"/>
     </canvas>
-    <canvas name="2" width="61" height="53">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="30" y="53"/>
       <int name="delay" value="800"/>
     </canvas>

@@ -42,6 +42,12 @@ import java.util.Iterator;
 import java.util.List;
 
 public class XMLDomMapleData implements Data {
+    /**
+     * Xerces' DOM NodeList cache is not safe when different XMLDomMapleData
+     * wrappers traverse the same document concurrently. Instance-level locks
+     * do not help because every child creates a new wrapper instance.
+     */
+    private static final Object DOM_ACCESS_LOCK = new Object();
     private final Node node;
     private Path imageDataDir;
 
@@ -66,51 +72,60 @@ public class XMLDomMapleData implements Data {
     }
 
     @Override
-    public synchronized Data getChildByPath(String path) {  // the whole XML reading system seems susceptible to give nulls on strenuous read scenarios
-        String[] segments = path.split("/");
-        if (segments[0].equals("..")) {
-            return ((Data) getParent()).getChildByPath(path.substring(path.indexOf("/") + 1));
-        }
+    public Data getChildByPath(String path) {  // the whole XML reading system seems susceptible to give nulls on strenuous read scenarios
+        synchronized (DOM_ACCESS_LOCK) {
+            String[] segments = path.split("/");
+            if (segments[0].equals("..")) {
+                DataEntity parent = getParent();
+                return parent == null ? null : ((Data) parent).getChildByPath(path.substring(path.indexOf("/") + 1));
+            }
 
-        Node myNode;
-        myNode = node;
-        for (String s : segments) {
-            NodeList childNodes = myNode.getChildNodes();
-            boolean foundChild = false;
-            for (int i = 0; i < childNodes.getLength(); i++) {
-                Node childNode = childNodes.item(i);
-                if (childNode.getNodeType() == Node.ELEMENT_NODE
-                        && childNode.getAttributes().getNamedItem("name").getNodeValue().equals(s)) {
-                    myNode = childNode;
-                    foundChild = true;
-                    break;
+            Node myNode = node;
+            for (String s : segments) {
+                NodeList childNodes = myNode.getChildNodes();
+                boolean foundChild = false;
+                for (int i = 0; i < childNodes.getLength(); i++) {
+                    Node childNode = childNodes.item(i);
+                    if (childNode == null || childNode.getNodeType() != Node.ELEMENT_NODE) {
+                        continue;
+                    }
+
+                    NamedNodeMap attributes = childNode.getAttributes();
+                    Node nameAttribute = attributes == null ? null : attributes.getNamedItem("name");
+                    if (nameAttribute != null && nameAttribute.getNodeValue().equals(s)) {
+                        myNode = childNode;
+                        foundChild = true;
+                        break;
+                    }
+                }
+                if (!foundChild) {
+                    return null;
                 }
             }
-            if (!foundChild) {
-                return null;
-            }
-        }
 
-        XMLDomMapleData ret = new XMLDomMapleData(myNode);
-        ret.imageDataDir = imageDataDir.resolve(getName().trim()).resolve(path).getParent();
-        return ret;
+            XMLDomMapleData ret = new XMLDomMapleData(myNode);
+            ret.imageDataDir = imageDataDir.resolve(getName().trim()).resolve(path).getParent();
+            return ret;
+        }
     }
 
     @Override
-    public synchronized List<Data> getChildren() {
-        List<Data> ret = new ArrayList<>();
+    public List<Data> getChildren() {
+        synchronized (DOM_ACCESS_LOCK) {
+            List<Data> ret = new ArrayList<>();
 
-        NodeList childNodes = node.getChildNodes();
-        for (int i = 0; i < childNodes.getLength(); i++) {
-            Node childNode = childNodes.item(i);
-            if (childNode.getNodeType() == Node.ELEMENT_NODE) {
-                XMLDomMapleData child = new XMLDomMapleData(childNode);
-                child.imageDataDir = imageDataDir.resolve(getName().trim());
-                ret.add(child);
+            NodeList childNodes = node.getChildNodes();
+            for (int i = 0; i < childNodes.getLength(); i++) {
+                Node childNode = childNodes.item(i);
+                if (childNode != null && childNode.getNodeType() == Node.ELEMENT_NODE) {
+                    XMLDomMapleData child = new XMLDomMapleData(childNode);
+                    child.imageDataDir = imageDataDir.resolve(getName().trim());
+                    ret.add(child);
+                }
             }
-        }
 
-        return ret;
+            return ret;
+        }
     }
 
     @Override

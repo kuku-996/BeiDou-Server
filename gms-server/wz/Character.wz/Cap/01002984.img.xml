@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002984.img">
+<imgdir name="01002984.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="28" height="33">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="30"/>
     </canvas>
-    <canvas name="iconRaw" width="28" height="33">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="30"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -16,16 +16,18 @@
     <int name="reqINT" value="0"/>
     <int name="reqLUK" value="0"/>
     <int name="cash" value="1"/>
+    <int name="tradeBlock" value="1"/>
+    <int name="isDonor" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="45" height="65">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="71"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
       </imgdir>
       <string name="z" value="cap"/>
     </canvas>
-    <canvas name="defaultAc" width="51" height="37">
+    <canvas name="defaultAc" format="1" scale="0">
       <vector name="origin" x="28" y="24"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -34,7 +36,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default1" width="52" height="81">
+    <canvas name="default1" format="1" scale="0">
       <vector name="origin" x="16" y="69"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -88,7 +90,7 @@
       <uol name="defaultAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -108,7 +110,7 @@
       <uol name="defaultAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -128,7 +130,7 @@
       <uol name="defaultAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -144,14 +146,14 @@
       <uol name="defaultAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="47" height="66">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="17" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -160,14 +162,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="102" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="70" height="65">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -178,14 +180,14 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="76" height="39">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="53" y="35"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -194,14 +196,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="79" height="25">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="56" y="21"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -210,14 +212,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="74" height="69">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -228,14 +230,14 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="default" width="50" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -244,14 +246,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="51" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="21" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -260,14 +262,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="102" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="70" height="65">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -278,14 +280,14 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="79" height="25">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="56" y="21"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -294,7 +296,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -303,14 +305,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="51" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="51" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="28" y="21"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -319,14 +321,14 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="128" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="79" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="83" height="39">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="53" y="35"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -337,14 +339,14 @@
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -353,14 +355,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="81" height="30">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="55" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -369,14 +371,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="74" height="69">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="27" height="20">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="-3" y="16"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -387,14 +389,14 @@
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -403,14 +405,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="81" height="30">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="55" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -419,14 +421,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="73" height="69">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="27" height="20">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="-3" y="16"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -437,14 +439,14 @@
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -453,14 +455,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="47" height="66">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="17" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -469,14 +471,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="103" height="82">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="73" y="88"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="75" height="65">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="45" y="61"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -487,7 +489,7 @@
   </imgdir>
   <imgdir name="swingTF">
     <imgdir name="0">
-      <canvas name="default" width="52" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -496,14 +498,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="51" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="28" y="21"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -512,14 +514,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="51" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="60" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -528,14 +530,14 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="121" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="74" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -546,14 +548,14 @@
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -562,14 +564,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="81" height="30">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="55" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -578,14 +580,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="74" height="69">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="27" height="20">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="-3" y="16"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -596,14 +598,14 @@
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -612,14 +614,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="81" height="30">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="55" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -628,14 +630,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="73" height="69">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="27" height="20">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="-3" y="16"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -646,14 +648,14 @@
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="76" height="39">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="53" y="35"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -662,14 +664,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -678,14 +680,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -694,14 +696,14 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="73" height="69">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="27" height="20">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="-3" y="16"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -712,14 +714,14 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="default" width="50" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -728,14 +730,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="102" height="82">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="88"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="74" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -746,14 +748,14 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="default" width="50" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -762,14 +764,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="102" height="82">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="88"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="74" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -780,14 +782,14 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -796,14 +798,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="47" height="66">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="17" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -812,14 +814,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="102" height="82">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -830,14 +832,14 @@
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -846,14 +848,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="47" height="66">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="17" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -862,14 +864,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="102" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="74" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -880,14 +882,14 @@
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -896,14 +898,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="78" height="29">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="55" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -912,14 +914,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="73" height="69">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="16" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="27" height="20">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="-3" y="16"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -930,14 +932,14 @@
   </imgdir>
   <imgdir name="stabTF">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -946,14 +948,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="102" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -972,14 +974,14 @@
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -988,14 +990,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="47" height="66">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="17" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1004,14 +1006,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="102" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1022,14 +1024,14 @@
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1038,14 +1040,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1054,14 +1056,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1070,14 +1072,14 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1086,14 +1088,14 @@
       </canvas>
     </imgdir>
     <imgdir name="4">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1104,14 +1106,14 @@
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1120,14 +1122,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="47" height="66">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="19" y="70"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="5" y="13"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1136,14 +1138,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="102" height="81">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="72" y="87"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1154,14 +1156,14 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="51" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="28" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1170,14 +1172,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1188,14 +1190,14 @@
   </imgdir>
   <imgdir name="prone">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="51" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="28" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1220,14 +1222,14 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="default" width="47" height="67">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="17" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1236,14 +1238,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="47" height="67">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="17" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="26" height="18">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="3" y="14"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1254,14 +1256,14 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="67" height="64">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="44" y="60"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -1272,14 +1274,14 @@
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="default" width="45" height="65">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="71"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
         </imgdir>
         <string name="z" value="cap"/>
       </canvas>
-      <canvas name="defaultAc" width="55" height="37">
+      <canvas name="defaultAc" format="1" scale="0">
         <vector name="origin" x="32" y="27"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>

@@ -52,7 +52,7 @@ function start() {
     }
 
     var posX;
-    var posY = 180;
+    var posY = 0;
     posX = (Math.floor(Math.random() * 900) - 900);
     const Point = Java.type('java.awt.Point');
     const spawnpoint = new Point(posX, posY);

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1300003.img">
-  <imgdir name="info">
-  </imgdir>
+<imgdir name="1300003.img" indent="2" media="NONE">
+  <imgdir name="info"/>
   <imgdir name="stand">
-    <canvas name="0" width="77" height="73">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="33" y="72"/>
       <int name="delay" value="180"/>
     </canvas>
-    <canvas name="1" width="77" height="73">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="33" y="72"/>
       <int name="delay" value="180"/>
     </canvas>
-    <canvas name="2" width="77" height="73">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="33" y="72"/>
       <int name="delay" value="180"/>
     </canvas>
@@ -19,11 +18,11 @@
     <uol name="4" value="0"/>
   </imgdir>
   <imgdir name="say">
-    <canvas name="0" width="77" height="73">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="33" y="72"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="1" width="77" height="73">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="33" y="72"/>
       <int name="delay" value="150"/>
     </canvas>
@@ -44,15 +43,15 @@
     </imgdir>
   </imgdir>
   <imgdir name="head">
-    <canvas name="0" width="77" height="73">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="33" y="72"/>
       <int name="delay" value="180"/>
     </canvas>
-    <canvas name="1" width="76" height="73">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="32" y="72"/>
       <int name="delay" value="180"/>
     </canvas>
-    <canvas name="2" width="77" height="73">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="33" y="72"/>
       <int name="delay" value="180"/>
     </canvas>

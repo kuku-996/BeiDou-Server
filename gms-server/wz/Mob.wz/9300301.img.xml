@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9300301.img">
+<imgdir name="9300301.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="level" value="10"/>
     <int name="maxHP" value="10"/>
@@ -18,14 +18,14 @@
     <int name="summonType" value="1"/>
   </imgdir>
   <imgdir name="move">
-    <canvas name="0" width="66" height="49">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="32" y="49"/>
       <vector name="lt" x="-32" y="-49"/>
       <vector name="rb" x="34" y="0"/>
       <vector name="head" x="-12" y="-40"/>
       <int name="delay" value="120"/>
     </canvas>
-    <canvas name="1" width="67" height="49">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="32" y="49"/>
       <vector name="lt" x="-32" y="-49"/>
       <vector name="rb" x="34" y="0"/>
@@ -34,14 +34,14 @@
     </canvas>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="68" height="49">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="29" y="49"/>
       <vector name="lt" x="-29" y="-49"/>
       <vector name="rb" x="39" y="0"/>
       <vector name="head" x="-16" y="-35"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="1" width="68" height="47">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="29" y="47"/>
       <int name="z" value="0"/>
       <vector name="lt" x="-28" y="-47"/>
@@ -49,7 +49,7 @@
       <vector name="head" x="-13" y="-37"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="2" width="69" height="45">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="29" y="45"/>
       <int name="z" value="0"/>
       <vector name="lt" x="-27" y="-45"/>
@@ -59,7 +59,7 @@
     </canvas>
   </imgdir>
   <imgdir name="hit1">
-    <canvas name="0" width="60" height="54">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="25" y="54"/>
       <vector name="lt" x="-25" y="-54"/>
       <vector name="rb" x="35" y="0"/>
@@ -68,22 +68,22 @@
     </canvas>
   </imgdir>
   <imgdir name="die1">
-    <canvas name="0" width="60" height="54">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="25" y="54"/>
       <int name="delay" value="180"/>
       <vector name="head" x="1" y="-47"/>
     </canvas>
-    <canvas name="1" width="69" height="56">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="30" y="56"/>
       <vector name="head" x="1" y="-47"/>
       <int name="delay" value="300"/>
     </canvas>
-    <canvas name="2" width="68" height="55">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="32" y="54"/>
       <int name="delay" value="180"/>
       <vector name="head" x="1" y="-47"/>
     </canvas>
-    <canvas name="3" width="66" height="52">
+    <canvas name="3" format="1" scale="0">
       <vector name="origin" x="31" y="52"/>
       <int name="z" value="0"/>
       <int name="a0" value="255"/>

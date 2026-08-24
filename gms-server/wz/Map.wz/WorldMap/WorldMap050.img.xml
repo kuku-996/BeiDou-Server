@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="WorldMap050.img">
+<imgdir name="WorldMap050.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="parentMap" value="WorldMap"/>
   </imgdir>
   <imgdir name="BaseImg">
-    <canvas name="0" width="640" height="470">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="320" y="235"/>
-      <int name="z" value="-1"/>
+      <int name="z" value="0"/>
     </canvas>
   </imgdir>
   <imgdir name="MapList">
@@ -90,7 +90,7 @@
       </imgdir>
     </imgdir>
     <imgdir name="10">
-      <vector name="spot" x="265" y="-69"/>
+      <vector name="spot" x="261" y="-77"/>
       <int name="type" value="1"/>
       <imgdir name="mapNo">
         <int name="0" value="240010900"/>
@@ -155,17 +155,17 @@
       </imgdir>
     </imgdir>
     <imgdir name="19">
-      <vector name="spot" x="134" y="-80"/>
+      <vector name="spot" x="137" y="-78"/>
       <int name="type" value="1"/>
-      <string name="title" value="Battlefield of Fire and Water"/>
-      <string name="desc" value="A mini dungeon where you can hunt alone or with your party members. There is a portal that leads to the #cRound Table of Kentaurus#."/>
       <imgdir name="mapNo">
         <int name="0" value="240020500"/>
       </imgdir>
-      <canvas name="path" width="80" height="40">
-        <vector name="origin" x="-136" y="128"/>
+      <canvas name="path" format="1" scale="0">
+        <vector name="origin" x="-142" y="124"/>
         <int name="z" value="2"/>
       </canvas>
+      <string name="desc" value="可独自或组队挑战#c迷你地图：半人马隐身处#."/>
+      <string name="title" value="神秘村：冰火战场"/>
     </imgdir>
     <imgdir name="20">
       <vector name="spot" x="-8" y="142"/>
@@ -263,28 +263,28 @@
     <imgdir name="33">
       <vector name="spot" x="-148" y="-68"/>
       <int name="type" value="1"/>
-      <string name="title" value="The Dragon Nest Left Behind"/>
-      <string name="desc" value="A mini dungeon where you can hunt alone or with your party members. There is a portal that leads to the #cRevivifying Memory#."/>
       <imgdir name="mapNo">
         <int name="0" value="240040511"/>
       </imgdir>
-      <canvas name="path" width="80" height="33">
-        <vector name="origin" x="146" y="108"/>
+      <string name="desc" value="可独自或组队挑战#c迷你地图：复活的记忆#."/>
+      <string name="title" value="神秘村：被遗忘的龙之巢穴"/>
+      <canvas name="path" format="1" scale="0">
+        <vector name="origin" x="145" y="105"/>
         <int name="z" value="2"/>
       </canvas>
     </imgdir>
     <imgdir name="34">
       <vector name="spot" x="-183" y="49"/>
       <int name="type" value="1"/>
-      <string name="title" value="Destroyed Dragon Nest"/>
-      <string name="desc" value="A dungeon where you can hunt alone or with your party members. There is a portal that leads to the #cNewtie Conservation Area#."/>
       <imgdir name="mapNo">
         <int name="0" value="240040520"/>
       </imgdir>
-      <canvas name="path" width="80" height="35">
-        <vector name="origin" x="180" y="-6"/>
+      <string name="desc" value="可独自或组队挑战#c迷你地图：小蜥蜴保护区域#."/>
+      <canvas name="path" format="1" scale="0">
+        <vector name="origin" x="173" y="-11"/>
         <int name="z" value="2"/>
       </canvas>
+      <string name="title" value="神木村：遭破坏的龙之巢穴"/>
     </imgdir>
     <imgdir name="35">
       <vector name="spot" x="-96" y="36"/>
@@ -309,7 +309,7 @@
     </imgdir>
     <imgdir name="38">
       <vector name="spot" x="-53" y="-69"/>
-      <string name="title" value="Cave of Life"/>
+      <string name="title" value="危险区域：生命之穴"/>
       <int name="type" value="2"/>
       <imgdir name="mapNo">
         <int name="0" value="240050000"/>
@@ -328,55 +328,6 @@
         <int name="13" value="240060100"/>
         <int name="14" value="240060200"/>
       </imgdir>
-    </imgdir>
-    <imgdir name="39">
-      <vector name="spot" x="275" y="-141"/>
-      <string name="title" value="Tera Forest (Neo City)"/>
-      <int name="type" value="2"/>
-      <imgdir name="mapNo">
-        <int name="0" value="240070000"/>
-        <int name="1" value="240070010"/>
-        <int name="2" value="240070020"/>
-        <int name="3" value="240070030"/>
-        <int name="4" value="240070040"/>
-        <int name="5" value="240070050"/>
-        <int name="6" value="240070060"/>
-        <int name="7" value="240070100"/>
-        <int name="8" value="240070101"/>
-        <int name="9" value="240070102"/>
-        <int name="10" value="240070200"/>
-        <int name="11" value="240070201"/>
-        <int name="12" value="240070202"/>
-        <int name="13" value="240070203"/>
-        <int name="14" value="240070300"/>
-        <int name="15" value="240070301"/>
-        <int name="16" value="240070302"/>
-        <int name="17" value="240070303"/>
-        <int name="18" value="240070400"/>
-        <int name="19" value="240070401"/>
-        <int name="20" value="240070402"/>
-        <int name="21" value="240070403"/>
-        <int name="22" value="240070500"/>
-        <int name="23" value="240070501"/>
-        <int name="24" value="240070502"/>
-        <int name="25" value="240070503"/>
-        <int name="26" value="240070600"/>
-        <int name="27" value="240070601"/>
-        <int name="28" value="240070602"/>
-        <int name="29" value="240070603"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="MapLink">
-    <imgdir name="0">
-      <imgdir name="link">
-        <string name="linkMap" value="WorldMap051"/>
-        <canvas name="linkImg" width="82" height="107">
-          <vector name="origin" x="-237" y="221"/>
-          <int name="z" value="1"/>
-        </canvas>
-      </imgdir>
-      <string name="toolTip" value="Neo City"/>
     </imgdir>
   </imgdir>
 </imgdir>

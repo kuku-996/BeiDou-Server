@@ -31,6 +31,8 @@ public class Foothold implements Comparable<Foothold> {
     private final Point p2;
     private final int id;
     private int next, prev;
+    private boolean forbidFallDown;
+    private float footholdSpeed;
 
     public Foothold(Point p1, Point p2, int id) {
         this.p1 = p1;
@@ -66,6 +68,31 @@ public class Foothold implements Comparable<Foothold> {
         int slope = (p1.y - p2.y) / (p1.x - p2.x);
         int intercept = p1.y - (slope * p1.x);
         return (slope * x) + intercept;
+    }
+
+    public double slope() {
+        int dx = p2.x - p1.x;
+        return dx == 0 ? 0.0 : (double) (p2.y - p1.y) / dx;
+    }
+
+    public boolean isForbidFallDown() {
+        return forbidFallDown;
+    }
+
+    public void setForbidFallDown(boolean forbidFallDown) {
+        this.forbidFallDown = forbidFallDown;
+    }
+
+    public float getFootholdSpeed() {
+        return footholdSpeed;
+    }
+
+    public void setFootholdSpeed(float footholdSpeed) {
+        this.footholdSpeed = footholdSpeed;
+    }
+
+    public static boolean isCollidableWall(Foothold foothold, java.util.Map<Integer, Foothold> byId) {
+        return foothold != null && foothold.isWall();
     }
 
     @Override

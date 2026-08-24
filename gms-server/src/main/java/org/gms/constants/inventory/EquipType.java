@@ -32,6 +32,7 @@ public enum EquipType {
     CAPE(110),
     COAT(104),
     FACE(2),
+    EARRING(103),
     GLOVES(108),
     HAIR(3),
     LONGCOAT(105),

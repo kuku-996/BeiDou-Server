@@ -355,6 +355,18 @@ public enum SendOpcode implements Opcode {
     MAPLELIFE_ERROR(0x15E), // MapleLife错误
     VICIOUS_HAMMER(0x162), // 恶毒锤子
     VEGA_SCROLL(0x166), // VEGA卷轴
+    DAMAGE_SKIN_CATALOG(0x170), // Kaentake damage skin catalog
+    DAMAGE_SKIN_INVENTORY(0x171), // Kaentake owned damage skins
+    DAMAGE_SKIN_RESULT(0x172), // Kaentake apply/purchase result
+    DAMAGE_SKIN_BROADCAST(0x173), // Kaentake active skin map sync
+    BEAUTY_SALON(0x174), // Kaentake hair/face/skin storage
+    WORLD_MAP_PLAYERS(0x178), // Kaentake world-map player list
+    DAILY_CHECKIN(0x17C), // Kaentake daily check-in snapshot
+    BATTLE_STATISTICS(0x17D), // Kaentake combat statistics snapshot
+    QUEST_SCRIPT_DEBUG(0x17E), // Kaentake GM6 quest XML path authorization
+    SET_ITEM_SYNC(0x371C), // Kaentake set catalog/piece-count snapshot
+    BAG_WINDOW(0x3725), // Kaentake character storage bag snapshot
+    MONSTER_BOOK_RESULT(0x372C), // Kaentake extended Monster Book query result
 
     UPDATE_HPMPAALERT(0x1000), // 更新HP/MP/EXP警报
     ;

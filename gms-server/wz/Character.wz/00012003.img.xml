@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="00012003.img">
+<imgdir name="00012003.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="islot" value="Hd"/>
     <string name="vslot" value="Hd"/>
     <int name="cash" value="0"/>
   </imgdir>
   <imgdir name="front">
-    <canvas name="head" width="39" height="35">
+    <canvas name="head" format="1" scale="0">
       <vector name="origin" x="19" y="17"/>
       <imgdir name="map">
         <vector name="neck" x="0" y="15"/>
@@ -19,7 +19,7 @@
     </canvas>
   </imgdir>
   <imgdir name="back">
-    <canvas name="head" width="41" height="35">
+    <canvas name="head" format="1" scale="0">
       <vector name="origin" x="20" y="17"/>
       <imgdir name="map">
         <vector name="neck" x="0" y="15"/>

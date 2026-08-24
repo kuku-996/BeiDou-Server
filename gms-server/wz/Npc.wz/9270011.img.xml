@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9270011.img">
+<imgdir name="9270011.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="MapleTV" value="1"/>
     <short name="MapleTVmsgX" value="-123"/>
@@ -13,11 +13,11 @@
     <int name="dcBottom" value="0"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="1" width="398" height="469">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="184" y="469"/>
       <int name="z" value="0"/>
     </canvas>
-    <canvas name="0" width="399" height="467">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="184" y="467"/>
       <int name="z" value="0"/>
     </canvas>

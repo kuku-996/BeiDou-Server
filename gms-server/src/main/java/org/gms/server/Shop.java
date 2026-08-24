@@ -30,6 +30,7 @@ import org.gms.client.inventory.Pet;
 import org.gms.client.inventory.manipulator.InventoryManipulator;
 import org.gms.constants.id.ItemId;
 import org.gms.constants.inventory.ItemConstants;
+import org.gms.server.artificial.soloport.Casino.CasinoChipConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.util.DatabaseConnection;
@@ -216,8 +217,13 @@ public class Shop {
                 quantity = getSellingQuantity(item, quantity);
                 InventoryManipulator.removeFromSlot(c, type, (byte) slot, quantity, false);
 
-                ItemInformationProvider ii = ItemInformationProvider.getInstance();
-                int recvMesos = ii.getPrice(item.getItemId(), quantity);
+                int recvMesos;
+                if (CasinoChipConfig.isCasinoChip(item.getItemId())) {
+                    recvMesos = CasinoChipConfig.getChipPrice(item.getItemId()) * quantity;
+                } else {
+                    ItemInformationProvider ii = ItemInformationProvider.getInstance();
+                    recvMesos = ii.getPrice(item.getItemId(), quantity);
+                }
                 if (recvMesos > 0) {
                     c.getPlayer().gainMeso(recvMesos, false);
                 }

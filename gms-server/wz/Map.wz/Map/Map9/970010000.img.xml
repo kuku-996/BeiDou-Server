@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="970010000.img">
+<imgdir name="970010000.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
     <int name="town" value="1"/>
     <float name="mobRate" value="1.0"/>
     <string name="bgm" value="Bgm00/FloralLife"/>
-    <int name="returnMap" value="970010000"/>
+    <int name="returnMap" value="970010001"/>
     <string name="mapDesc" value=""/>
-    <int name="forcedReturn" value="970010000"/>
+    <int name="forcedReturn" value="970010001"/>
     <int name="hideMinimap" value="0"/>
     <int name="moveLimit" value="0"/>
     <string name="mapMark" value="Event"/>
     <int name="swim" value="0"/>
-    <int name="fieldLimit" value="271100"/>
+    <int name="fieldLimit" value="1022"/>
     <int name="VRTop" value="660"/>
     <int name="VRLeft" value="-405"/>
     <int name="VRBottom" value="1445"/>
@@ -142,18 +142,13 @@
     </imgdir>
   </imgdir>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="acc1"/>
@@ -326,10 +321,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="acc1"/>
@@ -637,8 +630,7 @@
         <int name="zM" value="11"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="4">
     <imgdir name="info">
@@ -1135,35 +1127,26 @@
     </imgdir>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="reactor">
     <imgdir name="0">
       <string name="id" value="9702000"/>
       <int name="x" value="502"/>
       <int name="y" value="1172"/>
-      <int name="reactorTime" value="1"/>
+      <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
       <string name="name" value="mapleTree"/>
     </imgdir>
@@ -1471,11 +1454,9 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="96" height="32">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="1538"/>
     <int name="height" value="523"/>
     <int name="centerX" value="454"/>
@@ -1499,6 +1480,62 @@
       <int name="tm" value="999999999"/>
       <string name="tn" value=""/>
       <string name="script" value="mapleTree_out"/>
+    </imgdir>
+  </imgdir>
+  <imgdir name="noSkill">
+    <imgdir name="class">
+      <int name="0" value="1"/>
+      <int name="1" value="2"/>
+      <int name="2" value="3"/>
+      <int name="3" value="4"/>
+      <string name="4" value="5"/>
+    </imgdir>
+  </imgdir>
+  <imgdir name="user">
+    <imgdir name="0">
+      <imgdir name="cond">
+        <int name="jobCategory" value="5"/>
+      </imgdir>
+      <imgdir name="stat">
+        <int name="speed" value="100"/>
+        <int name="jump" value="100"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <imgdir name="cond">
+        <int name="jobCategory" value="1"/>
+      </imgdir>
+      <imgdir name="stat">
+        <int name="speed" value="100"/>
+        <int name="jump" value="100"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="2">
+      <imgdir name="cond">
+        <int name="jobCategory" value="2"/>
+      </imgdir>
+      <imgdir name="stat">
+        <int name="speed" value="100"/>
+        <int name="jump" value="100"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="3">
+      <imgdir name="cond">
+        <int name="jobCategory" value="3"/>
+      </imgdir>
+      <imgdir name="stat">
+        <int name="speed" value="100"/>
+        <int name="jump" value="100"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="4">
+      <imgdir name="cond">
+        <int name="jobCategory" value="4"/>
+      </imgdir>
+      <imgdir name="stat">
+        <int name="speed" value="100"/>
+        <int name="jump" value="100"/>
+      </imgdir>
     </imgdir>
   </imgdir>
 </imgdir>

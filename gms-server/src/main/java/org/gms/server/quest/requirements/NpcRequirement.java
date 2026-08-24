@@ -40,7 +40,11 @@ public class NpcRequirement extends AbstractQuestRequirement {
 
     @Override
     public void processData(Data data) {
-        reqNPC = DataTool.getInt(data);
+        // Some valid WZ exports encode NPC ids as string values (for example,
+        // Quest.wz/Check.img entries 1130 and 1135).  Accept both native
+        // numeric nodes and numeric strings so one newer-format quest does
+        // not prevent the whole server from loading.
+        reqNPC = DataTool.getIntConvert(data, 0);
     }
 
 

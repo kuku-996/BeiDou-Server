@@ -45,12 +45,24 @@ public class BeginnerCreator extends CharacterFactory {
 
     public static int createCharacter(Client c, String name, int face, int hair, int skin, int top, int bottom, int shoes, int weapon, int gender) {
 
-        int iMapID = MapId.MUSHROOM_TOWN;
+        return createCharacter(c, name, face, hair, skin, top, bottom, shoes, weapon, gender, null);
+    }
+
+    public static int createCharacter(Client c, String name, int face, int hair, int skin, int top, int bottom, int shoes, int weapon, int gender, AdventurerDiceStats diceStats) {
+
+        // The active client/WZ set includes Map0/000000001.img, while the former
+        // Mushroom Town start map (000010000.img) is absent.
+        int iMapID = MapId.BEGINNER_START;
         if (GameConfig.getServerBoolean("use_beidou_beginner_map"))
         {
             iMapID = MapId.BEIDOU_BEGINNER;
         }
 
-        return createNewCharacter(c, name, face, hair, skin, gender, createRecipe(Job.BEGINNER, 1, iMapID, top, bottom, shoes, weapon));
+        CharacterFactoryRecipe recipe = createRecipe(Job.BEGINNER, 1, iMapID, top, bottom, shoes, weapon);
+        if (diceStats != null) {
+            diceStats.applyTo(recipe);
+        }
+
+        return createNewCharacter(c, name, face, hair, skin, gender, recipe);
     }
 }

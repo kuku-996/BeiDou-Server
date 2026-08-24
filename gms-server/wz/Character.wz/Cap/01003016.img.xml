@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01003016.img">
+<imgdir name="01003016.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="30" height="30">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-2" y="30"/>
     </canvas>
-    <canvas name="iconRaw" width="30" height="28">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-2" y="30"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -125,21 +125,21 @@
     </imgdir>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="41" height="24">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="15"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
       </imgdir>
       <string name="z" value="cap"/>
     </canvas>
-    <canvas name="defaultBack" width="11" height="26">
+    <canvas name="defaultBack" format="1" scale="0">
       <vector name="origin" x="-19" y="-2"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
       </imgdir>
       <string name="z" value="backHairOverCape"/>
     </canvas>
-    <canvas name="defaultPront" width="11" height="26">
+    <canvas name="defaultPront" format="1" scale="0">
       <vector name="origin" x="-19" y="-2"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -148,7 +148,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="37" height="47">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="19" y="10"/>
       <imgdir name="map">
         <vector name="brow" x="-5" y="4"/>

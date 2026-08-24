@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1094005.img">
+<imgdir name="1094005.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="hideName" value="1"/>
     <imgdir name="script">
@@ -10,7 +10,7 @@
     <int name="talkMouseOnly" value="1"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="59" height="63">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="30" y="63"/>
       <int name="delay" value="1000"/>
     </canvas>

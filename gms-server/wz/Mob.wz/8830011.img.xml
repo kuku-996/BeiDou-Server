@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="8830011.img">
+<imgdir name="8830011.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="bodyAttack" value="0"/>
     <int name="level" value="1"/>
@@ -21,21 +21,21 @@
     <int name="noFlip" value="1"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="367" height="215">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="441" y="193"/>
       <int name="z" value="0"/>
       <int name="delay" value="120"/>
     </canvas>
   </imgdir>
   <imgdir name="hit1">
-    <canvas name="0" width="367" height="215">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="441" y="193"/>
       <int name="z" value="0"/>
       <int name="delay" value="120"/>
     </canvas>
   </imgdir>
   <imgdir name="die1">
-    <canvas name="0" width="367" height="215">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="441" y="193"/>
       <int name="z" value="0"/>
       <int name="delay" value="120"/>

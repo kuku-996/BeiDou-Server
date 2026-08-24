@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01082056.img">
+<imgdir name="01082056.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="28" height="29">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-2" y="29"/>
     </canvas>
-    <canvas name="iconRaw" width="26" height="24">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-4" y="29"/>
     </canvas>
     <string name="islot" value="Gv"/>
@@ -20,111 +20,17 @@
     <int name="tuc" value="5"/>
     <int name="price" value="37500"/>
     <int name="cash" value="0"/>
-    <imgdir name="level">
-      <imgdir name="info">
-        <imgdir name="1">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="2">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="3">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="4">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="5">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="6">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="7">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="8">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="9">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="10">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="11">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="12">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="13">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="14">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="15">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="16">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="17">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="18">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="19">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="20">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="21">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="22">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="23">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="24">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="25">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="26">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="27">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="28">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="29">
-          <int name="exp" value="10000"/>
-        </imgdir>
-        <imgdir name="30">
-          <int name="exp" value="10000"/>
-        </imgdir>
-      </imgdir>
-    </imgdir>
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="lGlove" width="10" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="3"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="1"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-21" y="-4"/>
@@ -133,14 +39,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="5" height="8">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="5" y="-4"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-12" y="-9"/>
@@ -149,7 +55,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="9" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="10" y="-2"/>
@@ -159,14 +65,14 @@
       <uol name="rGlove" value="../0/rGlove"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="lGlove" width="9" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="2"/>
         <imgdir name="map">
           <vector name="navel" x="11" y="7"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="9" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-23" y="-1"/>
@@ -177,14 +83,14 @@
   </imgdir>
   <imgdir name="walk2">
     <imgdir name="0">
-      <canvas name="lGlove" width="7" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="7" y="-3"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="-4"/>
@@ -193,14 +99,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="7" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="8" y="-5"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="9" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-10" y="-5"/>
@@ -213,14 +119,14 @@
       <uol name="rGlove" value="../0/rGlove"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="lGlove" width="7" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="6" y="-1"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-12" y="-3"/>
@@ -231,14 +137,14 @@
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="lGlove" width="6" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="5" y="-3"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-20" y="-8"/>
@@ -247,14 +153,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="7" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="7" y="-2"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-19" y="-7"/>
@@ -263,14 +169,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="8" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="8" y="-3"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-18" y="-8"/>
@@ -281,14 +187,14 @@
   </imgdir>
   <imgdir name="stand2">
     <imgdir name="0">
-      <canvas name="lGlove" width="7" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="7" y="-5"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="-5"/>
@@ -297,14 +203,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="7" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="7" y="-3"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="-5"/>
@@ -313,14 +219,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="7" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="7" y="-3"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="-6"/>
@@ -331,14 +237,14 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="lGlove" width="7" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="15" y="24"/>
         <imgdir name="map">
           <vector name="handMove" x="-11" y="-20"/>
         </imgdir>
         <string name="z" value="gloveBelowWeapon"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-12" y="-7"/>
@@ -347,14 +253,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="7" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="15" y="23"/>
         <imgdir name="map">
           <vector name="handMove" x="-13" y="-19"/>
         </imgdir>
         <string name="z" value="gloveBelowWeapon"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-12" y="-9"/>
@@ -363,14 +269,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="7" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="15" y="22"/>
         <imgdir name="map">
           <vector name="handMove" x="-15" y="-17"/>
         </imgdir>
         <string name="z" value="gloveBelowWeapon"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-12" y="-11"/>
@@ -381,14 +287,14 @@
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="1">
-      <canvas name="lGlove" width="9" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="5"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="4" y="-2"/>
@@ -397,14 +303,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="5" height="7">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="6" y="3"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="16" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-18" y="16"/>
@@ -415,14 +321,14 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="lGlove" width="8" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="8" y="-1"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="14" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="12" y="9"/>
@@ -431,14 +337,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="8" height="6">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="8" y="8"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="15" y="5"/>
@@ -447,14 +353,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="11" height="8">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="16" y="11"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-21" y="-3"/>
@@ -465,14 +371,14 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="lGlove" width="14" height="8">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="24" y="7"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-22" y="4"/>
@@ -481,7 +387,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="11" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="13" y="1"/>
@@ -492,14 +398,14 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="lGlove" width="11" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="-7"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="rGlove" width="13" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-20" y="5"/>
@@ -508,14 +414,14 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="lGlove" width="9" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="15" y="-6"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="rGlove" width="14" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-19" y="11"/>
@@ -526,14 +432,14 @@
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="lGlove" width="17" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="-1" y="23"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="16">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-23" y="20"/>
@@ -542,14 +448,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="10" height="16">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="20" y="11"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="15" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="15"/>
@@ -558,7 +464,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="11" height="14">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="-10"/>
@@ -569,14 +475,14 @@
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="1">
-      <canvas name="lGlove" width="9" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="18" y="7"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="13" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="-1"/>
@@ -585,7 +491,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="19" height="17">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="-1" y="2"/>
@@ -596,14 +502,14 @@
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="lGlove" width="11" height="13">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="-6" y="2"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="rGlove" width="9" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="-2"/>
@@ -612,7 +518,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="21" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="2" y="-3"/>
@@ -623,7 +529,7 @@
   </imgdir>
   <imgdir name="swingTF">
     <imgdir name="1">
-      <canvas name="lGlove" width="10" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="-10" y="13"/>
@@ -632,7 +538,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="19" height="22">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="13" y="28"/>
@@ -641,7 +547,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="rGlove" width="11" height="14">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="11" y="-8"/>
@@ -652,14 +558,14 @@
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="lGlove" width="15" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="5" y="26"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="16">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-22" y="21"/>
@@ -668,14 +574,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="11" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="22" y="5"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="16" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="16"/>
@@ -684,14 +590,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="6" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="-5"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="14">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="9" y="-9"/>
@@ -702,7 +608,7 @@
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="rGlove" width="10" height="15">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="12" y="8"/>
@@ -711,7 +617,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="14" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="13" y="-3"/>
@@ -720,7 +626,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="19" height="17">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="0" y="1"/>
@@ -731,14 +637,14 @@
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="lGlove" width="11" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="19" y="6"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="13" height="13">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-26" y="2"/>
@@ -747,14 +653,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="10" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="18" y="1"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="13" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-25" y="3"/>
@@ -763,14 +669,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="15" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="12" y="25"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="16">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-19" y="22"/>
@@ -779,14 +685,14 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="lGlove" width="9" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="12" y="-5"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="14">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="12" y="-10"/>
@@ -797,14 +703,14 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="lGlove" width="13" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="21" y="4"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-20" y="-5"/>
@@ -813,7 +719,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="14" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="20" y="3"/>
@@ -824,14 +730,14 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="lGlove" width="13" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="21" y="9"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="13" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-16" y="6"/>
@@ -840,7 +746,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="13" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="17" y="3"/>
@@ -851,14 +757,14 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="lGlove" width="13" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="1" y="3"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-14" y="-1"/>
@@ -867,14 +773,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="15" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="32" y="8"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-18" y="-4"/>
@@ -883,14 +789,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="9" height="13">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="20" y="5"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="14" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="22" y="3"/>
@@ -901,14 +807,14 @@
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="lGlove" width="13" height="8">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="5" y="-4"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="13">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-22" y="1"/>
@@ -917,14 +823,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="10" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="6" y="-6"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="13">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-22" y="1"/>
@@ -933,14 +839,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="13" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="26" y="5"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="15" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-3" y="-1"/>
@@ -951,14 +857,14 @@
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="lGlove" width="10" height="6">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="12" y="-6"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="9" height="13">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-19" y="2"/>
@@ -967,14 +873,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="10" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="16" y="-4"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-17" y="3"/>
@@ -983,14 +889,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="11" height="13">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="27" y="3"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="13" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-15" y="-7"/>
@@ -1009,14 +915,14 @@
       <uol name="rGlove" value="../../swingPF/1/rGlove"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="13" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="-7" y="6"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="13">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-28" y="9"/>
@@ -1031,14 +937,14 @@
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="lGlove" width="13" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="23" y="10"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="14" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="3" y="8"/>
@@ -1047,14 +953,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="13" height="11">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="24" y="9"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="14" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="6"/>
@@ -1069,14 +975,14 @@
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="lGlove" width="11" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="14" y="5"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-10" y="0"/>
@@ -1086,7 +992,7 @@
     </imgdir>
     <imgdir name="1">
       <uol name="lGlove" value="../0/lGlove"/>
-      <canvas name="rGlove" width="14" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="5" y="7"/>
@@ -1096,7 +1002,7 @@
     </imgdir>
     <imgdir name="2">
       <uol name="lGlove" value="../0/lGlove"/>
-      <canvas name="rGlove" width="13" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-9" y="7"/>
@@ -1109,14 +1015,14 @@
       <uol name="rGlove" value="../0/rGlove"/>
     </imgdir>
     <imgdir name="4">
-      <canvas name="lGlove" width="11" height="10">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="12" y="5"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="12" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-13" y="1"/>
@@ -1127,14 +1033,14 @@
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="lGlove" width="16" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="25" y="13"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="15" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="2" y="8"/>
@@ -1143,14 +1049,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="17" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="28" y="12"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="13" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-13" y="5"/>
@@ -1165,14 +1071,14 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="lGlove" width="11" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="36" y="2"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="15" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="4" y="-3"/>
@@ -1182,7 +1088,7 @@
     </imgdir>
     <imgdir name="1">
       <uol name="lGlove" value="../0/lGlove"/>
-      <canvas name="rGlove" width="14" height="10">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="19" y="-3"/>
@@ -1213,14 +1119,14 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="lGlove" width="8" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="8" y="4"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-9" y="2"/>
@@ -1235,14 +1141,14 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="lGlove" width="8" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="navel" x="7" y="3"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="10" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-10" y="1"/>
@@ -1253,14 +1159,14 @@
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="lGlove" width="7" height="5">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="navel" x="6" y="-3"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="11" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="11" y="9"/>
         <imgdir name="map">
           <vector name="navel" x="-11" y="-7"/>
@@ -1271,7 +1177,7 @@
   </imgdir>
   <imgdir name="ladder">
     <imgdir name="0">
-      <canvas name="rGlove" width="25" height="21">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="3" y="12"/>
@@ -1280,7 +1186,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="25" height="21">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="2" y="12"/>
@@ -1291,7 +1197,7 @@
   </imgdir>
   <imgdir name="rope">
     <imgdir name="0">
-      <canvas name="rGlove" width="7" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-6" y="9"/>
@@ -1300,7 +1206,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="5" height="3">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="10" y="10"/>
         <imgdir name="map">
           <vector name="navel" x="-8" y="2"/>

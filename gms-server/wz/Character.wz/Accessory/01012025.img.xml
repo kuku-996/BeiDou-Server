@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01012025.img">
+<imgdir name="01012025.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="26" height="30">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-3" y="30"/>
     </canvas>
-    <canvas name="iconRaw" width="23" height="29">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-4" y="30"/>
     </canvas>
     <string name="islot" value="Af"/>
@@ -127,7 +127,7 @@
   </imgdir>
   <imgdir name="blaze">
     <imgdir name="0">
-      <canvas name="default" width="26" height="5">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-41"/>
@@ -149,7 +149,7 @@
   </imgdir>
   <imgdir name="bowing">
     <imgdir name="0">
-      <canvas name="default" width="26" height="5">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="15" y="25"/>
         <imgdir name="map">
           <vector name="brow" x="-5" y="-42"/>
@@ -178,7 +178,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="26" height="5">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="25"/>
       <imgdir name="map">
         <vector name="brow" x="-5" y="-41"/>

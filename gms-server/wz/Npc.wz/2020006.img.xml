@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2020006.img">
+<imgdir name="2020006.img" indent="2" media="NONE">
   <imgdir name="info">
     <imgdir name="speak">
       <string name="0" value="n0"/>
@@ -7,26 +7,26 @@
     </imgdir>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="88" height="69">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="3000"/>
     </canvas>
-    <canvas name="1" width="88" height="69">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="150"/>
     </canvas>
-    <canvas name="2" width="88" height="69">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="200"/>
     </canvas>
     <uol name="3" value="1"/>
   </imgdir>
   <imgdir name="say">
-    <canvas name="0" width="88" height="69">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="250"/>
     </canvas>
-    <canvas name="1" width="88" height="69">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="250"/>
     </canvas>
@@ -52,11 +52,11 @@
     </imgdir>
   </imgdir>
   <imgdir name="lag">
-    <canvas name="0" width="88" height="69">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="100"/>
     </canvas>
-    <canvas name="1" width="88" height="69">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="100"/>
     </canvas>
@@ -66,7 +66,7 @@
     <uol name="5" value="1"/>
     <uol name="6" value="0"/>
     <uol name="7" value="1"/>
-    <canvas name="8" width="88" height="69">
+    <canvas name="8" format="1" scale="0">
       <vector name="origin" x="41" y="67"/>
       <int name="delay" value="2000"/>
     </canvas>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="889100021.img">
+<imgdir name="889100021.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -9,7 +9,7 @@
     <float name="mobRate" value="1.0"/>
     <string name="bgm" value="Bgm04/WhiteChristmas"/>
     <string name="mapMark" value="HappyVillage"/>
-    <int name="hideMinimap" value="0"/>
+    <int name="hideMinimap" value="1"/>
     <int name="fieldLimit" value="786556"/>
     <int name="swim" value="0"/>
     <int name="fly" value="0"/>
@@ -334,18 +334,13 @@
     </imgdir>
   </imgdir>
   <imgdir name="0">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="1">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="Christmas"/>
@@ -458,10 +453,8 @@
     </imgdir>
   </imgdir>
   <imgdir name="2">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="Christmas"/>
@@ -538,20 +531,14 @@
     </imgdir>
   </imgdir>
   <imgdir name="3">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="4">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="5">
     <imgdir name="info">
@@ -1204,41 +1191,42 @@
         <int name="zM" value="11"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="reactor">
     <imgdir name="0">
-      <string name="id" value="9400300"/>
+      <string name="id" value="8892004"/>
       <int name="x" value="-178"/>
       <int name="y" value="32"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
-      <string name="name" value="snowmanCollector"/>
+      <string name="name" value="snow20"/>
     </imgdir>
     <imgdir name="1">
-      <string name="id" value="9400301"/>
-      <int name="x" value="-178"/>
-      <int name="y" value="32"/>
+      <string name="id" value="8892005"/>
+      <int name="x" value="-188"/>
+      <int name="y" value="146"/>
       <int name="reactorTime" value="-1"/>
       <int name="f" value="0"/>
-      <string name="name" value="snowmanFakeCollector"/>
+      <string name="name" value="mob20"/>
+    </imgdir>
+    <imgdir name="2">
+      <string name="id" value="8898000"/>
+      <int name="x" value="-182"/>
+      <int name="y" value="31"/>
+      <int name="reactorTime" value="0"/>
+      <int name="f" value="1"/>
+      <string name="name" value="snow01"/>
     </imgdir>
   </imgdir>
   <imgdir name="snowMan">
@@ -1740,11 +1728,9 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="85" height="43">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="1361"/>
     <int name="height" value="702"/>
     <int name="centerX" value="818"/>

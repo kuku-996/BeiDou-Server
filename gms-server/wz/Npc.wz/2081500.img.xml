@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2081500.img">
+<imgdir name="2081500.img" indent="2" media="NONE">
   <imgdir name="info">
     <imgdir name="speak">
       <string name="0" value="n0"/>
@@ -12,7 +12,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="72" height="120">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="40" y="104"/>
       <int name="z" value="0"/>
     </canvas>

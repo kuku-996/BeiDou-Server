@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="970000106.img">
+<imgdir name="970000106.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -248,10 +248,8 @@
       <int name="a" value="255"/>
     </imgdir>
   </imgdir>
-  <imgdir name="life">
-  </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="life"/>
+  <imgdir name="reactor"/>
   <imgdir name="0">
     <imgdir name="info">
       <string name="tS" value="magatia"/>
@@ -822,8 +820,7 @@
         <int name="zM" value="6"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="2">
     <imgdir name="info">
@@ -993,8 +990,7 @@
         <int name="zM" value="7"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="3">
     <imgdir name="info">
@@ -1171,8 +1167,7 @@
         <int name="zM" value="4"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="4">
     <imgdir name="info">
@@ -1433,22 +1428,16 @@
         <int name="zM" value="3"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="acc8"/>
@@ -1489,12 +1478,9 @@
     </imgdir>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="foothold">
     <imgdir name="0">
@@ -2064,11 +2050,9 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="76" height="64">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="1220"/>
     <int name="height" value="1033"/>
     <int name="centerX" value="568"/>

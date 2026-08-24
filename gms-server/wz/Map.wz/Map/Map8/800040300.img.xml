@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="800040300.img" indent="2" media="NONE">
+  <imgdir name="info">
+    <string name="bgm" value="BgmJp/CastleInside"/>
+    <int name="cloud" value="0"/>
+    <int name="swim" value="0"/>
+    <int name="forcedReturn" value="800040200"/>
+    <int name="hideMinimap" value="1"/>
+    <string name="mapMark" value="jipangu"/>
+    <float name="mobRate" value="1.0"/>
+    <int name="returnMap" value="800040000"/>
+    <int name="town" value="0"/>
+    <int name="version" value="10"/>
+    <int name="fieldLimit" value="764"/>
+    <int name="VRLeft" value="-153"/>
+    <int name="VRRight" value="1127"/>
+    <int name="VRTop" value="-235"/>
+    <int name="VRBottom" value="425"/>
+  </imgdir>
+  <imgdir name="0">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="1">
+    <imgdir name="info"/>
+    <imgdir name="obj">
+      <imgdir name="0">
+        <int name="x" value="290"/>
+        <int name="y" value="194"/>
+        <int name="z" value="52"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="32"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="1">
+        <int name="x" value="493"/>
+        <int name="y" value="194"/>
+        <int name="z" value="53"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="32"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="2">
+        <int name="x" value="697"/>
+        <int name="y" value="194"/>
+        <int name="z" value="54"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="32"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="3">
+        <int name="x" value="492"/>
+        <int name="y" value="54"/>
+        <int name="z" value="7"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="31"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="4">
+        <int name="x" value="495"/>
+        <int name="y" value="28"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="15"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="5">
+        <int name="x" value="711"/>
+        <int name="y" value="28"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="15"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="6">
+        <int name="x" value="276"/>
+        <int name="y" value="28"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="15"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="7">
+        <int name="x" value="788"/>
+        <int name="y" value="157"/>
+        <int name="z" value="5"/>
+        <int name="zM" value="4"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="16"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="8">
+        <int name="x" value="167"/>
+        <int name="y" value="76"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="16"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="9">
+        <int name="x" value="389"/>
+        <int name="y" value="77"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="16"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="10">
+        <int name="x" value="603"/>
+        <int name="y" value="75"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="16"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="11">
+        <int name="x" value="167"/>
+        <int name="y" value="240"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="16"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="12">
+        <int name="x" value="815"/>
+        <int name="y" value="79"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="16"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="13">
+        <int name="x" value="818"/>
+        <int name="y" value="243"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="16"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="14">
+        <int name="x" value="922"/>
+        <int name="y" value="54"/>
+        <int name="z" value="50"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="19"/>
+        <int name="r" value="0"/>
+        <int name="hide" value="0"/>
+        <int name="reactor" value="0"/>
+        <int name="flow" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="15">
+        <int name="x" value="62"/>
+        <int name="y" value="54"/>
+        <int name="z" value="50"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="19"/>
+        <int name="r" value="0"/>
+        <int name="hide" value="0"/>
+        <int name="reactor" value="0"/>
+        <int name="flow" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="16">
+        <int name="x" value="1141"/>
+        <int name="y" value="156"/>
+        <int name="z" value="0"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="16"/>
+        <int name="r" value="0"/>
+        <int name="hide" value="0"/>
+        <int name="reactor" value="0"/>
+        <int name="flow" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="17">
+        <int name="x" value="-156"/>
+        <int name="y" value="156"/>
+        <int name="z" value="0"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="16"/>
+        <int name="r" value="0"/>
+        <int name="hide" value="0"/>
+        <int name="reactor" value="0"/>
+        <int name="flow" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="2">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="3">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="4">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="5">
+    <imgdir name="info"/>
+    <imgdir name="obj">
+      <imgdir name="0">
+        <int name="x" value="162"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="1">
+        <int name="x" value="331"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="1"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="1"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="2">
+        <int name="x" value="500"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="2"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="2"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="3">
+        <int name="x" value="669"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="3"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="3"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="4">
+        <int name="x" value="838"/>
+        <int name="y" value="375"/>
+        <int name="z" value="7"/>
+        <int name="zM" value="3"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="1"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="5">
+        <int name="x" value="1007"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="6">
+        <int name="x" value="1176"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="1"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="7">
+        <int name="x" value="-7"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="1"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="8">
+        <int name="x" value="-176"/>
+        <int name="y" value="375"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="insideEmperor"/>
+        <string name="l2" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="9">
+        <int name="x" value="-96"/>
+        <int name="y" value="-372"/>
+        <int name="z" value="54"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="26"/>
+        <int name="r" value="0"/>
+        <int name="hide" value="0"/>
+        <int name="reactor" value="0"/>
+        <int name="flow" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="10">
+        <int name="x" value="334"/>
+        <int name="y" value="-372"/>
+        <int name="z" value="54"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="26"/>
+        <int name="r" value="0"/>
+        <int name="hide" value="0"/>
+        <int name="reactor" value="0"/>
+        <int name="flow" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="11">
+        <int name="x" value="764"/>
+        <int name="y" value="-372"/>
+        <int name="z" value="54"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="26"/>
+        <int name="r" value="0"/>
+        <int name="hide" value="0"/>
+        <int name="reactor" value="0"/>
+        <int name="flow" value="0"/>
+        <int name="f" value="0"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="6">
+    <imgdir name="info"/>
+    <imgdir name="obj">
+      <imgdir name="0">
+        <int name="x" value="42"/>
+        <int name="y" value="76"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="7"/>
+        <int name="f" value="0"/>
+      </imgdir>
+      <imgdir name="1">
+        <int name="x" value="949"/>
+        <int name="y" value="76"/>
+        <int name="z" value="9"/>
+        <int name="zM" value="0"/>
+        <string name="oS" value="globalJP"/>
+        <string name="l0" value="ninja"/>
+        <string name="l1" value="inside"/>
+        <string name="l2" value="7"/>
+        <int name="f" value="0"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="7">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="8">
+    <imgdir name="info"/>
+    <imgdir name="obj"/>
+    <imgdir name="tile"/>
+  </imgdir>
+  <imgdir name="ladderRope"/>
+  <imgdir name="portal">
+    <imgdir name="0">
+      <int name="x" value="298"/>
+      <int name="y" value="256"/>
+      <int name="pt" value="0"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value=""/>
+      <string name="pn" value="sp"/>
+    </imgdir>
+    <imgdir name="1">
+      <int name="x" value="399"/>
+      <int name="y" value="290"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="999999999"/>
+      <string name="tn" value=""/>
+      <string name="pn" value="st00"/>
+    </imgdir>
+    <imgdir name="2">
+      <int name="x" value="291"/>
+      <int name="y" value="291"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="800040305"/>
+      <string name="tn" value="st00"/>
+      <string name="pn" value="h001"/>
+    </imgdir>
+    <imgdir name="3">
+      <int name="x" value="493"/>
+      <int name="y" value="291"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="800040308"/>
+      <string name="tn" value="st00"/>
+      <string name="pn" value="h002"/>
+    </imgdir>
+    <imgdir name="4">
+      <int name="x" value="697"/>
+      <int name="y" value="291"/>
+      <int name="pt" value="1"/>
+      <int name="tm" value="800040313"/>
+      <string name="tn" value="st00"/>
+      <string name="pn" value="h003"/>
+    </imgdir>
+  </imgdir>
+  <imgdir name="reactor"/>
+  <imgdir name="back">
+    <imgdir name="0">
+      <int name="x" value="336"/>
+      <int name="y" value="-21"/>
+      <int name="rx" value="0"/>
+      <int name="ry" value="0"/>
+      <int name="cx" value="0"/>
+      <int name="cy" value="0"/>
+      <int name="a" value="255"/>
+      <int name="type" value="3"/>
+      <int name="front" value="0"/>
+      <int name="f" value="0"/>
+      <string name="bS" value="globalJP"/>
+      <int name="ani" value="0"/>
+      <int name="no" value="0"/>
+    </imgdir>
+    <imgdir name="1">
+      <int name="x" value="-157"/>
+      <int name="y" value="-237"/>
+      <int name="rx" value="0"/>
+      <int name="ry" value="0"/>
+      <int name="cx" value="0"/>
+      <int name="cy" value="0"/>
+      <int name="a" value="255"/>
+      <int name="type" value="1"/>
+      <int name="front" value="0"/>
+      <int name="f" value="0"/>
+      <string name="bS" value="globalJP"/>
+      <int name="ani" value="0"/>
+      <int name="no" value="8"/>
+    </imgdir>
+    <imgdir name="2">
+      <int name="x" value="-233"/>
+      <int name="y" value="-62"/>
+      <int name="rx" value="0"/>
+      <int name="ry" value="0"/>
+      <int name="cx" value="0"/>
+      <int name="cy" value="0"/>
+      <int name="a" value="255"/>
+      <int name="type" value="0"/>
+      <int name="front" value="0"/>
+      <int name="f" value="0"/>
+      <string name="bS" value="globalJP"/>
+      <int name="ani" value="0"/>
+      <int name="no" value="9"/>
+    </imgdir>
+  </imgdir>
+  <imgdir name="foothold">
+    <imgdir name="5">
+      <imgdir name="0">
+        <imgdir name="1">
+          <int name="x1" value="77"/>
+          <int name="y1" value="296"/>
+          <int name="x2" value="248"/>
+          <int name="y2" value="296"/>
+          <int name="prev" value="0"/>
+          <int name="next" value="2"/>
+        </imgdir>
+        <imgdir name="2">
+          <int name="x1" value="248"/>
+          <int name="y1" value="296"/>
+          <int name="x2" value="417"/>
+          <int name="y2" value="296"/>
+          <int name="prev" value="1"/>
+          <int name="next" value="3"/>
+        </imgdir>
+        <imgdir name="3">
+          <int name="x1" value="417"/>
+          <int name="y1" value="296"/>
+          <int name="x2" value="586"/>
+          <int name="y2" value="296"/>
+          <int name="prev" value="2"/>
+          <int name="next" value="4"/>
+        </imgdir>
+        <imgdir name="4">
+          <int name="x1" value="586"/>
+          <int name="y1" value="296"/>
+          <int name="x2" value="755"/>
+          <int name="y2" value="296"/>
+          <int name="prev" value="3"/>
+          <int name="next" value="5"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="1">
+        <imgdir name="5">
+          <int name="x1" value="755"/>
+          <int name="y1" value="296"/>
+          <int name="x2" value="912"/>
+          <int name="y2" value="296"/>
+          <int name="prev" value="4"/>
+          <int name="next" value="0"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="life">
+    <imgdir name="0">
+      <string name="id" value="9400401"/>
+      <int name="x" value="775"/>
+      <int name="y" value="278"/>
+      <int name="cy" value="296"/>
+      <int name="mobTime" value="0"/>
+      <int name="rx0" value="606"/>
+      <int name="rx1" value="858"/>
+      <int name="f" value="0"/>
+      <int name="hide" value="0"/>
+      <string name="type" value="m"/>
+      <int name="fh" value="5"/>
+    </imgdir>
+    <imgdir name="1">
+      <string name="id" value="9400406"/>
+      <int name="x" value="448"/>
+      <int name="y" value="276"/>
+      <int name="cy" value="296"/>
+      <int name="mobTime" value="0"/>
+      <int name="rx0" value="437"/>
+      <int name="rx1" value="566"/>
+      <int name="f" value="0"/>
+      <int name="hide" value="0"/>
+      <string name="type" value="m"/>
+      <int name="fh" value="3"/>
+    </imgdir>
+    <imgdir name="2">
+      <string name="id" value="9400406"/>
+      <int name="x" value="617"/>
+      <int name="y" value="269"/>
+      <int name="cy" value="296"/>
+      <int name="mobTime" value="0"/>
+      <int name="rx0" value="606"/>
+      <int name="rx1" value="858"/>
+      <int name="f" value="0"/>
+      <int name="hide" value="0"/>
+      <string name="type" value="m"/>
+      <int name="fh" value="4"/>
+    </imgdir>
+    <imgdir name="3">
+      <string name="id" value="9400402"/>
+      <int name="x" value="548"/>
+      <int name="y" value="279"/>
+      <int name="cy" value="296"/>
+      <int name="mobTime" value="0"/>
+      <int name="rx0" value="437"/>
+      <int name="rx1" value="566"/>
+      <int name="f" value="0"/>
+      <int name="hide" value="0"/>
+      <string name="type" value="m"/>
+      <int name="fh" value="3"/>
+    </imgdir>
+  </imgdir>
+</imgdir>

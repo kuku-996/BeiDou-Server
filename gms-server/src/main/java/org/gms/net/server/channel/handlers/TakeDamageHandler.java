@@ -53,6 +53,8 @@ import org.gms.server.maps.MapleMap;
 import org.gms.util.PacketCreator;
 import org.gms.util.Randomizer;
 
+import static org.gms.server.artificial.soloport.ArtificialPlayer.BotHelpers.isBot;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -67,6 +69,12 @@ public final class TakeDamageHandler extends AbstractPacketHandler {
         List<Character> banishPlayers = new ArrayList<>();
 
         Character chr = c.getPlayer();
+        // Artificial players are server-driven simulations, not real clients.
+        // Their scripted movement can overlap a mob for a tick, but that must
+        // never enter the normal player damage/death pipeline.
+        if (isBot(chr)) {
+            return;
+        }
         p.readInt();
         byte damagefrom = p.readByte();
         p.readByte(); //Element

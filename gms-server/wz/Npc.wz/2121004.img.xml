@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2121004.img">
+<imgdir name="2121004.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="dcLeft" value="-25"/>
     <int name="dcTop" value="-44"/>
     <int name="dcRight" value="27"/>
     <int name="dcBottom" value="1"/>
     <int name="hideName" value="1"/>
-    <canvas name="default" width="53" height="45">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="26" y="45"/>
       <int name="z" value="0"/>
     </canvas>
@@ -18,7 +18,7 @@
     <int name="talkMouseOnly" value="1"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="4" height="4">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="4"/>
     </canvas>
   </imgdir>

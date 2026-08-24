@@ -314,6 +314,16 @@ public final class PacketProcessor {
         registerHandler(RecvOpcode.OPEN_ITEMUI, new RaiseUIStateHandler());
         registerHandler(RecvOpcode.USE_ITEMUI, new RaiseIncExpHandler());
         registerHandler(RecvOpcode.CHANGE_QUICKSLOT, new QuickslotKeyMappedModifiedHandler());
+        registerHandler(RecvOpcode.HYPER_TELEPORT_ROCK, new HyperTeleportRockHandler());
+        registerHandler(RecvOpcode.DAMAGE_SKIN_APPLY, new DamageSkinApplyHandler());
+        registerHandler(RecvOpcode.DAMAGE_SKIN_PURCHASE, new DamageSkinPurchaseHandler());
+        registerHandler(RecvOpcode.WORLD_MAP_PLAYERS, new WorldMapPlayersHandler());
+        registerHandler(RecvOpcode.DAILY_CHECKIN, new DailyCheckinHandler());
+        registerHandler(RecvOpcode.BATTLE_STATISTICS, new BattleStatisticsHandler());
+        registerHandler(RecvOpcode.BEAUTY_SALON, new BeautySalonHandler());
+        registerHandler(RecvOpcode.SET_ITEM_ACTION, new SetItemHandler());
+        registerHandler(RecvOpcode.BAG_WINDOW, new BagWindowHandler());
+        registerHandler(RecvOpcode.MONSTER_BOOK_QUERY, new MonsterBookQueryHandler());
         registerHandler(RecvOpcode.SET_HPMPALERT, new SetHpMpAlertHandler());
     }
 }

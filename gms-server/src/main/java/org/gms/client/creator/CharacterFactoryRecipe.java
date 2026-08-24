@@ -23,7 +23,6 @@ import org.gms.client.Job;
 import org.gms.client.Skill;
 import org.gms.client.inventory.InventoryType;
 import org.gms.client.inventory.Item;
-import org.gms.config.GameConfig;
 import org.gms.util.Pair;
 
 import java.util.LinkedHashMap;
@@ -61,14 +60,6 @@ public class CharacterFactoryRecipe {
         this.shoes = shoes;
         this.weapon = weapon;
 
-        if (!GameConfig.getServerBoolean("use_starting_ap_4")) {
-            if (GameConfig.getServerBoolean("use_auto_assign_starters_ap")) {
-                str = 12;
-                dex = 5;
-            } else {
-                ap = 9;
-            }
-        }
     }
 
     public void setStr(int v) {

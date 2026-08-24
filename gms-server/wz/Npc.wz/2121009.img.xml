@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2121009.img">
+<imgdir name="2121009.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="dcLeft" value="-49"/>
     <int name="dcTop" value="-186"/>
@@ -11,14 +11,14 @@
         <string name="script" value="picture3"/>
       </imgdir>
     </imgdir>
-    <canvas name="default" width="94" height="65">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="47" y="32"/>
       <int name="z" value="0"/>
     </canvas>
     <int name="talkMouseOnly" value="1"/>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="4" height="4">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
     </canvas>
   </imgdir>

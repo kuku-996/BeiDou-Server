@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01112810.img">
+<imgdir name="01112810.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="37" height="35">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="2" y="34"/>
     </canvas>
-    <canvas name="iconRaw" width="37" height="36">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="2" y="34"/>
     </canvas>
-    <canvas name="sample" width="214" height="140">
-    </canvas>
+    <canvas name="sample" format="1" scale="0"/>
     <string name="islot" value="Ri"/>
     <string name="vslot" value="Ri"/>
     <int name="reqJob" value="0"/>

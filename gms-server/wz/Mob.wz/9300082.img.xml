@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9300082.img">
+<imgdir name="9300082.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="bodyAttack" value="1"/>
     <int name="level" value="6"/>
@@ -21,13 +21,13 @@
     <int name="mobType" value="0"/>
   </imgdir>
   <imgdir name="fly">
-    <canvas name="0" width="46" height="30">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="23" y="50"/>
       <int name="delay" value="150"/>
       <vector name="lt" x="-23" y="-50"/>
       <vector name="rb" x="23" y="-20"/>
     </canvas>
-    <canvas name="1" width="32" height="43">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="16" y="62"/>
       <int name="delay" value="150"/>
       <vector name="lt" x="-16" y="-62"/>
@@ -35,7 +35,7 @@
     </canvas>
   </imgdir>
   <imgdir name="hit1">
-    <canvas name="0" width="34" height="44">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="17" y="62"/>
       <int name="delay" value="600"/>
       <vector name="lt" x="-17" y="-62"/>
@@ -43,22 +43,22 @@
     </canvas>
   </imgdir>
   <imgdir name="die1">
-    <canvas name="0" width="24" height="47">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="12" y="67"/>
       <vector name="head" x="1" y="-7"/>
       <int name="delay" value="130"/>
     </canvas>
-    <canvas name="1" width="21" height="47">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="10" y="67"/>
       <vector name="head" x="1" y="-7"/>
       <int name="delay" value="130"/>
     </canvas>
-    <canvas name="2" width="24" height="47">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="12" y="67"/>
       <vector name="head" x="1" y="-7"/>
       <int name="delay" value="130"/>
     </canvas>
-    <canvas name="3" width="21" height="47">
+    <canvas name="3" format="1" scale="0">
       <vector name="origin" x="10" y="67"/>
       <vector name="head" x="1" y="-7"/>
       <int name="delay" value="300"/>

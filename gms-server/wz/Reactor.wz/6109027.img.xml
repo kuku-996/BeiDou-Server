@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="6109027.img">
+<imgdir name="6109027.img" indent="2" media="NONE">
   <imgdir name="info">
     <string name="info" value="글로벌 파티 퀘스트 - 불 콘트롤3_5"/>
     <int name="activateByTouch" value="1"/>
@@ -12,12 +12,12 @@
       </imgdir>
     </imgdir>
     <imgdir name="hit">
-      <canvas name="0" width="149" height="45">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="74" y="22"/>
         <int name="z" value="0"/>
       </canvas>
     </imgdir>
-    <canvas name="0" width="149" height="45">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="74" y="22"/>
       <int name="z" value="0"/>
     </canvas>
@@ -30,7 +30,7 @@
       </imgdir>
     </imgdir>
     <uol name="hit" value="../0/hit"/>
-    <canvas name="0" width="149" height="45">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="74" y="22"/>
       <int name="z" value="0"/>
     </canvas>

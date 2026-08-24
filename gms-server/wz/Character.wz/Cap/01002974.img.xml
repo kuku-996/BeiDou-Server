@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002974.img">
+<imgdir name="01002974.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="29" height="33">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-1" y="36"/>
     </canvas>
-    <canvas name="iconRaw" width="29" height="33">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-1" y="36"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -16,9 +16,11 @@
     <int name="reqINT" value="0"/>
     <int name="reqLUK" value="0"/>
     <int name="cash" value="1"/>
+    <int name="tradeBlock" value="1"/>
+    <int name="isDonor" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="27" height="33">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="11" y="37"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -27,7 +29,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="27" height="42">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="-121" y="37"/>
       <imgdir name="map">
         <vector name="brow" x="130" y="0"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01082173.img">
+<imgdir name="01082173.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="27" height="30">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-3" y="30"/>
     </canvas>
-    <canvas name="iconRaw" width="27" height="26">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-3" y="30"/>
     </canvas>
     <string name="islot" value="Gv"/>
@@ -19,7 +19,7 @@
   </imgdir>
   <imgdir name="walk1">
     <imgdir name="0">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="6"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -28,7 +28,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="5" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="1" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -40,7 +40,7 @@
       <uol name="rGlove" value="../0/rGlove"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="rGlove" width="5" height="7">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -51,7 +51,7 @@
   </imgdir>
   <imgdir name="walk2">
     <imgdir name="0">
-      <canvas name="rGlove" width="21" height="14">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="15" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -60,7 +60,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="18" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="13" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -72,7 +72,7 @@
       <uol name="rGlove" value="../0/rGlove"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="rGlove" width="20" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="13" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -83,7 +83,7 @@
   </imgdir>
   <imgdir name="stand1">
     <imgdir name="0">
-      <canvas name="rGlove" width="6" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -92,7 +92,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="6" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -101,7 +101,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="6" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="1" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -112,7 +112,7 @@
   </imgdir>
   <imgdir name="stand2">
     <imgdir name="0">
-      <canvas name="rGlove" width="18" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="14" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -121,7 +121,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="19" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="14" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -130,7 +130,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="19" height="12">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="14" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -141,7 +141,7 @@
   </imgdir>
   <imgdir name="alert">
     <imgdir name="0">
-      <canvas name="rGlove" width="20" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="17" y="8"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -150,7 +150,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="20" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="16" y="7"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -159,7 +159,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="20" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="17" y="6"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -170,7 +170,7 @@
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="1">
-      <canvas name="rGlove" width="3" height="5">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -179,7 +179,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="8" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="4" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -190,7 +190,7 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="rGlove" width="13" height="22">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="4" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -199,7 +199,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="16" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="12"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -208,7 +208,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="42" height="16">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="38" y="14"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -219,14 +219,14 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="lGlove" width="7" height="5">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="48" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="45" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -235,7 +235,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="7" height="4">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="1" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -246,7 +246,7 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="rGlove" width="36" height="16">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="18" y="8"/>
         <imgdir name="map">
           <vector name="hand" x="15" y="-5"/>
@@ -255,7 +255,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="rGlove" width="40" height="31">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="37" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="-1"/>
@@ -266,7 +266,7 @@
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="rGlove" width="19" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="4" y="7"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -275,7 +275,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="13" height="13">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="10"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -284,7 +284,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -295,7 +295,7 @@
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="1">
-      <canvas name="rGlove" width="9" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -304,7 +304,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="15" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="7"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -315,7 +315,7 @@
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="lGlove" width="14" height="9">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="5" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -324,7 +324,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="15" height="7">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="12" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -335,7 +335,7 @@
   </imgdir>
   <imgdir name="swingTF">
     <imgdir name="1">
-      <canvas name="lGlove" width="7" height="5">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -344,7 +344,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="17" height="15">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="12" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -353,7 +353,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="6"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -364,7 +364,7 @@
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="rGlove" width="26" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="5" y="6"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -373,7 +373,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="15" height="19">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="9" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -382,7 +382,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="6"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -393,7 +393,7 @@
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="rGlove" width="20" height="18">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="5" y="14"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -402,7 +402,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="9" height="21">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="18"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -411,7 +411,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="15" height="12">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="5" y="8"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -422,14 +422,14 @@
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="rGlove" width="6" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="lGlove" width="4" height="3">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="2" y="1"/>
         <imgdir name="map">
           <vector name="hand" x="39" y="-2"/>
@@ -438,14 +438,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="4" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="lGlove" width="5" height="5">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="2" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="37" y="-9"/>
@@ -454,7 +454,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="26" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="22" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -463,7 +463,7 @@
       </canvas>
     </imgdir>
     <imgdir name="3">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="-2" y="1"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -474,7 +474,7 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="rGlove" width="6" height="7">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -483,7 +483,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="9" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -494,7 +494,7 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="rGlove" width="8" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -503,7 +503,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="9" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -514,7 +514,7 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -523,7 +523,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="6" height="7">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="-32" y="8"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -532,7 +532,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="9" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="8" y="17"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -543,14 +543,14 @@
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="lGlove" width="6" height="4">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="21" y="-7"/>
@@ -559,14 +559,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="6" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="lGlove" width="4" height="2">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="2" y="1"/>
         <imgdir name="map">
           <vector name="hand" x="21" y="-7"/>
@@ -575,14 +575,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="9" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
         </imgdir>
         <string name="z" value="glove"/>
       </canvas>
-      <canvas name="lGlove" width="6" height="4">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="3" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="21" y="-3"/>
@@ -593,14 +593,14 @@
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="lGlove" width="5" height="5">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="2" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="26" y="-5"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="8" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="7"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -609,14 +609,14 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="lGlove" width="5" height="3">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="2" y="1"/>
         <imgdir name="map">
           <vector name="hand" x="26" y="-8"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="6" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -625,14 +625,14 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="5" height="5">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="2" y="2"/>
         <imgdir name="map">
           <vector name="hand" x="31" y="5"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="7" height="9">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="6"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -651,14 +651,14 @@
       <uol name="rGlove" value="../../swingPF/1/rGlove"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="lGlove" width="8" height="6">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="3" y="-27"/>
         </imgdir>
         <string name="z" value="gloveOverHair"/>
       </canvas>
-      <canvas name="rGlove" width="7" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="-10" y="-18"/>
@@ -673,7 +673,7 @@
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="rGlove" width="9" height="7">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -682,7 +682,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="8" height="5">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -696,7 +696,7 @@
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="rGlove" width="9" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="4" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -705,7 +705,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="8" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="17" y="11"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -714,7 +714,7 @@
       </canvas>
     </imgdir>
     <imgdir name="2">
-      <canvas name="rGlove" width="9" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="9" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="-20" y="0"/>
@@ -726,7 +726,7 @@
       <uol name="rGlove" value="../0/rGlove"/>
     </imgdir>
     <imgdir name="4">
-      <canvas name="rGlove" width="9" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="-2" y="-3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -737,7 +737,7 @@
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="rGlove" width="8" height="5">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -746,7 +746,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="9" height="7">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="2" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -760,14 +760,14 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="lGlove" width="6" height="5">
+      <canvas name="lGlove" format="1" scale="0">
         <vector name="origin" x="4" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
         </imgdir>
         <string name="z" value="gloveOverBody"/>
       </canvas>
-      <canvas name="rGlove" width="35" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="29" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -777,7 +777,7 @@
     </imgdir>
     <imgdir name="1">
       <uol name="lGlove" value="../0/lGlove"/>
-      <canvas name="rGlove" width="18" height="8">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="14" y="5"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -806,7 +806,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="rGlove" width="18" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="14" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -815,7 +815,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="18" height="11">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="13" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -826,7 +826,7 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="rGlove" width="21" height="13">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="16" y="4"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -837,7 +837,7 @@
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="rGlove" width="7" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="-8"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>
@@ -848,7 +848,7 @@
   </imgdir>
   <imgdir name="ladder">
     <imgdir name="0">
-      <canvas name="rGlove" width="18" height="15">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="9" y="7"/>
         <imgdir name="map">
           <vector name="hand" x="-5" y="-4"/>
@@ -857,7 +857,7 @@
       </canvas>
     </imgdir>
     <imgdir name="1">
-      <canvas name="rGlove" width="18" height="15">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="9" y="7"/>
         <imgdir name="map">
           <vector name="hand" x="6" y="-5"/>
@@ -868,7 +868,7 @@
   </imgdir>
   <imgdir name="rope">
     <imgdir name="0">
-      <canvas name="rGlove" width="6" height="6">
+      <canvas name="rGlove" format="1" scale="0">
         <vector name="origin" x="3" y="3"/>
         <imgdir name="map">
           <vector name="hand" x="0" y="0"/>

@@ -26,6 +26,7 @@ import org.gms.net.AbstractPacketHandler;
 import org.gms.net.packet.InPacket;
 import org.gms.scripting.npc.NPCScriptManager;
 import org.gms.scripting.quest.QuestScriptManager;
+import org.gms.util.PacketCreator;
 
 /**
  * @author Matze
@@ -70,6 +71,9 @@ public final class NPCMoreTalkHandler extends AbstractPacketHandler {
                 }
             } else if (c.getCM() != null) {
                 cmRouting(c, action, lastMsg, selection);
+            } else {
+                // GM6 的 XML 任务调试页没有对应的 JS 会话，关闭后只需恢复客户端动作。
+                c.sendPacket(PacketCreator.enableActions());
             }
         }
     }

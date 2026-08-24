@@ -50,6 +50,8 @@
         <fastjson2.version>2.0.47</fastjson2.version>
         <mybatis-flex.version>1.8.9</mybatis-flex.version>
         <swagger.version>2.5.0</swagger.version>
+        <yamlbeans.version>1.17</yamlbeans.version>
+        <jgrapht.version>1.5.2</jgrapht.version>
     </properties>
 
     <dependencyManagement>
@@ -143,6 +145,21 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.esotericsoftware.yamlbeans</groupId>
+            <artifactId>yamlbeans</artifactId>
+            <version>${yamlbeans.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-core</artifactId>
+            <version>${jgrapht.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-io</artifactId>
+            <version>${jgrapht.version}</version>
         </dependency>
         <dependency>
             <groupId>com.mybatis-flex</groupId>

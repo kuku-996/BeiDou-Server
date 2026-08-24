@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="970000005.img">
+<imgdir name="970000005.img" indent="2" media="NONE">
   <imgdir name="info">
     <int name="version" value="10"/>
     <int name="cloud" value="0"/>
@@ -79,81 +79,6 @@
       <int name="a" value="255"/>
     </imgdir>
     <imgdir name="4">
-      <string name="bS" value="cokeTown"/>
-      <int name="front" value="0"/>
-      <int name="ani" value="1"/>
-      <int name="no" value="14"/>
-      <int name="f" value="0"/>
-      <int name="x" value="302"/>
-      <int name="y" value="-252"/>
-      <int name="rx" value="0"/>
-      <int name="ry" value="0"/>
-      <int name="type" value="0"/>
-      <int name="cx" value="0"/>
-      <int name="cy" value="0"/>
-      <int name="a" value="255"/>
-    </imgdir>
-    <imgdir name="5">
-      <string name="bS" value="cokeTown"/>
-      <int name="front" value="0"/>
-      <int name="ani" value="1"/>
-      <int name="no" value="14"/>
-      <int name="f" value="0"/>
-      <int name="x" value="-195"/>
-      <int name="y" value="-175"/>
-      <int name="rx" value="0"/>
-      <int name="ry" value="0"/>
-      <int name="type" value="0"/>
-      <int name="cx" value="0"/>
-      <int name="cy" value="0"/>
-      <int name="a" value="255"/>
-    </imgdir>
-    <imgdir name="6">
-      <string name="bS" value="cokeTown"/>
-      <int name="front" value="0"/>
-      <int name="ani" value="1"/>
-      <int name="no" value="16"/>
-      <int name="f" value="0"/>
-      <int name="x" value="322"/>
-      <int name="y" value="-137"/>
-      <int name="rx" value="0"/>
-      <int name="ry" value="0"/>
-      <int name="type" value="0"/>
-      <int name="cx" value="0"/>
-      <int name="cy" value="0"/>
-      <int name="a" value="255"/>
-    </imgdir>
-    <imgdir name="7">
-      <string name="bS" value="cokeTown"/>
-      <int name="front" value="0"/>
-      <int name="ani" value="1"/>
-      <int name="no" value="16"/>
-      <int name="f" value="0"/>
-      <int name="x" value="-321"/>
-      <int name="y" value="-151"/>
-      <int name="rx" value="0"/>
-      <int name="ry" value="0"/>
-      <int name="type" value="0"/>
-      <int name="cx" value="0"/>
-      <int name="cy" value="0"/>
-      <int name="a" value="255"/>
-    </imgdir>
-    <imgdir name="8">
-      <string name="bS" value="cokeTown"/>
-      <int name="front" value="0"/>
-      <int name="ani" value="1"/>
-      <int name="no" value="16"/>
-      <int name="f" value="0"/>
-      <int name="x" value="202"/>
-      <int name="y" value="-208"/>
-      <int name="rx" value="0"/>
-      <int name="ry" value="0"/>
-      <int name="type" value="0"/>
-      <int name="cx" value="0"/>
-      <int name="cy" value="0"/>
-      <int name="a" value="255"/>
-    </imgdir>
-    <imgdir name="9">
       <string name="bS" value="nightDesert"/>
       <int name="front" value="0"/>
       <int name="ani" value="0"/>
@@ -168,7 +93,7 @@
       <int name="cy" value="0"/>
       <int name="a" value="255"/>
     </imgdir>
-    <imgdir name="10">
+    <imgdir name="5">
       <string name="bS" value="nightDesert"/>
       <int name="front" value="0"/>
       <int name="ani" value="0"/>
@@ -183,7 +108,7 @@
       <int name="cy" value="0"/>
       <int name="a" value="255"/>
     </imgdir>
-    <imgdir name="11">
+    <imgdir name="6">
       <string name="bS" value="nightDesert"/>
       <int name="front" value="0"/>
       <int name="ani" value="0"/>
@@ -198,7 +123,7 @@
       <int name="cy" value="0"/>
       <int name="a" value="255"/>
     </imgdir>
-    <imgdir name="12">
+    <imgdir name="7">
       <string name="bS" value="nightDesert"/>
       <int name="front" value="0"/>
       <int name="ani" value="0"/>
@@ -213,7 +138,7 @@
       <int name="cy" value="0"/>
       <int name="a" value="255"/>
     </imgdir>
-    <imgdir name="13">
+    <imgdir name="8">
       <string name="bS" value="nightDesert"/>
       <int name="front" value="0"/>
       <int name="ani" value="0"/>
@@ -228,7 +153,7 @@
       <int name="cy" value="0"/>
       <int name="a" value="255"/>
     </imgdir>
-    <imgdir name="14">
+    <imgdir name="9">
       <string name="bS" value="nightDesert"/>
       <int name="front" value="0"/>
       <int name="ani" value="0"/>
@@ -244,10 +169,8 @@
       <int name="a" value="255"/>
     </imgdir>
   </imgdir>
-  <imgdir name="life">
-  </imgdir>
-  <imgdir name="reactor">
-  </imgdir>
+  <imgdir name="life"/>
+  <imgdir name="reactor"/>
   <imgdir name="0">
     <imgdir name="info">
       <string name="tS" value="magatia"/>
@@ -818,8 +741,7 @@
         <int name="zM" value="6"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="2">
     <imgdir name="info">
@@ -989,8 +911,7 @@
         <int name="zM" value="7"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="3">
     <imgdir name="info">
@@ -1167,8 +1088,7 @@
         <int name="zM" value="4"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="4">
     <imgdir name="info">
@@ -1429,22 +1349,16 @@
         <int name="zM" value="3"/>
       </imgdir>
     </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="5">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="6">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
     <imgdir name="obj">
       <imgdir name="0">
         <string name="oS" value="acc8"/>
@@ -1485,12 +1399,9 @@
     </imgdir>
   </imgdir>
   <imgdir name="7">
-    <imgdir name="info">
-    </imgdir>
-    <imgdir name="tile">
-    </imgdir>
-    <imgdir name="obj">
-    </imgdir>
+    <imgdir name="info"/>
+    <imgdir name="tile"/>
+    <imgdir name="obj"/>
   </imgdir>
   <imgdir name="foothold">
     <imgdir name="0">
@@ -2060,11 +1971,9 @@
       </imgdir>
     </imgdir>
   </imgdir>
-  <imgdir name="ladderRope">
-  </imgdir>
+  <imgdir name="ladderRope"/>
   <imgdir name="miniMap">
-    <canvas name="canvas" width="76" height="64">
-    </canvas>
+    <canvas name="canvas" format="1" scale="0"/>
     <int name="width" value="1220"/>
     <int name="height" value="1033"/>
     <int name="centerX" value="568"/>

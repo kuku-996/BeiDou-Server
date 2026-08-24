@@ -33,6 +33,30 @@ public final class CancelChairHandler extends AbstractPacketHandler {
         int id = p.readShort();
         Character mc = c.getPlayer();
 
+        /*
+         * GMS083 clients do not use a single, consistent value when they
+         * leave an inventory chair.  Most send -1, but several chairs send
+         * a zero seat id.  Treating that zero as a map-seat request leaves
+         * the inventory chair active server-side and the client stays action
+         * locked until a manual @dispose sends ENABLE_ACTIONS.
+         *
+         * A real map seat is only valid while the player is not already using
+         * an inventory chair.  Therefore an incoming seat id for a character
+         * sitting on an item chair must always mean "stand up".
+         */
+        boolean isSittingOnItemChair = mc.getChair() >= 1_000_000;
+        if (isSittingOnItemChair && id >= 0) {
+            if (c.tryacquireClient()) {
+                try {
+                    mc.sitChair(-1);
+                    mc.enableActions();
+                } finally {
+                    c.releaseClient();
+                }
+            }
+            return;
+        }
+
         if (id >= mc.getMap().getSeats()) {
             return;
         }
@@ -40,6 +64,8 @@ public final class CancelChairHandler extends AbstractPacketHandler {
         if (c.tryacquireClient()) {
             try {
                 mc.sitChair(id);
+                // Keep the client input state in sync after both item and map chairs.
+                mc.enableActions();
             } finally {
                 c.releaseClient();
             }

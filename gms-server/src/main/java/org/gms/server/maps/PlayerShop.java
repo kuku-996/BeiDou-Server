@@ -30,6 +30,8 @@ import org.gms.client.inventory.manipulator.InventoryManipulator;
 import org.gms.client.inventory.manipulator.KarmaManipulator;
 import org.gms.net.packet.Packet;
 import org.gms.server.Trade;
+import org.gms.server.artificial.soloport.ArtificialPlayer.BotHelpers;
+import org.gms.server.artificial.soloport.FreeMarket.ShopOfferSystem.ShopOfferWelcome;
 import org.gms.util.PacketCreator;
 import org.gms.util.Pair;
 
@@ -219,6 +221,56 @@ public class PlayerShop extends AbstractMapObject {
         }
     }
 
+    public void setItems(List<PlayerShopItem> replacement) {
+        synchronized (items) {
+            items.clear();
+            if (replacement != null) {
+                items.addAll(replacement);
+            }
+        }
+    }
+
+    /** Server-side purchase path for a headless bot visitor. */
+    public void botBuy(Character buyer, PlayerShopItem item, int itemPosition, short quantity) {
+        if (buyer == null || item == null || quantity < 1) {
+            return;
+        }
+        synchronized (items) {
+            if (!item.isExist() || item.getBundles() < quantity || !items.contains(item)) {
+                return;
+            }
+            visitorLock.lock();
+            try {
+                int price = (int) Math.min((float) item.getPrice() * quantity, Integer.MAX_VALUE);
+                if (!owner.canHoldMeso(price)) {
+                    return;
+                }
+
+                price -= Trade.getFee(price);
+                owner.gainMeso(price, true);
+                SoldItem soldItem = new SoldItem(buyer.getName(), item.getItem().getItemId(), quantity, price);
+                if (!BotHelpers.isBot(owner)) {
+                    owner.sendPacket(PacketCreator.getPlayerShopOwnerUpdate(soldItem, itemPosition));
+                }
+                synchronized (sold) {
+                    sold.add(soldItem);
+                }
+
+                item.setBundles((short) (item.getBundles() - quantity));
+                if (item.getBundles() < 1) {
+                    item.setDoesExist(false);
+                    if (++boughtnumber == items.size()) {
+                        owner.setPlayerShop(null);
+                        setOpen(false);
+                        closeShop();
+                    }
+                }
+            } finally {
+                visitorLock.unlock();
+            }
+        }
+    }
+
     private void removeFromSlot(int slot) {
         items.remove(slot);
     }
@@ -332,7 +384,7 @@ public class PlayerShop extends AbstractMapObject {
         visitorLock.lock();
         try {
             for (int i = 0; i < 3; i++) {
-                if (visitors[i] != null) {
+                if (visitors[i] != null && !BotHelpers.isBot(visitors[i])) {
                     visitors[i].sendPacket(packet);
                 }
             }
@@ -414,17 +466,25 @@ public class PlayerShop extends AbstractMapObject {
     }
 
     public void chat(Client c, String chat) {
-        byte s = getVisitorSlot(c.getPlayer());
+        Character speaker = c.getPlayer();
+        if (speaker != null) {
+            chat(speaker, chat);
+        }
+    }
+
+    /** Chat path for a headless artificial-player visitor. */
+    public void chat(Character speaker, String chat) {
+        byte s = getVisitorSlot(speaker);
 
         synchronized (chatLog) {
-            chatLog.add(new Pair<>(c.getPlayer(), chat));
+            chatLog.add(new Pair<>(speaker, chat));
             if (chatLog.size() > 25) {
                 chatLog.remove(0);
             }
-            chatSlot.put(c.getPlayer().getId(), s);
+            chatSlot.put(speaker.getId(), s);
         }
 
-        broadcast(PacketCreator.getPlayerShopChat(c.getPlayer(), chat, s));
+        broadcast(PacketCreator.getPlayerShopChat(speaker, chat, s));
     }
 
     private void recoverChatLog() {
@@ -545,7 +605,12 @@ public class PlayerShop extends AbstractMapObject {
             if (this.hasFreeSlot() && !this.isVisitor(chr)) {
                 this.addVisitor(chr);
                 chr.setPlayerShop(this);
-                this.sendShop(chr.getClient());
+                if (!BotHelpers.isBot(chr)) {
+                    this.sendShop(chr.getClient());
+                    if (BotHelpers.isBot(owner)) {
+                        ShopOfferWelcome.onPlayerEnterShop(this, chr);
+                    }
+                }
 
                 return true;
             }

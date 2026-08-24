@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01912004.img">
+<imgdir name="01912004.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="32" height="32">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="32" height="32">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="31"/>
     </canvas>
     <string name="islot" value="Sd"/>
@@ -14,7 +14,7 @@
   <imgdir name="1902009">
     <imgdir name="walk1">
       <imgdir name="0">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="14" y="75"/>
           <imgdir name="map">
             <vector name="navel" x="8" y="-65"/>
@@ -23,7 +23,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="77"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -32,7 +32,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="14" y="74"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -41,7 +41,7 @@
         </canvas>
       </imgdir>
       <imgdir name="3">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="75"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -66,7 +66,7 @@
     </imgdir>
     <imgdir name="stand1">
       <imgdir name="0">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="77"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -75,7 +75,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="77"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -84,7 +84,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="76"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -93,7 +93,7 @@
         </canvas>
       </imgdir>
       <imgdir name="3">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="76"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -118,7 +118,7 @@
     </imgdir>
     <imgdir name="tired">
       <imgdir name="0">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="47"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -127,7 +127,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="47"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -136,7 +136,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="47"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -145,7 +145,7 @@
         </canvas>
       </imgdir>
       <imgdir name="3">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="47"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -156,7 +156,7 @@
     </imgdir>
     <imgdir name="jump">
       <imgdir name="0">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="14" y="87"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -167,7 +167,7 @@
     </imgdir>
     <imgdir name="prone">
       <imgdir name="0">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="47"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -178,7 +178,7 @@
     </imgdir>
     <imgdir name="ladder">
       <imgdir name="0">
-        <canvas name="0" width="28" height="38">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="29"/>
           <string name="z" value="backSaddle"/>
           <imgdir name="map">
@@ -187,7 +187,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="28" height="38">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="29"/>
           <string name="z" value="backSaddle"/>
           <imgdir name="map">
@@ -198,7 +198,7 @@
     </imgdir>
     <imgdir name="rope">
       <imgdir name="0">
-        <canvas name="0" width="28" height="38">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="29"/>
           <string name="z" value="backSaddle"/>
           <imgdir name="map">
@@ -207,7 +207,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="28" height="38">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="13" y="29"/>
           <string name="z" value="backSaddle"/>
           <imgdir name="map">
@@ -218,7 +218,7 @@
     </imgdir>
     <imgdir name="fly">
       <imgdir name="0">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="14" y="88"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -227,7 +227,7 @@
         </canvas>
       </imgdir>
       <imgdir name="1">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="16" y="95"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -236,7 +236,7 @@
         </canvas>
       </imgdir>
       <imgdir name="2">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="14" y="90"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">
@@ -245,7 +245,7 @@
         </canvas>
       </imgdir>
       <imgdir name="3">
-        <canvas name="0" width="39" height="44">
+        <canvas name="0" format="1" scale="0">
           <vector name="origin" x="16" y="93"/>
           <string name="z" value="saddleFront"/>
           <imgdir name="map">

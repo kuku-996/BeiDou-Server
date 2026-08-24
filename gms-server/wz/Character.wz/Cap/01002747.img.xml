@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002747.img">
+<imgdir name="01002747.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="31" height="35">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-1" y="31"/>
     </canvas>
-    <canvas name="iconRaw" width="31" height="35">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-1" y="31"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -18,14 +18,14 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="51" height="23">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="20" y="3"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
       </imgdir>
       <string name="z" value="capOverHair"/>
     </canvas>
-    <canvas name="defaultAc" width="24" height="14">
+    <canvas name="defaultAc" format="1" scale="0">
       <vector name="origin" x="-7" y="5"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -34,7 +34,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="47" height="17">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="19" y="-3"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -122,7 +122,7 @@
   </imgdir>
   <imgdir name="swingO1">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -132,7 +132,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -142,7 +142,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -154,7 +154,7 @@
   </imgdir>
   <imgdir name="swingO2">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -164,7 +164,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -174,7 +174,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -186,7 +186,7 @@
   </imgdir>
   <imgdir name="swingO3">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -196,7 +196,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -206,7 +206,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -218,7 +218,7 @@
   </imgdir>
   <imgdir name="swingOF">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -231,7 +231,7 @@
       <uol name="backDefault" value="../../backDefault/default"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -241,7 +241,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -253,7 +253,7 @@
   </imgdir>
   <imgdir name="swingT1">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -263,7 +263,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -273,7 +273,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -285,7 +285,7 @@
   </imgdir>
   <imgdir name="swingT2">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -295,7 +295,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -305,7 +305,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -317,7 +317,7 @@
   </imgdir>
   <imgdir name="swingT3">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -327,7 +327,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -337,7 +337,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -352,7 +352,7 @@
       <uol name="backDefault" value="../../backDefault/default"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -362,7 +362,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -372,7 +372,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -384,7 +384,7 @@
   </imgdir>
   <imgdir name="swingP1">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -394,7 +394,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -404,7 +404,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -416,7 +416,7 @@
   </imgdir>
   <imgdir name="swingP2">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -426,7 +426,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -436,7 +436,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -448,7 +448,7 @@
   </imgdir>
   <imgdir name="swingPF">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -458,7 +458,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -468,7 +468,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -478,7 +478,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -490,7 +490,7 @@
   </imgdir>
   <imgdir name="stabO1">
     <imgdir name="0">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -500,7 +500,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -512,7 +512,7 @@
   </imgdir>
   <imgdir name="stabO2">
     <imgdir name="0">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -522,7 +522,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -534,7 +534,7 @@
   </imgdir>
   <imgdir name="stabOF">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -544,7 +544,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -554,7 +554,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -566,7 +566,7 @@
   </imgdir>
   <imgdir name="stabT1">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -576,7 +576,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -586,7 +586,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -598,7 +598,7 @@
   </imgdir>
   <imgdir name="stabT2">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -608,7 +608,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -618,7 +618,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -630,7 +630,7 @@
   </imgdir>
   <imgdir name="stabTF">
     <imgdir name="0">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -640,7 +640,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -650,7 +650,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -660,7 +660,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -672,7 +672,7 @@
   </imgdir>
   <imgdir name="shoot1">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -682,7 +682,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -692,7 +692,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -704,7 +704,7 @@
   </imgdir>
   <imgdir name="shoot2">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -714,7 +714,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -724,7 +724,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -734,7 +734,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="3">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -744,7 +744,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="4">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -756,7 +756,7 @@
   </imgdir>
   <imgdir name="shootF">
     <imgdir name="0">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -766,7 +766,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -776,7 +776,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -788,7 +788,7 @@
   </imgdir>
   <imgdir name="proneStab">
     <imgdir name="0">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -798,7 +798,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -810,7 +810,7 @@
   </imgdir>
   <imgdir name="prone">
     <imgdir name="0">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -822,7 +822,7 @@
   </imgdir>
   <imgdir name="heal">
     <imgdir name="0">
-      <canvas name="default" width="51" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -832,7 +832,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -842,7 +842,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="2">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -854,7 +854,7 @@
   </imgdir>
   <imgdir name="fly">
     <imgdir name="0">
-      <canvas name="default" width="52" height="23">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -864,7 +864,7 @@
       <uol name="defalutAc" value="../../default/defaultAc"/>
     </imgdir>
     <imgdir name="1">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -876,7 +876,7 @@
   </imgdir>
   <imgdir name="jump">
     <imgdir name="0">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>
@@ -888,7 +888,7 @@
   </imgdir>
   <imgdir name="sit">
     <imgdir name="0">
-      <canvas name="default" width="53" height="24">
+      <canvas name="default" format="1" scale="0">
         <vector name="origin" x="20" y="3"/>
         <imgdir name="map">
           <vector name="brow" x="0" y="0"/>

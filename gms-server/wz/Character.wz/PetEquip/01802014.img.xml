@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01802014.img">
+<imgdir name="01802014.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="30" height="29">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-2" y="29"/>
     </canvas>
-    <canvas name="iconRaw" width="30" height="25">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-2" y="29"/>
     </canvas>
     <int name="tuc" value="7"/>
@@ -13,14 +13,14 @@
   </imgdir>
   <imgdir name="5000003">
     <imgdir name="stand0">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-4" y="27"/>
       </canvas>
       <uol name="1" value="0"/>
       <uol name="2" value="0"/>
     </imgdir>
     <imgdir name="stand1">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-4" y="27"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -30,29 +30,29 @@
       <uol name="5" value="0"/>
     </imgdir>
     <imgdir name="hungry">
-      <canvas name="0" width="11" height="11">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-7" y="19"/>
       </canvas>
     </imgdir>
     <imgdir name="move">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-1" y="29"/>
       </canvas>
-      <canvas name="1" width="14" height="17">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="-2" y="34"/>
       </canvas>
-      <canvas name="2" width="7" height="16">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="0" y="40"/>
       </canvas>
-      <canvas name="3" width="8" height="15">
+      <canvas name="3" format="1" scale="0">
         <vector name="origin" x="5" y="38"/>
       </canvas>
-      <canvas name="4" width="16" height="11">
+      <canvas name="4" format="1" scale="0">
         <vector name="origin" x="3" y="38"/>
       </canvas>
     </imgdir>
     <imgdir name="rest0">
-      <canvas name="0" width="11" height="11">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-5" y="19"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -60,27 +60,27 @@
       <uol name="3" value="0"/>
     </imgdir>
     <imgdir name="jump">
-      <canvas name="0" width="14" height="17">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="0" y="34"/>
       </canvas>
     </imgdir>
     <imgdir name="chat">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-3" y="27"/>
       </canvas>
     </imgdir>
     <imgdir name="angry">
-      <canvas name="0" width="8" height="19">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-1" y="35"/>
       </canvas>
     </imgdir>
     <imgdir name="hang">
-      <canvas name="0" width="32" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="15" y="30"/>
       </canvas>
     </imgdir>
     <imgdir name="dung">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-2" y="27"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -104,7 +104,7 @@
       <uol name="19" value="0"/>
     </imgdir>
     <imgdir name="eye">
-      <canvas name="0" width="10" height="11">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-5" y="20"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -128,7 +128,7 @@
       <uol name="19" value="0"/>
     </imgdir>
     <imgdir name="prone">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="4" y="22"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -138,7 +138,7 @@
       <uol name="5" value="0"/>
     </imgdir>
     <imgdir name="rise">
-      <canvas name="0" width="8" height="13">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-10" y="26"/>
       </canvas>
       <uol name="1" value="0"/>
@@ -162,13 +162,13 @@
       <uol name="19" value="0"/>
     </imgdir>
     <imgdir name="yes">
-      <canvas name="0" width="11" height="11">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-5" y="19"/>
       </canvas>
-      <canvas name="1" width="11" height="11">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="-5" y="19"/>
       </canvas>
-      <canvas name="2" width="11" height="11">
+      <canvas name="2" format="1" scale="0">
         <vector name="origin" x="-5" y="19"/>
       </canvas>
       <uol name="3" value="1"/>
@@ -186,40 +186,40 @@
       <uol name="15" value="1"/>
     </imgdir>
     <imgdir name="cry">
-      <canvas name="0" width="11" height="11">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-5" y="19"/>
       </canvas>
     </imgdir>
     <imgdir name="alert">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-2" y="27"/>
       </canvas>
     </imgdir>
     <imgdir name="no">
-      <canvas name="0" width="8" height="7">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-8" y="15"/>
       </canvas>
     </imgdir>
     <imgdir name="smile">
-      <canvas name="0" width="16" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-2" y="27"/>
       </canvas>
     </imgdir>
     <imgdir name="sneer">
-      <canvas name="0" width="8" height="11">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="1" y="25"/>
       </canvas>
     </imgdir>
     <imgdir name="front">
-      <canvas name="0" width="14" height="12">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-4" y="27"/>
       </canvas>
     </imgdir>
     <imgdir name="fly">
-      <canvas name="0" width="14" height="17">
+      <canvas name="0" format="1" scale="0">
         <vector name="origin" x="-2" y="34"/>
       </canvas>
-      <canvas name="1" width="16" height="12">
+      <canvas name="1" format="1" scale="0">
         <vector name="origin" x="-1" y="30"/>
       </canvas>
     </imgdir>

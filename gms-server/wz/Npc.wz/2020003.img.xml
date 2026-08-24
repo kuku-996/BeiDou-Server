@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2020003.img">
+<imgdir name="2020003.img" indent="2" media="NONE">
   <imgdir name="info">
     <imgdir name="speak">
       <string name="0" value="n0"/>
@@ -7,25 +7,25 @@
     </imgdir>
   </imgdir>
   <imgdir name="stand">
-    <canvas name="0" width="45" height="66">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="22" y="66"/>
       <int name="delay" value="3000"/>
     </canvas>
-    <canvas name="1" width="45" height="66">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="22" y="66"/>
       <int name="delay" value="70"/>
     </canvas>
-    <canvas name="2" width="45" height="66">
+    <canvas name="2" format="1" scale="0">
       <vector name="origin" x="22" y="66"/>
       <int name="delay" value="70"/>
     </canvas>
   </imgdir>
   <imgdir name="say0">
-    <canvas name="0" width="45" height="66">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="22" y="66"/>
       <int name="delay" value="250"/>
     </canvas>
-    <canvas name="1" width="45" height="66">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="22" y="66"/>
       <int name="delay" value="250"/>
     </canvas>
@@ -51,11 +51,11 @@
     </imgdir>
   </imgdir>
   <imgdir name="say1">
-    <canvas name="0" width="45" height="66">
+    <canvas name="0" format="1" scale="0">
       <vector name="origin" x="22" y="66"/>
       <int name="delay" value="250"/>
     </canvas>
-    <canvas name="1" width="45" height="66">
+    <canvas name="1" format="1" scale="0">
       <vector name="origin" x="22" y="66"/>
       <int name="delay" value="250"/>
     </canvas>

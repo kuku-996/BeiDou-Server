@@ -42,4 +42,15 @@ public class DataProviderFactory {
         // 中文 WZ 只维护被本地化过的文件，缺失的文件继续回退到原始 WZ。
         return new LocalizedDataProvider(getWZ(languagePath), baseProvider);
     }
+
+    /**
+     * 返回指定 WZ XML 实际命中的相对路径，规则与 {@link #getDataProvider(WZFiles)} 一致：
+     * 语言目录中存在对应 XML 时优先使用，否则回退到原始 wz 目录。
+     */
+    public static String getResolvedXmlPath(WZFiles in, String dataPath) {
+        Path languageXml = in.getLanguageFile().resolve(dataPath + ".xml");
+        Path baseXml = in.getBaseFile().resolve(dataPath + ".xml");
+        Path resolved = Files.exists(languageXml) ? languageXml : baseXml;
+        return resolved.toString().replace('\\', '/');
+    }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01003035.img">
+<imgdir name="01003035.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="31" height="36">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="0" y="36"/>
     </canvas>
-    <canvas name="iconRaw" width="31" height="36">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="0" y="35"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -122,14 +122,14 @@
     </imgdir>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="52" height="54">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="18" y="30"/>
       <imgdir name="map">
         <vector name="brow" x="5" y="1"/>
       </imgdir>
       <string name="z" value="cap"/>
     </canvas>
-    <canvas name="defaultAc" width="55" height="72">
+    <canvas name="defaultAc" format="1" scale="0">
       <vector name="origin" x="26" y="46"/>
       <imgdir name="map">
         <vector name="brow" x="-3" y="-15"/>
@@ -138,7 +138,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default1" width="59" height="65">
+    <canvas name="default1" format="1" scale="0">
       <vector name="origin" x="23" y="32"/>
       <imgdir name="map">
         <vector name="brow" x="3" y="1"/>
@@ -521,7 +521,7 @@
   <imgdir name="proneStab">
     <imgdir name="0">
       <uol name="default" value="../../default/default"/>
-      <canvas name="default1" width="68" height="54">
+      <canvas name="default1" format="1" scale="0">
         <vector name="origin" x="20" y="30"/>
         <imgdir name="map">
           <vector name="brow" x="3" y="1"/>

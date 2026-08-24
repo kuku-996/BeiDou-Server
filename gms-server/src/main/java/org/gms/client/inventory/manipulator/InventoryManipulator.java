@@ -38,6 +38,7 @@ import org.gms.util.I18nUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.server.ItemInformationProvider;
+import org.gms.server.setitem.SetItemPackets;
 import org.gms.server.maps.MapleMap;
 import org.gms.util.PacketCreator;
 
@@ -673,6 +674,7 @@ public class InventoryManipulator {
         mods.add(new ModifyInventory(2, source, src));
         c.sendPacket(PacketCreator.modifyInventory(true, mods));
         chr.equipChanged();
+        c.sendPacket(SetItemPackets.pieceCounts(chr));
     }
 
     public static void unequip(Client c, short src, short dst) {
@@ -724,6 +726,7 @@ public class InventoryManipulator {
         
         c.sendPacket(PacketCreator.modifyInventory(true, Collections.singletonList(new ModifyInventory(2, source, src))));
         chr.equipChanged();
+        c.sendPacket(SetItemPackets.pieceCounts(chr));
     }
 
     private static boolean isDisappearingItemDrop(Item it) {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="01002568.img">
+<imgdir name="01002568.img" indent="2" media="NONE">
   <imgdir name="info">
-    <canvas name="icon" width="28" height="29">
+    <canvas name="icon" format="1" scale="0">
       <vector name="origin" x="-1" y="29"/>
     </canvas>
-    <canvas name="iconRaw" width="28" height="27">
+    <canvas name="iconRaw" format="1" scale="0">
       <vector name="origin" x="-1" y="29"/>
     </canvas>
     <string name="islot" value="Cp"/>
@@ -18,7 +18,7 @@
     <int name="cash" value="1"/>
   </imgdir>
   <imgdir name="default">
-    <canvas name="default" width="34" height="20">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="15" y="25"/>
       <imgdir name="map">
         <vector name="brow" x="-2" y="-12"/>
@@ -27,7 +27,7 @@
     </canvas>
   </imgdir>
   <imgdir name="backDefault">
-    <canvas name="default" width="1" height="1">
+    <canvas name="default" format="1" scale="0">
       <vector name="origin" x="0" y="0"/>
       <imgdir name="map">
         <vector name="brow" x="0" y="0"/>
@@ -133,8 +133,7 @@
     <imgdir name="0">
       <uol name="default" value="../../default/default"/>
     </imgdir>
-    <imgdir name="1">
-    </imgdir>
+    <imgdir name="1"/>
     <imgdir name="2">
       <uol name="default" value="../../default/default"/>
     </imgdir>
@@ -176,8 +175,7 @@
     </imgdir>
   </imgdir>
   <imgdir name="swingTF">
-    <imgdir name="0">
-    </imgdir>
+    <imgdir name="0"/>
     <imgdir name="1">
       <uol name="default" value="../../default/default"/>
     </imgdir>
