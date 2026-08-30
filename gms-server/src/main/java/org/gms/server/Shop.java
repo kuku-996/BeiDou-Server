@@ -31,6 +31,7 @@ import org.gms.client.inventory.manipulator.InventoryManipulator;
 import org.gms.constants.id.ItemId;
 import org.gms.constants.inventory.ItemConstants;
 import org.gms.server.artificial.soloport.Casino.CasinoChipConfig;
+import org.gms.server.buyback.SoldItemStorage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.util.DatabaseConnection;
@@ -83,6 +84,10 @@ public class Shop {
 
     public void sendShop(Client c) {
         c.getPlayer().setShop(this);
+        c.getPlayer().setShopBuybackMode(false);
+        boolean hasBuybackItems = !SoldItemStorage.getInstance()
+                .getSoldItems(c.getPlayer().getId()).isEmpty();
+        c.sendPacket(PacketCreator.shopBuybackMode(false, hasBuybackItems));
         c.sendPacket(PacketCreator.getNPCShop(c, getNpcId(), items));
     }
 
@@ -210,12 +215,23 @@ public class Shop {
         }
 
         Inventory inventory = c.getPlayer().getInventory(type);
-        Item item = inventory.getItem(slot);
         inventory.lockInventory();
         try {
+            Item item = inventory.getItem(slot);
             if (canSell(item, quantity)) {
                 quantity = getSellingQuantity(item, quantity);
+                Item soldCopy = item.copy();
+                int quantityBefore = item.getQuantity() == 0xFFFF ? 1 : item.getQuantity();
                 InventoryManipulator.removeFromSlot(c, type, (byte) slot, quantity, false);
+
+                Item remaining = inventory.getItem(slot);
+                int quantityAfter = remaining != null && remaining.getItemId() == item.getItemId()
+                        ? (remaining.getQuantity() == 0xFFFF ? 1 : remaining.getQuantity()) : 0;
+                int removed = Math.max(0, quantityBefore - quantityAfter);
+                if (removed > 0 && removed <= Short.MAX_VALUE) {
+                    soldCopy.setQuantity((short) removed);
+                    SoldItemStorage.getInstance().addSoldItem(c.getPlayer().getId(), soldCopy);
+                }
 
                 int recvMesos;
                 if (CasinoChipConfig.isCasinoChip(item.getItemId())) {

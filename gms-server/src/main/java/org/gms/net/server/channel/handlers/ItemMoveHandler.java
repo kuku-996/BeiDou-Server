@@ -45,6 +45,15 @@ public final class ItemMoveHandler extends AbstractPacketHandler {
         short action = p.readShort();
         short quantity = p.readShort();
 
+        if (type == InventoryType.EQUIP && src > 0) {
+            var item = c.getPlayer().getInventory(InventoryType.EQUIP).getItem(src);
+            if (item != null && item.getItemId() / 10000 == 115) {
+                System.out.println("[ShoulderEquip] itemMove src=" + src
+                        + " action=" + action + " quantity=" + quantity
+                        + " itemId=" + item.getItemId());
+            }
+        }
+
         if (src < 0 && action > 0) {
             InventoryManipulator.unequip(c, src, action);   //脱下装备
         } else if (action < 0) {

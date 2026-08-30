@@ -65,16 +65,28 @@ public class StorageProcessor {
                 switch (mode) {
                 case 4: { // Take out
                     byte type = p.readByte();
-                    byte slot = p.readByte();
-                    if (slot < 0 || slot > storage.getSlots()) { // removal starts at zero
+                    int slot = p.readByte() & 0xFF;
+                    InventoryType inventoryType = InventoryType.getByType(type);
+                    slot = storage.getSlot(inventoryType, slot);
+                    if (slot < 0) {
+                        // Do not let an invalid typed index reach getItem(-1):
+                        // the native client would remain in its busy state.
                         AutobanFactory.PACKET_EDIT.alert(c.getPlayer(), c.getPlayer().getName() + " tried to packet edit with storage.");
-                        log.warn("Chr {} tried to work with storage slot {}", c.getPlayer().getName(), slot);
-                        c.disconnect(true, false);
+                        log.warn("Chr {} tried to work with an invalid storage slot", c.getPlayer().getName());
+                        c.sendPacket(PacketCreator.enableActions());
                         return;
                     }
-
-                    slot = storage.getSlot(InventoryType.getByType(type), slot);
                     Item item = storage.getItem(slot);
+                    if (item == null || item.getInventoryType() != inventoryType) {
+                        // The storage list can change between the client
+                        // click and this packet.  Never continue with a
+                        // mismatched item: doing so can consume the wrong
+                        // stack and leaves the native dialog busy.
+                        log.warn("Chr {} sent a stale storage slot: type {}, slot {}",
+                                c.getPlayer().getName(), type, slot);
+                        c.sendPacket(PacketCreator.enableActions());
+                        return;
+                    }
 
                     if (hasGMRestrictions(chr)) {
                         chr.dropMessage(1, gmBlockedStorageMessage);
@@ -83,37 +95,35 @@ public class StorageProcessor {
                         return;
                     }
 
-                    if (item != null) {
-                        if (ii.isPickupRestricted(item.getItemId()) && chr.haveItemWithId(item.getItemId(), true)) {
-                            c.sendPacket(PacketCreator.getStorageError((byte) 0x0C));
-                            return;
-                        }
+                    if (ii.isPickupRestricted(item.getItemId()) && chr.haveItemWithId(item.getItemId(), true)) {
+                        c.sendPacket(PacketCreator.getStorageError((byte) 0x0C));
+                        return;
+                    }
 
-                        int takeoutFee = storage.getTakeOutFee();
-                        if (chr.getMeso() < takeoutFee) {
-                            c.sendPacket(PacketCreator.getStorageError((byte) 0x0B));
-                            return;
-                        }
+                    int takeoutFee = storage.getTakeOutFee();
+                    if (chr.getMeso() < takeoutFee) {
+                        c.sendPacket(PacketCreator.getStorageError((byte) 0x0B));
+                        return;
+                    }
 
-                        if (InventoryManipulator.checkSpace(c, item.getItemId(), item.getQuantity(), item.getOwner())) {
-                            if (storage.takeOut(item)) {
-                                chr.setUsedStorage();
+                    if (InventoryManipulator.checkSpace(c, item.getItemId(), item.getQuantity(), item.getOwner())) {
+                        if (storage.takeOut(item)) {
+                            chr.setUsedStorage();
 
-                                KarmaManipulator.toggleKarmaFlagToUntradeable(item);
-                                InventoryManipulator.addFromDrop(c, item, false);
-                                chr.gainMeso(-takeoutFee, false);
+                            KarmaManipulator.toggleKarmaFlagToUntradeable(item);
+                            InventoryManipulator.addFromDrop(c, item, false);
+                            chr.gainMeso(-takeoutFee, false);
 
-                                String itemName = ii.getName(item.getItemId());
-                                log.debug("Chr {} took out {}x {} ({})", c.getPlayer().getName(), item.getQuantity(), itemName, item.getItemId());
+                            String itemName = ii.getName(item.getItemId());
+                            log.debug("Chr {} took out {}x {} ({})", c.getPlayer().getName(), item.getQuantity(), itemName, item.getItemId());
 
-                                storage.sendTakenOut(c, item.getInventoryType());
-                            } else {
-                                c.sendPacket(PacketCreator.enableActions());
-                                return;
-                            }
+                            storage.sendTakenOut(c, item.getInventoryType());
                         } else {
-                            c.sendPacket(PacketCreator.getStorageError((byte) 0x0A));
+                            c.sendPacket(PacketCreator.enableActions());
+                            return;
                         }
+                    } else {
+                        c.sendPacket(PacketCreator.getStorageError((byte) 0x0A));
                     }
                     break;
                 }

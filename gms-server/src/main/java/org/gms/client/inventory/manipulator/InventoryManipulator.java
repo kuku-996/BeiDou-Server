@@ -538,6 +538,20 @@ public class InventoryManipulator {
         Inventory eqpdInv = chr.getInventory(InventoryType.EQUIPPED);
 
         Equip source = (Equip) eqpInv.getItem(src);
+        if (source == null) {
+            c.sendPacket(PacketCreator.enableActions());
+            return;
+        }
+
+        // Keep the server authoritative for the independent shoulder body
+        // part. BodyPart 20 is the legacy mob-equipment slot; shoulders use
+        // BodyPart 51 and must therefore be stored at equipped slot -51.
+        if (source.getItemId() / 10000 == 115) {
+            System.out.println("[ShoulderEquip] equip src=" + src + " requestedDst=" + dst
+                    + " itemId=" + source.getItemId());
+            dst = -51;
+        }
+
         int itemGender = ItemId.getGender(source.getItemId());
         //控制台参数为true时进行校验判断
         if(GameConfig.getServerBoolean("use_equipment_gender_limit") && itemGender != 2 && itemGender != chr.getGender()) {  //判断装备是否要求角色性别
@@ -553,6 +567,10 @@ public class InventoryManipulator {
             return;
         }
         if (source == null || !ii.canWearEquipment(chr, source, dst)) {
+            if (source != null && source.getItemId() / 10000 == 115) {
+                System.out.println("[ShoulderEquip] rejected dst=" + dst
+                        + " itemId=" + source.getItemId());
+            }
             c.sendPacket(PacketCreator.enableActions());
             return;
         } else if ((ItemId.isExplorerMount(source.getItemId()) && chr.isCygnus()) ||

@@ -69,6 +69,7 @@ import org.gms.scripting.AbstractPlayerInteraction;
 import org.gms.scripting.event.EventInstanceManager;
 import org.gms.scripting.item.ItemScriptManager;
 import org.gms.server.*;
+import org.gms.server.buyback.SoldItemStorage;
 import org.gms.server.ExpLogger.ExpLogRecord;
 import org.gms.server.ItemInformationProvider.ScriptedItem;
 import org.gms.server.events.Events;
@@ -351,8 +352,8 @@ public class Character extends AbstractCharacterObject {
     @Setter
     private PlayerShop playerShop = null;
     @Getter
-    @Setter
     private Shop shop = null;
+    private boolean shopBuybackMode = false;
     @Getter
     @Setter
     private SkinColor skinColor = SkinColor.NORMAL;
@@ -1835,6 +1836,7 @@ public class Character extends AbstractCharacterObject {
 
             // if this map has obstacle components moving, make it do so for this client
             sendPacket(PacketCreator.environmentMoveList(map.getEnvironment().entrySet()));
+            org.gms.server.weather.WeatherPackets.sendTo(this);
         }
     }
 
@@ -5181,6 +5183,21 @@ public class Character extends AbstractCharacterObject {
         setShop(null);
     }
 
+    public void setShop(Shop shop) {
+        this.shop = shop;
+        if (shop == null) {
+            shopBuybackMode = false;
+        }
+    }
+
+    public boolean isShopBuybackMode() {
+        return shopBuybackMode;
+    }
+
+    public void setShopBuybackMode(boolean shopBuybackMode) {
+        this.shopBuybackMode = shopBuybackMode;
+    }
+
     public void closeTrade() {
         Trade.cancelTrade(this, Trade.TradeResult.PARTNER_CANCEL);
     }
@@ -6502,6 +6519,16 @@ public class Character extends AbstractCharacterObject {
             for (InventorySearchRtnDTO searchRtnDTO : searchRtnDTOList) {
                 sandboxCheck |= searchRtnDTO.getFlag();
                 Item item = searchRtnDTO.toItem();
+                // Earlier shoulder experiments reused the native mob-equip
+                // slot (-20). Normalize those persisted records in memory so
+                // the next inventory save moves 1152xxx shoulders to their
+                // independent BodyPart 51 slot.
+                if (InventoryType.EQUIPPED.equals(inventoryType)
+                        && item.getPosition() == -20
+                        && item.getItemId() >= 1152000
+                        && item.getItemId() < 1153000) {
+                    item.setPosition((short) -51);
+                }
                 chr.getInventory(inventoryType).addItemFromDB(item);
                 if (item.getPetId() > -1) {
                     Pet pet = item.getPet();
@@ -9808,6 +9835,8 @@ public class Character extends AbstractCharacterObject {
 
     public void logOff() {
         this.loggedIn = false;
+        SoldItemStorage.getInstance().clear(id);
+        shopBuybackMode = false;
         characterService.update(CharactersDO.builder()
                 .id(id)
                 .lastLogoutTime(new Timestamp(System.currentTimeMillis()))

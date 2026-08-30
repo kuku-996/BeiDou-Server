@@ -256,6 +256,7 @@ public final class ItemConstants {
             case 112 -> 13;
             case 113 -> 14;
             case 114 -> 15;
+            case 115 -> 51;
             default -> 0;
         };
     }

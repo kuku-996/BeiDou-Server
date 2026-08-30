@@ -310,6 +310,7 @@ public enum SendOpcode implements Opcode {
     NPC_TALK(0x130), // NPC对话
     OPEN_NPC_SHOP(0x131), // 打开NPC商店
     CONFIRM_SHOP_TRANSACTION(0x132), // 确认商店交易
+    SHOP_BUYBACK_MODE(0x168), // NPC商店当前是否显示回购列表
     ADMIN_SHOP_MESSAGE(0x133),//lame :P // 管理员商店消息
     ADMIN_SHOP(0x134), // 管理员商店
     STORAGE(0x135), // 仓库
@@ -364,9 +365,13 @@ public enum SendOpcode implements Opcode {
     DAILY_CHECKIN(0x17C), // Kaentake daily check-in snapshot
     BATTLE_STATISTICS(0x17D), // Kaentake combat statistics snapshot
     QUEST_SCRIPT_DEBUG(0x17E), // Kaentake GM6 quest XML path authorization
+    CHAT_EMOTICON(0x17F), // Kaentake overhead chat emoticon
+    BOSS_DAMAGE_RANKING(0x180), // Kaentake boss HP and per-player DPS ranking
     SET_ITEM_SYNC(0x371C), // Kaentake set catalog/piece-count snapshot
     BAG_WINDOW(0x3725), // Kaentake character storage bag snapshot
     MONSTER_BOOK_RESULT(0x372C), // Kaentake extended Monster Book query result
+    WEATHER_SYNC(0x373D), // Kaentake day/night and weather state
+    LAMP_PREVIEW(0x373F), // Kaentake GM lamp-preview state
 
     UPDATE_HPMPAALERT(0x1000), // 更新HP/MP/EXP警报
     ;

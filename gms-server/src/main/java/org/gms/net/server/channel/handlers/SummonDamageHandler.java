@@ -35,6 +35,7 @@ import org.gms.net.packet.InPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.server.ItemInformationProvider;
+import org.gms.server.BattleStatisticsService;
 import org.gms.server.StatEffect;
 import org.gms.server.life.Monster;
 import org.gms.server.life.MonsterInformationProvider;
@@ -104,6 +105,7 @@ public final class SummonDamageHandler extends AbstractDealDamageHandler {
 
         boolean magic = summonEffect.getWatk() == 0;
         int maxDmg = calcMaxDamage(summonEffect, player, magic);    // thanks Darter (YungMoozi) for reporting unchecked max dmg
+        List<Integer> battleDamageLines = new ArrayList<>();
         for (SummonAttackEntry attackEntry : allDamage) {
             int damage = attackEntry.getDamage();
             Monster target = player.getMap().getMonsterByOid(attackEntry.getMonsterOid());
@@ -121,9 +123,13 @@ public final class SummonDamageHandler extends AbstractDealDamageHandler {
                         target.applyStatus(player, new MonsterStatusEffect(summonEffect.getMonsterStati(), summonSkill, null, false), summonEffect.isPoison(), 4000);
                     }
                 }
+                int appliedDamage = Math.max(0, Math.min(damage, target.getHp()));
+                if (appliedDamage > 0) battleDamageLines.add(appliedDamage);
                 player.getMap().damageMonster(player, target, damage);
             }
         }
+        BattleStatisticsService.recordAttackDamage(
+                player, summon.getSkill(), battleDamageLines);
 
         if (summon.getSkill() == Outlaw.GAVIOTA) {  // thanks Periwinks for noticing Gaviota not cancelling after grenade toss
             player.cancelEffect(summonEffect, false, -1);

@@ -65,6 +65,7 @@ import org.gms.server.life.MobSkill;
 import org.gms.server.DamageSkinService;
 import org.gms.server.DailyCheckinService;
 import org.gms.server.DailyCheckinConfigService;
+import org.gms.server.weather.WeatherPackets;
 import org.gms.service.NoteService;
 import org.gms.util.DatabaseConnection;
 import org.gms.util.PacketCreator;
@@ -406,6 +407,7 @@ public final class PlayerLoggedinHandler extends AbstractPacketHandler {
                     }
                     */
                 c.sendPacket(PacketCreator.questScriptDebugAccess(player.gmLevel()));
+                WeatherPackets.sendTo(player);
 
                 if (player.isGM()) {
                     Server.getInstance().broadcastGMMessage(c.getWorld(), PacketCreator.earnTitleMessage((player.gmLevel() < 6 ? "GM " : "Admin ") + player.getName() + " 登录了游戏"));

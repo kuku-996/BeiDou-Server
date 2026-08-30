@@ -52,18 +52,19 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Storage {
     private static final Logger log = LoggerFactory.getLogger(Storage.class);
+    public static final int MAX_SLOTS = 240;
     private static final Map<Integer, Integer> trunkGetCache = new HashMap<>();
     private static final Map<Integer, Integer> trunkPutCache = new HashMap<>();
 
     private final int id;
     private int currentNpcid;
     private int meso;
-    private byte slots;
+    private int slots;
     private final Map<InventoryType, List<Item>> typeItems = new HashMap<>();
     private List<Item> items = new LinkedList<>();
     private final Lock lock = new ReentrantLock(true);
 
-    private Storage(int id, byte slots, int meso) {
+    private Storage(int id, int slots, int meso) {
         this.id = id;
         this.slots = slots;
         this.meso = meso;
@@ -89,7 +90,8 @@ public class Storage {
 
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {
-                    ret = new Storage(rs.getInt("storageid"), (byte) rs.getInt("slots"), rs.getInt("meso"));
+                    int slots = Math.max(4, Math.min(MAX_SLOTS, rs.getInt("slots")));
+                    ret = new Storage(rs.getInt("storageid"), slots, rs.getInt("meso"));
                     for (Pair<Item, InventoryType> item : ItemFactory.STORAGE.loadItems(ret.id, false)) {
                         ret.items.add(item.getLeft());
                     }
@@ -105,13 +107,13 @@ public class Storage {
         }
     }
 
-    public byte getSlots() {
+    public int getSlots() {
         return slots;
     }
 
     public boolean canGainSlots(int slots) {
         slots += this.slots;
-        return slots <= 48;
+        return slots <= MAX_SLOTS;
     }
 
     public boolean gainSlots(int slots) {
@@ -119,7 +121,7 @@ public class Storage {
         try {
             if (canGainSlots(slots)) {
                 slots += this.slots;
-                this.slots = (byte) slots;
+                this.slots = slots;
                 return true;
             }
 
@@ -150,7 +152,7 @@ public class Storage {
         }
     }
 
-    public Item getItem(byte slot) {
+    public Item getItem(int slot) {
         lock.lock();
         try {
             return items.get(slot);
@@ -212,13 +214,23 @@ public class Storage {
         return ret;
     }
 
-    public byte getSlot(InventoryType type, byte slot) {
+    public int getSlot(InventoryType type, int slot) {
         lock.lock();
         try {
-            byte ret = 0;
+            // The client sends the position within the selected inventory
+            // type, not the position in the mixed storage list.  Rebuild the
+            // view here instead of trusting a cached list: the native trunk
+            // client can request an item immediately after a partial update.
+            // A stale cache would resolve USE/ETC slots to the wrong item (or
+            // to -1), which is exactly the symptom seen with stacked items.
+            List<Item> typedItems = filterItems(type);
+            if (typedItems == null || slot < 0 || slot >= typedItems.size()) {
+                return -1;
+            }
+            int ret = 0;
             List<Item> storageItems = getItems();
             for (Item item : storageItems) {
-                if (item == typeItems.get(type).get(slot)) {
+                if (item == typedItems.get(slot)) {
                     return ret;
                 }
                 ret++;
@@ -249,7 +261,7 @@ public class Storage {
 
             List<Item> storageItems = getItems();
             for (InventoryType type : InventoryType.values()) {
-                typeItems.put(type, new ArrayList<>(storageItems));
+                typeItems.put(type, new ArrayList<>(filterItems(type)));
             }
 
             currentNpcid = npcId;
@@ -262,7 +274,14 @@ public class Storage {
     public void sendStored(Client c, InventoryType type) {
         lock.lock();
         try {
-            c.sendPacket(PacketCreator.storeStorage(slots, type, typeItems.get(type)));
+            // CTrunkDlg::SetGetItems clears and rebuilds its storage array
+            // when it receives opcode 0x0D.  Sending only the changed type
+            // therefore drops the other categories from the native array and
+            // makes the following typed slot byte point at the wrong item.
+            // Send a complete, type-grouped snapshot after every mutation.
+            rebuildTypeItems();
+            c.sendPacket(PacketCreator.refreshStorageAfterMutation(
+                    0x0D, slots, items));
         } finally {
             lock.unlock();
         }
@@ -271,9 +290,18 @@ public class Storage {
     public void sendTakenOut(Client c, InventoryType type) {
         lock.lock();
         try {
-            c.sendPacket(PacketCreator.takeOutStorage(slots, type, typeItems.get(type)));
+            rebuildTypeItems();
+            c.sendPacket(PacketCreator.refreshStorageAfterMutation(
+                    0x09, slots, items));
         } finally {
             lock.unlock();
+        }
+    }
+
+    private void rebuildTypeItems() {
+        for (InventoryType inventoryType : InventoryType.values()) {
+            typeItems.put(inventoryType,
+                    new ArrayList<>(filterItems(inventoryType)));
         }
     }
 
@@ -285,7 +313,7 @@ public class Storage {
             items = msi.sortItems();
 
             for (InventoryType type : InventoryType.values()) {
-                typeItems.put(type, new ArrayList<>(items));
+                typeItems.put(type, new ArrayList<>(filterItems(type)));
             }
 
             c.sendPacket(PacketCreator.arrangeStorage(slots, items));

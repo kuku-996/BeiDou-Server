@@ -25,6 +25,7 @@ public enum EquipSlot {
     PENDANT("Pe", -17),
     TAMED_MOB("Tm", -18),
     SADDLE("Sd", -19),
+    SHOULDER("Sh", -51),
     MEDAL("Me", -49),
     BELT("Be", -50),
     PET_EQUIP;

@@ -26,6 +26,7 @@ import org.gms.client.autoban.AutobanFactory;
 import org.gms.constants.inventory.ItemConstants;
 import org.gms.net.AbstractPacketHandler;
 import org.gms.net.packet.InPacket;
+import org.gms.server.buyback.SoldItemStorage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,14 +51,26 @@ public final class NPCShopHandler extends AbstractPacketHandler {
                 c.disconnect(true, false);
                 return;
             }
-            c.getPlayer().getShop().buy(c, slot, itemId, quantity);
+            if (c.getPlayer().getShop() == null) {
+                return;
+            }
+            if (c.getPlayer().isShopBuybackMode()) {
+                SoldItemStorage.getInstance().buyBackFromShop(c, slot, itemId);
+            } else {
+                c.getPlayer().getShop().buy(c, slot, itemId, quantity);
+            }
             break;
         }
         case 1: { // sell ;)
             short slot = p.readShort();
             int itemId = p.readInt();
             short quantity = p.readShort();
+            if (c.getPlayer().getShop() == null) {
+                return;
+            }
             c.getPlayer().getShop().sell(c, ItemConstants.getInventoryType(itemId), slot, quantity);
+            SoldItemStorage.getInstance().refreshBuybackShop(c);
+            SoldItemStorage.getInstance().refreshBuybackTab(c);
             break;
         }
         case 2: { // recharge ;)
@@ -68,6 +81,16 @@ public final class NPCShopHandler extends AbstractPacketHandler {
         }
         case 3: // leaving :(
             c.getPlayer().setShop(null);
+            break;
+        case 4: // show the session's buyback list
+            if (c.getPlayer().getShop() != null) {
+                SoldItemStorage.getInstance().sendBuybackShop(c);
+            }
+            break;
+        case 5: // restore the NPC's own stock
+            if (c.getPlayer().getShop() != null) {
+                SoldItemStorage.getInstance().sendNormalShop(c);
+            }
             break;
         }
 

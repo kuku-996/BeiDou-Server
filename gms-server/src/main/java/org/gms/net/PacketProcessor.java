@@ -320,6 +320,7 @@ public final class PacketProcessor {
         registerHandler(RecvOpcode.WORLD_MAP_PLAYERS, new WorldMapPlayersHandler());
         registerHandler(RecvOpcode.DAILY_CHECKIN, new DailyCheckinHandler());
         registerHandler(RecvOpcode.BATTLE_STATISTICS, new BattleStatisticsHandler());
+        registerHandler(RecvOpcode.CHAT_EMOTICON, new ChatEmoticonHandler());
         registerHandler(RecvOpcode.BEAUTY_SALON, new BeautySalonHandler());
         registerHandler(RecvOpcode.SET_ITEM_ACTION, new SetItemHandler());
         registerHandler(RecvOpcode.BAG_WINDOW, new BagWindowHandler());

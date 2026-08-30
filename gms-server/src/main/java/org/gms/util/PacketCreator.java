@@ -86,6 +86,7 @@ import org.gms.server.events.gm.Snowball;
 import org.gms.server.life.MobSkill;
 import org.gms.server.life.MobSkillId;
 import org.gms.server.life.Monster;
+import org.gms.server.BossDamageRankingService;
 import org.gms.server.life.NPC;
 import org.gms.server.life.PlayerNPC;
 import org.gms.server.maps.AbstractMapObject;
@@ -2417,6 +2418,41 @@ public class PacketCreator {
         return p;
     }
 
+    /** Tells the Kaentake shop extension which list is currently displayed. */
+    public static Packet shopBuybackMode(boolean listShown, boolean hasSoldItems) {
+        OutPacket p = OutPacket.create(SendOpcode.SHOP_BUYBACK_MODE);
+        p.writeBool(listShown);
+        p.writeBool(hasSoldItems);
+        return p;
+    }
+
+    /**
+     * Encodes the session's sold items in the same row format as a normal NPC shop.
+     * The client therefore keeps its native item rendering, tooltip and scrolling.
+     */
+    public static Packet getBuybackShop(Client c, int npcId, List<Item> items, int price) {
+        OutPacket p = OutPacket.create(SendOpcode.OPEN_NPC_SHOP);
+        p.writeInt(npcId);
+        p.writeShort(items.size());
+        for (Item item : items) {
+            p.writeInt(item.getItemId());
+            p.writeInt(price);
+            p.writeInt(0);
+            p.writeInt(0);
+            p.writeInt(0);
+            if (!ItemConstants.isRechargeable(item.getItemId())) {
+                p.writeShort(1);
+                p.writeShort(Math.max(1, item.getQuantity()));
+            } else {
+                p.writeShort(0);
+                p.writeInt(0);
+                p.writeShort(0);
+                p.writeShort(Math.max(1, item.getQuantity()));
+            }
+        }
+        return p;
+    }
+
     /* 00 = /
      * 01 = You don't have enough in stock
      * 02 = You do not have enough mesos
@@ -3568,7 +3604,7 @@ public class PacketCreator {
         return p;
     }
 
-    public static Packet getStorage(int npcId, byte slots, Collection<Item> items, int meso) {
+    public static Packet getStorage(int npcId, int slots, Collection<Item> items, int meso) {
         final OutPacket p = OutPacket.create(SendOpcode.STORAGE);
         p.writeByte(0x16);
         p.writeInt(npcId);
@@ -3578,7 +3614,7 @@ public class PacketCreator {
         p.writeInt(0);
         p.writeInt(meso);
         p.writeShort(0);
-        p.writeByte((byte) items.size());
+        p.writeByte(items.size());
         for (Item item : items) {
             addItemInfo(p, item, true);
         }
@@ -3598,7 +3634,7 @@ public class PacketCreator {
         return p;
     }
 
-    public static Packet mesoStorage(byte slots, int meso) {
+    public static Packet mesoStorage(int slots, int meso) {
         final OutPacket p = OutPacket.create(SendOpcode.STORAGE);
         p.writeByte(0x13);
         p.writeByte(slots);
@@ -3609,7 +3645,7 @@ public class PacketCreator {
         return p;
     }
 
-    public static Packet storeStorage(byte slots, InventoryType type, Collection<Item> items) {
+    public static Packet storeStorage(int slots, InventoryType type, Collection<Item> items) {
         final OutPacket p = OutPacket.create(SendOpcode.STORAGE);
         p.writeByte(0xD);
         p.writeByte(slots);
@@ -3623,7 +3659,7 @@ public class PacketCreator {
         return p;
     }
 
-    public static Packet takeOutStorage(byte slots, InventoryType type, Collection<Item> items) {
+    public static Packet takeOutStorage(int slots, InventoryType type, Collection<Item> items) {
         final OutPacket p = OutPacket.create(SendOpcode.STORAGE);
         p.writeByte(0x9);
         p.writeByte(slots);
@@ -3637,7 +3673,41 @@ public class PacketCreator {
         return p;
     }
 
-    public static Packet arrangeStorage(byte slots, Collection<Item> items) {
+    /**
+     * Rebuilds the native storage item array after a store/take-out action.
+     *
+     * CTrunkDlg::SetGetItems clears its mixed item array before parsing the
+     * inventory-type bitfield.  The normal partial packets are useful to the
+     * stock client, but they are not sufficient for the Talery 8x6 view: a
+     * partial USE/ETC packet would remove the other categories from the
+     * native array and desynchronise the type-relative slot byte.  Keep the
+     * original opcode (0x0D for store, 0x09 for take-out), but send all five
+     * inventory categories in the format consumed by SetGetItems.
+     */
+    public static Packet refreshStorageAfterMutation(int mode, int slots,
+                                                     Collection<Item> items) {
+        final OutPacket p = OutPacket.create(SendOpcode.STORAGE);
+        p.writeByte(mode);
+        p.writeByte(slots);
+        // A mutation refresh carries item categories only.  0x7E is used by
+        // the initial-open packet because it also carries the storage mesos
+        // field; SetGetItems expects 0x7C here and reads the five category
+        // counts immediately after the type header.
+        p.writeShort(0x7C);
+        p.writeShort(0);
+        p.writeInt(0);
+        // CTrunkDlg::SetGetItems reads one item-count byte for every type bit
+        // in the 0x7C mask (EQUIP, USE, SETUP, ETC, CASH).  A previous
+        // version wrote the total item count only once, which made the
+        // native parser treat the following type's item bytes as more items
+        // of the first type.  That corrupts the native item array and causes
+        // a client access violation when a weapon or stackable item is taken
+        // out.
+        writeStorageItemsByType(p, items);
+        return p;
+    }
+
+    public static Packet arrangeStorage(int slots, Collection<Item> items) {
         OutPacket p = OutPacket.create(SendOpcode.STORAGE);
         p.writeByte(0xF);
         p.writeByte(slots);
@@ -3649,6 +3719,29 @@ public class PacketCreator {
         }
         p.writeByte(0);
         return p;
+    }
+
+    /**
+     * Writes the item section expected by the native GMS083 trunk dialog.
+     *
+     * CTrunkDlg::SetGetItems reads one count byte for each enabled inventory
+     * type (EQUIP through CASH), followed by that type's item records.
+     */
+    private static void writeStorageItemsByType(OutPacket p, Collection<Item> items) {
+        for (byte type = 1; type <= 5; type++) {
+            int count = 0;
+            for (Item item : items) {
+                if (item.getInventoryType().getType() == type) {
+                    count++;
+                }
+            }
+            p.writeByte(count);
+            for (Item item : items) {
+                if (item.getInventoryType().getType() == type) {
+                    addItemInfo(p, item, true);
+                }
+            }
+        }
     }
 
     /**
@@ -3700,6 +3793,25 @@ public class PacketCreator {
         p.writeInt(customHP.right);
         p.writeByte(tagColor);
         p.writeByte(tagBgColor);
+        return p;
+    }
+
+    public static Packet bossDamageRankingSnapshot(
+            BossDamageRankingService.Snapshot snapshot) {
+        final OutPacket p = OutPacket.create(SendOpcode.BOSS_DAMAGE_RANKING);
+        p.writeByte(1); // protocol version
+        p.writeInt(snapshot.mobId());
+        p.writeInt(snapshot.objectId());
+        p.writeLong(snapshot.currentHp());
+        p.writeLong(snapshot.maxHp());
+        p.writeInt(snapshot.elapsedSeconds());
+        p.writeByte(snapshot.entries().size());
+        for (BossDamageRankingService.Entry entry : snapshot.entries()) {
+            p.writeString(entry.name());
+            p.writeLong(entry.damage());
+            p.writeLong(entry.dps());
+            p.writeShort(entry.contributionBasisPoints());
+        }
         return p;
     }
 
@@ -7126,7 +7238,7 @@ public class PacketCreator {
         return p;
     }
 
-    public static Packet showBoughtStorageSlots(short slots) {
+    public static Packet showBoughtStorageSlots(int slots) {
         OutPacket p = OutPacket.create(SendOpcode.CASHSHOP_OPERATION);
 
         p.writeByte(0x62);
@@ -7550,16 +7662,25 @@ public class PacketCreator {
         return p;
     }
 
-    /** Kaentake combat statistics snapshot (0x17D). */
-    public static Packet battleStatisticsSnapshot(boolean active, int elapsedSeconds,
-                                                  int killedMobs, int mesos, int experience) {
+    /** Kaentake combat statistics snapshot v2 (0x17D). */
+    public static Packet battleStatisticsSnapshot(BattleStatisticsService.Snapshot snapshot) {
         final OutPacket p = OutPacket.create(SendOpcode.BATTLE_STATISTICS);
-        p.writeByte(1);
-        p.writeByte(active ? 1 : 0);
-        p.writeInt(elapsedSeconds);
-        p.writeInt(killedMobs);
-        p.writeInt(mesos);
-        p.writeInt(experience);
+        p.writeByte(2);
+        p.writeByte(snapshot.active() ? 1 : 0);
+        p.writeInt(snapshot.elapsedSeconds());
+        p.writeInt(snapshot.killedMobs());
+        p.writeLong(snapshot.mesos());
+        p.writeLong(snapshot.experience());
+        p.writeLong(snapshot.totalDamage());
+        p.writeByte(snapshot.skills().size());
+        for (BattleStatisticsService.SkillSnapshot skill : snapshot.skills()) {
+            p.writeInt(skill.skillId());
+            p.writeLong(skill.totalDamage());
+            p.writeInt(skill.useCount());
+            p.writeInt(skill.hitCount());
+            p.writeInt(skill.maxHit());
+            p.writeInt(skill.minHit());
+        }
         return p;
     }
 
@@ -7567,6 +7688,14 @@ public class PacketCreator {
     public static Packet questScriptDebugAccess(int gmLevel) {
         final OutPacket p = OutPacket.create(SendOpcode.QUEST_SCRIPT_DEBUG);
         p.writeByte(Math.max(0, Math.min(gmLevel, 6)));
+        return p;
+    }
+
+    /** Displays one animated chat emoticon above a character for players on the same map. */
+    public static Packet chatEmoticon(int characterId, int emoticonId) {
+        final OutPacket p = OutPacket.create(SendOpcode.CHAT_EMOTICON);
+        p.writeInt(characterId);
+        p.writeInt(emoticonId);
         return p;
     }
 

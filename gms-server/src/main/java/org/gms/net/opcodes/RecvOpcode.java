@@ -210,6 +210,7 @@ public enum RecvOpcode implements Opcode {
     WORLD_MAP_PLAYERS(0x115), // Kaentake world-map player lookup
     DAILY_CHECKIN(0x11A), // Kaentake 28-day daily check-in
     BATTLE_STATISTICS(0x11B), // Kaentake combat statistics panel
+    CHAT_EMOTICON(0x11C), // Kaentake overhead chat emoticon
     BEAUTY_SALON(0x174), // Kaentake hair/face/skin storage
     SET_ITEM_ACTION(0x371B), // Kaentake set catalog/piece-count requests
     BAG_WINDOW(0x3724), // Kaentake character storage bags

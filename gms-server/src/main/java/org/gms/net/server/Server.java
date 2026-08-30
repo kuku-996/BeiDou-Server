@@ -801,6 +801,7 @@ public class Server {
         tMan.register(new InvitationTask(), SECONDS.toMillis(30), SECONDS.toMillis(30));
         tMan.register(new RespawnTask(), GameConfig.getServerLong("respawn_interval"), GameConfig.getServerLong("respawn_interval"));
         tMan.register(new OnlineTimeTask(), 5000, 5000);
+        tMan.register(new WeatherBroadcastTask(), 60_000L, 5_000L);
 
         timeLeft = getTimeLeftForNextDay();
         ExpeditionBossLog.resetBossLogTable();

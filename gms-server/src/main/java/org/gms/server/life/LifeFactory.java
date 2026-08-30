@@ -561,7 +561,8 @@ public class LifeFactory {
             }
             return new Monster(mid, stats);
         } catch (NullPointerException npe) {
-            log.error("[SEVERE] MOB {} failed to load.", mid, npe);
+            // Talery 数据可能不包含 GMS083 旧事件脚本引用的怪物；缺失资源不是服务端启动故障。
+            log.warn("[WZ兼容] 怪物 {} 不存在或无法加载，已跳过。", mid);
             return null;
         }
     }

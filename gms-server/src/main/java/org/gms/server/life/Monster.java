@@ -57,6 +57,7 @@ import org.slf4j.LoggerFactory;
 import org.gms.scripting.event.EventInstanceManager;
 import org.gms.server.StatEffect;
 import org.gms.server.TimerManager;
+import org.gms.server.BossDamageRankingService;
 import org.gms.server.life.LifeFactory.BanishInfo;
 import org.gms.server.loot.LootManager;
 import org.gms.server.maps.AbstractAnimatedMapObject;
@@ -87,6 +88,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Monster extends AbstractLoadedLife {
     private static final Logger log = LoggerFactory.getLogger(Monster.class);
+    private static final long BOSS_HUD_HEARTBEAT_MILLIS = 2000L;
 
     private ChangeableStats ostats = null;  //unused, v83 WZs offers no support for changeable stats.
     private MonsterStats stats;
@@ -112,6 +114,7 @@ public class Monster extends AbstractLoadedLife {
     private int spawnEffect = 0;
     private final HashMap<Integer, AtomicLong> takenDamage = new HashMap<>();
     private ScheduledFuture<?> monsterItemDrop = null;
+    private ScheduledFuture<?> bossHudHeartbeat = null;
     private Runnable removeAfterAction = null;
     private boolean availablePuppetUpdate = true;
 
@@ -384,6 +387,7 @@ public class Monster extends AbstractLoadedLife {
     }
 
     public synchronized void disposeMapObject() {     // mob is no longer associated with the map it was in
+        stopBossHudHeartbeat();
         hp.set(-1);
     }
 
@@ -391,6 +395,8 @@ public class Monster extends AbstractLoadedLife {
         if (hasBossHPBar()) {
             from.setPlayerAggro(this.hashCode());
             from.getMap().broadcastBossHpMessage(this, this.hashCode(), makeBossHPBarPacket(), getPosition());
+            from.getMap().broadcastMessage(
+                    makeBossDamageRankingPacket(), getPosition());
         } else if (!isBoss()) {
             int remainingHP = (int) Math.max(1, hp.get() * 100f / getMaxHp());
             Packet packet = PacketCreator.showMonsterHP(getObjectId(), remainingHP);
@@ -469,6 +475,7 @@ public class Monster extends AbstractLoadedLife {
 
         if (!fake) {
             dispatchMonsterDamaged(from, trueDamage);
+            BossDamageRankingService.recordDamage(this, from, trueDamage);
         }
 
         // ========== 通知事件实例记录伤害 ==========
@@ -1059,8 +1066,49 @@ public class Monster extends AbstractLoadedLife {
         return PacketCreator.showBossHP(getId(), getHp(), getMaxHp(), getTagColor(), getTagBgColor());
     }
 
+    public Packet makeBossDamageRankingPacket() {
+        return PacketCreator.bossDamageRankingSnapshot(
+                BossDamageRankingService.snapshot(this));
+    }
+
     public boolean hasBossHPBar() {
         return isBoss() && getTagColor() > 0;
+    }
+
+    private synchronized void ensureBossHudHeartbeat() {
+        if (!hasBossHPBar() || !isAlive() ||
+                (bossHudHeartbeat != null && !bossHudHeartbeat.isDone())) {
+            return;
+        }
+        bossHudHeartbeat = TimerManager.getInstance().register(
+                this::broadcastBossHudHeartbeat,
+                BOSS_HUD_HEARTBEAT_MILLIS,
+                BOSS_HUD_HEARTBEAT_MILLIS);
+    }
+
+    private void broadcastBossHudHeartbeat() {
+        MapleMap currentMap = getMap();
+        if (!isAlive() || currentMap == null) {
+            stopBossHudHeartbeat();
+            return;
+        }
+
+        final int bossHash = hashCode();
+        final Packet rankingPacket = makeBossDamageRankingPacket();
+        for (Character character : currentMap.getAllPlayers()) {
+            if (character == null || character.getMap() != currentMap
+                    || character.getTargetHpBarHash() != bossHash) {
+                continue;
+            }
+            character.getClient().sendPacket(rankingPacket);
+        }
+    }
+
+    private synchronized void stopBossHudHeartbeat() {
+        if (bossHudHeartbeat != null) {
+            bossHudHeartbeat.cancel(false);
+            bossHudHeartbeat = null;
+        }
     }
 
     @Override
@@ -1076,6 +1124,8 @@ public class Monster extends AbstractLoadedLife {
 
         if (hasBossHPBar()) {
             client.announceBossHpBar(this, this.hashCode(), makeBossHPBarPacket());
+            client.sendPacket(makeBossDamageRankingPacket());
+            ensureBossHudHeartbeat();
         }
     }
 
@@ -2219,6 +2269,7 @@ public class Monster extends AbstractLoadedLife {
     }
 
     public void dispose() {
+        stopBossHudHeartbeat();
         if (monsterItemDrop != null) {
             monsterItemDrop.cancel(false);
         }

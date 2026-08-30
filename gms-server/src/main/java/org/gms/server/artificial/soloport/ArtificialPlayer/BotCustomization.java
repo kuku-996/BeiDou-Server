@@ -39,6 +39,13 @@ public class BotCustomization {
         if (itemId == null) {
             return;
         }
+        // Talery 的全量装备池可能包含客户端可显示、但服务端没有完整
+        // Item.wz/info 的条目。此类条目不能安全创建 Equip，直接跳过。
+        ItemInformationProvider ii = ItemInformationProvider.getInstance();
+        java.util.Map<String, Integer> equipStats = ii.getEquipStats(itemId);
+        if (equipStats == null) {
+            return;
+        }
         short dst = getDestinationEquipSlot(itemId);
 //        if (dst == -12 || dst == -13 || dst == -15 || dst == -16 || dst == -112 || dst == -113 || dst == -115 | dst == -116) {
 //            EquipBotRing(fakechar, itemId, dst);
@@ -50,7 +57,8 @@ public class BotCustomization {
     public static short getDestinationEquipSlot(int itemID) {
         int itemSlot = ItemConstants.getEquipSlotType(itemID);
         ItemInformationProvider ii = ItemInformationProvider.getInstance();
-        boolean isCash = ii.getEquipStats(itemID).get("cash") == 1;
+        java.util.Map<String, Integer> equipStats = ii.getEquipStats(itemID);
+        boolean isCash = equipStats != null && equipStats.getOrDefault("cash", 0) == 1;
 
         // Upstream ItemConstants.isWeapon() only recognises the regular 1302000-1493000
         // range, so cash weapons (v83 "170xxxx") fall through and get mis-slotted into

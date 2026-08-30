@@ -212,7 +212,7 @@ public class ItemInformationProvider {
             theData = cashStringData;
         } else if (itemId >= 2000000 && itemId < 3000000) {
             theData = consumeStringData;
-        } else if ((itemId >= 1010000 && itemId < 1040000) || (itemId >= 1122000 && itemId < 1123000) || (itemId >= 1132000 && itemId < 1133000) || (itemId >= 1142000 && itemId < 1143000)) {
+        } else if ((itemId >= 1010000 && itemId < 1040000) || (itemId >= 1122000 && itemId < 1123000) || (itemId >= 1132000 && itemId < 1133000) || (itemId >= 1142000 && itemId < 1143000) || (itemId >= 1152000 && itemId < 1153000)) {
             theData = eqpStringData;
             cat = "Eqp/Accessory";
         } else if (itemId >= 1000000 && itemId < 1010000) {
@@ -516,6 +516,15 @@ public class ItemInformationProvider {
     }
 
     protected String getEquipmentSlot(int itemId) {
+        // 1152xxx is the legacy shoulder-equipment range.  Some mixed WZ
+        // packs do not expose the accessory's islot consistently, so keep
+        // the server-side slot authoritative instead of allowing it to fall
+        // through to PET_EQUIP/slot validation.
+        if (itemId / 10000 == 115) {
+            equipmentSlotCache.put(itemId, "Sh");
+            return "Sh";
+        }
+
         if (equipmentSlotCache.containsKey(itemId)) {
             return equipmentSlotCache.get(itemId);
         }
@@ -1841,6 +1850,10 @@ public class ItemInformationProvider {
     }
 
     public boolean canWearEquipment(Character chr, Equip equip, int dst) {
+        if (equip == null) {
+            return false;
+        }
+
         int id = equip.getItemId();
 
         if (ItemId.isWeddingRing(id) && chr.hasJustMarried()) {

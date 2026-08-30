@@ -39,6 +39,7 @@ import org.gms.net.AbstractPacketHandler;
 import org.gms.net.packet.InPacket;
 import org.gms.net.server.PlayerBuffValueHolder;
 import org.gms.scripting.AbstractPlayerInteraction;
+import org.gms.server.BattleStatisticsService;
 import org.gms.server.StatEffect;
 import org.gms.server.TimerManager;
 import org.gms.server.life.Element;
@@ -196,6 +197,7 @@ public abstract class AbstractDealDamageHandler extends AbstractPacketHandler {
             }*/
 
             int totDamage = 0;
+            List<Integer> battleDamageLines = new ArrayList<>();
             Monster distanceHackWorstMonster = null;
             double distanceHackWorstDistance = Double.NEGATIVE_INFINITY;
             double distanceHackWorstThreshold = 0.0;
@@ -573,6 +575,9 @@ public abstract class AbstractDealDamageHandler extends AbstractPacketHandler {
                             map.broadcastMessage(PacketCreator.damageMonster(monster.getObjectId(), totDamageToOneMonster));
                         }
 
+                        int appliedDamage = Math.max(0,
+                                Math.min(totDamageToOneMonster, monster.getHp()));
+                        collectAppliedDamage(battleDamageLines, onedList, appliedDamage);
                         map.damageMonster(player, monster, totDamageToOneMonster);
                     }
                     if (monster.isBuffed(MonsterStatus.WEAPON_REFLECT) && !attack.magic) {
@@ -595,6 +600,8 @@ public abstract class AbstractDealDamageHandler extends AbstractPacketHandler {
                     }
                 }
             }
+            BattleStatisticsService.recordAttackDamage(
+                    player, attack.skill, battleDamageLines);
             if (teleportBeforePosForDistanceCheck != null) {
                 player.consumeTeleportDistanceCheckContext();
             }
@@ -634,6 +641,24 @@ public abstract class AbstractDealDamageHandler extends AbstractPacketHandler {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private static void collectAppliedDamage(List<Integer> destination,
+                                             List<Integer> source,
+                                             int appliedTotal) {
+        int remaining = appliedTotal;
+        if (source != null) {
+            for (int rawDamage : source) {
+                if (remaining <= 0) break;
+                int normalized = rawDamage < 0 ? rawDamage + Integer.MAX_VALUE : rawDamage;
+                int applied = Math.max(0, Math.min(normalized, remaining));
+                if (applied > 0) destination.add(applied);
+                remaining -= applied;
+            }
+        }
+        // Some server-side skill adjustments replace or multiply the packet
+        // damage. Preserve that accepted remainder as one additional hit.
+        if (remaining > 0) destination.add(remaining);
     }
 
     private static void damageMonsterWithSkill(final Character attacker, final MapleMap map, final Monster monster, final int damage, int skillid, int fixedTime) {

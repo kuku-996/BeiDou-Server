@@ -8,6 +8,7 @@ import org.gms.client.Character;
 import org.gms.client.Client;
 import org.gms.client.command.Command;
 import org.gms.client.command.CommandsExecutor;
+import org.gms.client.command.commands.gm6.WeatherCommand;
 
 import org.gms.dao.entity.CommandInfoDO;
 import org.gms.dao.mapper.CommandInfoMapper;
@@ -49,6 +50,15 @@ public class CommandService {
                 .collect(Collectors.groupingBy(CommandInfoDO::getLevel));
         for (int i = 0; i <= 6; i++) {
             registerCommands(registeredCommands, commandsNameDesc, i, levelMap.get(i));
+        }
+        // Weather is a client-extension diagnostic. Keep it built in so a missing
+        // command_info row cannot prevent the GM6-only visual test command from loading.
+        if (!registeredCommands.containsKey("weather")) {
+            Command weather = new WeatherCommand();
+            weather.setRank(6);
+            registeredCommands.put("weather", weather);
+            commandsNameDesc.get(6).getLeft().add("weather");
+            commandsNameDesc.get(6).getRight().add(weather.getDescription());
         }
         log.info(I18nUtil.getLogMessage("CommandService.loadCommands.info1"), registeredCommands.size());
     }
@@ -252,5 +262,4 @@ public class CommandService {
         }
 
     }
-
 

@@ -432,6 +432,10 @@ public class MapleMap {
             mapobject.setObjectId(curOID);
             this.mapobjects.put(curOID, mapobject);
             for (Character chr : characters) {
+                Client client = chr.getClient();
+                if (client == null || client.getPlayer() != chr) {
+                    continue;
+                }
                 if (condition == null || condition.canSpawn(chr)) {
                     if (chr.getPosition().distanceSq(mapobject.getPosition()) <= getRangedDistance()) {
                         inRangeCharacters.add(chr);
@@ -445,7 +449,10 @@ public class MapleMap {
         }
 
         for (Character chr : inRangeCharacters) {
-            packetbakery.sendPackets(chr.getClient());
+            Client client = chr.getClient();
+            if (client != null && client.getPlayer() == chr) {
+                packetbakery.sendPackets(client);
+            }
         }
     }
 
@@ -1143,6 +1150,9 @@ public class MapleMap {
         mdrop.setDropTime(Server.getInstance().getCurrentTime());
         spawnAndAddRangedMapObject(mdrop, c -> {
             Character chr1 = c.getPlayer();
+            if (chr1 == null || !this.equals(chr1.getMap())) {
+                return;
+            }
 
             if (chr1.needQuestItem(questid, idrop.getItemId())) {
                 mdrop.lockItem();
@@ -1902,9 +1912,20 @@ public class MapleMap {
     }
 
     public void spawnMonsterOnGroundBelow(Monster mob, Point pos) {
+        if (mob == null || pos == null) {
+            log.warn("[刷怪兼容] 地图 {}({}) 收到空的怪物或坐标，已跳过。", mapName, mapid);
+            return;
+        }
         Point spos = new Point(pos.x, pos.y - 1);
         spos = calcPointBelow(spos);
-        spos.y--;
+        // Talery 地图的 foothold 与旧 GMS083 坐标可能不完全一致。
+        // 没有可落脚点时保留脚本给出的坐标，避免事件线程因 NPE 中断。
+        if (spos == null) {
+            log.warn("[刷怪兼容] 地图 {}({}) 坐标 ({},{}) 找不到 foothold，使用原始坐标。", mapName, mapid, pos.x, pos.y);
+            spos = new Point(pos);
+        } else {
+            spos.y--;
+        }
         mob.setPosition(spos);
         spawnMonster(mob);
     }
@@ -1929,9 +1950,14 @@ public class MapleMap {
     }
 
     public Point getGroundBelow(Point pos) {
+        if (pos == null) {
+            return null;
+        }
         Point spos = new Point(pos.x, pos.y - 14); // Using -14 fixes spawning pets causing a lot of issues.
         spos = calcPointBelow(spos);
-        spos.y--;//shouldn't be null!
+        if (spos != null) {
+            spos.y--;
+        }
         return spos;
     }
 
